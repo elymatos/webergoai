@@ -1,0 +1,17 @@
+flora_nowarn_symbol(http,*,\@,any_symbol_context,nontransactional_symbol,'ergo2http.ergo').
+flora_nowarn_symbol(properties,*,\@,any_symbol_context,nontransactional_symbol,'ergo2http.ergo').
+flora_symbol(file,1,\@,939,85,function_symbol,nontransactional_symbol,'ergo2http.ergo').
+flora_symbol(ergo_http,0,\@,675,58,function_symbol,nontransactional_symbol,'ergo2http.ergo').
+flora_symbol(encoding,0,\@,868,79,function_symbol,nontransactional_symbol,'ergo2http.ergo').
+flora_symbol(list,1,\@,1035,92,function_symbol,nontransactional_symbol,'ergo2http.ergo').
+flora_symbol(properties,1,\@,776,71,function_symbol,nontransactional_symbol,'ergo2http.ergo').
+flora_symbol(properties,0,\@,765,71,function_symbol,nontransactional_symbol,'ergo2http.ergo').
+flora_symbol(base64decode,0,\@,982,89,function_symbol,nontransactional_symbol,'ergo2http.ergo').
+flora_symbol('Libpath',0,\@,663,57,function_symbol,nontransactional_symbol,'ergo2http.ergo').
+flora_symbol(add,1,'\\system',665,57,function_symbol,nontransactional_symbol,'ergo2http.ergo').
+flora_symbol(base64encode,0,\@,925,84,function_symbol,nontransactional_symbol,'ergo2http.ergo').
+flora_symbol(http,1,\@,704,65,function_symbol,nontransactional_symbol,'ergo2http.ergo').
+flora_symbol(http,0,\@,689,64,function_symbol,nontransactional_symbol,'ergo2http.ergo').
+flora_symbol(initialize,0,\@,611,50,predicate_symbol,transactional_symbol,'ergo2http.ergo').
+flora_symbol(ensure_loaded,0,\@,685,62,predicate_symbol,nontransactional_symbol,'ergo2http.ergo').
+flora_symbol(rawValue,0,\@,739,68,function_symbol,nontransactional_symbol,'ergo2http.ergo').

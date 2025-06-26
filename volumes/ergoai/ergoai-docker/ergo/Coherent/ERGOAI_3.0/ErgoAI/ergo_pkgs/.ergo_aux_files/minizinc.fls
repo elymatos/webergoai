@@ -1,0 +1,7 @@
+flora_symbol(dbg_clear,0,\@,352,68,predicate_symbol,nontransactional_symbol,'minizinc.ergo').
+flora_symbol(show_mzn_cmd,0,\@,341,67,predicate_symbol,nontransactional_symbol,'minizinc.ergo').
+flora_symbol(keep_tmpfiles,0,\@,330,66,predicate_symbol,nontransactional_symbol,'minizinc.ergo').
+flora_symbol(delete,1,\@,296,61,predicate_symbol,nontransactional_symbol,'minizinc.ergo').
+flora_symbol(show,1,\@,254,55,predicate_symbol,nontransactional_symbol,'minizinc.ergo').
+flora_symbol(solve_flex,8,\@,195,48,predicate_symbol,nontransactional_symbol,'minizinc.ergo').
+flora_symbol(solve,8,\@,99,39,predicate_symbol,nontransactional_symbol,'minizinc.ergo').

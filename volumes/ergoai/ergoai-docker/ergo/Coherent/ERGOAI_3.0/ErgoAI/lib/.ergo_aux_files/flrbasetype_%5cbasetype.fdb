@@ -1,0 +1,579 @@
+/************************************************************************
+  file: includes/flrheader.flh
+
+  Author(s): Guizhen Yang
+	     Michael Kifer
+
+  Copyright (C) by
+       The Research Foundation of the State University of New York, 1999-2013.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+       http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+
+  This file is automatically included by the FLORA-2 compiler.
+************************************************************************/
+
+
+/************************************************************************
+  Note: This file should contain Macros only!
+
+  If FLORA_DUMP is defined: preprocessing for user-friendly output.
+
+  If any of these macros are changed, the corresponding wrappers in
+  flrwrapper.P must also be changed
+************************************************************************/
+
+
+
+
+/* File:      flora_prefix.flh -- FLORA-2 prefixes
+**
+** Author(s): Michael Kifer
+**	      Guizhen Yang
+**
+** Contact:   see  ../CONTACTS.txt
+**
+** Copyright (C) by
+**      The Research Foundation of the State University of New York, 1999-2023;
+**      and Vulcan, Inc., 2008-2013.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**      http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+**
+*/
+
+
+/******************************************************************************
+  Flora prefix
+
+  All Flora symbols begin with this prefix.
+******************************************************************************/
+/* Prefix for F-logic and HiLog predicates */
+
+/* File:   flrincludes/flrproduct.P  -- the Ergo hook for all kinds of
+**                                      product-related things
+**
+** Author(s): Michael Kifer
+**
+** Contact:   see  ../CONTACTS.txt
+**
+** Copyright (C) Coherent Knowledge Systems, LLC, 2013-2023.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**      http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+**
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************
+  Attaching FLORA_PREFIX
+
+  The argument to this Macro should be quoted.
+******************************************************************************/
+
+
+
+
+/******************************************************************************
+  Strings following FLORA_PREFIX
+
+  These strings should be quoted.
+******************************************************************************/
+/* Keep "mod" in the name of a formula wrapper right after FLORA_PREFIX
+   We rely on this to identify meta wrappers */
+
+
+
+/*  Trie for keeping skeletons of defined facts -- debugging */
+
+
+/*  Trie for storing used symbols names */
+
+
+
+
+/******************************************************************************
+  Module and trie prefixes
+******************************************************************************/
+/* prefix to construct Flora module predicates. */
+
+
+/*  prefix to name Flora storage trie for a module. */
+
+
+
+/* prefix to name Flora fld storage trie for a module. */
+
+
+/* prefix to name Flora fls storage trie for a module. */
+
+
+
+/****************************************************************************
+  F-logic atom prefixes for predicates that are used to distinguish F-logic
+  wrappers in the trailers, the user program, base facts, etc.
+****************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************
+  Lengths of prefixes of F-logic wrappers
+******************************************************************************/
+
+
+
+/****************************************************************************
+  Prefixes that are used for F-logic wrappers in rule bodies of user programs.
+  They are called "debuggin prefixes" because they were introduced to help
+  implement the debugging feature that catches undefined methods.
+  Note:
+     naf^, dyna^, dynz^ are the outermost prefixes
+     neg^ is the next outermost
+****************************************************************************/
+
+
+
+
+
+
+
+
+
+
+/* Prefixes used for checking undefinedness */
+
+
+
+/* Corresponding 1-arg macros */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******* these are used in inheritance closure axioms *******/
+
+
+
+
+
+
+
+
+
+/******* these are for transactions in LIBMOD *******/
+
+
+
+
+
+
+
+/******************************************************************************
+  Lengths of prefixes that are used in the wrappers to the left of module name
+
+  Note: We need to remember that these prefixes are enclosed in quotes.
+        But we need the actual atom length that Prolog uses. So, we deduct 2.
+******************************************************************************/
+
+
+
+/* length of FLORA_PREFIX'FLORA_MODULE_TAG */
+
+
+
+
+
+
+
+
+
+
+
+
+
+%% support for undefinedness checks
+
+
+%% used for generating new oids statically
+%% We had previously #1'FLORA_COMPILATION_ID', but this caused gpp error in
+%% \dump(file). Apparently a gpp bug. So changed to X'FLORA_COMPILATION_ID'
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* File:    flrincludes/ergo_structdb.flh -- include file for rule structure DB
+**
+** Author(s): Michael Kifer
+**
+** Contact:   see  ../CONTACTS.txt
+**
+** Copyright (C) Coherent Knowledge Systems, LLC, 2016.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**      http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+'_$_$_ergo''mod''\\basetype''mvdsig'('\\iri',flapply(toType,'\\string'),'\\iri',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''mvdcondef'('\\iri',flapply(toType,'\\string'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''boolsig'('\\iri',flapply('\\isTypeOf','\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\iri',scheme,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\iri',scheme,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\iri',user,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\iri',user,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\iri',host,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\iri',host,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\iri',port,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\iri',port,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\iri',path,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\iri',path,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\iri',query,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\iri',query,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\iri',fragment,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\iri',fragment,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\iri',toSymbol,'\\symbol',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\iri',toSymbol,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\iri',flapply(equals,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\iri',typeName,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\iri',typeName,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''mvdsig'('\\dateTime',flapply(toType,'\\integer','\\integer','\\integer','\\integer','\\integer','\\integer','\\decimal','\\integer','\\integer','\\integer'),'\\dateTime',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''mvdcondef'('\\dateTime',flapply(toType,'\\integer','\\integer','\\integer','\\integer','\\integer','\\integer','\\decimal','\\integer','\\integer','\\integer'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''mvdsig'('\\dateTime',flapply(toType,'\\string'),'\\dateTime',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''mvdcondef'('\\dateTime',flapply(toType,'\\string'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''boolsig'('\\dateTime',flapply(isTypeOf,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\dateTime',dateSign,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\dateTime',dateSign,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\dateTime',year,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\dateTime',year,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\dateTime',month,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\dateTime',month,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\dateTime',day,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\dateTime',day,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\dateTime',hour,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\dateTime',hour,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\dateTime',minute,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\dateTime',minute,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\dateTime',second,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\dateTime',second,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\dateTime',zoneSign,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\dateTime',zoneSign,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\dateTime',zoneHour,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\dateTime',zoneHour,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\dateTime',zoneMinute,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\dateTime',zoneMinute,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\dateTime',now,'\\dateTime',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\dateTime',now,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\dateTime',flapply(now,'\\decimal'),'\\dateTime',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\dateTime',flapply(now,'\\decimal'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\dateTime',toSymbol,'\\symbol',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\dateTime',toSymbol,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\dateTime',flapply(equals,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\dateTime',flapply(lessThan,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\dateTime',typeName,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\dateTime',typeName,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\dateTime',flapply(add,'\\duration'),'\\dateTime',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\dateTime',flapply(add,'\\duration'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''mvdsig'('\\date',flapply(toType,'\\integer','\\integer','\\integer','\\integer','\\integer','\\integer','\\integer'),'\\date',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''mvdcondef'('\\date',flapply(toType,'\\integer','\\integer','\\integer','\\integer','\\integer','\\integer','\\integer'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''mvdsig'('\\date',flapply(toType,'\\string'),'\\date',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''mvdcondef'('\\date',flapply(toType,'\\string'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''boolsig'('\\date',flapply(isTypeOf,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\date',dateSign,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\date',dateSign,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\date',year,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\date',year,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\date',month,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\date',month,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\date',day,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\date',day,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\date',zoneSign,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\date',zoneSign,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\date',zoneHour,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\date',zoneHour,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\date',zoneMinute,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\date',zoneMinute,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\date',now,'\\date',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\date',now,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\date',flapply(now,'\\decimal'),'\\date',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\date',flapply(now,'\\decimal'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\date',toSymbol,'\\symbol',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\date',toSymbol,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\date',flapply(equals,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\date',flapply(lessThan,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\date',typeName,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\date',typeName,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\date',flapply(add,'\\duration'),'\\date',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\date',flapply(add,'\\duration'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''mvdsig'('\\time',flapply(toType,'\\integer','\\integer','\\decimal','\\integer','\\integer','\\integer'),'\\time',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''mvdcondef'('\\time',flapply(toType,'\\integer','\\integer','\\decimal','\\integer','\\integer','\\integer'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''mvdsig'('\\time',flapply(toType,'\\string'),'\\time',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''mvdcondef'('\\time',flapply(toType,'\\string'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''boolsig'('\\time',flapply(isTypeOf,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\time',hour,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\time',hour,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\time',minute,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\time',minute,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\time',second,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\time',second,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\time',zoneSign,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\time',zoneSign,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\time',zoneHour,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\time',zoneHour,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\time',zoneMinute,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\time',zoneMinute,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\time',now,'\\time',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\time',now,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\time',flapply(now,'\\decimal'),'\\time',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\time',flapply(now,'\\decimal'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\time',toSymbol,'\\symbol',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\time',toSymbol,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\time',flapply(equals,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\time',flapply(lessThan,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\time',typeName,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\time',typeName,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\time',flapply(add,'\\duration'),'\\time',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\time',flapply(add,'\\duration'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''mvdsig'('\\duration',flapply(toType,'\\integer','\\integer','\\integer','\\integer','\\integer','\\integer'),'\\duration',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''mvdcondef'('\\duration',flapply(toType,'\\integer','\\integer','\\integer','\\integer','\\integer','\\integer'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''mvdsig'('\\duration',flapply(toType,'\\string'),'\\duration',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''mvdcondef'('\\duration',flapply(toType,'\\string'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''boolsig'('\\duration',flapply(isTypeOf,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\duration',year,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\duration',year,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\duration',month,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\duration',month,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\duration',day,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\duration',day,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\duration',hour,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\duration',hour,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\duration',minute,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\duration',minute,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\duration',second,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\duration',second,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\duration',toSymbol,'\\symbol',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\duration',toSymbol,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\duration',flapply(equals,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\duration',flapply(lessThan,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\duration',typeName,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\duration',typeName,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\duration',flapply(add,'\\duration'),'\\duration',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\duration',flapply(add,'\\duration'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''mvdsig'('\\boolean',toSymbol,'\\symbol',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''mvdcondef'('\\boolean',toSymbol,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''boolsig'('\\boolean',flapply(isTypeOf,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\boolean',toSymbol,'\\symbol',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\boolean',toSymbol,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\boolean',flapply(equals,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\boolean',flapply(lessThan,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\boolean',typeName,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\boolean',typeName,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\boolean',rawValue,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\boolean',rawValue,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''mvdsig'('\\long',flapply(toType,'\\string'),'\\long',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''mvdcondef'('\\long',flapply(toType,'\\string'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''mvdsig'('\\long',flapply(toType,'\\integer'),'\\long',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''mvdcondef'('\\long',flapply(toType,'\\integer'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''boolsig'('\\integer',flapply(isTypeOf,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\long',toSymbol,'\\symbol',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\long',toSymbol,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\long',flapply(equals,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\long',flapply(lessThan,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\long',typeName,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\long',typeName,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\long',rawValue,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\long',rawValue,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''mvdsig'('\\double',flapply(toType,'\\decimal'),'\\double',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''mvdcondef'('\\double',flapply(toType,'\\decimal'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''mvdsig'('\\double',flapply(toType,'\\long'),'\\double',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''mvdcondef'('\\double',flapply(toType,'\\long'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''boolsig'('\\double',flapply(isTypeOf,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\double',floor,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\double',floor,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\double',ceiling,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\double',ceiling,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\double',round,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\double',round,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\double',toSymbol,'\\symbol',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\double',toSymbol,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\double',flapply(equals,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\double',flapply(lessThan,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\double',typeName,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\double',typeName,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\double',rawValue,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\double',rawValue,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''boolsig'('\\string',flapply(isTypeOf,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\string',flapply(+>>,'\\string'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\string',flapply(concat,'\\string'),'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\string',flapply(concat,'\\string'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\string',reverse,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\string',reverse,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\string',length,'\\integer',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\string',length,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\string',toUpper,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\string',toUpper,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\string',toLower,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\string',toLower,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\string',flapply(startsWith,'\\string'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\string',flapply(endsWith,'\\string'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\string',flapply(substring,'\\integer','\\integer'),'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\string',flapply(substring,'\\integer','\\integer'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\string',flapply(equals,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\string',flapply(lessThan,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\string',typeName,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\string',typeName,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''boolsig'('\\list',flapply(isTypeOf,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\list',flapply(contains,list),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\list',flapply(member,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\list',flapply(ith,'\\long'),'\\object',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\list',flapply(ith,'\\long'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\list',flapply(append,'\\list'),'\\list',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\list',flapply(append,'\\list'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''mvdsig'('\\list',flapply(append,'\\list'),'\\list',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''mvdcondef'('\\list',flapply(append,'\\list'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\list',flapply(select,'\\object'),'\\list',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\list',flapply(select,'\\object'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\list',flapply(delete,'\\object'),'\\list',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\list',flapply(delete,'\\object'),0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\list',length,'\\long',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\list',length,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\list',reverse,'\\list',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\list',reverse,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\list',sort,'\\list',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\list',sort,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\list',flapply(startsWith,'\\list'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\list',flapply(endsWith,'\\list'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\list',flapply(subset,'\\list'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\list',toSymbol,'\\symbol',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\list',toSymbol,0,*,__newcontextvar6).
+'_$_$_ergo''mod''\\basetype''iboolsig'('\\list',flapply(equals,'\\object'),__newcontextvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'('\\list',typeName,'\\string',__newcontextvar5).
+'_$_$_ergo''mod''\\basetype''imvdcondef'('\\list',typeName,0,*,__newcontextvar6).

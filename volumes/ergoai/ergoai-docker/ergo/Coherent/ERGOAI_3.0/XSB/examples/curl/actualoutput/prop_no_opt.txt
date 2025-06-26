@@ -1,0 +1,4 @@
+test_url_properties_no_opt on https://mail.google.com
+Size = 78571
+Modified Time = -1
+Redirection URL = https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1

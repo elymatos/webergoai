@@ -1,0 +1,170 @@
+/*
+   THIS FILE IS IN THE PUBLIC DOMAIN.
+
+   IT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+   INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+   IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+   OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+   ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+   OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+/*
+    Example that shows how actions can be represented via defeasible reasoning.
+
+    States of the world are represented as 0, nxt(0), nxt(nxt(0)), etc.
+    To make them a bit easier to write, we define a UDF - user-defined
+    function --- named pos(N).
+
+    So, this example also illustrates two more things:
+       a. UDFs
+       b. Dealing with situations involving infinite domains, like the set
+          of of possible world states in our case.
+*/
+
+:- use_argumentation_theory.
+
+// ?N >= 0
+\udf pos(?N) := ?pos \if state_by_number(?N,?pos).
+
+// A block will, in the next state, change location to new_loc and
+// free up the old location old_loc if:
+//   a. there was a move-action in the current state that moved this block from
+//      old_loc to new_loc; and
+//   b. that block was really at old_lock in the current state; and
+//   c. new_loc was unoccupied in the current state
+@{explicit_move_action}
+location(nxt(?state),?block,?new_loc)
+  \and \neg location(nxt(?state),?block,?old_loc) :-
+	action(?state,move(?block,?old_loc,?new_loc)),
+	location(?state,?block,?old_loc),
+	//\naf exists(?a_block)^location(?state,?a_block,?new_loc).
+        unoccuplied_location(?state,?new_loc).
+
+// A location is unoccupied if we have no derivable information
+// to the contrary.
+unoccuplied_location(?state,?location) :-
+        \naf exists(?a_block)^location(?state,?a_block,?location).
+
+/*
+   Blocks stay put unless moved.
+   The "unless" part is the consequence of the \overrides statement below.
+*/
+// The positive part of the statement "blocks stay put unless moved".
+@{blocks_stay_put_unless_moved}
+location(nxt(?s),?x,?y) :-
+        is_state(?s),
+	location(?s,?x,?y).
+// The negative part of the statement "blocks stay put unless moved".
+@{blocks_stay_put_unless_moved}
+\neg location(nxt(?s),?x,?y) :-
+        is_state(?s),
+	\neg location(?s,?x,?y).
+
+// In the absence of any other info, assume that each spot
+// is unoccupied in any given state.
+// Note 1: the default nature of this fact is the result of the \overrides
+//         statements below, which give the tag default_location_info 
+//         the lowest priority.
+// Note 2: we use \neg here (i.e., it is said to be "known" that the location
+//         is unoccupied) --- NOT \naf.  In the rule heads (or facts), \naf
+//         is NOT allowed. However, recall that \neg implies \naf.
+@{default_location_info}
+\neg location(?_state,?_block,?_spot).
+
+/*
+  Normal, explicit location information; it overrides default_location_info.
+*/
+// initially, block4 is at spot7
+@{explicit_location_info} location(0,block4,spot7).
+// and block5 is at spot4
+@{explicit_location_info} location(0,block5,spot4).
+// and block1 at spot2
+@{explicit_location_info} location(0,block1,spot2).
+
+// action occurred in state pos(1): block4 moved from spot7 to spot3.
+action(pos(1),move(block4,spot7,spot3)).
+// action occurred in state pos(2): block5 moved from spot4 to spot8.
+action(pos(2),move(block5,spot4,spot8)).
+
+\overrides(explicit_location_info,default_location_info).
+\overrides(blocks_stay_put_unless_moved,default_location_info).
+\overrides(explicit_move_action,explicit_location_info).
+\overrides(explicit_move_action,blocks_stay_put_unless_moved).
+// note: \overrides isn't transitive unless the user defines it to be,
+//       so the below is not redundant.
+\overrides(explicit_move_action,default_location_info).
+
+/*
+  We must ground ?x and ?y before comparing them using !+,
+  since otherwise != is a non-logical operation (?- 1 != ?X is false).
+*/
+\opposes(location(?_s,?_b,?spot1),location(?_s,?_b,?spot2)) :-
+	?spot1 != ?spot2.
+
+
+// Create a domain of 20 states - needed to make recursion safe
+// We allow other states as well (of arbitrary depth), but if a query
+// comes down with an unbound state argument, we limit that to just
+// the first 20 states.
+?- %make_states(20).
+
+// Defines the first ?N states in the domain of states.
+// Needed to make recursion safe, if someone asks queries
+// with the unbound state argument (like some of the queries at the end).
+%make_states(?N) :-
+        deleteall{state(?,?)},  // clear out the previous state-set
+        %make_states_aux(?N,?).
+
+// %make_states_aux(state_sequence_number, state_expression)
+%make_states_aux(0,0) :- !, insert{state(0,0)}.
+%make_states_aux(?N,?State) :-
+        isinteger{?N},
+        ?N > 0,
+        ?N1 \is ?N-1,
+        %make_states_aux(?N1,?State1),
+        ?State = nxt(?State1),
+        insert{state(?State,?N)}.
+
+// Checks if ?s is a state. If it is ground, then we check if ?s has
+// the right format: nxt(...nxt(0)...).
+// Otherwise (?s is a var), gets bound successively to the predefined
+// 20 states in our finite domain of states.
+is_state(?s) :-
+        isground{?s},
+        state(?s,?),
+        !.
+is_state(?s) :-
+        isground{?s},
+        !,
+        ?s = nxt(?s1),
+        is_state(?s1).
+is_state(?s) :- state(?s,?).
+
+// This is used by the UDF pos(.) only. Given a state number, returns
+// the state expression. This predicate is tabled, indexed, and is efficient.
+state_by_number(?N,?S) :-
+        isinteger{?N},
+        state(?S,?N),
+        !.
+state_by_number(?N,?S) :-
+        isinteger{?N},
+        ?S = nxt(?S1),
+        state_by_number(=?N-1, ?S1).
+
+
+/*
+    Queries:
+        location(pos(0), block4,spot7).    // yes
+        location(pos(0), block5,spot4).    // yes
+        location(pos(2), block4,spot3).    // yes
+        location(pos(2), ,block4,?spot).   // spot3
+        location(pos(2), ,block5,?spot).   // spot4
+        location(pos(3), ,block5,?spot).   // spot8
+        location(pos(3), ,block1,?spot).   // spot2
+        location(?s,block4,?spot).  // many answers, one per state
+        location(?s,block1,?spot).  // many answers, one per state
+*/
+
+

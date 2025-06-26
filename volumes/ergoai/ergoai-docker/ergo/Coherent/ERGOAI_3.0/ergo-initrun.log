@@ -1,0 +1,12 @@
+
+ErgoAI Reasoner 3.0 (Philo) of 2023-05-01 (linux-gnu x64; rev: d934cd9)
+
+For basic commands:  type  \help.  then <Enter>
+Documentation:       https://github.com/ErgoAI
+
+Current folder:      /root
+
+
+
+ergo> 
+End XSB (cputime 0.99 secs, elapsetime 1.64 secs)

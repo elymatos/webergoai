@@ -1,0 +1,26 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 1
+
+FLORA_THIS_WORKSPACE(nontblflapply)(insert_bridge_rules,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,show,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(xpath_xml,__XPathExpr,__NamespacePrefLst,__Mod),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(xpath_html,__XPathExpr,__NamespacePrefLst,__Mod),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(xpath_xhtml,__XPathExpr,__NamespacePrefLst,__Mod),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(show,flapply(attribute,__attrname)),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(show,__elementname),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(load_xml,__Mod),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(load_sgml,__Mod),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(load_html,__Mod),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(load_xhtml,__Mod),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(xpath_sgml,__XPathExpr,__NamespacePrefLst,__Mod),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(load_structure,__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4,__fldnewvar5).
+FLORA_THIS_WORKSPACE(tblflapply)(parse_structure,__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4,__fldnewvar5).
+FLORA_THIS_WORKSPACE(tblflapply)(apply_xpath,__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4,__fldnewvar5,__fldnewvar6,__fldnewvar7).
+FLORA_THIS_WORKSPACE(tblflapply)(flrattributefunc,__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4,__fldnewvar5,__fldnewvar6).
+FLORA_THIS_WORKSPACE(tblflapply)(flrattribute,__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4,__fldnewvar5).
+FLORA_THIS_WORKSPACE(tblflapply)(flrelement,__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4,__fldnewvar5).
+FLORA_THIS_WORKSPACE(tblflapply)(get_mode,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(set_mode,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(ensure_loaded,__fldnewvar1).

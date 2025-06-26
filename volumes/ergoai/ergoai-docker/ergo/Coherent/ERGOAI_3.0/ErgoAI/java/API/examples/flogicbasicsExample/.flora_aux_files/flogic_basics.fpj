@@ -1,0 +1,5 @@
+%% #include info for source file: /home/kifer/FLORA/flora-git/flora2/java/API/examples/flogicbasicsExample/flogic_basics.flr
+
+
+:-(multifile(/('_$_$_flora''include_prj_info',2))).
+'_$_$_flora''include_prj_info'('/home/kifer/FLORA/flora-git/flora2/java/API/examples/flogicbasicsExample/flogic_basics.flr','(runtime)').

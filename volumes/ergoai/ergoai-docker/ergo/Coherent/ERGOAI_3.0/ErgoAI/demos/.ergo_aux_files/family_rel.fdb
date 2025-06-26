@@ -1,0 +1,29 @@
+#include "flrheader.flh"
+#define FLORA_COMPILATION_ID 2
+
+
+FLORA_THIS_WORKSPACE(nontblflapply)(female,rita,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(female,johanna,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(female,monique,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(female,christina,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(female,kati,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(female,eva,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(male,wilhelm,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(male,franz,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(male,heinz,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(male,hermann,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(male,bernhard,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(male,karl,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(male,albert,__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(spouse,wilhem,rita,__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(spouse,hermann,johanna,__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(spouse,karl,christina,__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(child,wilhelm,franz,__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(child,wilhelm,heinz,__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(child,wilhelm,hermann,__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(child,hermann,bernhard,__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(child,hermann,karl,__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(child,hermann,kati,__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(child,bernhard,albert,__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(child,monique,albert,__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(child,kati,eva,__newcontextvar3).

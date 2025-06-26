@@ -1,0 +1,37 @@
+(TeX-add-style-hook "clpr"
+ (lambda ()
+    (LaTeX-add-index-entries
+     "Prologs!SWI"
+     "\\texttt{\\{\\}/1}"
+     "\\texttt{entailed/1}"
+     "\\texttt{inf/2}"
+     "\\texttt{sup/2}"
+     "\\texttt{minimize/1}"
+     "\\texttt{maximize/1}"
+     "\\texttt{inf/4}"
+     "\\texttt{sup/4}"
+     "\\texttt{bb\\_inf/4}"
+     "\\texttt{bb\\_inf/3}"
+     "\\texttt{dump/3}"
+     "projecting\\_assert/1"
+     "constraints!asserting dynamic code with"
+     "Prologs!Sicstus"
+     "\\texttt{in/2}"
+     "\\texttt{\\#>/2}"
+     "\\texttt{\\#</2}"
+     "\\texttt{\\#>=/2}"
+     "\\texttt{\\#=</2}"
+     "\\texttt{\\#=/2}"
+     "\\texttt{all\\_different/1}"
+     "\\texttt{sum/3}"
+     "\\texttt{labelling/2}"
+     "\\texttt{label/1}"
+     "\\texttt{indomain/1}"
+     "\\texttt{serialized/2}"
+     "\\texttt{lex\\_chain/1}")
+    (LaTeX-add-labels
+     "sec:clpr"
+     "sec:clpr-api"
+     "fig:clpr"
+     "sec:bounds")))
+

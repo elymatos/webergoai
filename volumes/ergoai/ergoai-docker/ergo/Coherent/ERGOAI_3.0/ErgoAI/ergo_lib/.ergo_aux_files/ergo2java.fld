@@ -1,0 +1,30 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 1
+
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(close,__Window),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(setJavaFlags,__List),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(clear,__Window),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(print,__Window,__Text),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(addJar,__Jar),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(setJavaCP,__CP),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(alive,__Window),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(setSize,__Win,__Columns,__Rows),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(setSize,__Win,__newdontcarevar1,__newdontcarevar2),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(show,__Title,__Message),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(show,___Title,__Message),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,restart,__fldnewvar2).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,chooseFile,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,mode,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(open,__WindTitle,__Tooltip),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(open,__newdontcarevar1,__newdontcarevar2),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(chooseFile,__FileExtensions),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(chooseFile,___FileExtensions),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(showOptions,__Title,__Message,__Buttons),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(show,__Question),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(path,studioLogFile),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(message,__MethodAndArgs),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(nogui_session,__fldnewvar1).
+FLORA_THIS_WORKSPACE(tblflapply)(ensure_loaded,__fldnewvar1).
+FLORA_THIS_WORKSPACE(nontblflapply)(initialize,__fldnewvar1).

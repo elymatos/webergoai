@@ -1,0 +1,13 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 1
+
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,a,__fldnewvar2).
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,aaa,__fldnewvar2).
+FLORA_THIS_WORKSPACE(mvdsig)(__fldnewvar1,bs1,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvdsig)(__fldnewvar1,b,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,bs1,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,b1,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,bs,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,b,__fldnewvar2,__fldnewvar3).

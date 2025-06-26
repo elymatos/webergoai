@@ -1,0 +1,59 @@
+flora_nowarn_symbol(on,1,\@,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_nowarn_symbol(off,1,\@,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_nowarn_symbol(abort,0,flvar('_',663),predicate_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_nowarn_symbol(mustDefine,2,\@,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(executable,1,'\\io',2544,292,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('invalid option in Method[mustDefine(',0,\@,1788,199,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('Method',0,\@,1171,119,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(remove,1,\@,844,73,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(sysabort,1,\@,997,90,predicate_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(' is not loaded',0,\@,2430,275,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(')]@\\system : Module ',0,\@,2425,275,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('))]@\\system',0,\@,1415,150,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(system_turn_on_debug_all,0,\@,610,36,prolog_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('non-loaded module used in Method[mustDefine(',0,\@,1450,153,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(/,2,\@,2441,279,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('invalid module name in Method[mustDefine(',0,\@,1407,150,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(removeall,1,\@,879,76,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(system_turn_off_debug_all,0,\@,615,36,prolog_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(uninstall,0,\@,2494,285,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(')]@\\system',0,\@,1956,220,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('(',0,\@,1411,150,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(warning,1,\@,1091,106,predicate_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(system_turn_off_debug,1,\@,605,35,prolog_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('invalid second argument (not atomic formula) in Method[mustDefine(off,',0,\@,2109,237,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('invalid mode in Method[mustDefine(',0,\@,1947,220,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(system_ignore_undefined_errors,1,\@,620,37,prolog_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('+++ This copy does not look like an ErgoAI release;
++++ it cannot be uninstalled via this method',0,\@,2569,296,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(query,1,\@,914,80,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('invalid argument in Method[mustDefine(off,',0,\@,2277,258,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(on,1,\@,1577,172,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(on,0,\@,1205,123,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(turn_on_debug_list,1,\@,625,38,prolog_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('\\run',1,\@,2553,293,predicate_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('Libpath[query(Path)]@ ys: argument must be an atomic string or variable',0,\@,999,90,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(off,1,\@,1674,184,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(off,0,\@,1214,126,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(turn_off_debug_list,1,\@,630,38,prolog_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(refresh,0,\@,1013,94,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(system_turn_on_debug,1,\@,600,35,prolog_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('Libpath',0,\@,788,67,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('invalid second argument (variable) in Method[mustDefine(off,',0,\@,1984,224,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(message,1,\@,1136,113,predicate_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(abort,0,\@,1047,100,predicate_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(abort,1,\@,1020,96,predicate_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(turn_debug_off_for_call,3,\@,635,39,prolog_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('+++ On Windows, please use the standard uninstallation facilities',0,\@,2512,288,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(add,1,\@,790,67,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('\\cd',1,\@,2530,291,predicate_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(..,0,\@,2538,291,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('./uninstall_ergoAI.sh',0,\@,2546,292,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('File',0,\@,2542,292,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('))]',0,\@,1796,199,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('System',0,\@,2436,279,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('\\abolishtables',0,\@,1009,93,predicate_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(abolish,0,\@,1004,93,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(flora_hilog_symbol_name,1,\@,1387,148,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol(type,0,\@,2438,279,function_symbol,nontransactional_symbol,'flrsystem.flr').
+flora_symbol('Tables',0,\@,1002,93,function_symbol,nontransactional_symbol,'flrsystem.flr').

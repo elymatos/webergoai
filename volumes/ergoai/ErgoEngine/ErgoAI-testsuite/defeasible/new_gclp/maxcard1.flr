@@ -1,0 +1,44 @@
+
+:- use_argumentation_theory.
+
+// NOTE: cannot just have ?y != ?z in the body, as != is only
+// a SEMI-logical operator, so the rule would not be purely logical,
+// which is required for defeasible rules.
+\opposes(?_p(?_x,?y),?_p(?_x,?z)) :- 
+        // explicit domain might be cheaper than candidate/2 in some cases,
+        // but is less general
+        //{?y,?z} \in [p,q,r,3,2,a,b],
+        //any_candidate(${?_p(?_x,?y)}),
+        //any_candidate(${?_p(?_x,?z)}),
+        ?y != ?z.
+any_candidate(?C) :- candidate(?,?C)@\gcl.
+any_candidate(?C) :- strict_candidate(?,?C)@\gcl.
+any_candidate(?C) :- isbasefact{?C}.
+
+@{hi}
+p(?x,2) :- q(?x).
+q(a).
+q(b).
+
+@{low}
+p(?x,3) :- r(?x).
+r(b).
+r(c).
+
+%tst1 :- insert{\overrides(hi,low)},
+         p(?x,?y), writeln(test1 = ?x+?y)@\plg, \false.
+%tst1 :- !.
+
+%tst2 :- delete{\overrides(?,?)},
+         p(?x,?y), writeln(test2 = ?x+?y)@\plg, \false.
+%tst2 :- !.
+
+%pretest :- %tst1, %tst2.
+
+
+%test :- tell(temp)@\plg(),
+	Method[mustDefine(on)]@\sys,
+	%pretest,
+	Method[mustDefine(off)]@\sys,
+	%pretest,
+	told@\plg().

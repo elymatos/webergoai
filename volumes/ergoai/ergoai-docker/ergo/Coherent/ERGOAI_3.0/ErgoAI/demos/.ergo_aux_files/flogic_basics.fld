@@ -1,0 +1,21 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 3
+
+FLORA_THIS_WORKSPACE(imvd)(__fldnewvar1,believes_in,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,kids,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,age,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,employee,__fldnewvar2).
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,dangerous_hobby,__fldnewvar2).
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,object,__fldnewvar2).
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,person,__fldnewvar2).
+FLORA_THIS_WORKSPACE(nontblflapply)(e,__fldnewvar1,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(time_flies_like_an_arrow,__fldnewvar1).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1998),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,self,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,hobbies,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,kids,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,age,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,instances,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(tc,__fldnewvar1,__fldnewvar2,__fldnewvar3).

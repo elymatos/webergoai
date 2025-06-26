@@ -1,0 +1,28 @@
+flora_nowarn_symbol(check,2,\@,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_nowarn_symbol(check,3,\@,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol(ok,0,\@,1328,138,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol(allsigns,0,\@,1912,225,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol(off,1,'\\system',1397,162,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol('Error in Cardinality[check(?[?Method {?Low..?High} => ?])]@\\typecheck: ?High must be an unbound variable',0,\@,1280,125,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol(typeCheckInternal,6,\@,560,44,prolog_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol('Type',0,\@,1361,159,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol(typeCheckBoolInternal,6,\@,565,44,prolog_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol(abort,1,'\\system',694,56,predicate_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol(checkBounds,2,\@,546,43,prolog_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol('Type[check(',0,\@,1895,218,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol(nonstrict,0,\@,1597,183,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol('Error in Cardinality[check(?[?Method {?Low..?High} => ?])]@\\typecheck: ?Low must be an unbound variable',0,\@,1263,123,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol(')]@\\typecheck: Invalid signature argument',0,\@,703,58,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol(is_native,1,\@,555,44,prolog_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol('\\typecheck',0,\@,770,65,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol(')]@\\typecheck: Invalid first argument',0,\@,1903,220,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol(strict,0,\@,2032,236,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol('Cardinality',0,\@,595,50,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol('Cardinality[check(',0,\@,697,56,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol(',?Result',0,\@,1900,219,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol('Error in Cardinality[check(?[?Method {?Low..?High} => ?])]@\\typecheck: Low and high bounds must be different',0,\@,1246,121,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol(boundViolated,5,\@,536,42,prolog_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol(flora_hilog_symbol_name,1,'\\system',1383,161,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol('Method',0,\@,1379,161,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol(defaultonly,0,\@,1541,177,function_symbol,nontransactional_symbol,'flrtypeconstraint.flr').
+flora_symbol(not_complies_with_type_list,3,\@,541,43,prolog_symbol,nontransactional_symbol,'flrtypeconstraint.flr').

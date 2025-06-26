@@ -1,0 +1,214 @@
+\indexentry{\texttt{odbc\_open/3}|hyperpage}{3}
+\indexentry{\texttt{odbc\_close/0}|hyperpage}{3}
+\indexentry{\texttt{odbc\_open/4}|hyperpage}{3}
+\indexentry{\texttt{odbc\_close/1}|hyperpage}{3}
+\indexentry{\texttt{odbc\_data\_sources/2}|hyperpage}{3}
+\indexentry{\texttt{odbc\_sql/3}|hyperpage}{4}
+\indexentry{\texttt{odbc\_sql/4}|hyperpage}{4}
+\indexentry{\texttt{odbc\_sql\_cnt/4}|hyperpage}{5}
+\indexentry{\texttt{findall\_odbc\_sql/4}|hyperpage}{5}
+\indexentry{\texttt{findall\_odbc\_sql/3}|hyperpage}{5}
+\indexentry{\texttt{odbc\_import/2}|hyperpage}{6}
+\indexentry{\texttt{odbc\_import/4}|hyperpage}{7}
+\indexentry{\texttt{odbc\_query/2}|hyperpage}{10}
+\indexentry{\texttt{odbc\_query/3}|hyperpage}{13}
+\indexentry{\texttt{odbc\_insert/\{2,3\}}|hyperpage}{13}
+\indexentry{\texttt{odbc\_delete/\{2,3\}}|hyperpage}{14}
+\indexentry{\texttt{odbc\_show\_schema/1}|hyperpage}{14}
+\indexentry{\texttt{odbc\_get\_schema/2}|hyperpage}{14}
+\indexentry{\texttt{odbc\_create\_table/2}|hyperpage}{15}
+\indexentry{\texttt{odbc\_create\_index/3}|hyperpage}{15}
+\indexentry{\texttt{odbc\_delete\_table/1}|hyperpage}{15}
+\indexentry{\texttt{odbc\_delete\_view/1}|hyperpage}{15}
+\indexentry{\texttt{odbc\_delete\_index/1}|hyperpage}{15}
+\indexentry{\texttt{odbc\_transaction/1}|hyperpage}{15}
+\indexentry{\texttt{set\_odbc\_flag/2}|hyperpage}{16}
+\indexentry{\texttt{odbc\_flag/2}|hyperpage}{16}
+\indexentry{Code authors!Carlsson, Mats|hyperpage}{30}
+\indexentry{\texttt  {assoc\_xsb}!\texttt  {list\_to\_assoc/2}|hyperpage}{30}
+\indexentry{\texttt  {assoc\_xsb}!\texttt  {assoc\_to\_list/2}|hyperpage}{30}
+\indexentry{\texttt  {assoc\_xsb}!\texttt  {assoc\_vals\_to\_list/2}|hyperpage}{30}
+\indexentry{\texttt  {assoc\_xsb}!\texttt  {is\_assoc/1}|hyperpage}{30}
+\indexentry{\texttt  {assoc\_xsb}!\texttt  {gen\_assoc/3}|hyperpage}{31}
+\indexentry{\texttt  {assoc\_xsb}!\texttt  {get\_assoc/5}|hyperpage}{31}
+\indexentry{\texttt  {assoc\_xsb}!\texttt  {put\_assoc/4}|hyperpage}{31}
+\indexentry{\texttt  {assoc\_xsb}!\texttt  {del\_assoc/4}|hyperpage}{31}
+\indexentry{Code authors!Carlsson, Mats|hyperpage}{31}
+\indexentry{Code authors!O'Keefe, Richard|hyperpage}{31}
+\indexentry{\texttt  {curl}!\texttt  {see/1}|hyperpage}{47}
+\indexentry{\texttt  {curl}!\texttt  {see/1}|hyperpage}{47}
+\indexentry{\texttt  {curl}!\texttt  {open/3}|hyperpage}{47}
+\indexentry{\texttt  {curl}!\texttt  {open/4}|hyperpage}{47}
+\indexentry{\texttt  {curl}!\texttt  {close/2}|hyperpage}{48}
+\indexentry{\texttt  {curl}!\texttt  {close/4}|hyperpage}{48}
+\indexentry{\texttt  {curl}!\texttt  {load\_page/5}|hyperpage}{48}
+\indexentry{\texttt  {curl}!\texttt  {url\_properties/3}|hyperpage}{49}
+\indexentry{\texttt  {curl}!\texttt  {url\_properties/2}|hyperpage}{49}
+\indexentry{\texttt  {curl}!\texttt  {encode\_url/2}|hyperpage}{50}
+\indexentry{\texttt{CDATA}|hyperpage}{53}
+\indexentry{\texttt{load\_sgml\_structure/3}|hyperpage}{54}
+\indexentry{\texttt{load\_xml\_structure/3}|hyperpage}{54}
+\indexentry{\texttt{load\_html\_structure/3}|hyperpage}{54}
+\indexentry{\texttt{load\_xhtml\_structure/3}|hyperpage}{54}
+\indexentry{\texttt{load\_structure/4}|hyperpage}{54}
+\indexentry{\texttt{CDATA}|hyperpage}{54}
+\indexentry{\texttt{NAMES}|hyperpage}{54}
+\indexentry{\texttt{NUMBER}|hyperpage}{54}
+\indexentry{\texttt{SDATA}|hyperpage}{55}
+\indexentry{\texttt{NDATA}|hyperpage}{55}
+\indexentry{\texttt{xml}|hyperpage}{55}
+\indexentry{\texttt{sgml}|hyperpage}{55}
+\indexentry{\texttt{xmlns}|hyperpage}{55}
+\indexentry{\texttt{token}|hyperpage}{55}
+\indexentry{\texttt{integer}|hyperpage}{55}
+\indexentry{\texttt{false}|hyperpage}{56}
+\indexentry{\texttt{sgml} space mode|hyperpage}{56}
+\indexentry{\texttt{default} space mode|hyperpage}{57}
+\indexentry{\texttt{preserve} space mode|hyperpage}{57}
+\indexentry{\texttt{sgml}|hyperpage}{57}
+\indexentry{\texttt{xml}|hyperpage}{57}
+\indexentry{\texttt{preserve} space mode|hyperpage}{57}
+\indexentry{\texttt{remove} space mode|hyperpage}{57}
+\indexentry{\texttt{xmlns} dialect|hyperpage}{58}
+\indexentry{\texttt{new\_dtd/2}|hyperpage}{58}
+\indexentry{\texttt{free\_dtd/1}|hyperpage}{58}
+\indexentry{\texttt{open\_dtd/3}|hyperpage}{58}
+\indexentry{\texttt{dtd/3}|hyperpage}{59}
+\indexentry{\texttt{doctype}|hyperpage}{59}
+\indexentry{\texttt{dtd/3}|hyperpage}{59}
+\indexentry{\texttt{new\_sgml\_parser/2}|hyperpage}{59}
+\indexentry{\texttt{free\_sgml\_parser/1}|hyperpage}{59}
+\indexentry{\texttt{set\_sgml\_parser/2}|hyperpage}{59}
+\indexentry{\texttt{sgml}|hyperpage}{60}
+\indexentry{\texttt{xml}|hyperpage}{60}
+\indexentry{\texttt{xmlns}|hyperpage}{60}
+\indexentry{\texttt{sgml\_parse/3}|hyperpage}{61}
+\indexentry{\texttt{file}|hyperpage}{61}
+\indexentry{\texttt{element}|hyperpage}{61}
+\indexentry{\texttt{declaration}|hyperpage}{61}
+\indexentry{\texttt{informational}|hyperpage}{61}
+\indexentry{\texttt{DOCTYPE} declaration|hyperpage}{62}
+\indexentry{\texttt{parse\_xpath/4}|hyperpage}{65}
+\indexentry{Prologs!SWI|hyperpage}{71}
+\indexentry{\texttt  {clpr}!\texttt  {\{\}/1}|hyperpage}{73}
+\indexentry{\texttt  {clpr}!\texttt  {entailed/1}|hyperpage}{74}
+\indexentry{\texttt  {clpr}!\texttt  {inf/2}|hyperpage}{74}
+\indexentry{\texttt  {clpr}!\texttt  {sup/2}|hyperpage}{74}
+\indexentry{\texttt  {clpr}!\texttt  {minimize/1}|hyperpage}{74}
+\indexentry{\texttt  {clpr}!\texttt  {maximize/1}|hyperpage}{74}
+\indexentry{\texttt  {clpr}!\texttt  {inf/4}|hyperpage}{75}
+\indexentry{\texttt  {clpr}!\texttt  {sup/4}|hyperpage}{75}
+\indexentry{\texttt  {clpr}!\texttt  {bb\_inf/4}|hyperpage}{76}
+\indexentry{\texttt  {clpr}!\texttt  {bb\_inf/3}|hyperpage}{76}
+\indexentry{\texttt  {clpr}!\texttt  {dump/3}|hyperpage}{77}
+\indexentry{\texttt  {dump}!\texttt  {projecting\_assert/1}|hyperpage}{77}
+\indexentry{constraints!asserting dynamic code with|hyperpage}{77}
+\indexentry{Prologs!Sicstus|hyperpage}{78}
+\indexentry{Prologs!SWI|hyperpage}{78}
+\indexentry{\texttt  {bounds}!\texttt  {in/2}|hyperpage}{80}
+\indexentry{\texttt  {bounds}!\texttt  {\#>/2}|hyperpage}{80}
+\indexentry{\texttt  {bounds}!\texttt  {\#</2}|hyperpage}{80}
+\indexentry{\texttt  {bounds}!\texttt  {\#>=/2}|hyperpage}{80}
+\indexentry{\texttt  {bounds}!\texttt  {\#=</2}|hyperpage}{80}
+\indexentry{\texttt  {bounds}!\texttt  {\#=/2}|hyperpage}{80}
+\indexentry{\texttt  {bounds}!\texttt  {\#\=/2}|hyperpage}{81}
+\indexentry{\texttt  {bounds}!\texttt  {\#>/2}|hyperpage}{81}
+\indexentry{\texttt  {bounds}!\texttt  {\#>/2}|hyperpage}{81}
+\indexentry{\texttt  {bounds}!\texttt  {\#>/2}|hyperpage}{81}
+\indexentry{\texttt  {bounds}!\texttt  {all\_different/1}|hyperpage}{81}
+\indexentry{\texttt  {bounds}!\texttt  {sum/3}|hyperpage}{81}
+\indexentry{\texttt  {bounds}!\texttt  {labeling/2}|hyperpage}{81}
+\indexentry{\texttt  {bounds}!\texttt  {label/1}|hyperpage}{82}
+\indexentry{\texttt  {bounds}!\texttt  {indomain/1}|hyperpage}{82}
+\indexentry{\texttt  {bounds}!\texttt  {serialized/2}|hyperpage}{82}
+\indexentry{\texttt  {bounds}!\texttt  {lex\_chain/1}|hyperpage}{82}
+\indexentry{\texttt  {chr\_pp}!\texttt  {load\_chr/1}|hyperpage}{88}
+\indexentry{\texttt  {chr\_pp}!\texttt  {preprocess/2}|hyperpage}{88}
+\indexentry{\texttt  {chr}!\texttt  {show\_store/1}|hyperpage}{88}
+\indexentry{\texttt  {chr}!\texttt  {suspended\_chr\_constraints/2}|hyperpage}{88}
+\indexentry{\texttt  {chr}!\texttt  {merge\_answer\_store/1}|hyperpage}{95}
+\indexentry{\texttt  {chr}!\texttt  {get\_chr\_store/1}|hyperpage}{95}
+\indexentry{\texttt  {chr}!\texttt  {set\_chr\_store/1}|hyperpage}{95}
+\indexentry{\texttt  {chr}!\texttt  {get\_chr\_answer\_store/1}|hyperpage}{95}
+\indexentry{\texttt  {view\_sys}!\texttt  {generate\_new\_instance/2}|hyperpage}{103}
+\indexentry{files!{\tt  (}|hyperpage}{118}
+\indexentry{PITA|hyperpage}{121}
+\indexentry{Logic Programs with Annotated Disjunction|hyperpage}{121}
+\indexentry{CP-logic|hyperpage}{121}
+\indexentry{LPADs|hyperpage}{121}
+\indexentry{PRISM|hyperpage}{121}
+\indexentry{Probabilistic Logic Programming|hyperpage}{121}
+\indexentry{Possibilistic Logic Programming|hyperpage}{121}
+\indexentry{xp\_struct|hyperpage}{141}
+\indexentry{px\_term|hyperpage}{141}
+\indexentry{term form (of a structure|hyperpage}{141}
+\indexentry{\texttt  {xsbpy}!\texttt  {pyfunc/5}|hyperpage}{143}
+\indexentry{\texttt  {xsbpy}!\texttt  {pyfunc/4}|hyperpage}{143}
+\indexentry{\texttt  {xsbpy}!\texttt  {pyfunc/3}|hyperpage}{143}
+\indexentry{\texttt  {xsbpy}!\texttt  {pydot/5}|hyperpage}{144}
+\indexentry{\texttt  {xsbpy}!\texttt  {pydot/4}|hyperpage}{144}
+\indexentry{\texttt  {xsbpy}!\texttt  {pp\_py/2}|hyperpage}{145}
+\indexentry{\texttt  {xsbpy}!\texttt  {pp\_py/1}|hyperpage}{145}
+\indexentry{\texttt  {xsbpy}!\texttt  {add\_py\_lib\_dir/1}|hyperpage}{145}
+\indexentry{\texttt  {xsbpy}!\texttt  {py\_lib\_dirs/1}|hyperpage}{145}
+\indexentry{\texttt  {xp\_utils}!\texttt  {values/3}|hyperpage}{145}
+\indexentry{\texttt  {xp\_utils}!\texttt  {keys/2}|hyperpage}{146}
+\indexentry{\texttt  {xp\_utils}!\texttt  {key/2}|hyperpage}{146}
+\indexentry{\texttt  {xp\_utils}!\texttt  {items/2}|hyperpage}{146}
+\indexentry{\texttt  {xp\_utils}!\texttt  {obj\_dict/2}|hyperpage}{146}
+\indexentry{\texttt  {xp\_utils}!\texttt  {obj\_dir/2}|hyperpage}{146}
+\indexentry{\texttt  {xp\_fasttext}!\texttt  {load\_model/2}|hyperpage}{148}
+\indexentry{\texttt  {xp\_fasttext}!\texttt  {get\_nearest\_neighbors/3}|hyperpage}{148}
+\indexentry{\texttt  {xp\_fasttext}!\texttt  {cosine\_similarity/3}|hyperpage}{148}
+\indexentry{\texttt  {xp\_fasttext}!\texttt  {get\_word\_vec/3}|hyperpage}{149}
+\indexentry{\texttt  {xsbpy}!\texttt  {hdt\_load/2}|hyperpage}{153}
+\indexentry{\texttt  {xsbpy}!\texttt  {hdt\_query/4}|hyperpage}{153}
+\indexentry{\texttt  {xp\_spacy}!\texttt  {load\_model/2}|hyperpage}{154}
+\indexentry{\texttt  {xp\_spacy}!\texttt  {load\_model/1}|hyperpage}{154}
+\indexentry{\texttt  {xp\_spacy}!\texttt  {proc\_string/4}|hyperpage}{154}
+\indexentry{\texttt  {xp\_spacy}!\texttt  {proc\_string/3}|hyperpage}{154}
+\indexentry{\texttt  {xp\_spacy}!\texttt  {proc\_file/4}|hyperpage}{155}
+\indexentry{\texttt  {xp\_spacy}!\texttt  {proc\_file/3}|hyperpage}{155}
+\indexentry{\texttt  {xp\_spacy}!\texttt  {token\_assert/1}|hyperpage}{155}
+\indexentry{\texttt  {xp\_spacy}!\texttt  {get\_text/2}|hyperpage}{156}
+\indexentry{\texttt  {xp\_spacy}!\texttt  {get\_lemma/2}|hyperpage}{156}
+\indexentry{\texttt  {xp\_spacy}!\texttt  {get\_pos/2}|hyperpage}{156}
+\indexentry{\texttt  {xp\_spacy}!\texttt  {get\_tag/2}|hyperpage}{156}
+\indexentry{\texttt  {xp\_spacy}!\texttt  {get\_dep/2}|hyperpage}{156}
+\indexentry{\texttt  {xp\_spacy}!\texttt  {get\_ner\_type/2}|hyperpage}{156}
+\indexentry{\texttt  {xp\_spacy}!\texttt  {token\_info/7}|hyperpage}{156}
+\indexentry{\texttt  {xp\_spacy}!\texttt  {show\_all\_trees/0}|hyperpage}{156}
+\indexentry{\texttt  {xp\_spacy}!\texttt  {sentence\_root/1}|hyperpage}{156}
+\indexentry{\texttt  {xp\_spacy}!\texttt  {dependent\_tokens/2}|hyperpage}{156}
+\indexentry{\texttt  {xp\_xmldict}!\texttt  {xmldict\_read/2}|hyperpage}{159}
+\indexentry{\texttt  {xp\_wdi}!\texttt  {wdi\_get\_dict(+Qnode,-Dict)}|hyperpage}{160}
+\indexentry{\texttt  {xp\_wdi}!\texttt  {wdi\_get\_entity/2}|hyperpage}{160}
+\indexentry{\texttt  {xp\_wdi}!\texttt  {wdi\_sparql\_query/3}|hyperpage}{160}
+\indexentry{Python functions!\texttt  {px\_cmd()}|hyperpage}{174}
+\indexentry{Python functions!\texttt  {px\_qdet()}|hyperpage}{175}
+\indexentry{Python functions!\texttt  {px\_com()}|hyperpage}{175}
+\indexentry{Python functions!\texttt  {px\_get\_error\_message()}|hyperpage}{176}
+\indexentry{Python functions!\texttt  {pp\_px\_cmd()}|hyperpage}{176}
+\indexentry{Python functions!\texttt  {pp\_px\_qdet()}|hyperpage}{176}
+\indexentry{Python functions!\texttt  {pp\_px\_comp()}|hyperpage}{176}
+\indexentry{Python functions!\texttt  {consult()}|hyperpage}{177}
+\indexentry{Python functions!\texttt  {ensure\_loaded()}|hyperpage}{177}
+\indexentry{Python functions!\texttt  {prolog\_paths()}|hyperpage}{177}
+\indexentry{Python functions!\texttt  {add\_prolog\_path()}|hyperpage}{177}
+\indexentry{\texttt  {xasp}!\texttt  {smcInit/0}|hyperpage}{185}
+\indexentry{\texttt  {xasp}!\texttt  {\texttt  {smcReInit}}|hyperpage}{185}
+\indexentry{\texttt  {xasp}!\texttt  {smcAddRule/2}|hyperpage}{185}
+\indexentry{\texttt  {xasp}!\texttt  {smcCompute/1}|hyperpage}{185}
+\indexentry{\texttt  {xasp}!\texttt  {smcCommitProgram/0}|hyperpage}{186}
+\indexentry{\texttt  {xasp}!\texttt  {smcComputeModel/0}|hyperpage}{186}
+\indexentry{\texttt  {xasp}!\texttt  {smcExamineModel/2}|hyperpage}{186}
+\indexentry{\texttt  {xasp}!\texttt  {smcEnd/0}|hyperpage}{186}
+\indexentry{\texttt  {xasp}!\texttt  {print\_cache/0}|hyperpage}{186}
+\indexentry{\texttt  {xasp}!\texttt  {init\_smodels/1}|hyperpage}{187}
+\indexentry{\texttt  {xasp}!\texttt  {atom\_handle/2}|hyperpage}{187}
+\indexentry{\texttt  {xasp}!\texttt  {in\_all\_stable\_models/2}|hyperpage}{187}
+\indexentry{\texttt  {xasp}!\texttt  {pstable\_model/3}|hyperpage}{187}
+\indexentry{\texttt  {xasp}!\texttt  {a\_stable\_model/0}|hyperpage}{187}
+\indexentry{\texttt  {xasp}!\texttt  {in\_current\_stable\_model/1}|hyperpage}{187}
+\indexentry{\texttt  {xasp}!\texttt  {current\_stable\_model/1}|hyperpage}{187}
+\indexentry{\texttt  {xasp}!\texttt  {print\_current\_stable\_model/0}|hyperpage}{188}

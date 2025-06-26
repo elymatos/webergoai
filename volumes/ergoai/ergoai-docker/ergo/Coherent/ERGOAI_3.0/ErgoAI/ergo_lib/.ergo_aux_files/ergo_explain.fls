@@ -1,0 +1,166 @@
+flora_nowarn_symbol(support,*,\@,any_symbol_context,nontransactional_symbol,'ergo_explain.ergo').
+flora_nowarn_symbol(why,*,\@,any_symbol_context,nontransactional_symbol,'ergo_explain.ergo').
+flora_nowarn_symbol(undefined,*,\@,any_symbol_context,nontransactional_symbol,'ergo_explain.ergo').
+flora_nowarn_symbol(true,*,\@,any_symbol_context,nontransactional_symbol,'ergo_explain.ergo').
+flora_nowarn_symbol(false,*,\@,any_symbol_context,nontransactional_symbol,'ergo_explain.ergo').
+flora_nowarn_symbol(unknown,*,\@,any_symbol_context,nontransactional_symbol,'ergo_explain.ergo').
+flora_nowarn_symbol(contradiction,*,\@,any_symbol_context,nontransactional_symbol,'ergo_explain.ergo').
+flora_nowarn_symbol(rebuttedBy,*,\@,any_symbol_context,nontransactional_symbol,'ergo_explain.ergo').
+flora_nowarn_symbol(refutedBy,*,\@,any_symbol_context,nontransactional_symbol,'ergo_explain.ergo').
+flora_nowarn_symbol(beatenByStrictRule,*,\@,any_symbol_context,nontransactional_symbol,'ergo_explain.ergo').
+flora_nowarn_symbol(disqualified,*,\@,any_symbol_context,nontransactional_symbol,'ergo_explain.ergo').
+flora_nowarn_symbol(w,*,\@,any_symbol_context,nontransactional_symbol,'ergo_explain.ergo').
+flora_nowarn_symbol(m,*,\@,any_symbol_context,nontransactional_symbol,'ergo_explain.ergo').
+flora_nowarn_symbol(d,*,\@,any_symbol_context,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(get_max_explanation_depth,1,\@,8041,1051,predicate_symbol,transactional_symbol,'ergo_explain.ergo').
+flora_symbol('defeated by refutation',0,\@,7606,989,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(d,6,\@,4659,611,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(d,0,\@,3448,455,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(sysabort,1,'\\system',7065,921,predicate_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(textify,2,\@,6129,792,predicate_symbol,transactional_symbol,'ergo_explain.ergo').
+flora_symbol(text,0,\@,5852,746,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(ignore_repeated_subgoals,0,\@,8053,1053,predicate_symbol,transactional_symbol,'ergo_explain.ergo').
+flora_symbol('equality axiom',0,\@,7571,986,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('aggregate expression',0,\@,7626,991,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(']}',0,\@,7781,1019,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(': the goal to be explained must be a callable formula',0,\@,7074,921,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('\\modular',0,\@,7049,918,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('already explained subquery',0,\@,3930,520,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(expand_repeated_subgoals,0,\@,8002,1043,predicate_symbol,transactional_symbol,'ergo_explain.ergo').
+flora_symbol('", "support":[',0,\@,7777,1019,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('The method toJson handles only explanations produced via
+		the why(full,textonly) method. The below explanation is not:
+		   ',0,\@,7852,1026,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(unknown,3,\@,4538,599,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(unknown,2,\@,4319,570,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(unknown,4,\@,4024,536,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('maximum explanation depth reached',0,\@,3914,519,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(rebuttedBy,0,\@,7593,988,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(rebuttedBy,2,\@,3653,486,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(use_unsorted_explanations,0,\@,7980,1040,predicate_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('", "ruleinfo":"',0,\@,7772,1018,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(check_callable,1,\@,824,109,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(w,0,\@,3444,455,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(w,6,\@,1100,160,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('<Explanation API> ',0,\@,7068,921,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('derived by the axiom for contradiction',0,\@,1581,219,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(beatenByStrictRule,0,\@,7615,990,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(beatenByStrictRule,1,\@,3687,488,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('", "goal":"',0,\@,7767,1017,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(raw,0,\@,1436,197,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(true,0,\@,5942,757,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(true,0,\@,3531,470,predicate_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(true,3,\@,1704,232,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(true,2,\@,1663,228,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(true,4,\@,1590,221,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(use_sorted_explanations,0,\@,7964,1039,predicate_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('{ "truthvalue":"',0,\@,7762,1016,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('\\callable',0,\@,7095,924,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(info_unify,3,\@,3840,512,predicate_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(info_unify,0,\@,1456,199,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(main,0,\@,6061,779,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('it is a top query',0,\@,1566,219,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(using_sorted_explanations,0,\@,1781,244,predicate_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(disqualified,0,\@,7582,987,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(disqualified,3,\@,3702,489,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('derived via a builtin axiom (negation, defeasibility, composite goal, etc.)',0,\@,7401,960,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(ergo_explain,0,\@,964,138,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(using_unsorted_explanations,0,\@,7948,1038,predicate_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(add,1,'\\system',978,139,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(justificationTreeFunction,3,\@,519,55,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(childOfDefeated,3,\@,814,107,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(refutedBy,0,\@,7604,989,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(refutedBy,2,\@,3670,487,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(max_explanation_depth,1,\@,614,69,predicate_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(check_justification_type,2,\@,839,112,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('\\IGNORE',0,\@,7015,913,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(flora_hilog_symbol_name,2,\@,7793,1020,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(flora_hilog_symbol_name,3,\@,6705,871,predicate_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(flora_hilog_symbol_name,1,\@,5931,756,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(flora_hilog_symbol_name,6,\@,3423,454,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('defeated by disqualification',0,\@,7584,987,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(explanation2json,2,\@,7700,1006,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(get_justification_type,2,\@,844,113,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(canceled,0,\@,7637,992,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(why,0,\@,994,143,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(contradiction,0,\@,5948,757,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(contradiction,3,\@,1688,230,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(contradiction,2,\@,1651,227,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(contradiction,4,\@,1562,219,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('defeated by cancellation',0,\@,7639,992,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('this is a base fact or a builtin',0,\@,7197,938,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(printable_axiom,2,\@,849,114,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(info_withtext,3,\@,3793,505,predicate_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(info_withtext,0,\@,1388,191,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(goal_NOT_to_ignore,1,\@,854,115,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(ignored_goal,1,\@,859,116,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(ruleid,3,\@,1073,157,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(info_withouttext,3,\@,3759,499,predicate_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(info_withouttext,0,\@,1354,187,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(max_depth_reached,0,\@,3922,519,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(immediate_support,3,\@,864,117,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('\\symbol',0,\@,951,138,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('it is a base fact',0,\@,1110,160,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(explanation,2,\@,1481,206,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('',0,\@,7912,1031,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(fj_bodyExpression,0,\@,7691,1000,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(size,0,\@,6005,768,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(immediate_support_internal,4,\@,869,118,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('computed via an aggregate function',0,\@,7628,991,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(repeated_subquery,0,\@,3938,520,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(full_support_info,4,\@,874,119,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('no text given for the relevant rule',0,\@,7391,959,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(convert_to_text,2,\@,819,108,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('_',0,\@,7844,1025,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('defeated by rebuttal',0,\@,7595,988,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('MAX_EXPLANATION_DEPTH',0,\@,5673,730,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(support_info,4,\@,829,110,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(paraphrase,2,\@,879,120,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(false,0,\@,5944,757,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(false,3,\@,1718,233,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(false,2,\@,1675,229,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(false,4,\@,1611,223,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(size_of_explanation,2,\@,834,111,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(choose_rule_text,3,\@,884,121,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(support,0,\@,3406,452,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('REPEATED_SUBQUERY',0,\@,5689,731,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(yes,0,\@,3998,533,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('Libpath',0,\@,976,139,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(change_module_if_match,4,\@,524,56,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(no,0,\@,3785,503,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(support_object_is_not_aggregate_body,1,\@,889,122,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(concat,1,'\\basetype',953,138,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(textonly,0,\@,1402,193,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(ruleinfo,2,\@,1570,219,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(reason,0,\@,2939,388,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(goal,0,\@,1272,176,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(info_textonly,3,\@,3817,508,predicate_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(info_textonly,0,\@,1422,195,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(all_support,4,\@,894,123,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(isleaf,0,\@,3479,464,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(rule,0,\@,5777,737,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(toJson,0,\@,7713,1010,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('Method',0,\@,608,69,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(initialize,0,\@,923,133,predicate_symbol,transactional_symbol,'ergo_explain.ergo').
+flora_symbol(full,0,\@,1334,185,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(ergo_explain_utils,0,\@,988,140,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(set_max_explanation_depth,1,\@,8006,1044,predicate_symbol,transactional_symbol,'ergo_explain.ergo').
+flora_symbol(ensure_loaded,0,\@,911,129,predicate_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(ergo_lib,0,\@,960,138,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(m,0,\@,3446,455,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(m,6,\@,1239,173,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(show,0,\@,7057,920,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(explanationSupport2json,2,\@,7705,1007,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(info,0,\@,3752,498,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(whynot,0,\@,1121,162,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(clear_max_explanation_depth,0,\@,8018,1047,predicate_symbol,transactional_symbol,'ergo_explain.ergo').
+flora_symbol(get_rule_text,4,\@,905,126,prolog_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(null,0,\@,1075,157,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(withtext,0,\@,1368,189,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(undefined,0,\@,5946,757,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(undefined,3,\@,2796,371,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(undefined,2,\@,2595,346,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(undefined,4,\@,2286,312,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol(off,0,\@,612,69,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('inferrence rule cannot be determined',0,\@,3016,395,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
+flora_symbol('derived by equality substitution',0,\@,7573,986,function_symbol,nontransactional_symbol,'ergo_explain.ergo').
