@@ -1,0 +1,22 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 1
+
+FLORA_THIS_WORKSPACE(tblflapply)(query3_2,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(query1_2,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(query4,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(query3,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(query3_3,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(query2_4,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(passenger,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(query2,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(query2_3,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)('Ticket',__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4).
+FLORA_THIS_WORKSPACE(tblflapply)(query2_2,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(query1,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)('Flight',__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4,__fldnewvar5,__fldnewvar6).
+FLORA_THIS_WORKSPACE(tblflapply)('Itinerary',__fldnewvar1,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(query1_3,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(travelAgent,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(query5,__fldnewvar1,__fldnewvar2).

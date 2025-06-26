@@ -1,0 +1,13 @@
+flora_nowarn_symbol(readAll,*,\@,any_symbol_context,nontransactional_symbol,'flrparse.flr').
+flora_nowarn_symbol(read,*,\@,any_symbol_context,nontransactional_symbol,'flrparse.flr').
+flora_symbol(string,1,\@,473,113,function_symbol,nontransactional_symbol,'flrparse.flr').
+flora_symbol(readAll,1,\@,347,95,function_symbol,nontransactional_symbol,'flrparse.flr').
+flora_symbol(readAll,2,\@,376,99,function_symbol,nontransactional_symbol,'flrparse.flr').
+flora_symbol(readAll,2,\@,324,93,predicate_symbol,nontransactional_symbol,'flrparse.flr').
+flora_symbol(eof,0,\@,317,81,function_symbol,nontransactional_symbol,'flrparse.flr').
+flora_symbol(null,0,\@,307,81,function_symbol,nontransactional_symbol,'flrparse.flr').
+flora_symbol(see,1,'\\io',263,78,predicate_symbol,nontransactional_symbol,'flrparse.flr').
+flora_symbol(seeing,1,'\\io',257,77,predicate_symbol,nontransactional_symbol,'flrparse.flr').
+flora_symbol(read,1,\@,188,72,function_symbol,nontransactional_symbol,'flrparse.flr').
+flora_symbol(read,2,\@,218,75,function_symbol,nontransactional_symbol,'flrparse.flr').
+flora_symbol(read,2,\@,163,70,predicate_symbol,nontransactional_symbol,'flrparse.flr').

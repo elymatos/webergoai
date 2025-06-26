@@ -1,0 +1,6 @@
+  MySQL support:                                  yes
+  MySQL library directory:                        /usr/lib/x86_64-linux-gnu
+  MySQL header directory:                         /usr/include/mariadb
+  MySQL C Flags:                                  -I/usr/include/mariadb -I/usr/include/mariadb/mysql
+  MySQL Loader Flags:                             -L/usr/lib/x86_64-linux-gnu/ -lmariadb
+

@@ -1,0 +1,1365 @@
+\indexentry{attributed variables|hyperpage}{3}
+\indexentry{Constraint Handling Rules|hyperpage}{3}
+\indexentry{indexing!star|hyperpage}{4}
+\indexentry{InterProlog|hyperpage}{4}
+\indexentry{ODBC Interface|hyperpage}{4}
+\indexentry{Flora-2|hyperpage}{6}
+\indexentry{xsbdoc|hyperpage}{6}
+\indexentry{XASP|hyperpage}{6}
+\indexentry{notational conventions|hyperpage}{6}
+\indexentry{configuration|hyperpage}{8}
+\indexentry{installation into shared directories|hyperpage}{8}
+\indexentry{cc (compiler)|hyperpage}{10}
+\indexentry{gcc|hyperpage}{10}
+\indexentry{acc (compiler)|hyperpage}{10}
+\indexentry{InterProlog!Interface|hyperpage}{11}
+\indexentry{Oracle Interface|hyperpage}{11}
+\indexentry{SModels Interface|hyperpage}{11}
+\indexentry{XASP|hyperpage}{11}
+\indexentry{ODBC Interface|hyperpage}{11}
+\indexentry{Tck/Tk|hyperpage}{11}
+\indexentry{Interface!InterProlog|hyperpage}{11}
+\indexentry{Interface!Oracle|hyperpage}{11}
+\indexentry{Interface!SModels|hyperpage}{11}
+\indexentry{XASP|hyperpage}{11}
+\indexentry{Interface!ODBC|hyperpage}{11}
+\indexentry{scheduling strategy|hyperpage}{11}
+\indexentry{64-bit architectures|hyperpage}{12}
+\indexentry{base file name|hyperpage}{22}
+\indexentry{source file designator|hyperpage}{22}
+\indexentry{modules|hyperpage}{23}
+\indexentry{modules!declaration|hyperpage}{25}
+\indexentry{modules!qualification|hyperpage}{25}
+\indexentry{modules!usermod|hyperpage}{25}
+\indexentry{modules!declaration|hyperpage}{25}
+\indexentry{Prolog flags!{\tt unknown}|hyperpage}{29}
+\indexentry{usage inference|hyperpage}{30}
+\indexentry{static analysis!usage|hyperpage}{30}
+\indexentry{xsbdoc|hyperpage}{32}
+\indexentry{declarations!\texttt{document\_export/1}|hyperpage}{32}
+\indexentry{declarations!\texttt{document\_import/1}|hyperpage}{32}
+\indexentry{pseudo-modules|hyperpage}{32}
+\indexentry{modules!pseudo|hyperpage}{32}
+\indexentry{parameterized modules|hyperpage}{33}
+\indexentry{modules!parameterized|hyperpage}{33}
+\indexentry{modules!explicit filenames|hyperpage}{36}
+\indexentry{load search path|hyperpage}{38}
+\indexentry{\texttt  {library\_directory/1}|hyperpage}{38}
+\indexentry{environment variables!{\tt XSB\_USER\_AUXDIR}|hyperpage}{38}
+\indexentry{\texttt  {add\_lib\_dir/1}|hyperpage}{39}
+\indexentry{\texttt  {add\_lib\_dir/1}|hyperpage}{39}
+\indexentry{.xsb/ configuration directory|hyperpage}{40}
+\indexentry{xsbrc.P initialization file|hyperpage}{40}
+\indexentry{packages|hyperpage}{41}
+\indexentry{\texttt  {bootstram\_userpakage/3}|hyperpage}{41}
+\indexentry{\texttt  {unload\_package/1}|hyperpage}{42}
+\indexentry{packages!\texttt{unload\_package/1}|hyperpage}{42}
+\indexentry{packages!\texttt{package\_configuration/2}|hyperpage}{42}
+\indexentry{emulator!command line options|hyperpage}{43}
+\indexentry{options!command line arguments|hyperpage}{43}
+\indexentry{stacks!default sizes|hyperpage}{43}
+\indexentry{stacks!expanding|hyperpage}{43}
+\indexentry{tabling!call subsumption|hyperpage}{43}
+\indexentry{scripting|hyperpage}{44}
+\indexentry{tabling!call subsumption|hyperpage}{46}
+\indexentry{shared\_predicates|hyperpage}{46}
+\indexentry{garbage collection|hyperpage}{47}
+\indexentry{memory management|hyperpage}{48}
+\indexentry{garbage collection|hyperpage}{48}
+\indexentry{\texttt  {gc\_heap/0}|hyperpage}{48}
+\indexentry{\texttt  {gc\_atoms/0}|hyperpage}{48}
+\indexentry{garbage collection!dynamic clauses|hyperpage}{48}
+\indexentry{\texttt  {gc\_dynamic/1}|hyperpage}{48}
+\indexentry{garbage collection!tables|hyperpage}{49}
+\indexentry{\texttt  {gc\_tables/1}|hyperpage}{49}
+\indexentry{Prolog flags!{\tt max\_memory}|hyperpage}{49}
+\indexentry{\texttt  {bounded\_call/4}|hyperpage}{49}
+\indexentry{\texttt  {compile/2}|hyperpage}{50}
+\indexentry{\texttt  {compile/1}|hyperpage}{50}
+\indexentry{\texttt  {[]/1 (consult)}|hyperpage}{50}
+\indexentry{dynamic code!loading|hyperpage}{51}
+\indexentry{canonical format|hyperpage}{51}
+\indexentry{dynamic code!advantages and disadvantages|hyperpage}{51}
+\indexentry{declarations!\texttt{multifile/2}|hyperpage}{52}
+\indexentry{compiler|hyperpage}{53}
+\indexentry{byte code!files!compiler|hyperpage}{53}
+\indexentry{compiler!\texttt{cmplib}|hyperpage}{53}
+\indexentry{GPP|hyperpage}{53}
+\indexentry{preprocessing|hyperpage}{53}
+\indexentry{invoking the Compiler|hyperpage}{53}
+\indexentry{compiler!invoking|hyperpage}{53}
+\indexentry{\texttt  {compile/2}|hyperpage}{53}
+\indexentry{\texttt  {compile/1}|hyperpage}{53}
+\indexentry{compiler!options|hyperpage}{55}
+\indexentry{options!compiler|hyperpage}{55}
+\indexentry{\texttt  {set\_global\_compiler\_options/1}|hyperpage}{55}
+\indexentry{compiler options!\texttt{optimize}|hyperpage}{56}
+\indexentry{dynamic code!loading|hyperpage}{56}
+\indexentry{compiler options!\texttt{dynamic/1}|hyperpage}{56}
+\indexentry{Unicode!character\_sets|hyperpage}{56}
+\indexentry{compiler options!\texttt{character\_set/1}|hyperpage}{56}
+\indexentry{modules!explicit filenames|hyperpage}{56}
+\indexentry{compiler options!\texttt{module/1}|hyperpage}{56}
+\indexentry{standard predicates|hyperpage}{56}
+\indexentry{compiler   options!\texttt{xpp\_on}|hyperpage}{56}
+\indexentry{GPP|hyperpage}{56}
+\indexentry{GPP!\texttt{gpp\_include\_dir}|hyperpage}{57}
+\indexentry{compilation!conditional!gpp|hyperpage}{57}
+\indexentry{GPP!\texttt{gpp\_options}|hyperpage}{57}
+\indexentry{GPP!\texttt{xpp\_dump}|hyperpage}{58}
+\indexentry{GPP!\texttt{xpp\_on/N}|hyperpage}{58}
+\indexentry{GPP!\texttt{xpp\_dump/N}|hyperpage}{58}
+\indexentry{GPP!\texttt{quit\_on\_error}|hyperpage}{61}
+\indexentry{tabling!compiler options|hyperpage}{61}
+\indexentry{tabling!automatic|hyperpage}{61}
+\indexentry{declarations!\texttt{auto\_table}|hyperpage}{61}
+\indexentry{tabling!supplemental|hyperpage}{61}
+\indexentry{declarations!\texttt{suppl\_table}|hyperpage}{62}
+\indexentry{specialization!compiler options|hyperpage}{62}
+\indexentry{compiler options!\texttt{spec\_repr}|hyperpage}{62}
+\indexentry{compiler options!\texttt{spec\_off}|hyperpage}{62}
+\indexentry{compiler options!\texttt{unfold\_off}|hyperpage}{62}
+\indexentry{compiler options!\texttt{spec\_dump}|hyperpage}{62}
+\indexentry{mode analysis!compiler options|hyperpage}{62}
+\indexentry{static analysis!mode|hyperpage}{62}
+\indexentry{modes!annotations|hyperpage}{62}
+\indexentry{compiler options!\texttt{modeinfer}|hyperpage}{62}
+\indexentry{compiler options!\texttt{mi\_warn}|hyperpage}{64}
+\indexentry{standard predicates|hyperpage}{64}
+\indexentry{compiler!specialization|hyperpage}{65}
+\indexentry{specialization!Compiler|hyperpage}{65}
+\indexentry{compiler!directives|hyperpage}{67}
+\indexentry{directives!Compiler|hyperpage}{67}
+\indexentry{\texttt  {include/1}|hyperpage}{68}
+\indexentry{compilation!conditional!Prolog directives|hyperpage}{68}
+\indexentry{\texttt  {if/1}|hyperpage}{69}
+\indexentry{\texttt  {elif/1}|hyperpage}{69}
+\indexentry{\texttt  {else/0}|hyperpage}{69}
+\indexentry{\texttt  {endif/0}|hyperpage}{69}
+\indexentry{mode analysis!mode indicators|hyperpage}{69}
+\indexentry{static analysis!mode|hyperpage}{69}
+\indexentry{modes!directives|hyperpage}{69}
+\indexentry{directives!modes|hyperpage}{69}
+\indexentry{modes!indicators|hyperpage}{69}
+\indexentry{modes!annotations|hyperpage}{69}
+\indexentry{tabling!directives|hyperpage}{71}
+\indexentry{directives!tabling|hyperpage}{71}
+\indexentry{static analysis!auto\_table|hyperpage}{71}
+\indexentry{static analysis!suppl\_table|hyperpage}{71}
+\indexentry{declarations!\texttt{auto\_table}|hyperpage}{71}
+\indexentry{termination|hyperpage}{72}
+\indexentry{static analysis!suppl\_table|hyperpage}{72}
+\indexentry{declarations!\texttt{suppl\_table}|hyperpage}{72}
+\indexentry{indexing!directives|hyperpage}{73}
+\indexentry{directives!indexing|hyperpage}{73}
+\indexentry{dynamic code!indexing|hyperpage}{73}
+\indexentry{Unicode|hyperpage}{74}
+\indexentry{\texttt  {encoding/1}|hyperpage}{74}
+\indexentry{compiler!inlines|hyperpage}{75}
+\indexentry{inlines!compiler|hyperpage}{75}
+\indexentry{ISO Compatibility|hyperpage}{76}
+\indexentry{syntax!integers|hyperpage}{78}
+\indexentry{syntax!integers!binary|hyperpage}{78}
+\indexentry{syntax!integers!octal|hyperpage}{78}
+\indexentry{syntax!integers!hexidecimal|hyperpage}{78}
+\indexentry{character code constants|hyperpage}{79}
+\indexentry{syntax!floats|hyperpage}{80}
+\indexentry{syntax!atoms|hyperpage}{80}
+\indexentry{syntax!escaped characters|hyperpage}{80}
+\indexentry{Unicode!UTF-8|hyperpage}{80}
+\indexentry{\texttt  {op/3}|hyperpage}{89}
+\indexentry{canonical format|hyperpage}{90}
+\indexentry{tabling!consumer|hyperpage}{94}
+\indexentry{tabling!producer,   generator|hyperpage}{94}
+\indexentry{\texttt  {table/1}|hyperpage}{94}
+\indexentry{termination|hyperpage}{96}
+\indexentry{termination|hyperpage}{97}
+\indexentry{declarations!\texttt{auto\_table}|hyperpage}{97}
+\indexentry{declarations!\texttt{suppl\_table}|hyperpage}{97}
+\indexentry{tabling!similarity measures|hyperpage}{97}
+\indexentry{tabling!call subsumption|hyperpage}{97}
+\indexentry{tabling!answer subsumption|hyperpage}{97}
+\indexentry{tabling!call variance|hyperpage}{97}
+\indexentry{tabling!call variance|hyperpage}{98}
+\indexentry{tabling!call subsumption|hyperpage}{98}
+\indexentry{attributed variables|hyperpage}{98}
+\indexentry{tabling!attributed variables|hyperpage}{98}
+\indexentry{tabling!call subsumption|hyperpage}{98}
+\indexentry{tabling!call subsumption|hyperpage}{100}
+\indexentry{declarations!\texttt{table\ as}|hyperpage}{100}
+\indexentry{tabling!interned ground terms|hyperpage}{100}
+\indexentry{tabling!scheduling strategies|hyperpage}{101}
+\indexentry{strongly connected components (SCCs)|hyperpage}{102}
+\indexentry{tabling!cuts|hyperpage}{104}
+\indexentry{tabling!call subsumption!interaction with meta-logical predicates|hyperpage}{106}
+\indexentry{tabling!negation|hyperpage}{108}
+\indexentry{negation!stratified|hyperpage}{108}
+\indexentry{tabling!complete evaluation|hyperpage}{109}
+\indexentry{tabled subgoals!incomplete|hyperpage}{110}
+\indexentry{tabled subgoals!complete|hyperpage}{110}
+\indexentry{tabling!early completion of subgoals|hyperpage}{110}
+\indexentry{\texttt  {tnot/1}|hyperpage}{110}
+\indexentry{\texttt  {$\delimiter "026E30F $\texttt  {+/1}}|hyperpage}{110}
+\indexentry{negation!unstratified|hyperpage}{112}
+\indexentry{tabling!conditional answers|hyperpage}{112}
+\indexentry{well-founded semantics|hyperpage}{115}
+\indexentry{tabling!answer completion|hyperpage}{115}
+\indexentry{stable models|hyperpage}{116}
+\indexentry{residual program|hyperpage}{117}
+\indexentry{negation!stable models|hyperpage}{118}
+\indexentry{tabling!answer subsumption|hyperpage}{119}
+\indexentry{tabling!answer subsumption|hyperpage}{119}
+\indexentry{tabling!answer subsumption|hyperpage}{120}
+\indexentry{termination!answer subsumption|hyperpage}{120}
+\indexentry{tabling!answer subsumption|hyperpage}{121}
+\indexentry{tabling!answer subsumption|hyperpage}{122}
+\indexentry{answer abstraction|hyperpage}{122}
+\indexentry{tabling!answer subsumption|hyperpage}{123}
+\indexentry{termination!subgoal abstraction|hyperpage}{128}
+\indexentry{bounded rationality|hyperpage}{128}
+\indexentry{termination!radial restraint|hyperpage}{128}
+\indexentry{termination!answer count restraint|hyperpage}{128}
+\indexentry{abstraction of terms!subgoal|hyperpage}{128}
+\indexentry{abstraction of terms!answer|hyperpage}{128}
+\indexentry{abstraction of terms!size metric|hyperpage}{130}
+\indexentry{abstraction of terms!subgoal|hyperpage}{131}
+\indexentry{tripwires!max\_table\_answer\_size|hyperpage}{132}
+\indexentry{Prolog flags!{\tt max\_table\_subgoal\_action}|hyperpage}{132}
+\indexentry{Prolog  flags!{\tt max\_table\_subgoal\_size}|hyperpage}{132}
+\indexentry{abstraction of terms!answer|hyperpage}{133}
+\indexentry{bounded rationality|hyperpage}{133}
+\indexentry{restraint!radial|hyperpage}{133}
+\indexentry{tripwires!max\_table\_answer\_size|hyperpage}{134}
+\indexentry{Prolog flags!{\tt max\_table\_answer\_action}|hyperpage}{135}
+\indexentry{Prolog flags!{\tt max\_table\_answer\_size}|hyperpage}{135}
+\indexentry{tripwires!max\_answers\_for\_subgoal|hyperpage}{135}
+\indexentry{restraint!answer count|hyperpage}{135}
+\indexentry{residual dependency graph|hyperpage}{136}
+\indexentry{\texttt  {explain\_u\_val/3}|hyperpage}{136}
+\indexentry{\texttt  {get\_residual\_sccs/3}|hyperpage}{136}
+\indexentry{\texttt  {get\_residual\_sccs/5}|hyperpage}{136}
+\indexentry{tabling!incremental|hyperpage}{136}
+\indexentry{Incremental Dependency Graph (IDG)|hyperpage}{139}
+\indexentry{tabling!incremental!invalid subgoals|hyperpage}{139}
+\indexentry{view consistency|hyperpage}{139}
+\indexentry{tries!and incremental tabling|hyperpage}{141}
+\indexentry{Incremental Dependency Graph (IDG)|hyperpage}{142}
+\indexentry{tabling!opaque|hyperpage}{145}
+\indexentry{tabling!declarations|hyperpage}{145}
+\indexentry{tabling!incremental|hyperpage}{145}
+\indexentry{\texttt  {table/1}|hyperpage}{145}
+\indexentry{\texttt  {dynamic/1}|hyperpage}{145}
+\indexentry{\texttt  {table/1}|hyperpage}{145}
+\indexentry{\texttt  {incr\_assert/1}|hyperpage}{146}
+\indexentry{\texttt  {incr\_assertz/1}|hyperpage}{146}
+\indexentry{\texttt  {incr\_asserta/1}|hyperpage}{146}
+\indexentry{\texttt  {incr\_retract/1}|hyperpage}{146}
+\indexentry{\texttt  {incr\_retractall/1}|hyperpage}{146}
+\indexentry{\texttt  {incr\_invalidate\_call/1}|hyperpage}{146}
+\indexentry{\texttt  {incr\_trie\_intern/2}|hyperpage}{147}
+\indexentry{\texttt  {incr\_trie\_uninternall/2}|hyperpage}{147}
+\indexentry{residual dependency graph|hyperpage}{147}
+\indexentry{Incremental Dependency Graph (IDG)|hyperpage}{147}
+\indexentry{\texttt  {is\_incremental\_subgoal/1}|hyperpage}{148}
+\indexentry{\texttt  {incr\_directly\_depends/2}|hyperpage}{148}
+\indexentry{\texttt  {incr\_trans\_depends/2}|hyperpage}{148}
+\indexentry{\texttt  {get\_incr\_sccs/1}|hyperpage}{148}
+\indexentry{\texttt  {get\_incr\_sccs\_with\_deps/2}|hyperpage}{148}
+\indexentry{\texttt  {get\_incr\_sccs/2}|hyperpage}{148}
+\indexentry{\texttt  {get\_incr\_sccs\_with\_deps/3}|hyperpage}{148}
+\indexentry{completion semantics|hyperpage}{150}
+\indexentry{completion semantics!weak|hyperpage}{150}
+\indexentry{tabling!call subsumption|hyperpage}{152}
+\indexentry{tabling!call variance|hyperpage}{152}
+\indexentry{tabling!answer subsumption|hyperpage}{152}
+\indexentry{tabling!incremental|hyperpage}{152}
+\indexentry{streams|hyperpage}{155}
+\indexentry{aliases!streams|hyperpage}{156}
+\indexentry{aliases!streams!user\_input|hyperpage}{156}
+\indexentry{aliases!streams!user\_output|hyperpage}{156}
+\indexentry{aliases!streams!user\_error|hyperpage}{156}
+\indexentry{aliases!streams!user\_warning|hyperpage}{156}
+\indexentry{aliases!streams!user\_message|hyperpage}{156}
+\indexentry{streams!system|hyperpage}{157}
+\indexentry{streams!STDDBG|hyperpage}{157}
+\indexentry{streams!STDERR|hyperpage}{157}
+\indexentry{streams!STDFDBK|hyperpage}{157}
+\indexentry{streams!STDIN|hyperpage}{157}
+\indexentry{streams!STDOUT|hyperpage}{157}
+\indexentry{streams!STDWARN|hyperpage}{157}
+\indexentry{streams!STDMSG|hyperpage}{157}
+\indexentry{streams!system|hyperpage}{157}
+\indexentry{Unicode!UTF-8|hyperpage}{158}
+\indexentry{character sets|hyperpage}{158}
+\indexentry{CP1252|hyperpage}{158}
+\indexentry{LATIN-1|hyperpage}{158}
+\indexentry{\texttt  {open/3}|hyperpage}{158}
+\indexentry{\texttt  {open/4}|hyperpage}{159}
+\indexentry{\texttt  {close/2}|hyperpage}{160}
+\indexentry{\texttt  {close/1}|hyperpage}{161}
+\indexentry{\texttt  {set\_input/1}|hyperpage}{161}
+\indexentry{\texttt  {set\_output/1}|hyperpage}{161}
+\indexentry{\texttt  {stream\_property/2}|hyperpage}{161}
+\indexentry{\texttt  {flush\_output/1}|hyperpage}{162}
+\indexentry{\texttt  {flush\_output/0}|hyperpage}{163}
+\indexentry{\texttt  {set\_stream\_position/2}|hyperpage}{163}
+\indexentry{\texttt  {at\_end\_of\_stream/1}|hyperpage}{163}
+\indexentry{\texttt  {at\_end\_of\_stream/0}|hyperpage}{163}
+\indexentry{\texttt  {file\_reopen/3}|hyperpage}{164}
+\indexentry{\texttt  {file\_clone/3}|hyperpage}{164}
+\indexentry{\texttt  {file\_truncate/3}|hyperpage}{164}
+\indexentry{\texttt  {tmpfile\_open/1}|hyperpage}{165}
+\indexentry{\texttt  {flush\_all\_output\_streams/0}|hyperpage}{165}
+\indexentry{streams!system|hyperpage}{165}
+\indexentry{\texttt  {see/1}|hyperpage}{165}
+\indexentry{\texttt  {seeing/1}|hyperpage}{166}
+\indexentry{\texttt  {seen/0}|hyperpage}{166}
+\indexentry{\texttt  {tell/1}|hyperpage}{166}
+\indexentry{\texttt  {telling/1}|hyperpage}{167}
+\indexentry{\texttt  {told/0}|hyperpage}{167}
+\indexentry{\texttt  {file\_exists/1}|hyperpage}{167}
+\indexentry{\texttt  {url\_encode/2}|hyperpage}{167}
+\indexentry{\texttt  {url\_decode/2}|hyperpage}{168}
+\indexentry{Unicode!UTF-8|hyperpage}{168}
+\indexentry{\texttt  {get\_char/2}|hyperpage}{168}
+\indexentry{\texttt  {get\_char/1}|hyperpage}{168}
+\indexentry{\texttt  {get\_code/2}|hyperpage}{169}
+\indexentry{\texttt  {get\_code/1}|hyperpage}{169}
+\indexentry{\texttt  {get\_byte/2}|hyperpage}{169}
+\indexentry{\texttt  {get\_byte/1}|hyperpage}{170}
+\indexentry{\texttt  {peek\_char/2}|hyperpage}{170}
+\indexentry{\texttt  {peek\_char/1}|hyperpage}{170}
+\indexentry{\texttt  {peek\_code/2}|hyperpage}{171}
+\indexentry{\texttt  {peek\_code/1}|hyperpage}{171}
+\indexentry{\texttt  {peek\_byte/1}|hyperpage}{171}
+\indexentry{\texttt  {peek\_byte/1}|hyperpage}{172}
+\indexentry{\texttt  {put\_char/2}|hyperpage}{172}
+\indexentry{\texttt  {put\_char/1}|hyperpage}{172}
+\indexentry{\texttt  {put\_code/2}|hyperpage}{172}
+\indexentry{\texttt  {put\_code/1}|hyperpage}{173}
+\indexentry{\texttt  {nl/0}|hyperpage}{173}
+\indexentry{\texttt  {nl/1}|hyperpage}{173}
+\indexentry{\texttt  {tab/2}|hyperpage}{173}
+\indexentry{\texttt  {tab/1}|hyperpage}{173}
+\indexentry{Unicode!UTF-8|hyperpage}{174}
+\indexentry{\texttt  {read/1}|hyperpage}{174}
+\indexentry{\texttt  {read/2}|hyperpage}{174}
+\indexentry{canonical format|hyperpage}{174}
+\indexentry{\texttt  {read\_canonical/1}|hyperpage}{175}
+\indexentry{\texttt  {read\_canonical/2}|hyperpage}{175}
+\indexentry{\texttt  {read\_term/2}|hyperpage}{175}
+\indexentry{\texttt  {read\_term/3}|hyperpage}{176}
+\indexentry{\texttt  {write\_term/2}|hyperpage}{176}
+\indexentry{\texttt  {write\_term/3}|hyperpage}{178}
+\indexentry{attributed variables|hyperpage}{179}
+\indexentry{Prolog flags!{\tt write\_attributes}|hyperpage}{179}
+\indexentry{\texttt  {write/1}|hyperpage}{179}
+\indexentry{\texttt  {write/2}|hyperpage}{179}
+\indexentry{\texttt  {writeq/1}|hyperpage}{180}
+\indexentry{\texttt  {writeq/2}|hyperpage}{180}
+\indexentry{canonical format|hyperpage}{180}
+\indexentry{\texttt  {write\_canonical/1}|hyperpage}{180}
+\indexentry{attributed variables|hyperpage}{181}
+\indexentry{\texttt  {write\_canonical/2}|hyperpage}{181}
+\indexentry{\texttt  {writeln/1}|hyperpage}{181}
+\indexentry{\texttt  {writeln/2}|hyperpage}{181}
+\indexentry{\texttt  {write\_prolog/1}|hyperpage}{181}
+\indexentry{\texttt  {write\_prolog/1}|hyperpage}{181}
+\indexentry{\texttt  {numbervars/4}|hyperpage}{182}
+\indexentry{attributed variables|hyperpage}{182}
+\indexentry{\texttt  {numbervars/3}|hyperpage}{182}
+\indexentry{\texttt  {numbervars/1}|hyperpage}{183}
+\indexentry{\texttt  {unnumbervars/3}|hyperpage}{183}
+\indexentry{streams!STDOUT|hyperpage}{183}
+\indexentry{streams!STDERR|hyperpage}{183}
+\indexentry{\texttt  {error\_write/1}|hyperpage}{183}
+\indexentry{\texttt  {error\_writeln/1}|hyperpage}{183}
+\indexentry{streams!STDFDBK|hyperpage}{183}
+\indexentry{\texttt  {console\_write/1}|hyperpage}{183}
+\indexentry{\texttt  {console\_writeln/1}|hyperpage}{183}
+\indexentry{streams!STDWARN|hyperpage}{183}
+\indexentry{Prolog flags!{\tt warning\_action}|hyperpage}{183}
+\indexentry{\texttt  {warning/1}|hyperpage}{183}
+\indexentry{streams!STDMSG|hyperpage}{184}
+\indexentry{\texttt  {message/1}|hyperpage}{184}
+\indexentry{\texttt  {messageln/1}|hyperpage}{184}
+\indexentry{\texttt  {fmt\_read/3}|hyperpage}{184}
+\indexentry{\texttt  {fmt\_read/4}|hyperpage}{184}
+\indexentry{\texttt  {fmt\_write/2}|hyperpage}{185}
+\indexentry{\texttt  {fmt\_write/3}|hyperpage}{185}
+\indexentry{\texttt  {fmt\_write\_string/3}|hyperpage}{187}
+\indexentry{\texttt  {file\_read\_line\_list/1}|hyperpage}{187}
+\indexentry{\texttt  {file\_read\_line\_list/2}|hyperpage}{187}
+\indexentry{\texttt  {file\_read\_line\_atom/1}|hyperpage}{187}
+\indexentry{\texttt  {file\_read\_line\_atom/2}|hyperpage}{188}
+\indexentry{\texttt  {file\_write\_line/2}|hyperpage}{188}
+\indexentry{\texttt  {file\_write\_line/3}|hyperpage}{188}
+\indexentry{\texttt  {file\_getbuf\_list/4}|hyperpage}{188}
+\indexentry{\texttt  {file\_getbuf\_list/3}|hyperpage}{189}
+\indexentry{\texttt  {file\_file\_getbuf\_atom/4}|hyperpage}{189}
+\indexentry{\texttt  {file\_getbuf\_atom/3}|hyperpage}{189}
+\indexentry{\texttt  {file\_putbuf/5}|hyperpage}{189}
+\indexentry{\texttt  {file\_putbuf/4}|hyperpage}{190}
+\indexentry{\texttt  {shell/1}|hyperpage}{190}
+\indexentry{\texttt  {shell/2}|hyperpage}{191}
+\indexentry{\texttt  {shell\_to\_list/4}|hyperpage}{191}
+\indexentry{\texttt  {shell\_to\_list/3}|hyperpage}{191}
+\indexentry{\texttt  {datime/1}|hyperpage}{192}
+\indexentry{\texttt  {local\_datime/1}|hyperpage}{192}
+\indexentry{\texttt  {epoch\_seconds/1}|hyperpage}{192}
+\indexentry{\texttt  {epoch\_milliseconds/2}|hyperpage}{192}
+\indexentry{\texttt  {sleep/1}|hyperpage}{193}
+\indexentry{\texttt  {cd/1}|hyperpage}{193}
+\indexentry{\texttt  {getenv/2}|hyperpage}{193}
+\indexentry{\texttt  {putenv/2}|hyperpage}{193}
+\indexentry{\texttt  {path\_sysop/2}|hyperpage}{194}
+\indexentry{\texttt  {path\_sysop/2}|hyperpage}{194}
+\indexentry{\texttt  {path\_sysop/3}|hyperpage}{194}
+\indexentry{\texttt  {path\_sysop/3}|hyperpage}{194}
+\indexentry{\texttt  {path\_sysop/2}|hyperpage}{194}
+\indexentry{\texttt  {path\_sysop/2}|hyperpage}{194}
+\indexentry{\texttt  {path\_sysop/3}|hyperpage}{194}
+\indexentry{\texttt  {path\_sysop/3}|hyperpage}{194}
+\indexentry{\texttt  {path\_sysop/2}|hyperpage}{194}
+\indexentry{\texttt  {path\_sysop/2}|hyperpage}{194}
+\indexentry{\texttt  {path\_sysop/2}|hyperpage}{194}
+\indexentry{\texttt  {path\_sysop/2}|hyperpage}{194}
+\indexentry{\texttt  {path\_sysop/2}|hyperpage}{194}
+\indexentry{\texttt  {path\_sysop/2}|hyperpage}{195}
+\indexentry{\texttt  {path\_sysop/2}|hyperpage}{195}
+\indexentry{\texttt  {path\_sysop/3}|hyperpage}{195}
+\indexentry{\texttt  {path\_sysop/3}|hyperpage}{195}
+\indexentry{\texttt  {path\_sysop/3}|hyperpage}{195}
+\indexentry{\texttt  {path\_sysop/2}|hyperpage}{195}
+\indexentry{\texttt  {path\_sysop/3}|hyperpage}{195}
+\indexentry{\texttt  {path\_sysop/3}|hyperpage}{195}
+\indexentry{\texttt  {path\_sysop/3}|hyperpage}{195}
+\indexentry{\texttt  {path\_sysop/2}|hyperpage}{195}
+\indexentry{\texttt  {path\_sysop/3}|hyperpage}{195}
+\indexentry{Prolog flags!{\tt exception\_action}|hyperpage}{196}
+\indexentry{\texttt  {is/2}|hyperpage}{196}
+\indexentry{\texttt  {+/2}|hyperpage}{197}
+\indexentry{\texttt  {-/2}|hyperpage}{197}
+\indexentry{\texttt  {*/2}|hyperpage}{197}
+\indexentry{\texttt  {'/'/2}|hyperpage}{197}
+\indexentry{\texttt  {div/2}|hyperpage}{197}
+\indexentry{\texttt  {'//'/2}|hyperpage}{197}
+\indexentry{\texttt  {-/1}|hyperpage}{197}
+\indexentry{\texttt  {'$\wedge $'/2}|hyperpage}{198}
+\indexentry{\texttt  {'$\vee $'/2}|hyperpage}{198}
+\indexentry{\texttt  {'>>'/2}|hyperpage}{198}
+\indexentry{\texttt  {'<<'/2}|hyperpage}{198}
+\indexentry{\texttt  {xor/2}|hyperpage}{198}
+\indexentry{\texttt  {'><'/2}|hyperpage}{198}
+\indexentry{\texttt  {min/2}|hyperpage}{198}
+\indexentry{\texttt  {max/2}|hyperpage}{198}
+\indexentry{\texttt  {ceiling/1}|hyperpage}{198}
+\indexentry{\texttt  {float/1}|hyperpage}{198}
+\indexentry{\texttt  {floor/1}|hyperpage}{198}
+\indexentry{\texttt  {mod/2}|hyperpage}{199}
+\indexentry{\texttt  {rem/2}|hyperpage}{199}
+\indexentry{\texttt  {round/1}|hyperpage}{199}
+\indexentry{\^\ /2|hyperpage}{199}
+\indexentry{\texttt  {**/2}|hyperpage}{200}
+\indexentry{\texttt  {sqrt/1}|hyperpage}{200}
+\indexentry{\texttt  {truncate/1}|hyperpage}{200}
+\indexentry{\texttt  {sign/1}|hyperpage}{200}
+\indexentry{\texttt  {pi/0}|hyperpage}{200}
+\indexentry{\texttt  {e/0}|hyperpage}{200}
+\indexentry{\texttt  {epsilon/0}|hyperpage}{200}
+\indexentry{\texttt  {cos/1}|hyperpage}{200}
+\indexentry{\texttt  {sin/1}|hyperpage}{200}
+\indexentry{\texttt  {tan/1}|hyperpage}{200}
+\indexentry{\texttt  {acos/1}|hyperpage}{200}
+\indexentry{\texttt  {asin/1}|hyperpage}{200}
+\indexentry{\texttt  {atan/1}|hyperpage}{200}
+\indexentry{\texttt  {log/1}|hyperpage}{200}
+\indexentry{\texttt  {log10/1}|hyperpage}{200}
+\indexentry{\texttt  {atan/2}|hyperpage}{200}
+\indexentry{\texttt  {atan2/2}|hyperpage}{200}
+\indexentry{\texttt  {true/0}|hyperpage}{201}
+\indexentry{\texttt  {otherwise/0}|hyperpage}{201}
+\indexentry{\texttt  {fail/0}|hyperpage}{201}
+\indexentry{\texttt  {false/0}|hyperpage}{201}
+\indexentry{control|hyperpage}{201}
+\indexentry{\texttt  {"!/0}|hyperpage}{201}
+\indexentry{cut|hyperpage}{201}
+\indexentry{$\backslash$\texttt{+/1}|hyperpage}{201}
+\indexentry{\texttt  {fail\_if/1}|hyperpage}{201}
+\indexentry{\texttt  {not/1}|hyperpage}{201}
+\indexentry{\texttt  {tnot/1}|hyperpage}{202}
+\indexentry{floundering|hyperpage}{202}
+\indexentry{\texttt  {not\_exists/1}|hyperpage}{202}
+\indexentry{floundering|hyperpage}{203}
+\indexentry{\texttt  {u\_not/1}|hyperpage}{203}
+\indexentry{\texttt  {->/2}|hyperpage}{204}
+\indexentry{\texttt  {->/2}|hyperpage}{204}
+\indexentry{\texttt  {repeat/0}|hyperpage}{204}
+\indexentry{\texttt  {between/3}|hyperpage}{205}
+\indexentry{\texttt  {do\_all/1}|hyperpage}{205}
+\indexentry{\texttt  {do\_all/2}|hyperpage}{205}
+\indexentry{terms!comparison of|hyperpage}{205}
+\indexentry{terms!unification of|hyperpage}{205}
+\indexentry{occurs check|hyperpage}{205}
+\indexentry{terms!cyclic|hyperpage}{205}
+\indexentry{Prolog flags!{\tt unify\_with\_occurs\_check}|hyperpage}{205}
+\indexentry{\texttt  {=/2}|hyperpage}{207}
+\indexentry{\texttt  {unify\_with\_occurs\_check/2}|hyperpage}{207}
+\indexentry{\texttt  {==/2}|hyperpage}{207}
+\indexentry{$\backslash$\texttt{=/2}|hyperpage}{208}
+\indexentry{$\backslash$\texttt{==/2}|hyperpage}{208}
+\indexentry{\texttt  {?=/2}|hyperpage}{208}
+\indexentry{\texttt  {unifiable/3}|hyperpage}{208}
+\indexentry{\texttt  {"@$<$/2}|hyperpage}{208}
+\indexentry{\texttt  {"@$>$/2}|hyperpage}{208}
+\indexentry{\texttt  {"@$=</2$}|hyperpage}{208}
+\indexentry{\texttt  {"@$>=/2$}|hyperpage}{208}
+\indexentry{\texttt  {"@$=/2$}|hyperpage}{208}
+\indexentry{\texttt  {compare/3}|hyperpage}{208}
+\indexentry{terms!cyclic|hyperpage}{209}
+\indexentry{\texttt  {ground/1}|hyperpage}{209}
+\indexentry{\texttt  {ground\_and\_acyclic/1}|hyperpage}{209}
+\indexentry{\texttt  {ground\_or\_cyclic/1}|hyperpage}{209}
+\indexentry{\texttt  {subsumes/2}|hyperpage}{209}
+\indexentry{\texttt  {subsumes\_chk/2}|hyperpage}{209}
+\indexentry{\texttt  {subsumes\_term/2}|hyperpage}{209}
+\indexentry{\texttt  {variant/2}|hyperpage}{210}
+\indexentry{\texttt  {check\_variant/1}|hyperpage}{210}
+\indexentry{\texttt  {check\_variant/2}|hyperpage}{210}
+\indexentry{\texttt  {sort/2}|hyperpage}{211}
+\indexentry{\texttt  {sort/3}|hyperpage}{212}
+\indexentry{\texttt  {keysort/2}|hyperpage}{213}
+\indexentry{\texttt  {parsort/5}|hyperpage}{213}
+\indexentry{\texttt  {parsort/}|hyperpage}{214}
+\indexentry{\texttt  {var/1}|hyperpage}{214}
+\indexentry{\texttt  {nonvar/1}|hyperpage}{215}
+\indexentry{\texttt  {atom/1}|hyperpage}{215}
+\indexentry{\texttt  {integer/1}|hyperpage}{215}
+\indexentry{\texttt  {ISO}|hyperpage}{216}
+\indexentry{\texttt  {real/1}|hyperpage}{216}
+\indexentry{\texttt  {number/1}|hyperpage}{216}
+\indexentry{\texttt  {atomic/1}|hyperpage}{216}
+\indexentry{\texttt  {compound/1}|hyperpage}{216}
+\indexentry{\texttt  {structure/1}|hyperpage}{217}
+\indexentry{\texttt  {is\_list/1}|hyperpage}{217}
+\indexentry{\texttt  {is\_charlist/1}|hyperpage}{217}
+\indexentry{\texttt  {is\_charlist/2}|hyperpage}{217}
+\indexentry{attributed variables|hyperpage}{217}
+\indexentry{\texttt  {is\_attv/1}|hyperpage}{217}
+\indexentry{\texttt  {is\_most\_general\_term/1}|hyperpage}{218}
+\indexentry{\texttt  {is\_number\_atom/1}|hyperpage}{218}
+\indexentry{\texttt  {callable/1}|hyperpage}{218}
+\indexentry{\texttt  {proper\_hilog/1}|hyperpage}{219}
+\indexentry{\texttt  {functor/3}|hyperpage}{219}
+\indexentry{\texttt  {functor/4}|hyperpage}{221}
+\indexentry{\texttt  {hilog\_functor/3}|hyperpage}{222}
+\indexentry{\texttt  {arg/3}|hyperpage}{224}
+\indexentry{\texttt  {arg0/3}|hyperpage}{225}
+\indexentry{\texttt  {hilog\_arg/3}|hyperpage}{225}
+\indexentry{\texttt  {=../2}|hyperpage}{226}
+\indexentry{\texttt  {\^{ }=../2}|hyperpage}{228}
+\indexentry{\texttt  {copy\_term/2}|hyperpage}{229}
+\indexentry{\texttt  {copy\_term\_nat/2}|hyperpage}{229}
+\indexentry{\texttt  {term\_variables/2}|hyperpage}{229}
+\indexentry{term depth!definition|hyperpage}{229}
+\indexentry{terms!cyclic|hyperpage}{229}
+\indexentry{attributed variables|hyperpage}{229}
+\indexentry{\texttt  {term\_depth/2}|hyperpage}{229}
+\indexentry{term size!definition|hyperpage}{230}
+\indexentry{terms!cyclic|hyperpage}{230}
+\indexentry{attributed variables|hyperpage}{230}
+\indexentry{\texttt  {term\_size/2}|hyperpage}{230}
+\indexentry{\texttt  {intern\_term/2}|hyperpage}{230}
+\indexentry{interned terms|hyperpage}{230}
+\indexentry{\texttt  {intern\_termhash/2}|hyperpage}{230}
+\indexentry{interned terms|hyperpage}{230}
+\indexentry{occurs check|hyperpage}{231}
+\indexentry{terms!cyclic|hyperpage}{231}
+\indexentry{Prolog flags!{\tt max\_table\_subgoal\_depth}|hyperpage}{231}
+\indexentry{Prolog flags!{\tt max\_answer\_term\_depth}|hyperpage}{231}
+\indexentry{Prolog flags!{\tt max\_answer\_list\_depth}|hyperpage}{231}
+\indexentry{Prolog flags!{\tt max\_table\_subgoal\_action}|hyperpage}{231}
+\indexentry{Prolog flags!{\tt max\_answer\_term\_action}|hyperpage}{231}
+\indexentry{Prolog flags!{\tt max\_answer\_list\_action}|hyperpage}{231}
+\indexentry{Prolog flags!{\tt unify\_with\_occurs\_check}|hyperpage}{231}
+\indexentry{Silk|hyperpage}{232}
+\indexentry{Flora-2|hyperpage}{232}
+\indexentry{tries!depth limit|hyperpage}{232}
+\indexentry{\texttt  {is\_cyclic/1}|hyperpage}{233}
+\indexentry{\texttt  {is\_acyclic/1}|hyperpage}{233}
+\indexentry{\texttt  {acyclic\_term/1}|hyperpage}{233}
+\indexentry{Unicode!UTF-8|hyperpage}{233}
+\indexentry{\texttt  {atom\_codes/2}|hyperpage}{233}
+\indexentry{\texttt  {number\_codes/2}|hyperpage}{235}
+\indexentry{\texttt  {name/2}|hyperpage}{236}
+\indexentry{Unicode!UTF-8|hyperpage}{237}
+\indexentry{\texttt  {atom\_chars/2}|hyperpage}{237}
+\indexentry{\texttt  {number\_chars/2}|hyperpage}{238}
+\indexentry{\texttt  {number\_digits/2}|hyperpage}{238}
+\indexentry{\texttt  {char\_code/2}|hyperpage}{238}
+\indexentry{\texttt  {atom\_length/2}|hyperpage}{238}
+\indexentry{\texttt  {concat\_atom/2}|hyperpage}{239}
+\indexentry{\texttt  {concat\_atom/3}|hyperpage}{239}
+\indexentry{\texttt  {atom\_concat/3}|hyperpage}{240}
+\indexentry{\texttt  {sub\_atom/5 }|hyperpage}{241}
+\indexentry{\texttt  {string\_substitute/4}|hyperpage}{243}
+\indexentry{\texttt  {term\_to\_atom/3}|hyperpage}{244}
+\indexentry{\texttt  {term\_to\_atom/2}|hyperpage}{245}
+\indexentry{Unicode!UTF-8|hyperpage}{245}
+\indexentry{\texttt  {term\_to\_codes/3 }|hyperpage}{245}
+\indexentry{\texttt  {term\_to\_codes/2}|hyperpage}{246}
+\indexentry{\texttt  {split\_atom/3}|hyperpage}{246}
+\indexentry{\texttt  {gc\_atoms/0}|hyperpage}{246}
+\indexentry{garbage collection!atoms|hyperpage}{246}
+\indexentry{Prolog flags!{\tt atom\_garbage\_collection}|hyperpage}{246}
+\indexentry{sets, bags|hyperpage}{246}
+\indexentry{aggregate predicates!prolog|hyperpage}{246}
+\indexentry{\texttt  {setof/3}|hyperpage}{247}
+\indexentry{\^|hyperpage}{247}
+\indexentry{\texttt  {bagof/3}|hyperpage}{248}
+\indexentry{\texttt  {findall/3}|hyperpage}{249}
+\indexentry{\texttt  {findall/4}|hyperpage}{249}
+\indexentry{\texttt  {tfindall/3}|hyperpage}{249}
+\indexentry{\texttt  {\^\ /2}|hyperpage}{250}
+\indexentry{\texttt  {excess\_vars/4}|hyperpage}{250}
+\indexentry{\texttt  {find\_n/4}|hyperpage}{251}
+\indexentry{\texttt  {call/1}|hyperpage}{251}
+\indexentry{\texttt  {"!/0}|hyperpage}{251}
+\indexentry{cut|hyperpage}{251}
+\indexentry{\texttt  {call/[2,10]}|hyperpage}{251}
+\indexentry{\texttt  {call\_tv/2}|hyperpage}{252}
+\indexentry{\texttt  {truth\_value/2}|hyperpage}{252}
+\indexentry{\texttt  {not3/1}|hyperpage}{253}
+\indexentry{\texttt  {once/1}|hyperpage}{253}
+\indexentry{\texttt  {forall/2}|hyperpage}{254}
+\indexentry{\texttt  {table\_once/1}|hyperpage}{254}
+\indexentry{\texttt  {table\_random/1}|hyperpage}{254}
+\indexentry{\texttt  {call\_cleanup/2}|hyperpage}{255}
+\indexentry{tripwires!timed call|hyperpage}{257}
+\indexentry{\texttt  {timed\_call/2}|hyperpage}{258}
+\indexentry{\texttt  {current\_timed\_call/2}|hyperpage}{260}
+\indexentry{\texttt  {timed\_call\_modify/1}|hyperpage}{261}
+\indexentry{\texttt  {timed\_call\_cancel/0}|hyperpage}{262}
+\indexentry{\texttt  {bounded\_call/4}|hyperpage}{262}
+\indexentry{\texttt  {bounded\_call/3}|hyperpage}{262}
+\indexentry{state of the system|hyperpage}{263}
+\indexentry{system, state of|hyperpage}{263}
+\indexentry{predicate indicator|hyperpage}{263}
+\indexentry{term indicator|hyperpage}{263}
+\indexentry{term indicator|hyperpage}{263}
+\indexentry{modules!usermod|hyperpage}{263}
+\indexentry{usermod|hyperpage}{263}
+\indexentry{predicate indicator|hyperpage}{263}
+\indexentry{\texttt  {current\_input/1}|hyperpage}{264}
+\indexentry{\texttt  {ISO}|hyperpage}{264}
+\indexentry{Prolog-commons|hyperpage}{264}
+\indexentry{Prolog flags|hyperpage}{264}
+\indexentry{\texttt  {current\_prolog\_flag/2}|hyperpage}{264}
+\indexentry{Prolog flags!{\tt bounded}|hyperpage}{264}
+\indexentry{Prolog flags!{\tt min\_integer}|hyperpage}{264}
+\indexentry{Prolog flags!{\tt max\_integer}|hyperpage}{264}
+\indexentry{Prolog flags!{\tt integer\_rounding\_function}|hyperpage}{264}
+\indexentry{Prolog flags!{\tt debug}|hyperpage}{264}
+\indexentry{Prolog flags!{\tt unknown}|hyperpage}{264}
+\indexentry{Prolog flags!{\tt double\_quotes}|hyperpage}{264}
+\indexentry{Prolog flags!{\tt dialect}|hyperpage}{264}
+\indexentry{Prolog flags!{\tt version\_data}|hyperpage}{264}
+\indexentry{unknown predicate handling|hyperpage}{265}
+\indexentry{Prolog flags!{\tt backtrace\_on\_error}|hyperpage}{266}
+\indexentry{Prolog flags!{\tt dcg\_style}|hyperpage}{266}
+\indexentry{Prolog flags!{\tt heap\_garbage\_collection}|hyperpage}{266}
+\indexentry{Prolog flags!{\tt heap\_margin}|hyperpage}{266}
+\indexentry{Prolog flags!{\tt clause\_garbage\_collection}|hyperpage}{266}
+\indexentry{Prolog flags!{\tt atom\_garbage\_collection}|hyperpage}{266}
+\indexentry{Prolog flags!{\tt table\_gc\_action}|hyperpage}{266}
+\indexentry{Prolog flags!{\tt goal}|hyperpage}{266}
+\indexentry{streams!STDERR|hyperpage}{266}
+\indexentry{garbage collection|hyperpage}{266}
+\indexentry{Heap Margin|hyperpage}{266}
+\indexentry{Prolog flags!{\tt tracing}|hyperpage}{267}
+\indexentry{Prolog flags!{\tt warning\_action}|hyperpage}{267}
+\indexentry{Prolog flags!{\tt write\_depth}|hyperpage}{267}
+\indexentry{Prolog flags!{\tt write\_attributes}|hyperpage}{267}
+\indexentry{attributed variables|hyperpage}{267}
+\indexentry{Prolog flags!{\tt unify\_with\_occurs\_check}|hyperpage}{267}
+\indexentry{occurs check|hyperpage}{267}
+\indexentry{terms!cyclic|hyperpage}{267}
+\indexentry{Prolog flags!{\tt character\_set}|hyperpage}{268}
+\indexentry{Prolog flags!{\tt character\_set}|hyperpage}{268}
+\indexentry{character sets|hyperpage}{268}
+\indexentry{Prolog flags!{\tt errors\_with\_position}|hyperpage}{268}
+\indexentry{Prolog flags!{\tt errors\_with\_position}|hyperpage}{268}
+\indexentry{errors with position|hyperpage}{268}
+\indexentry{\texttt  {explain\_u\_val/3}|hyperpage}{268}
+\indexentry{\texttt  {explain\_u\_val/6}|hyperpage}{268}
+\indexentry{\texttt  {get\_residual\_sccs/3}|hyperpage}{268}
+\indexentry{\texttt  {get\_residual\_sccs/5}|hyperpage}{268}
+\indexentry{Prolog flags!{\tt exception\_action}|hyperpage}{268}
+\indexentry{\texttt  {get\_scc\_dumpfile/0}|hyperpage}{268}
+\indexentry{Prolog flags!{\tt exception\_pre\_action}|hyperpage}{268}
+\indexentry{tabling!and exceptions|hyperpage}{268}
+\indexentry{Prolog flags!{\tt max\_tab\_usage}|hyperpage}{269}
+\indexentry{\texttt  {statistics/1}|hyperpage}{269}
+\indexentry{\texttt  {statistics/0}|hyperpage}{269}
+\indexentry{Prolog flags!{\tt load\_dync\_error\_limit}|hyperpage}{269}
+\indexentry{\texttt  {load\_dyn\_gen/2}|hyperpage}{269}
+\indexentry{tripwires|hyperpage}{269}
+\indexentry{term size|hyperpage}{269}
+\indexentry{Prolog flags!{\tt max\_table\_subgoal\_size}|hyperpage}{269}
+\indexentry{Prolog flags!{\tt max\_table\_subgoal\_size\_action}|hyperpage}{269}
+\indexentry{Prolog flags!{\tt max\_incomplete\_subgoals}|hyperpage}{269}
+\indexentry{Prolog flags!{\tt max\_incomplete\_subgoals\_action}|hyperpage}{269}
+\indexentry{Prolog flags!{\tt max\_scc\_subgoals}|hyperpage}{269}
+\indexentry{Prolog flags!{\tt max\_scc\_subgoals\_action}|hyperpage}{269}
+\indexentry{termination!subgoal abstraction|hyperpage}{269}
+\indexentry{termination!radial restraint|hyperpage}{269}
+\indexentry{Prolog flags!{\tt max\_table\_answer\_size}|hyperpage}{270}
+\indexentry{Prolog flags!{\tt max\_table\_answer\_size\_action}|hyperpage}{270}
+\indexentry{Prolog flags!{\tt max\_answers\_for\_subgoal}|hyperpage}{270}
+\indexentry{Prolog flags!{\tt max\_answers\_for\_subgoal\_action}|hyperpage}{270}
+\indexentry{Prolog flags!{\tt max\_memory}|hyperpage}{271}
+\indexentry{tripwires|hyperpage}{271}
+\indexentry{term size|hyperpage}{271}
+\indexentry{termination!subgoal abstraction|hyperpage}{271}
+\indexentry{termination!radial restraint|hyperpage}{271}
+\indexentry{XSB Parameters!{\tt max\_table\_subgoal\_size}|hyperpage}{271}
+\indexentry{XSB Parameters!{\tt max\_table\_answer\_size}|hyperpage}{271}
+\indexentry{XSB Parameters!{\tt max\_incomplete\_subgoals}|hyperpage}{271}
+\indexentry{XSB Parameters!{\tt max\_scc\_subgoals}|hyperpage}{271}
+\indexentry{XSB Parameters!{\tt max\_answers\_for\_subgoal}|hyperpage}{271}
+\indexentry{XSB Parameters!{\tt max\_memory}|hyperpage}{271}
+\indexentry{\texttt  {current\_xsb\_param/2}|hyperpage}{271}
+\indexentry{Prolog flags!{\tt max\_memory}|hyperpage}{273}
+\indexentry{\texttt  {set\_xsb\_param/2}|hyperpage}{274}
+\indexentry{\texttt  {xsb\_configuration/2}|hyperpage}{274}
+\indexentry{\texttt  {set\_prolog\_flag/2}|hyperpage}{274}
+\indexentry{\texttt  {current\_predicate/1}|hyperpage}{275}
+\indexentry{modules!usermod|hyperpage}{275}
+\indexentry{usermod|hyperpage}{275}
+\indexentry{\texttt  {current\_module/1}|hyperpage}{276}
+\indexentry{\texttt  {current\_module/2}|hyperpage}{276}
+\indexentry{\texttt  {current\_functor/1}|hyperpage}{276}
+\indexentry{\texttt  {current\_index/2}|hyperpage}{277}
+\indexentry{\texttt  {current\_atom/1}|hyperpage}{277}
+\indexentry{tabling!call subsumption|hyperpage}{277}
+\indexentry{tabling!call variance|hyperpage}{277}
+\indexentry{tabling!answer subsumption|hyperpage}{277}
+\indexentry{tabling!incremental|hyperpage}{277}
+\indexentry{\texttt  {predicate\_property/2}|hyperpage}{277}
+\indexentry{\texttt  {set\_predicate\_property/2}|hyperpage}{279}
+\indexentry{\texttt  {module\_property/2}|hyperpage}{280}
+\indexentry{\texttt  {subgoal\_property/2}|hyperpage}{281}
+\indexentry{\texttt  {variant\_subgoal\_property/2}|hyperpage}{282}
+\indexentry{dynamic code|hyperpage}{282}
+\indexentry{\texttt  {listing/0}|hyperpage}{282}
+\indexentry{modules|hyperpage}{282}
+\indexentry{modules!usermod|hyperpage}{282}
+\indexentry{usermod|hyperpage}{282}
+\indexentry{dynamic code|hyperpage}{282}
+\indexentry{\texttt  {listing/1}|hyperpage}{282}
+\indexentry{\texttt  {user\_dyn\_clause\_count/0}|hyperpage}{283}
+\indexentry{\texttt  {xsb\_configuration/2}|hyperpage}{284}
+\indexentry{\texttt  {hilog\_symbol/1}|hyperpage}{285}
+\indexentry{\texttt  {current\_op/3}|hyperpage}{286}
+\indexentry{\texttt  {hilog\_op/3}|hyperpage}{286}
+\indexentry{\texttt  {break/0}|hyperpage}{286}
+\indexentry{\texttt  {ISO}|hyperpage}{287}
+\indexentry{\texttt  {ISO}|hyperpage}{287}
+\indexentry{\texttt  {prompt/2}|hyperpage}{288}
+\indexentry{\texttt  {trimcore/0}|hyperpage}{288}
+\indexentry{\texttt  {gc\_heap/0}|hyperpage}{288}
+\indexentry{garbage collection!heap|hyperpage}{288}
+\indexentry{Prolog flags!{\tt heap\_garbage\_collection}|hyperpage}{288}
+\indexentry{tabling!call subsumption|hyperpage}{288}
+\indexentry{tabling!call variance|hyperpage}{288}
+\indexentry{tabling!incremental|hyperpage}{288}
+\indexentry{\texttt  {statistics/0}|hyperpage}{288}
+\indexentry{\texttt  {statistics/1}|hyperpage}{292}
+\indexentry{Incremental Dependency Graph (IDG)!displaying|hyperpage}{292}
+\indexentry{\texttt  {statistics/2}|hyperpage}{293}
+\indexentry{tabled subgoals!incomplete|hyperpage}{294}
+\indexentry{Incremental Dependency Graph (IDG)|hyperpage}{294}
+\indexentry{\texttt  {time/1}|hyperpage}{295}
+\indexentry{Prologs!SWI|hyperpage}{295}
+\indexentry{Prologs!YAP|hyperpage}{295}
+\indexentry{dynamic code|hyperpage}{295}
+\indexentry{indexing|hyperpage}{295}
+\indexentry{compiler options!\texttt{dynamic/1}|hyperpage}{296}
+\indexentry{\texttt{load\_dyn\_gen/2}|hyperpage}{296}
+\indexentry{dynamic code|hyperpage}{296}
+\indexentry{indexing|hyperpage}{296}
+\indexentry{\texttt  {asserta/1}|hyperpage}{296}
+\indexentry{dynamic code|hyperpage}{297}
+\indexentry{indexing|hyperpage}{297}
+\indexentry{\texttt  {assertz/1}|hyperpage}{297}
+\indexentry{dynamic code|hyperpage}{297}
+\indexentry{indexing|hyperpage}{297}
+\indexentry{\texttt  {assert/1}|hyperpage}{297}
+\indexentry{indexing|hyperpage}{297}
+\indexentry{\texttt  {assert/3}|hyperpage}{297}
+\indexentry{dynamic code|hyperpage}{298}
+\indexentry{\texttt  {retract/1}|hyperpage}{298}
+\indexentry{dynamic code|hyperpage}{299}
+\indexentry{\texttt  {retractall/1}|hyperpage}{299}
+\indexentry{dynamic code|hyperpage}{299}
+\indexentry{\texttt  {abolish/1}|hyperpage}{299}
+\indexentry{dynamic code|hyperpage}{300}
+\indexentry{\texttt  {clause/2}|hyperpage}{300}
+\indexentry{dynamic code|hyperpage}{300}
+\indexentry{\texttt  {gc\_dynamic/1}|hyperpage}{301}
+\indexentry{garbage collection!dynamic clauses|hyperpage}{301}
+\indexentry{dynamic code|hyperpage}{301}
+\indexentry{indexing|hyperpage}{301}
+\indexentry{\texttt  {index/2}|hyperpage}{301}
+\indexentry{indexing!dynamic predicates|hyperpage}{301}
+\indexentry{tries!asserted|hyperpage}{301}
+\indexentry{indexing!hash-based|hyperpage}{301}
+\indexentry{indexing!star|hyperpage}{303}
+\indexentry{indexing!multiple-argument|hyperpage}{303}
+\indexentry{indexing!composite|hyperpage}{303}
+\indexentry{tries!asserted!indexing|hyperpage}{303}
+\indexentry{indexing!trie-based|hyperpage}{303}
+\indexentry{dynamic code|hyperpage}{304}
+\indexentry{\texttt  {dynamic/1}|hyperpage}{304}
+\indexentry{dynamic code|hyperpage}{306}
+\indexentry{dynamic code|hyperpage}{307}
+\indexentry{\texttt  {load\_dyn\_gen/2}|hyperpage}{307}
+\indexentry{\texttt  {load\_dyn/1}|hyperpage}{309}
+\indexentry{\texttt  {load\_dyn/2}|hyperpage}{309}
+\indexentry{\texttt  {load\_dyn/3}|hyperpage}{309}
+\indexentry{\texttt  {load\_dync/1}|hyperpage}{310}
+\indexentry{\texttt  {load\_dync/2}|hyperpage}{310}
+\indexentry{\texttt  {load\_dynca/1}|hyperpage}{310}
+\indexentry{\texttt  {load\_dynca/2}|hyperpage}{310}
+\indexentry{\texttt  {ensure\_loaded/1}|hyperpage}{310}
+\indexentry{\texttt  {ensure\_loaded/2}|hyperpage}{310}
+\indexentry{\texttt  {cvt\_canonical/2}|hyperpage}{311}
+\indexentry{transaction logic|hyperpage}{311}
+\indexentry{backtrackable updates|(hyperpage}{311}
+\indexentry{\texttt  {storage\_insert\_keypair/4}|hyperpage}{311}
+\indexentry{\texttt  {storage\_delete\_keypair/3}|hyperpage}{312}
+\indexentry{\texttt  {storage\_find\_keypair/3}|hyperpage}{312}
+\indexentry{\texttt  {storage\_insert\_fact/3}|hyperpage}{312}
+\indexentry{\texttt  {storage\_delete\_fact/3}|hyperpage}{312}
+\indexentry{\texttt  {storage\_find\_fact/2}|hyperpage}{312}
+\indexentry{\texttt  {storage\_insert\_keypair\_bt/4}|hyperpage}{312}
+\indexentry{\texttt  {storage\_delete\_keypair\_bt/3}|hyperpage}{313}
+\indexentry{\texttt  {storage\_insert\_fact\_bt/2}|hyperpage}{313}
+\indexentry{\texttt  {storage\_delete\_fact\_bt/2}|hyperpage}{313}
+\indexentry{\texttt  {storage\_commit/1}|hyperpage}{313}
+\indexentry{\texttt  {storage\_reclaim\_space/1}|hyperpage}{313}
+\indexentry{backtrackable updates|)}{313}
+\indexentry{TableEntryHandle|hyperpage}{314}
+\indexentry{ReturnHandle|hyperpage}{314}
+\indexentry{skeleton|hyperpage}{314}
+\indexentry{tabling!directives|hyperpage}{314}
+\indexentry{tabling!strategy selection|hyperpage}{314}
+\indexentry{tabling!call subsumption|hyperpage}{314}
+\indexentry{tabling!call variance|hyperpage}{314}
+\indexentry{tabling!answer subsumption|hyperpage}{314}
+\indexentry{tabling!incremental|hyperpage}{314}
+\indexentry{tabling!opaque|hyperpage}{314}
+\indexentry{tabling!dynamic predicates|hyperpage}{314}
+\indexentry{tabling!sound completion|hyperpage}{314}
+\indexentry{tabling!subgoal abstraction|hyperpage}{314}
+\indexentry{tabling!answer abstraction|hyperpage}{314}
+\indexentry{tabling!interned ground terms|hyperpage}{314}
+\indexentry{\texttt  {table/1}|hyperpage}{314}
+\indexentry{\texttt  {set\_predicate\_property/2}|hyperpage}{317}
+\indexentry{\texttt  {set\_predicate\_property/2}|hyperpage}{317}
+\indexentry{tabling!table inspection|hyperpage}{318}
+\indexentry{tabling!call subsumption|hyperpage}{318}
+\indexentry{tabling!call variance|hyperpage}{318}
+\indexentry{\texttt  {get\_calls\_for\_table/2}|hyperpage}{319}
+\indexentry{\texttt  {get\_returns\_for\_call/2}|hyperpage}{320}
+\indexentry{\texttt  {get\_residual/2}|hyperpage}{321}
+\indexentry{\texttt  {variant\_get\_residual/2}|hyperpage}{321}
+\indexentry{residual program|hyperpage}{321}
+\indexentry{\texttt  {table\_state/1}|hyperpage}{323}
+\indexentry{\texttt  {table\_state/4}|hyperpage}{323}
+\indexentry{Prolog flags!{\tt exception\_pre\_action}|hyperpage}{324}
+\indexentry{strongly connected components (SCCs)|hyperpage}{324}
+\indexentry{tabling!and exceptions|hyperpage}{324}
+\indexentry{\texttt  {get\_scc\_dumpfile/1}|hyperpage}{324}
+\indexentry{tabling!table inspection|hyperpage}{325}
+\indexentry{tabling!call subsumption|hyperpage}{325}
+\indexentry{tabling!call variance|hyperpage}{325}
+\indexentry{answer substitution|hyperpage}{325}
+\indexentry{substitution factor|hyperpage}{325}
+\indexentry{\texttt  {get\_call/3}|hyperpage}{326}
+\indexentry{tabling!call subsumption|hyperpage}{326}
+\indexentry{tabling!call variance|hyperpage}{326}
+\indexentry{\texttt  {get\_calls/3}|hyperpage}{327}
+\indexentry{\texttt  {get\_calls/4}|hyperpage}{327}
+\indexentry{\texttt  {get\_returns/2}|hyperpage}{329}
+\indexentry{\texttt  {get\_returns\_and\_tvs/3}|hyperpage}{329}
+\indexentry{\texttt  {get\_returns/3}|hyperpage}{329}
+\indexentry{tabling!table abolishing|hyperpage}{330}
+\indexentry{view consistency|hyperpage}{331}
+\indexentry{tabling!conditional answers|hyperpage}{331}
+\indexentry{\texttt  {get\_residual/2}|hyperpage}{331}
+\indexentry{Prolog flags!{\tt table\_gc\_action}|hyperpage}{331}
+\indexentry{tabling!abolishes|hyperpage}{333}
+\indexentry{\texttt  {abolish\_table\_pred/1}|hyperpage}{333}
+\indexentry{tabling!abolishes!transitive vs. single|hyperpage}{333}
+\indexentry{tabling!conditional answers|hyperpage}{333}
+\indexentry{Prolog flags!{\tt table\_gc\_action}|hyperpage}{333}
+\indexentry{tabling!incremental|hyperpage}{333}
+\indexentry{Prolog flags!{\tt table\_gc\_action}|hyperpage}{334}
+\indexentry{\texttt  {abolish\_table\_pred/2}|hyperpage}{334}
+\indexentry{tabling!abolishes!transitive vs. single|hyperpage}{334}
+\indexentry{\texttt  {abolish\_table\_subgoals/1}|hyperpage}{334}
+\indexentry{Prolog flags!{\tt table\_gc\_action}|hyperpage}{334}
+\indexentry{Incremental Dependency Graph (IDG)|hyperpage}{334}
+\indexentry{tabling!abolishes!incremental|hyperpage}{334}
+\indexentry{Prolog flags!{\tt table\_gc\_action}|hyperpage}{335}
+\indexentry{\texttt  {abolish\_table\_subgoals/2}|hyperpage}{335}
+\indexentry{\texttt  {abolish\_table\_subgoal/1}|hyperpage}{335}
+\indexentry{\texttt  {abolish\_table\_subgoal/2}|hyperpage}{335}
+\indexentry{tabling!abolishes|hyperpage}{335}
+\indexentry{\texttt  {abolish\_all\_tables/0}|hyperpage}{335}
+\indexentry{tabling!abolishes!incremental|hyperpage}{336}
+\indexentry{tabling!abolishes!|hyperpage}{336}
+\indexentry{\texttt  {abolish\_nonincremental\_tables/0}|hyperpage}{336}
+\indexentry{tabling!abolishes!|hyperpage}{336}
+\indexentry{\texttt  {abolish\_module\_tables/1}|hyperpage}{336}
+\indexentry{\texttt  {gc\_tables/1}|hyperpage}{336}
+\indexentry{garbage collection!tables|hyperpage}{336}
+\indexentry{\texttt  {delete\_returns/2}|hyperpage}{337}
+\indexentry{\texttt  {invalidate\_tables\_for/2}|hyperpage}{337}
+\indexentry{tabling!indexing|hyperpage}{338}
+\indexentry{tabling!call subsumption!indexing|hyperpage}{338}
+\indexentry{tries!interned|(hyperpage}{341}
+\indexentry{indexing!trie-based|hyperpage}{341}
+\indexentry{aliases!tries|hyperpage}{345}
+\indexentry{\texttt  {trie\_create/2}|hyperpage}{345}
+\indexentry{tabling!incremental|hyperpage}{346}
+\indexentry{terms!cyclic|hyperpage}{346}
+\indexentry{\texttt  {trie\_insert/2}|hyperpage}{346}
+\indexentry{\texttt  {trie\_unify/2}|hyperpage}{347}
+\indexentry{\texttt  {trie\_delete/2}|hyperpage}{347}
+\indexentry{\texttt  {trie\_truncate/1}|hyperpage}{348}
+\indexentry{\texttt  {trie\_drop/1}|hyperpage}{348}
+\indexentry{\texttt  {trie\_bulk\_insert/2}|hyperpage}{349}
+\indexentry{terms!cyclic|hyperpage}{350}
+\indexentry{\texttt  {trie\_bulk\_delete/2}|hyperpage}{350}
+\indexentry{\texttt  {trie\_bulk\_unify/3}|hyperpage}{350}
+\indexentry{\texttt  {trie\_property/2}|hyperpage}{351}
+\indexentry{\texttt  {new\_trie/1}|hyperpage}{352}
+\indexentry{\texttt  {trie\_intern/2}|hyperpage}{352}
+\indexentry{\texttt  {trie\_intern/5}|hyperpage}{352}
+\indexentry{\texttt  {trie\_interned/2}|hyperpage}{352}
+\indexentry{\texttt  {trie\_interned/4}|hyperpage}{352}
+\indexentry{\texttt  {trie\_unintern2}|hyperpage}{353}
+\indexentry{\texttt  {trie\_unintern\_nr/2}|hyperpage}{353}
+\indexentry{\texttt  {reclaim\_uninterned\_rn/1}|hyperpage}{353}
+\indexentry{\texttt  {unmark\_uninterned\_nr/2}|hyperpage}{354}
+\indexentry{\texttt  {delete\_trie/1}|hyperpage}{354}
+\indexentry{tries!interned|)}{354}
+\indexentry{\texttt  {add\_xsb\_hook/1}|hyperpage}{355}
+\indexentry{\texttt  {remove\_xsb\_hook/1}|hyperpage}{356}
+\indexentry{\texttt  {xsb\_exit\_hook/1}|hyperpage}{356}
+\indexentry{\texttt  {xsb\_assert\_hook/1}|hyperpage}{356}
+\indexentry{\texttt  {xsb\_intercept\_assert\_hook/1}|hyperpage}{357}
+\indexentry{\texttt  {xsb\_retract\_hook/1}|hyperpage}{357}
+\indexentry{\texttt  {xsb\_intercept\_retractall\_hook/1}|hyperpage}{357}
+\indexentry{debugger|hyperpage}{359}
+\indexentry{tracing|(hyperpage}{359}
+\indexentry{tracing!Prolog programs|hyperpage}{359}
+\indexentry{\texttt  {trace/0}|hyperpage}{359}
+\indexentry{\texttt  {notrace/0}|hyperpage}{359}
+\indexentry{debugger!ports|hyperpage}{359}
+\indexentry{trace!options|hyperpage}{360}
+\indexentry{abort!trace facility|hyperpage}{360}
+\indexentry{break level|hyperpage}{360}
+\indexentry{\texttt  {trace/2}|hyperpage}{361}
+\indexentry{trace!logging|hyperpage}{361}
+\indexentry{\texttt  {spy/1}|hyperpage}{362}
+\indexentry{\texttt  {nospy/1}|hyperpage}{362}
+\indexentry{\texttt  {debug/0}|hyperpage}{362}
+\indexentry{\texttt  {nodebug/0}|hyperpage}{362}
+\indexentry{\texttt  {debugging/0}|hyperpage}{362}
+\indexentry{\texttt  {debug\_ctl/2}|hyperpage}{362}
+\indexentry{tracing!Prolog program!controls|hyperpage}{364}
+\indexentry{low-level tracing|hyperpage}{364}
+\indexentry{tracing!low-level|hyperpage}{364}
+\indexentry{\texttt  {\$trace/0}|hyperpage}{365}
+\indexentry{strongly connected components (SCCs)|hyperpage}{369}
+\indexentry{tabling!early completion of subgoals|hyperpage}{369}
+\indexentry{attributed variables|hyperpage}{370}
+\indexentry{\texttt  {log\_forest/2}|hyperpage}{370}
+\indexentry{\texttt  {log\_forest/2}|hyperpage}{370}
+\indexentry{indexing|hyperpage}{372}
+\indexentry{\texttt  {load\_forest\_log/1}|hyperpage}{372}
+\indexentry{tracing|)}{372}
+\indexentry{\texttt  {table\_dump/2}|hyperpage}{373}
+\indexentry{\texttt  {table\_dump/3}|hyperpage}{373}
+\indexentry{tabling!complete evaluation|hyperpage}{374}
+\indexentry{tabling!early completion of subgoals|hyperpage}{374}
+\indexentry{\texttt  {forest\_log\_overview/0}|hyperpage}{379}
+\indexentry{\texttt  {get\_scc\_size/3}|hyperpage}{379}
+\indexentry{\texttt  {three\_valued\_scc/1}|hyperpage}{379}
+\indexentry{\texttt  {analyze\_an\_scc/2}|hyperpage}{379}
+\indexentry{\texttt  {analyze\_an\_scc/3}|hyperpage}{379}
+\indexentry{\texttt  {abstract\_modes/2}|hyperpage}{380}
+\indexentry{\texttt  {set\_forest\_logging\_for\_pred/2}|hyperpage}{380}
+\indexentry{\texttt  {table\_dump/2}|hyperpage}{381}
+\indexentry{\texttt  {table\_dump/3}|hyperpage}{381}
+\indexentry{\texttt  {get\_sdg\_info/1}|hyperpage}{386}
+\indexentry{\texttt  {get\_sdg\_subgoal\_info/1}|hyperpage}{387}
+\indexentry{\texttt  {get\_idg\_info/2}|hyperpage}{388}
+\indexentry{\texttt  {get\_idg\_info/1}|hyperpage}{388}
+\indexentry{residual program|hyperpage}{390}
+\indexentry{\texttt  {get\_residual/2}|hyperpage}{390}
+\indexentry{\texttt  {variant\_get\_residual/2}|hyperpage}{390}
+\indexentry{Incremental Dependency Graph (IDG)|hyperpage}{390}
+\indexentry{residual dependency graph|hyperpage}{390}
+\indexentry{\texttt  {get\_rdg\_info/2}|hyperpage}{390}
+\indexentry{\texttt  {get\_rdg\_info/1}|hyperpage}{390}
+\indexentry{\texttt  {get\_residual\_sccs/3}|hyperpage}{391}
+\indexentry{\texttt  {get\_residual\_sccs/5}|hyperpage}{391}
+\indexentry{termination!radial restraint|hyperpage}{391}
+\indexentry{\texttt  {u\_not/1}|hyperpage}{391}
+\indexentry{restraint!radial|hyperpage}{392}
+\indexentry{termination!radial restraint|hyperpage}{392}
+\indexentry{\texttt  {u\_not/1}|hyperpage}{392}
+\indexentry{\texttt  {get\_residual\_sccs/5}|hyperpage}{392}
+\indexentry{\texttt  {explain\_u\_val/3}|hyperpage}{392}
+\indexentry{\texttt  {explain\_u\_val/6}|hyperpage}{392}
+\indexentry{\texttt  {morph\_dep\_graph/3}|hyperpage}{393}
+\indexentry{\texttt  {dep\_graph\_scc\_info/2}|hyperpage}{396}
+\indexentry{\texttt  {print\_sdg\_info/0}|hyperpage}{396}
+\indexentry{\texttt  {print\_sdg\_subgoal\_info/0}|hyperpage}{396}
+\indexentry{\texttt  {print\_dep\_graph/1}|hyperpage}{396}
+\indexentry{Incremental Dependency Graph (IDG)|hyperpage}{397}
+\indexentry{residual program|hyperpage}{397}
+\indexentry{residual dependency graph|hyperpage}{397}
+\indexentry{tripwires|hyperpage}{398}
+\indexentry{tripwires!timed call|hyperpage}{399}
+\indexentry{\texttt  {timed\_call/2}|hyperpage}{399}
+\indexentry{\texttt  {timed\_call\_modify/1}|hyperpage}{399}
+\indexentry{tripwires!max\_memory|hyperpage}{399}
+\indexentry{tripwires!max\_table\_subgoal\_size|hyperpage}{406}
+\indexentry{tripwires!max\_incomplete\_subgoals|hyperpage}{406}
+\indexentry{tripwires!max\_scc\_subgoals|hyperpage}{406}
+\indexentry{tripwires!max\_table\_answer\_size|hyperpage}{406}
+\indexentry{tripwires!max\_answers\_for\_subgoal|hyperpage}{407}
+\indexentry{definite clause grammars|hyperpage}{408}
+\indexentry{grammars!definite clause|hyperpage}{408}
+\indexentry{cut|hyperpage}{408}
+\indexentry{\texttt  {"!/0}|hyperpage}{408}
+\indexentry{cut|hyperpage}{409}
+\indexentry{\texttt  {"!/0}|hyperpage}{409}
+\indexentry{\texttt  {term\_expansion/2}|hyperpage}{410}
+\indexentry{definite clause grammars!list mode|hyperpage}{412}
+\indexentry{\texttt  {word/3}|hyperpage}{413}
+\indexentry{definite clause grammars!datalog mode|hyperpage}{413}
+\indexentry{\texttt  {phrase/2}|hyperpage}{414}
+\indexentry{\texttt  {tphrase/1}|hyperpage}{414}
+\indexentry{\texttt  {phrase/3}|hyperpage}{414}
+\indexentry{\texttt  {expand\_term/2}|hyperpage}{414}
+\indexentry{\texttt  {term\_expansion/2}|hyperpage}{415}
+\indexentry{\texttt  {`C'/3}|hyperpage}{416}
+\indexentry{cut|hyperpage}{416}
+\indexentry{\texttt  {tphrase\_set\_string/1}|hyperpage}{416}
+\indexentry{\texttt  {tphrase\_set\_string\_keeping\_tables/1}|hyperpage}{416}
+\indexentry{\texttt  {tphrase\_set\_string\_auto\_abolish/1}|hyperpage}{416}
+\indexentry{\texttt  {set\_dcg\_supported\_table/1}|hyperpage}{417}
+\indexentry{\texttt  {dcg/2}|hyperpage}{417}
+\indexentry{\texttt  {set\_dcg\_style/1}|hyperpage}{417}
+\indexentry{definite clause grammars!style|hyperpage}{418}
+\indexentry{exceptions|(hyperpage}{419}
+\indexentry{tabling!and exceptions|hyperpage}{423}
+\indexentry{strongly connected components (SCCs)|hyperpage}{423}
+\indexentry{Prolog flags!{\tt exception\_pre\_action}|hyperpage}{425}
+\indexentry{strongly connected components (SCCs)|hyperpage}{425}
+\indexentry{\texttt  {print\_sdg\_subgoal\_info}|hyperpage}{425}
+\indexentry{ISO!errors|hyperpage}{426}
+\indexentry{\texttt  {throw/1}|hyperpage}{429}
+\indexentry{\texttt  {domain\_error/4}|hyperpage}{429}
+\indexentry{\texttt  {evaluation\_error/3}|hyperpage}{429}
+\indexentry{\texttt  {existence\_error/4}|hyperpage}{429}
+\indexentry{\texttt  {instantiation\_error/4}|hyperpage}{430}
+\indexentry{\texttt  {permission\_error/4}|hyperpage}{430}
+\indexentry{\texttt  {representation\_error/3}|hyperpage}{430}
+\indexentry{\texttt  {resource\_error/3}|hyperpage}{430}
+\indexentry{\texttt  {type\_error/4}|hyperpage}{430}
+\indexentry{break level|hyperpage}{430}
+\indexentry{\texttt  {misc\_error/1}|hyperpage}{431}
+\indexentry{\texttt  {abort/1}|hyperpage}{431}
+\indexentry{\texttt  {abort/0}|hyperpage}{431}
+\indexentry{\texttt  {catch/3}|hyperpage}{431}
+\indexentry{\texttt  {default\_user\_error\_handler/1}|hyperpage}{431}
+\indexentry{streams!STDERR|hyperpage}{431}
+\indexentry{\texttt  {error\_write/1}|hyperpage}{431}
+\indexentry{\texttt  {error\_writeln/1}|hyperpage}{432}
+\indexentry{\texttt  {xsb\_error\_get\_message/2}|hyperpage}{432}
+\indexentry{\texttt  {xsb\_error\_get\_goal/2}|hyperpage}{432}
+\indexentry{\texttt  {xsb\_error\_get\_goalatom/2}|hyperpage}{432}
+\indexentry{\texttt  {xsb\_error\_get\_tid/2}|hyperpage}{432}
+\indexentry{\texttt  {xsb\_error\_get\_backtrace/2}|hyperpage}{432}
+\indexentry{\texttt  {check\_acyclic/3}|hyperpage}{432}
+\indexentry{\texttt  {check\_atom/3}|hyperpage}{433}
+\indexentry{\texttt  {check\_callable/3}|hyperpage}{433}
+\indexentry{\texttt  {check\_ground/3}|hyperpage}{433}
+\indexentry{\texttt  {check\_integern/3}|hyperpage}{433}
+\indexentry{\texttt  {check\_nonvar/3}|hyperpage}{433}
+\indexentry{\texttt  {check\_nonvar\_list/3}|hyperpage}{433}
+\indexentry{\texttt  {check\_stream/3}|hyperpage}{433}
+\indexentry{\texttt  {check\_var/3}|hyperpage}{433}
+\indexentry{permanent variables|hyperpage}{433}
+\indexentry{Prolog flags!{\tt backtrace\_on\_error}|hyperpage}{433}
+\indexentry{\texttt  {xsb\_backtrace/1}|hyperpage}{434}
+\indexentry{\texttt  {get\_backtrace\_list/2}|hyperpage}{434}
+\indexentry{\texttt  {print\_backtrace/1}|hyperpage}{434}
+\indexentry{exceptions|)}{434}
+\indexentry{64-bit architectures|hyperpage}{436}
+\indexentry{\texttt  {is\_attv}{\texttt  {()}}|hyperpage}{444}
+\indexentry{\texttt  {is\_float}{\texttt  {()}}|hyperpage}{444}
+\indexentry{\texttt  {is\_functor}{\texttt  {()}}|hyperpage}{444}
+\indexentry{\texttt  {is\_int}{\texttt  {()}}|hyperpage}{444}
+\indexentry{\texttt  {is\_list}{\texttt  {()}}|hyperpage}{444}
+\indexentry{\texttt  {is\_nil}{\texttt  {()}}|hyperpage}{444}
+\indexentry{\texttt  {is\_string}{\texttt  {()}}|hyperpage}{444}
+\indexentry{\texttt  {is\_var}{\texttt  {()}}|hyperpage}{445}
+\indexentry{\texttt  {p2c\_int}{\texttt  {()}}|hyperpage}{445}
+\indexentry{\texttt  {p2c\_float}{\texttt  {()}}|hyperpage}{445}
+\indexentry{\texttt  {p2c\_string}{\texttt  {()}}|hyperpage}{445}
+\indexentry{\texttt  {p2c\_functor}{\texttt  {()}}|hyperpage}{445}
+\indexentry{\texttt  {p2c\_arity}{\texttt  {()}}|hyperpage}{445}
+\indexentry{\texttt  {c2p\_int}{\texttt  {()}}|hyperpage}{446}
+\indexentry{\texttt  {c2p\_float}{\texttt  {()}}|hyperpage}{446}
+\indexentry{\texttt  {c2p\_string}{\texttt  {()}}|hyperpage}{446}
+\indexentry{\texttt  {c2p\_functor}{\texttt  {()}}|hyperpage}{446}
+\indexentry{\texttt  {c2p\_list}{\texttt  {()}}|hyperpage}{446}
+\indexentry{\texttt  {c2p\_nil}{\texttt  {()}}|hyperpage}{446}
+\indexentry{\texttt  {p2p\_new}{\texttt  {()}}|hyperpage}{446}
+\indexentry{\texttt  {p2p\_arg}{\texttt  {()}}|hyperpage}{446}
+\indexentry{\texttt  {p2p\_car}{\texttt  {()}}|hyperpage}{447}
+\indexentry{\texttt  {p2p\_cdr}{\texttt  {()}}|hyperpage}{447}
+\indexentry{\texttt  {reg\_term}{\texttt  {()}}|hyperpage}{448}
+\indexentry{\texttt  {p2p\_unify}{\texttt  {()}}|hyperpage}{448}
+\indexentry{\texttt  {xsb\_query\_save}{\texttt  {()}}|hyperpage}{455}
+\indexentry{\texttt  {xsb\_query\_restore}{\texttt  {()}}|hyperpage}{455}
+\indexentry{LD\_LIBRARY\_PATH|hyperpage}{456}
+\indexentry{LIBPATH|hyperpage}{456}
+\indexentry{\texttt  {runtime\_loader\_flag/2}|hyperpage}{456}
+\indexentry{\texttt  {foreign\_pred/0}|hyperpage}{457}
+\indexentry{\texttt  {private\_foreign\_pred/0}|hyperpage}{457}
+\indexentry{\texttt  {xsb\_domain\_error}{\texttt  {()}}|hyperpage}{463}
+\indexentry{\texttt  {xsb\_existence\_error}{\texttt  {()}}|hyperpage}{463}
+\indexentry{\texttt  {xsb\_instantiation\_error}{\texttt  {()}}|hyperpage}{463}
+\indexentry{\texttt  {xsb\_misc\_error}{\texttt  {()}}|hyperpage}{464}
+\indexentry{\texttt  {xsb\_permission\_error}{\texttt  {()}}|hyperpage}{464}
+\indexentry{\texttt  {xsb\_resource\_error}{\texttt  {()}}|hyperpage}{464}
+\indexentry{\texttt  {xsb\_type\_error}{\texttt  {()}}|hyperpage}{465}
+\indexentry{\texttt  {xsb\_throw}{\texttt  {()}}|hyperpage}{465}
+\indexentry{\texttt  {xsb\_init\_string}{\texttt  {()}}|hyperpage}{473}
+\indexentry{\texttt  {xsb\_init}{\texttt  {()}}|hyperpage}{473}
+\indexentry{\texttt  {xsb\_close}{\texttt  {()}}|hyperpage}{474}
+\indexentry{\texttt  {xsb\_command\_string}{\texttt  {()}}|hyperpage}{474}
+\indexentry{\texttt  {xsb\_command}{\texttt  {()}}|hyperpage}{475}
+\indexentry{\texttt  {xsb\_query\_string\_string}{\texttt  {()}}|hyperpage}{476}
+\indexentry{\texttt  {xsb\_query\_string\_string\_b}|hyperpage}{477}
+\indexentry{\texttt  {xsb\_query}{\texttt  {()}}|hyperpage}{478}
+\indexentry{\texttt  {xsb\_get\_last\_answer\_string\_b}{\texttt  {()}}|hyperpage}{478}
+\indexentry{\texttt  {xsb\_query\_string}{\texttt  {()}}|hyperpage}{478}
+\indexentry{\texttt  {xsb\_next\_string}{\texttt  {()}}|hyperpage}{479}
+\indexentry{\texttt  {xsb\_next\_string}{\texttt  {()}}|hyperpage}{480}
+\indexentry{\texttt  {xsb\_next}{\texttt  {()}}|hyperpage}{480}
+\indexentry{\texttt  {xsb\_close\_query}{\texttt  {()}}|hyperpage}{481}
+\indexentry{\texttt  {xsb\_add\_c\_predicate}{\texttt  {()}}|hyperpage}{481}
+\indexentry{\texttt  {xsb\_get\_error\_message}{\texttt  {()}}|hyperpage}{481}
+\indexentry{\texttt  {xsb\_get\_error\_type}{\texttt  {()}}|hyperpage}{482}
+\indexentry{\texttt  {xsb\_get\_error\_message}{\texttt  {()}}|hyperpage}{482}
+\indexentry{VarString|hyperpage}{482}
+\indexentry{\texttt  {xsb\_make\_vars}{\texttt  {()}}|hyperpage}{484}
+\indexentry{\texttt  {xsb\_set\_var\_int}{\texttt  {()}}|hyperpage}{484}
+\indexentry{\texttt  {xsb\_set\_var\_string}{\texttt  {()}}|hyperpage}{485}
+\indexentry{\texttt  {xsb\_set\_var\_float}{\texttt  {()}}|hyperpage}{485}
+\indexentry{\texttt  {xsb\_var\_int}{\texttt  {()}}|hyperpage}{485}
+\indexentry{\texttt  {xsb\_var\_string}{\texttt  {()}}|hyperpage}{485}
+\indexentry{\texttt  {xsb\_var\_float}{\texttt  {()}}|hyperpage}{485}
+\indexentry{64-bit architectures|hyperpage}{486}
+\indexentry{\texttt  {append/3}|hyperpage}{488}
+\indexentry{\texttt  {member/2}|hyperpage}{488}
+\indexentry{\texttt  {memberchk/2}|hyperpage}{488}
+\indexentry{\texttt  {absmember/2}|hyperpage}{488}
+\indexentry{\texttt  {opentail\_member/2}|hyperpage}{489}
+\indexentry{\texttt  {closetail/1}|hyperpage}{489}
+\indexentry{\texttt  {last/2}|hyperpage}{489}
+\indexentry{\texttt  {length/2}|hyperpage}{489}
+\indexentry{\texttt  {same\_length/2}|hyperpage}{489}
+\indexentry{\texttt  {select/3}|hyperpage}{489}
+\indexentry{\texttt  {reverse/2}|hyperpage}{489}
+\indexentry{\texttt  {perm/2}|hyperpage}{489}
+\indexentry{\texttt  {ith/3}|hyperpage}{489}
+\indexentry{\texttt  {delete\_ith/4}|hyperpage}{490}
+\indexentry{\texttt  {subseq/3}|hyperpage}{490}
+\indexentry{\texttt  {list\_valcount/2}|hyperpage}{490}
+\indexentry{\texttt  {list\_hist/4}|hyperpage}{490}
+\indexentry{\texttt  {log\_ith/3}|hyperpage}{491}
+\indexentry{\texttt  {log\_ith\_bound/3}|hyperpage}{491}
+\indexentry{\texttt  {log\_ith\_new/3}|hyperpage}{491}
+\indexentry{\texttt  {log\_ith\_to\_list/2}|hyperpage}{491}
+\indexentry{\texttt  {comma\_to\_list/2}|hyperpage}{492}
+\indexentry{\texttt  {comma\_append/3}|hyperpage}{492}
+\indexentry{\texttt  {comma\_length/2}|hyperpage}{492}
+\indexentry{\texttt  {comma\_member/2}|hyperpage}{492}
+\indexentry{\texttt  {comma\_memberchk/2}|hyperpage}{492}
+\indexentry{Prologs!hProlog|hyperpage}{492}
+\indexentry{Prologs!SWI|hyperpage}{492}
+\indexentry{\texttt  {get\_attr/3}|hyperpage}{492}
+\indexentry{\texttt  {put\_attr/3}|hyperpage}{493}
+\indexentry{\texttt  {del\_attr/2}|hyperpage}{493}
+\indexentry{\texttt  {install\_verify\_attribute\_handler/5}|hyperpage}{493}
+\indexentry{\texttt  {install\_verify\_attribute\_handler/4}|hyperpage}{493}
+\indexentry{\texttt  {install\_attribute\_portray\_hook/3}|hyperpage}{495}
+\indexentry{\texttt  {install\_attribute\_constraint\_hook/4}|hyperpage}{495}
+\indexentry{\texttt  {when/2}|hyperpage}{497}
+\indexentry{\texttt  {unifiable/3}|hyperpage}{497}
+\indexentry{\texttt  {setarg/3}|hyperpage}{498}
+\indexentry{\texttt  {set\_arg/3}|hyperpage}{498}
+\indexentry{\texttt  {term\_variables/2}|hyperpage}{498}
+\indexentry{\texttt  {format/2}|hyperpage}{499}
+\indexentry{\texttt  {format/3}|hyperpage}{499}
+\indexentry{\texttt  {str\_sub/3}|hyperpage}{502}
+\indexentry{\texttt  {str\_sub/3}|hyperpage}{502}
+\indexentry{\texttt  {str\_match/5}|hyperpage}{502}
+\indexentry{\texttt  {substring/4}|hyperpage}{503}
+\indexentry{\texttt  {substring/4}|hyperpage}{503}
+\indexentry{\texttt  {expand\_filename/2}|hyperpage}{504}
+\indexentry{\texttt  {expand\_filename\_no\_prepend/2}|hyperpage}{504}
+\indexentry{\texttt  {parse\_filename/4}|hyperpage}{505}
+\indexentry{\texttt  {pid/1}|hyperpage}{505}
+\indexentry{\texttt  {sys\_main\_memory/1}|hyperpage}{505}
+\indexentry{\texttt  {spawn\_process/5}|hyperpage}{505}
+\indexentry{\texttt  {process\_status/2}|hyperpage}{509}
+\indexentry{\texttt  {process\_control/2}|hyperpage}{509}
+\indexentry{\texttt  {get\_process\_table/1}|hyperpage}{510}
+\indexentry{\texttt  {shell/5}|hyperpage}{510}
+\indexentry{\texttt  {pipe\_open/2}|hyperpage}{511}
+\indexentry{\texttt  {fd2iostream/2}|hyperpage}{514}
+\indexentry{\texttt  {socket/2}|hyperpage}{515}
+\indexentry{\texttt  {socket\_set\_option/3}|hyperpage}{515}
+\indexentry{\texttt  {socket\_close/2}|hyperpage}{515}
+\indexentry{\texttt  {socket\_bind/3}|hyperpage}{515}
+\indexentry{\texttt  {socket\_connect/4}|hyperpage}{515}
+\indexentry{\texttt  {socket\_listen/3}|hyperpage}{515}
+\indexentry{\texttt  {socket\_accept/3}|hyperpage}{515}
+\indexentry{\texttt  {socket\_recv/3}|hyperpage}{517}
+\indexentry{\texttt  {socket\_send/3}|hyperpage}{517}
+\indexentry{\texttt  {socket\_get0/3}|hyperpage}{517}
+\indexentry{\texttt  {socket\_put/3}|hyperpage}{517}
+\indexentry{\texttt  {socket\_select/6}|hyperpage}{517}
+\indexentry{\texttt  {socket\_set\_select/4}|hyperpage}{518}
+\indexentry{\texttt  {socket\_select\_destroy/1}|hyperpage}{518}
+\indexentry{\texttt  {set\_timer/1}|hyperpage}{519}
+\indexentry{\texttt  {sleep/1}|hyperpage}{519}
+\indexentry{\texttt  {sleep\_ms/1}|hyperpage}{519}
+\indexentry{\texttt  {fd2ioport/2}|hyperpage}{520}
+\indexentry{\texttt  {array\_new/2}|hyperpage}{521}
+\indexentry{\texttt  {array\_elt/3}|hyperpage}{521}
+\indexentry{\texttt  {array\_update/3}|hyperpage}{521}
+\indexentry{\texttt  {profile\_call/1}|hyperpage}{522}
+\indexentry{interrupt instruction|hyperpage}{523}
+\indexentry{\texttt  {profile\_mode\_call/1}|hyperpage}{523}
+\indexentry{\texttt  {profile\_mode\_dump/0}|hyperpage}{524}
+\indexentry{\texttt  {profile\_mode\_init/0}|hyperpage}{524}
+\indexentry{\texttt  {profile\_unindexed\_calls/1}|hyperpage}{524}
+\indexentry{\texttt  {prepare/1}|hyperpage}{525}
+\indexentry{\texttt  {gennum/1}|hyperpage}{525}
+\indexentry{\texttt  {gensym/2}|hyperpage}{525}
+\indexentry{random variables|hyperpage}{525}
+\indexentry{\texttt  {random/1}|hyperpage}{525}
+\indexentry{\texttt  {random/3}|hyperpage}{526}
+\indexentry{\texttt  {getrand/1}|hyperpage}{526}
+\indexentry{\texttt  {setrand/1}|hyperpage}{526}
+\indexentry{\texttt  {datime\_setrand/0}|hyperpage}{526}
+\indexentry{\texttt  {randseq/3}|hyperpage}{526}
+\indexentry{\texttt  {randset/3}|hyperpage}{526}
+\indexentry{random variables!normal|hyperpage}{526}
+\indexentry{\texttt  {gauss/2}|hyperpage}{526}
+\indexentry{random variables!Weibull|hyperpage}{526}
+\indexentry{\texttt  {weibull/3}|hyperpage}{526}
+\indexentry{random variables!exponential|hyperpage}{526}
+\indexentry{\texttt  {exponential/2}|hyperpage}{527}
+\indexentry{\texttt  {sample\_all/4}|hyperpage}{527}
+\indexentry{\texttt  {sample\_bag/4}|hyperpage}{527}
+\indexentry{\texttt  {sample\_set/4}|hyperpage}{527}
+\indexentry{csv file format|hyperpage}{528}
+\indexentry{dsv file format|hyperpage}{528}
+\indexentry{comma-separated file format|hyperpage}{528}
+\indexentry{delimiter-separated file format|hyperpage}{528}
+\indexentry{\texttt  {load\_csv/2}|hyperpage}{528}
+\indexentry{\texttt  {load\_tsv/2}|hyperpage}{528}
+\indexentry{\texttt  {load\_psv/2}|hyperpage}{528}
+\indexentry{\texttt  {load\_dsv/3}|hyperpage}{529}
+\indexentry{\texttt  {save\_dsv/3}|hyperpage}{530}
+\indexentry{\texttt  {add\_cvt\_type\_hook/2}|hyperpage}{531}
+\indexentry{\texttt  {remove\_cvt\_type\_hook/1}|hyperpage}{531}
+\indexentry{\texttt  {data\_records/3}|hyperpage}{531}
+\indexentry{canonical format|hyperpage}{532}
+\indexentry{\texttt  {scan/2}|hyperpage}{533}
+\indexentry{\texttt  {scan/3}|hyperpage}{533}
+\indexentry{\texttt  {set\_scan\_pars/1}|hyperpage}{534}
+\indexentry{\texttt  {get\_scan\_pars/1}|hyperpage}{534}
+\indexentry{\texttt  {checkImpExps/1}|hyperpage}{537}
+\indexentry{code authors!Warren, David S.|hyperpage}{537}
+\indexentry{\texttt  {empty\_db/1}|hyperpage}{538}
+\indexentry{\texttt  {assert\_in\_db/3}|hyperpage}{538}
+\indexentry{\texttt  {retractall\_in\_db/3}|hyperpage}{538}
+\indexentry{\texttt  {clause\_in\_db/3}|hyperpage}{538}
+\indexentry{\texttt  {call\_in\_db/2}|hyperpage}{539}
+\indexentry{\texttt  {load\_in\_db/3}|hyperpage}{539}
+\indexentry{\texttt  {load\_in\_db/2}|hyperpage}{539}
+\indexentry{\texttt  {union\_db/3}|hyperpage}{539}
+\indexentry{\texttt  {intersect\_db/3}|hyperpage}{539}
+\indexentry{\texttt  {difference\_db/3}|hyperpage}{539}
+\indexentry{\texttt  {sym\_diff\_db/3}|hyperpage}{539}
+\indexentry{\texttt  {subset\_db/2}|hyperpage}{539}
+\indexentry{\texttt  {disjoint\_db/2}|hyperpage}{540}
+\indexentry{code authors!Warren, David S.|hyperpage}{540}
+\indexentry{\texttt  {init\_range\_trees/1}|hyperpage}{541}
+\indexentry{\texttt  {get\_from\_range\_tree/6}|hyperpage}{542}
+\indexentry{\texttt  {add\_to\_range\_tree/3}|hyperpage}{542}
+\indexentry{\texttt  {delete\_from\_range\_tree/3}|hyperpage}{542}
+\indexentry{\texttt  {delete\_from\_range\_tree/2}|hyperpage}{542}
+\indexentry{\texttt  {delete\_range\_tree/1}|hyperpage}{542}
+\indexentry{\texttt  {delete\_all\_range\_trees/0}|hyperpage}{542}
+\indexentry{\texttt  {range\_call/4}|hyperpage}{542}
+\indexentry{\texttt  {range\_retractall/4}|hyperpage}{543}
+\indexentry{random sampling|hyperpage}{543}
+\indexentry{sampling!random|hyperpage}{543}
+\indexentry{\texttt  {aggregate/4}|hyperpage}{543}
+\indexentry{\texttt  {aggregate/3}|hyperpage}{543}
+\indexentry{\texttt  {aggregate\_all/4}|hyperpage}{543}
+\indexentry{\texttt  {aggregate\_all/3}|hyperpage}{543}
+\indexentry{\texttt  {is\_ordset/1}|hyperpage}{545}
+\indexentry{\texttt  {list\_to\_ordset/2}|hyperpage}{545}
+\indexentry{\texttt  {ord\_add\_element/3}|hyperpage}{545}
+\indexentry{\texttt  {ord\_del\_element/3}|hyperpage}{545}
+\indexentry{\texttt  {ord\_intersect/2}|hyperpage}{545}
+\indexentry{\texttt  {ord\_disjoint/2}|hyperpage}{545}
+\indexentry{\texttt  {ord\_intersection/3}|hyperpage}{546}
+\indexentry{\texttt  {ord\_intersect/4}|hyperpage}{546}
+\indexentry{\texttt  {ord\_intersect/2}|hyperpage}{546}
+\indexentry{\texttt  {ord\_seteq/2}|hyperpage}{546}
+\indexentry{\texttt  {ord\_setproduct/3}|hyperpage}{546}
+\indexentry{\texttt  {ord\_subset/2}|hyperpage}{546}
+\indexentry{\texttt  {ord\_subtract/3}|hyperpage}{546}
+\indexentry{\texttt  {ord\_symdiff/3}|hyperpage}{546}
+\indexentry{\texttt  {ord\_union/3}|hyperpage}{546}
+\indexentry{\texttt  {ord\_union/4}|hyperpage}{546}
+\indexentry{\texttt  {ord\_union/2}|hyperpage}{546}
+\indexentry{\texttt  {jaccard\_similarity/3}|hyperpage}{546}
+\indexentry{\texttt  {jaccard\_distance/3}|hyperpage}{547}
+\indexentry{Unicode!UTF-8|hyperpage}{547}
+\indexentry{\texttt  {unicode\_upper/2}|hyperpage}{547}
+\indexentry{\texttt  {unicode\_lower/2}|hyperpage}{547}
+\indexentry{\texttt  {unicode\_char\_category/2}|hyperpage}{547}
+\indexentry{\texttt  {term\_hash/3}|hyperpage}{547}
+\indexentry{\texttt  {crypto\_hash/3}|hyperpage}{548}
+\indexentry{\texttt  {pretty\_print/1}|hyperpage}{548}
+\indexentry{\texttt  {pretty\_print/2}|hyperpage}{548}
+\indexentry{\texttt  {module\_of\_term/2}|hyperpage}{548}

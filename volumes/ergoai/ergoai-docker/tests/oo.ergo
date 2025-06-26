@@ -1,0 +1,21 @@
+?_X[self->?_X].				// define self
+
+Set::Thing.
+
+Set[|
+	a ->7,
+    members->{},
+    b-> (self->a)
+|].
+
+set1:Set[members->{Ely,Ligia}].
+set1[members->{Paulo}].
+
+set2:Set[members->{A,B,C}].
+
+
+members(?set,?x) :- ?set[members->?x].
+
+
+
+// ?- members(set1,?x).

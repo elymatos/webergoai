@@ -1,0 +1,53 @@
+flora_nowarn_symbol(chooseFile,0,\@,any_symbol_context,nontransactional_symbol,'ergo2java.ergo').
+flora_nowarn_symbol(show,2,\@,any_symbol_context,nontransactional_symbol,'ergo2java.ergo').
+flora_nowarn_symbol(setSize,2,\@,any_symbol_context,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(close,1,\@,2007,301,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol('Window[open(...)->?Window]: the ?Window parameter must be an unbound variable',0,\@,1861,283,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(sysabort,1,'\\system',1095,156,predicate_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol('Window',0,\@,1772,271,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(showOptions,3,\@,1343,209,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(readline,2,'\\io',2530,421,predicate_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(setJavaFlags,1,\@,1125,166,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(warning,1,'\\system',1051,153,predicate_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(mode,0,\@,1001,144,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(open,2,\@,1774,271,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(studioLogFile,0,\@,1208,183,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol('',0,\@,1103,156,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol('Window[open(?Title,?Tooltip)->?]: the title and tooltip must be atomic strings',0,\@,1839,279,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol('attempt to perform a window operation on a non-window object',0,\@,2330,377,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(show_options_dialog,5,\@,558,43,prolog_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(clear,1,\@,2066,314,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol('Dialog[chooseFile(?Extensions) -> ?]: ?Extensions must be bound to a list of desired extensions, ',0,\@,1683,255,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(message,1,\@,948,137,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(readline_chop_nl,1,\@,563,44,prolog_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(print,2,\@,2166,353,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(check_window,1,\@,568,45,prolog_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol('Dialog',0,\@,1256,193,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(' is not found',0,\@,1108,156,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol('cannot add Java library: file ',0,\@,1098,156,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol('Libpath',0,\@,857,83,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(ergo_java,0,\@,869,84,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(is_atomlist,1,\@,573,46,prolog_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(nogui,0,\@,2384,404,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol('dialog window''s button list must be a list of atoms: ',0,\@,1468,223,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(add,1,'\\system',859,83,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(addJar,1,\@,1040,151,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol('the method addJar has been deprecated because of the incompatible changes in Java 9+',0,\@,1053,153,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(setJavaCP,1,\@,1167,176,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(nogui_session,0,\@,1270,194,predicate_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol('dialog window''s message must be atomic string: ',0,\@,1431,219,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(restart,0,\@,1025,148,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol('System',0,\@,999,144,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(initialize,0,\@,805,76,predicate_symbol,transactional_symbol,'ergo2java.ergo').
+flora_symbol(alive,1,\@,2116,322,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(setSize,3,\@,1906,288,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(ensure_loaded,0,\@,904,91,predicate_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(atom,0,\@,2532,421,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol('dialog window''s title must be atomic string: ',0,\@,1400,215,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(show,2,\@,1516,231,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(show,1,\@,1258,193,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(path,1,\@,1206,183,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(chooseFile,0,\@,1702,259,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(chooseFile,1,\@,1595,244,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol(null,0,\@,1380,212,function_symbol,nontransactional_symbol,'ergo2java.ergo').
+flora_symbol('||',2,'\\system',1104,156,function_symbol,nontransactional_symbol,'ergo2java.ergo').

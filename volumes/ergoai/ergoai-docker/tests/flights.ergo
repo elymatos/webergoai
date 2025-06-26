@@ -1,0 +1,216 @@
+/*
+- KB facts:
+Flight(+flightNum, +start, +destination, +departureDateTime, +arrivalDateTime)
+Ticket(+ticketNum, +passengerName, +travelAgent)
+Itinerary(+ticketNum, +flightNum)
+*/
+
+Flight(United1, NYC, Seattle, "2016-12-30T12:32:00"^^\dateTime, "2016-12-30T16:15:00"^^\dateTime).
+Ticket(t1, 'Abe Smith', 'Mary Smith').
+Itinerary(t1, United1).
+Ticket(t3, 'Ben Jones', 'John Smith').
+Itinerary(t3, United1).
+
+Flight(United2, NYC, Seattle, "2016-12-31T12:32:00"^^\dateTime, "2016-12-30T16:15:00"^^\dateTime).
+Ticket(t2, 'Abe Smith', 'Mary Smith').
+Itinerary(t2, United2).
+Ticket(t4, 'Ben Jones', 'Mary Smith').
+Itinerary(t4, United2).
+
+Flight(United3, Seattle, 'San Francisco', "2016-12-30T6:45:00"^^\dateTime, "2016-12-30T11:17:00"^^\dateTime).
+Ticket(t5, 'Calvin Curtis', 'Mary Smith').
+Itinerary(t5, United3).
+
+Flight(United4, Seattle, 'San Francisco', "2016-12-30T6:45:00"^^\dateTime, "2016-12-30T11:16:00"^^\dateTime).
+
+/*
+- KB queries:
+Flight(?flightNum, ?start, ?destination, ?departureDateTime, ?arrivalDateTime).
+
+Ticket(?ticketNum, ?passengerName, ?travelAgent).
+
+Itinerary(?ticketNum, ?flightNum).
+
+Ticket(?ticketNum, ?passengerName, ?travelAgent),
+    Itinerary(?ticketNum, ?flightNum),
+    Flight(?flightNum, ?start, ?destination, ?departureDateTime, ?arrivalDateTime).
+*/
+
+// passenger/1: helper predicate for checking/generating passengers from tickets
+passenger(?passengerName) :-
+    Ticket(?_ticketNum, ?passengerName, ?_travelAgent).
+
+/*********************************************************************************/
+/*
+a. Find all passengers that took all the flights from New York (NYC) to Seattle.
+That is, for every passenger, check if "for every flight from New York (NYC) to Seattle, 
+    (s)he has a ticket on that flight. 
+*/
+query1(?passengerName) :-
+    passenger(?passengerName),
+    forall(?flightNum, ?departureDateTime, ?arrivalDateTime)^(
+        Flight(?flightNum, NYC, Seattle, ?departureDateTime, ?arrivalDateTime)
+        ~~>
+        exists(?ticketNum,?travelAgent)^(
+            Ticket(?ticketNum, ?passengerName, ?travelAgent),
+            Itinerary(?ticketNum, ?flightNum)
+        )
+    ).
+//?- query1(?passengerName).
+
+/*
+Another way to write this query is to use the equivalent logical formula: 
+  Find the passengers, such that "It is not the case that there exists a flight from New York to Seattle 
+    and this passenger does not have a ticket on."
+  using the logical equivalence: ∀x,p(x)->∃y,q(x,y) ≡ ~∃x,p(x)/\~∃y,q(x,y)
+*/
+query1_2(?passengerName) :-
+    passenger(?passengerName),
+    \naf exists(?flightNum, ?departureDateTime, ?arrivalDateTime)^(
+        Flight(?flightNum, NYC, Seattle, ?departureDateTime, ?arrivalDateTime),
+        \naf exists(?ticketNum, ?travelAgent)^(
+            Ticket(?ticketNum, ?passengerName, ?travelAgent),
+            Itinerary(?ticketNum, ?flightNum)
+        )
+    ).
+//?- query1_2(?passengerName).
+
+/*
+Another way to write this query is:
+  Find the total number of flight from New York to Seattle.
+*/
+query1_3(?passengerName) :-
+    passenger(?passengerName),
+    count{?flightNum | Flight(?flightNum, NYC, Seattle, ?_departureDateTime, ?_arrivalDateTime)}
+        = countdistinct{?flightNum | 
+            Flight(?flightNum, NYC, Seattle, ?_departureDateTime, ?_arrivalDateTime),
+            Ticket(?ticketNum, ?passengerName, ?_travelAgent),
+            Itinerary(?ticketNum, ?flightNum)
+        }. 
+//?- query1_3(?passengerName).
+
+/*********************************************************************************/
+/*
+b. Find all passengers that never took a flight from New York to Seattle.
+*/
+query2(?passengerName) :-
+    passenger(?passengerName),
+    forall(?flightNum, ?departureDateTime, ?arrivalDateTime)^(
+        Flight(?flightNum, NYC, Seattle, ?departureDateTime, ?arrivalDateTime)
+        ~~>
+        \naf exists(?ticketNum,?travelAgent)^(
+            Ticket(?ticketNum, ?passengerName, ?travelAgent),
+            Itinerary(?ticketNum, ?flightNum)
+        )
+    ).
+//?- query2(?passengerName).
+
+/*
+    Alternative way to write this using the logical equivalences: 
+        ∀x,p(x)->~∃y,q(x,y) ≡
+            ≡ ~~∀x,p(x)->~∃y,q(x,y), by double negation
+            ≡ ~∃x,p(x)/\∃y,q(x,y), by DeMorgan (i.e., negation of forall is exists negation formula) and double negation
+*/
+query2_2(?passengerName) :-
+    passenger(?passengerName),
+    \naf exists(?flightNum, ?departureDateTime, ?arrivalDateTime)^(
+        Flight(?flightNum, NYC, Seattle, ?departureDateTime, ?arrivalDateTime),
+        exists(?ticketNum,?travelAgent)^(
+            Ticket(?ticketNum, ?passengerName, ?travelAgent),
+            Itinerary(?ticketNum, ?flightNum)
+        )
+    ).
+//?- query2_2(?passengerName).
+
+/*
+ this might be a bug: 
+    ~∃x,p(x)/\∃y,q(x,y) ≡ ~∃x,y,(p(x)/\q(x,y))
+*/    
+query2_3(?passengerName) :-
+    passenger(?passengerName),
+    \naf exists(?flightNum, ?departureDateTime, ?arrivalDateTime, ?ticketNum, ?travelAgent)^(
+        Flight(?flightNum, NYC, Seattle, ?departureDateTime, ?arrivalDateTime),
+        Ticket(?ticketNum, ?passengerName, ?travelAgent),
+        Itinerary(?ticketNum, ?flightNum)
+    ).
+//?- query2_3(?passengerName).
+
+/*
+ another way to write this find the passengers that have the number of flights from NY to Seattle 0 (zero).
+*/    
+query2_4(?passengerName) :-
+    passenger(?passengerName),
+    count{?flightNum | 
+        Flight(?flightNum, NYC, Seattle, ?_departureDateTime, ?_arrivalDateTime),
+        Ticket(?ticketNum, ?passengerName, ?_travelAgent),
+        Itinerary(?ticketNum, ?flightNum)
+    } = 0. 
+//?- query2_4(?passengerName).
+
+/*********************************************************************************/
+/*
+c. Find the travel agents who issued at least a ticket for every existing passenger.
+*/
+travelAgent(?travelAgent):-
+    Ticket(?_ticketNum, ?_passengerName, ?travelAgent).
+
+query3(?travelAgent) :-
+    travelAgent(?travelAgent),
+    forall(?passengerName)^(
+        passenger(?passengerName)
+        ~~>
+        exists(?ticketNum)^(
+            Ticket(?ticketNum, ?passengerName, ?travelAgent)
+        )
+    ).
+//?- query3(?passengerName).
+
+/*
+    Alternative way to write this query using aggregates: 
+*/
+query3_2(?travelAgent) :-
+    travelAgent(?travelAgent),
+    countdistinct{?passengerName | passenger(?passengerName)}
+        = countdistinct{?passengerName | 
+        Flight(?flightNum, ?_start, ?_destination, ?_departureDateTime, ?_arrivalDateTime),
+        Ticket(?ticketNum, ?passengerName, ?travelAgent),
+        Itinerary(?ticketNum, ?flightNum)
+    }. 
+//?- query3_2(?travelAgent).
+
+/*
+    Alternative way to write this query using logical equivalences: 
+*/
+query3_3(?travelAgent) :-
+    travelAgent(?travelAgent),
+    \naf exists(?passengerName)^(
+        passenger(?passengerName),
+        \naf exists(?ticketNum)^(
+            Ticket(?ticketNum, ?passengerName, ?travelAgent)
+        )
+    ).
+//?- query3_3(?travelAgent).
+
+/*********************************************************************************/
+/*
+d. Find the travel agents who sold at least 10 tickets to at least one passenger.
+*/
+query4(?travelAgent) :-
+    travelAgent(?travelAgent),
+    ?N = count{?ticketNum[?passengerName] | Ticket(?ticketNum, ?passengerName, ?travelAgent)},
+    ?N >= 4. // We replaced 10 with 4 because we do not have that many passengers in the DB
+//?- query4(?travelAgent).
+
+/*********************************************************************************/
+/*
+e. Find the travel agents who sold the most number of tickets.
+*/
+query5(?travelAgent) :-
+    ?Max = max{?TicketsPerAgent | 
+            ?TicketsPerAgent = count{?ticketNum[?travelAgent2] | Ticket(?ticketNum, ?_passengerName, ?travelAgent2)}
+        },
+    travelAgent(?travelAgent),    
+    ?Max = count{?ticketNum | Ticket(?ticketNum, ?_passengerName, ?travelAgent)}.
+//?- query5(?travelAgent).
+
+/*********************************************************************************/

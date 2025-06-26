@@ -1,0 +1,5 @@
+%% #include info for source file: /home/ematos/devel/ergo/ergoai-docker/tests/demos/default.flr
+
+
+:-(multifile(/('_$_$_ergo''include_prj_info',2))).
+'_$_$_ergo''include_prj_info'('/home/ematos/devel/ergo/ergoai-docker/tests/demos/default.flr',null).

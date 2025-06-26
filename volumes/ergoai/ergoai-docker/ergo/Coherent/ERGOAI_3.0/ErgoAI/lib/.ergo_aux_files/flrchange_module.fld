@@ -1,0 +1,6 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 8
+
+FLORA_THIS_WORKSPACE(tblflapply)(ensure_loaded,__fldnewvar1).

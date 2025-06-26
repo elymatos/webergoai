@@ -1,0 +1,23 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 1
+
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1990),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1990),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1991),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1991),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1992),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1992),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1993),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1993),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1994),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1994),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1995),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1995),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1996),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1996),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1997),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1997),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1998),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(salary,1998),__fldnewvar2,__fldnewvar3).

@@ -1,0 +1,17 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 2
+
+FLORA_THIS_WORKSPACE(tblflapply)(one_stop,__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4).
+FLORA_THIS_WORKSPACE(tblflapply)(direct_connection,__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4).
+FLORA_THIS_WORKSPACE(tblflapply)(direct_connection,__fldnewvar1,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,connection,__fldnewvar2).
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,station,__fldnewvar2).
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,line,__fldnewvar2).
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,direct,__fldnewvar2).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,y,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,x,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,l,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,to,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,from,__fldnewvar2,__fldnewvar3).

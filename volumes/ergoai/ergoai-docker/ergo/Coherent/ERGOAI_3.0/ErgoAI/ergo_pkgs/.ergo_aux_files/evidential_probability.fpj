@@ -1,0 +1,6 @@
+%% #include info for source file: /home/kifer/ERGOAI/ErgoEngine/ErgoAI/ergo_pkgs/evidential_probability.ergo
+
+
+:-(multifile(/('_$_$_ergo''include_prj_info',2))).
+'_$_$_ergo''include_prj_info'('/home/kifer/ERGOAI/ErgoEngine/ErgoAI/ergo_pkgs/evidential_probability.ergo','/home/kifer/ERGOAI/ErgoEngine/ErgoAI/ergo_pkgs/./evidential_probability/ergo_ep.flh').
+'_$_$_ergo''include_prj_info'('/home/kifer/ERGOAI/ErgoEngine/ErgoAI/ergo_pkgs/evidential_probability.ergo',null).

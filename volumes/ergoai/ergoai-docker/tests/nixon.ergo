@@ -1,0 +1,26 @@
+// file nixon.ergo
+:- use_argumentation_theory.
+
+@{rep}	\neg pacifist(?X) :- republican(?X).
+@{qua}	pacifist(?X) :- quaker(?X).
+
+\overrides(rep, qua).
+
+@{fac1}	republican(nixon).
+@{fac2}	quaker(nixon).
+
+/* Queries:
+?- \neg pacifist(nixon).
+
+Expected answer:	Yes (true)
+
+Another interesting query is:
+?- pacifist(nixon).
+	
+Expected answer: No answers found (false).
+*/
+
+
+
+
+

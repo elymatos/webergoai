@@ -1,0 +1,20 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 4
+
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(describeAll,__ConnectionId,__QueryList),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(describe,__ConnectionId,__QueryList),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(constructAll,__ConnectionId,__QueryList),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(construct,__ConnectionId,__QueryList),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(selectAll,__ConnectionId,__QueryList),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(select,__ConnectionId,__QueryList),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(connectionURL,__ConnectionId),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(connectionType,__ConnectionId),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(update,__ConnectionId,__UpdateList),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(ask,__ConnectionId,__QueryList),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(close,__ConnectionId),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(open,__ConnectionId,__EndpointURL,__Username,__Password),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(open,flapply(__Type,__ConnectionId),__EndpointURL,__Username,__Password),__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(ensure_loaded,__fldnewvar1).
+FLORA_THIS_WORKSPACE(nontblflapply)(initialize,__fldnewvar1).

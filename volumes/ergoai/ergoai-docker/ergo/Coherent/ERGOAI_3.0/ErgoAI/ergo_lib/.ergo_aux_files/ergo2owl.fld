@@ -1,0 +1,17 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 5
+
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(rdf_reachable,__OwlMod,__P),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,rdf_object,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,rdf_subject,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,rdf_predicate,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,rdf_deleteall,__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(rdf_delete,__S,__P,__O),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(rdf_insert,__S,__P,__O),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(rdf_load,__InFile,__OwlMod),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(rdf_load,__InFile,__InLangSyntax,__IrisText,__OwlMod),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(rdf_load,__InFile,__InLangSyntax,__OutFormat,__IrisText,__OwlMod),__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(ensure_loaded,__fldnewvar1).
+FLORA_THIS_WORKSPACE(nontblflapply)(initialize,__fldnewvar1).

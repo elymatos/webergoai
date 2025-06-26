@@ -1,0 +1,4 @@
+test_url_properties on http://www.cs.sunysb.edu/~cse532/ where url body is not loaded
+Size = 245
+Modified Time = -1
+Redirection URL = http://www.cs.sunysb.edu/~cse532/

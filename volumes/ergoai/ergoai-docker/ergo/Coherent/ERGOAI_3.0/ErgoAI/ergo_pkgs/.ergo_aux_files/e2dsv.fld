@@ -1,0 +1,10 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 3
+
+FLORA_THIS_WORKSPACE(tblflapply)(add_key_info,__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4).
+FLORA_THIS_WORKSPACE(tblflapply)(dsv_save,__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4,__fldnewvar5).
+FLORA_THIS_WORKSPACE(tblflapply)(dsv_load,__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4).
+FLORA_THIS_WORKSPACE(tblflapply)(reinitialize,__fldnewvar1).
+FLORA_THIS_WORKSPACE(nontblflapply)(init,__fldnewvar1).

@@ -1,0 +1,18 @@
+
+  ODBC support:                                   no
+  ODBC library directory:                         
+  ODBC C Flags:                                   
+  ODBC Loader Flags:                              
+
+  MySQL support:                                  yes
+  MySQL library directory:                        /usr/lib/x86_64-linux-gnu
+  MySQL header directory:                         /usr/include/mariadb
+  MySQL C Flags:                                  -I/usr/include/mariadb -I/usr/include/mariadb/mysql
+  MySQL Loader Flags:                             -L/usr/lib/x86_64-linux-gnu/ -lmariadb
+
+  MySQL Embedded Server support:                  no
+  MySQL Embedded Server library directory:        /usr/lib/x86_64-linux-gnu
+  MySQL Embedded Server header directory:         /usr/include/mariadb
+  MySQL Embedded Server C Flags:                  -g -W -Wall -I/usr/include/mariadb -I/usr/include/mariadb/mysql -g -O2
+  MySQL Embedded Server Loader Flags:             -L/usr/lib/x86_64-linux-gnu/ -lmariadbd -lz -ldl -lm -lssl -lcrypto 
+

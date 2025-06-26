@@ -1,0 +1,5 @@
+apt-get update --fix-missing
+apt install default-jdk
+wget https://github.com/ErgoAI/.github/releases/download/v3.0_release/ergoAI_3.0.run
+echo y | sh ergoAI_3.0.run
+

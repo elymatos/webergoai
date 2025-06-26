@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: manual1.aux
+The style file: abbrv.bst
+Database file #1: longstring.bib
+Database file #2: manual.bib
+Warning--empty publisher in AitK90
+Warning--empty author in ISO-Revision
+You've used 89 entries,
+            2118 wiz_defined-function locations,
+            1112 strings with 17111 characters,
+and the built_in function-call counts, 30228 in all, are:
+= -- 2981
+> -- 1250
+< -- 32
++ -- 508
+- -- 402
+* -- 1924
+:= -- 4858
+add.period$ -- 291
+call.type$ -- 89
+change.case$ -- 459
+chr.to.int$ -- 0
+cite$ -- 91
+duplicate$ -- 1292
+empty$ -- 2550
+format.name$ -- 402
+if$ -- 6582
+int.to.chr$ -- 0
+int.to.str$ -- 89
+missing$ -- 86
+newline$ -- 457
+num.names$ -- 182
+pop$ -- 518
+preamble$ -- 1
+purify$ -- 378
+quote$ -- 0
+skip$ -- 929
+stack$ -- 0
+substring$ -- 1786
+swap$ -- 347
+text.length$ -- 32
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 344
+warning$ -- 2
+while$ -- 281
+width$ -- 91
+write$ -- 994
+(There were 2 warnings)
