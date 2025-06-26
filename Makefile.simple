@@ -1,0 +1,21 @@
+
+# Makefile.simple
+# Simple commands
+
+.PHONY: simple up down logs
+
+simple:
+	@echo "🚀 Starting SIMPLE ErgoAI interface..."
+	docker-compose -f docker-compose.simple.yml up -d
+
+down:
+	docker-compose -f docker-compose.simple.yml down
+
+logs:
+	docker-compose -f docker-compose.simple.yml logs -f
+
+shell:
+	docker-compose -f docker-compose.simple.yml exec backend bash
+
+clean:
+	docker-compose -f docker-compose.simple.yml down -v

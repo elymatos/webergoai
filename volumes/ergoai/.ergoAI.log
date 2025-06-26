@@ -1,0 +1,28 @@
+Dec 04, 2024 7:47:27 PM  
+STDOUT: Your machine's speed vs Dad's:90%
+
+Dec 04, 2024 7:47:29 PM  
+STDERR: Studio revision 7586178
+
+
+Dec 04, 2024 7:47:30 PM  
+STDOUT: File encoding:UTF-8
+
+Dec 04, 2024 7:47:30 PM  
+STDOUT: File encoding:UTF-8
+
+Dec 04, 2024 7:47:30 PM  
+STDOUT: File encoding:UTF-8
+
+Dec 04, 2024 7:54:19 PM  
+STDERR: java.lang.UnsupportedOperationException: The BROWSE action is not supported on the current platform!
+
+Dec 04, 2024 9:00:15 PM  
+STDOUT: File encoding:UTF-8
+
+Dec 04, 2024 9:03:30 PM  
+STDERR: Bad failure loading with goal fjLoadOrAddFile('/home/ematos/Downloads/sample_json_queries.ergo','main','\load',FileStatus)
+
+Dec 04, 2024 9:04:49 PM  
+STDERR: Bad failure loading with goal fjLoadOrAddFile('/home/ematos/Downloads/sample_json_queries.ergo','main','\load',FileStatus)
+

@@ -1,0 +1,21 @@
+
+# flower_startup.sh - Flower monitoring startup script
+#!/bin/bash
+set -e
+
+echo "🌸 Starting ErgoAI Flower Monitoring..."
+
+# Wait for Redis to be ready
+echo "⏳ Waiting for Redis..."
+while ! nc -z ${REDIS_HOST:-redis} ${REDIS_PORT:-6379}; do
+    sleep 1
+done
+echo "✅ Redis is ready"
+
+# Wait for worker to be ready
+echo "⏳ Waiting for worker to be ready..."
+sleep 30
+
+# Start Flower
+echo "🌸 Starting Flower monitoring..."
+exec celery -A celery_app flower --port=5555 --broker=redis://redis:6379/0

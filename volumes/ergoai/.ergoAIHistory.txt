@@ -1,0 +1,85 @@
+members(set1,?x).
+members(set2,?x).
+set1->listMembers-?x.
+set1->listMembers.
+?c | count(set1[members->?x]).
+?c | count(set1[members]).
+?count{?c | set1[members]}.
+count{?c | set1[members]}.
+count{?c | set1[members-?c]}.
+?x=count{?c | set1[members-?c]}.
+set1[listMembers(?x)].
+set1[listMembers].
+set1[?x -> ?yY].
+set1[listMembers -> ?x].
+set1[members -> ?x].
+set2[self].
+set2[self-?x].
+set2[self->?x].
+set2[a->?x].
+set2[b-?x].
+set2[b->?x].
+?x=count{?c | set3[members->?c]}.
+setMembers(set1,?x).
+setIsNull(set2).
+?n =  (count{?_x | ?set[members -> ?_x]}.
+?n =  (count{?_x | set1[members -> ?_x]}.
+?(count{?_x | set1[members -> ?_x]}.
+(count{?_x | set1[members -> ?_x]}.
+?x=count{?c | set1[members->?c]}.
+?x=count{?c | ?set[members->?c]}.
+?forall(?set)^(Set(?-set)^(count{?c | ?set[members->?c]}).
+?forall(?set)^(Set(?-set)^(count{?c | ?set[members->?c]})).
+?forall(?set)^(Set(?set)^(count{?c | ?set[members->?c]})).
+Set(?set).
+?set:Set.
+?set::Set,?n = (count{?c | ?set[members->?c]}).
+(count{?c | ?set[members->?c]}).
+count{?c | ?set[members->?c]}.
+?x = count{?c | ?set[members->?c]}.
+?set::Set,?x = count{?c | ?set[members->?c]}.
+forall(?set)^(?set::Set,?x = count{?c | ?set[members->?c]}).
+forall(?set)^(?set::Set \and ?x = count{?c | ?set[members->?c]}).
+forall(?set::Set)^(?x = count{?c | ?set[members->?c]}).
+forall(?set::Set)^(count{?c | ?set[members->?c]}).
+forall(?set)^(count{?c | ?set[members->?c]}).
+forall(?set)^(?n = count{?c | ?set[members->?c]}).
+forall(?set)^(?set::Set,?n = count{?c | ?set[members->?c]}).
+Set(?set),?n = (count{?c | ?set[members->?c]}).
+Set(?set),forall(?set)^(?n = (count{?c | ?set[members->?c]})).
+?n = (count{?c | ?set[members->?c]}).
+?n = (count{?c | set1[members->?c]}).
+count{?c | set1[members->?c]}.
+?set::Set,count{?c | ?set[members->?c]}.
+passenger(?passengerName),     count{?flightNum |          Flight(?flightNum, NYC, Seattle, ?_departureDateTime, ?_arrivalDateTime),         Ticket(?ticketNum, ?passengerName, ?_travelAgent),         Itinerary(?ticketNum, ?flightNum)} = 0.
+passenger(?passengerName),     count{?flightNum |          Flight(?flightNum, NYC, Seattle, ?_departureDateTime, ?_arrivalDateTime),         Ticket(?ticketNum, ?passengerName, ?_travelAgent),         Itinerary(?ticketNum, ?flightNum)}.
+passenger(?passengerName),  ?n =   count{?flightNum |          Flight(?flightNum, NYC, Seattle, ?_departureDateTime, ?_arrivalDateTime),         Ticket(?ticketNum, ?passengerName, ?_travelAgent),         Itinerary(?ticketNum, ?flightNum)} = 0.
+passenger(?passengerName),  ?n \is   count{?flightNum |          Flight(?flightNum, NYC, Seattle, ?_departureDateTime, ?_arrivalDateTime),         Ticket(?ticketNum, ?passengerName, ?_travelAgent),         Itinerary(?ticketNum, ?flightNum)}.
+forall(?set)^(?set::Set,?n \is count{?c | ?set[members->?c]}).
+forall(?set)^(?set::Set).
+?set::Set,?n \is count{?c | ?set[members->?c]}.
+?n \is count{?c | ?set[members->?c]}.
+?set1[memebers->?x].
+?set1[count->?x].
+set1[count->?x].
+set1[members->?x].
+?x :- setIsNull(set1).
+setIsNull(set1).
+setIsNull(set3).
+set2[setIsNull].
+set1[setIsNull].
+set3[setIsNull].
+set2[members->?x].
+set3[isNull ->?X].
+set3[isNull->?X].
+set1:Set[count ->?_X],(?_X == 0).
+set3:Set[count ->?X],(?X == 0).
+set1:Set[count ->?X],(?X == 0).
+set1[isNull].
+set3[isNull].
+set2[isNull].
+set3:Set[count ->?X] \and (?X == 0) .
+set2:Set[count ->?X] \and (?X == 0) .
+set3[isNull -?X].
+set3[isNull -> ?X].
+s[isNull -> ?X].
