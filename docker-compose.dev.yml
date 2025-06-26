@@ -1,0 +1,95 @@
+# docker-compose.dev.yml
+# Simplified development setup - minimal services
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15
+    container_name: ergoai_postgres_dev
+    environment:
+      POSTGRES_DB: ergoai_db
+      POSTGRES_USER: ergoai_user
+      POSTGRES_PASSWORD: ergoai_dev_password
+    volumes:
+      - postgres_dev_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - ergoai_dev_network
+    restart: unless-stopped
+
+  # Redis for Celery
+  redis:
+    image: redis:7-alpine
+    container_name: ergoai_redis_dev
+    ports:
+      - "6379:6379"
+    networks:
+      - ergoai_dev_network
+    restart: unless-stopped
+
+  # Backend API only
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: ergoai_backend_dev
+    environment:
+      - FLASK_ENV=development
+      - DATABASE_URL=postgresql://ergoai_user:ergoai_dev_password@postgres:5432/ergoai_db
+      - REDIS_URL=redis://redis:6379/0
+      - SECRET_KEY=dev-secret-key
+      - ERGOAI_PATH=/opt/ergoai
+      - CORS_ORIGINS=http://localhost:3000,http://localhost:3001
+      - DB_HOST=postgres
+      - DB_PORT=5432
+    volumes:
+      - ergoai_dev_data:/opt/ergoai
+      - ./backend:/app
+      - ./temp_sessions:/tmp/ergoai_sessions
+    ports:
+      - "5000:5000"
+    networks:
+      - ergoai_dev_network
+    depends_on:
+      - postgres
+      - redis
+    restart: unless-stopped
+    command: ["python", "run.py"]
+
+  # Celery Worker
+  worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.worker
+    container_name: ergoai_worker_dev
+    environment:
+      - DATABASE_URL=postgresql://ergoai_user:ergoai_dev_password@postgres:5432/ergoai_db
+      - REDIS_URL=redis://redis:6379/0
+      - ERGOAI_PATH=/opt/ergoai
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - DB_HOST=postgres
+      - DB_PORT=5432
+    volumes:
+      - ergoai_dev_data:/opt/ergoai
+      - ./backend:/app
+      - ./temp_sessions:/tmp/ergoai_sessions
+    networks:
+      - ergoai_dev_network
+    depends_on:
+      - postgres
+      - redis
+    restart: unless-stopped
+
+volumes:
+  postgres_dev_data:
+  ergoai_dev_data:
+
+networks:
+  ergoai_dev_network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.21.0.0/16

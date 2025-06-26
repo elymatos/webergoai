@@ -1,0 +1,208 @@
+# docker-compose.yml
+# Complete deployment setup for ErgoAI Web Interface
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15
+    container_name: ergoai_postgres
+    environment:
+      POSTGRES_DB: ergoai_db
+      POSTGRES_USER: ergoai_user
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-ergoai_password}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    networks:
+      - ergoai_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ergoai_user -d ergoai_db"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # Redis for session management and Celery
+  redis:
+    image: redis:7-alpine
+    container_name: ergoai_redis
+    ports:
+      - "6379:6379"
+    networks:
+      - ergoai_network
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ErgoAI Backend API
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: ergoai_backend
+    environment:
+      - FLASK_ENV=${FLASK_ENV:-production}
+      - DATABASE_URL=postgresql://ergoai_user:${POSTGRES_PASSWORD:-ergoai_password}@postgres:5432/ergoai_db
+      - REDIS_URL=redis://redis:6379/0
+      - SECRET_KEY=${SECRET_KEY:-change-this-in-production}
+      - ERGOAI_PATH=/opt/ergoai
+      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:3000}
+      - DB_HOST=postgres
+      - DB_PORT=5432
+    volumes:
+      - ergoai_data:/opt/ergoai
+      - ./temp_sessions:/tmp/ergoai_sessions
+    ports:
+      - "5000:5000"
+    networks:
+      - ergoai_network
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "health_check.py"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  # Celery Worker for background tasks
+  worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.worker
+    container_name: ergoai_worker
+    environment:
+      - DATABASE_URL=postgresql://ergoai_user:${POSTGRES_PASSWORD:-ergoai_password}@postgres:5432/ergoai_db
+      - REDIS_URL=redis://redis:6379/0
+      - ERGOAI_PATH=/opt/ergoai
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - DB_HOST=postgres
+      - DB_PORT=5432
+    volumes:
+      - ergoai_data:/opt/ergoai
+      - ./temp_sessions:/tmp/ergoai_sessions
+    networks:
+      - ergoai_network
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    command: ["./worker_startup.sh"]
+
+  # Celery Beat Scheduler for periodic tasks
+  scheduler:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.worker
+    container_name: ergoai_scheduler
+    environment:
+      - DATABASE_URL=postgresql://ergoai_user:${POSTGRES_PASSWORD:-ergoai_password}@postgres:5432/ergoai_db
+      - REDIS_URL=redis://redis:6379/0
+      - ERGOAI_PATH=/opt/ergoai
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - DB_HOST=postgres
+      - DB_PORT=5432
+    volumes:
+      - ergoai_data:/opt/ergoai
+      - ./temp_sessions:/tmp/ergoai_sessions
+    networks:
+      - ergoai_network
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    command: ["sh", "-c", "sleep 30 && celery -A celery_app beat --loglevel=info"]
+
+  # Frontend Web Application
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: ergoai_frontend
+    environment:
+      - REACT_APP_API_URL=${REACT_APP_API_URL:-http://localhost:5000/api}
+      - REACT_APP_WS_URL=${REACT_APP_WS_URL:-ws://localhost:5000/ws}
+    ports:
+      - "3000:80"
+    networks:
+      - ergoai_network
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # Nginx Reverse Proxy
+  nginx:
+    image: nginx:alpine
+    container_name: ergoai_nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+      - ./logs/nginx:/var/log/nginx
+    networks:
+      - ergoai_network
+    depends_on:
+      - frontend
+      - backend
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "nginx", "-t"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Flower - Celery monitoring (optional)
+  flower:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.worker
+    container_name: ergoai_flower
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - FLOWER_PORT=5555
+    ports:
+      - "5555:5555"
+    networks:
+      - ergoai_network
+    depends_on:
+      - redis
+      - worker
+    restart: unless-stopped
+    command: ["sh", "-c", "sleep 30 && celery -A celery_app flower --port=5555"]
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+  ergoai_data:
+    driver: local
+
+networks:
+  ergoai_network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.20.0.0/16

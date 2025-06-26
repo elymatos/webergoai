@@ -1,0 +1,178 @@
+#!/bin/bash
+# cleanup-networks.sh - Fix Docker network conflicts
+
+echo "🧹 Cleaning up Docker networks and containers..."
+
+# Stop all running containers for this project
+echo "Stopping containers..."
+docker-compose down 2>/dev/null || true
+docker-compose -f docker-compose.dev.yml down 2>/dev/null || true
+
+# Remove any orphaned containers
+echo "Removing orphaned containers..."
+docker container prune -f
+
+# List and remove conflicting networks
+echo "Checking for network conflicts..."
+docker network ls | grep ergoai
+
+echo "Removing existing ergoai networks..."
+docker network rm $(docker network ls | grep ergoai | awk '{print $1}') 2>/dev/null || true
+
+# Clean up unused networks
+echo "Cleaning up unused networks..."
+docker network prune -f
+
+# Clean up unused volumes (optional - be careful!)
+read -p "Do you want to clean up unused volumes? This will remove data! (y/N): " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    docker volume prune -f
+fi
+
+echo "✅ Cleanup complete!"
+
+# Show current network status
+echo "Current Docker networks:"
+docker network ls
+
+echo ""
+echo "🚀 Now you can run:"
+echo "  make dev     # For development"
+echo "  make up      # For production"
+
+---
+
+# check-networks.sh - Debug network issues
+#!/bin/bash
+
+echo "🔍 Docker Network Diagnostic"
+echo "============================"
+
+echo "📊 Current networks:"
+docker network ls
+
+echo ""
+echo "🔍 Network details with overlapping subnets:"
+for network in $(docker network ls --format "{{.Name}}" | grep -v bridge | grep -v host | grep -v none); do
+    echo "Network: $network"
+    docker network inspect $network | grep -A 1 "IPAM" || true
+    echo "---"
+done
+
+echo ""
+echo "📦 Running containers:"
+docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+
+echo ""
+echo "🔗 Network connections:"
+for container in $(docker ps --format "{{.Names}}"); do
+    echo "Container: $container"
+    docker inspect $container | grep -A 5 "Networks" || true
+    echo "---"
+done
+
+---
+
+# fix-permissions.sh - Fix file permissions
+#!/bin/bash
+
+echo "🔧 Fixing file permissions..."
+
+# Make scripts executable
+chmod +x backend/worker_startup.sh
+chmod +x backend/health_check.py
+chmod +x backend/migrations_cli.py
+chmod +x cleanup-networks.sh
+chmod +x check-networks.sh
+
+# Create necessary directories
+mkdir -p temp_sessions
+mkdir -p logs/nginx
+mkdir -p database
+mkdir -p nginx/ssl
+
+# Set proper permissions
+chmod 755 temp_sessions
+chmod 755 logs
+chmod 755 database
+
+echo "✅ Permissions fixed!"
+
+---
+
+# quick-start.sh - Complete setup script
+#!/bin/bash
+
+echo "🚀 ErgoAI Web Interface - Quick Start Setup"
+echo "=========================================="
+
+# Check if Docker is running
+if ! docker info > /dev/null 2>&1; then
+    echo "❌ Docker is not running. Please start Docker and try again."
+    exit 1
+fi
+
+# Clean up any existing conflicts
+echo "🧹 Cleaning up existing setup..."
+./cleanup-networks.sh
+
+# Fix permissions
+echo "🔧 Setting up permissions..."
+./fix-permissions.sh
+
+# Check if .env exists
+if [ ! -f .env ]; then
+    echo "📝 Creating .env file..."
+    cp .env.example .env
+    echo "⚠️  Please edit .env file with your settings!"
+    echo "   Minimum required: POSTGRES_PASSWORD and SECRET_KEY"
+fi
+
+# Choose setup type
+echo ""
+echo "🎯 Choose setup type:"
+echo "1) Development (recommended for testing)"
+echo "2) Production (full setup)"
+read -p "Enter choice (1 or 2): " choice
+
+case $choice in
+    1)
+        echo "🛠️  Starting development setup..."
+        make dev
+        ;;
+    2)
+        echo "🏭 Starting production setup..."
+        make up
+        ;;
+    *)
+        echo "❌ Invalid choice. Please run the script again."
+        exit 1
+        ;;
+esac
+
+# Wait for services to start
+echo "⏳ Waiting for services to start..."
+sleep 10
+
+# Check status
+echo "📊 Service status:"
+if [ "$choice" = "1" ]; then
+    docker-compose -f docker-compose.dev.yml ps
+else
+    docker-compose ps
+fi
+
+echo ""
+echo "✅ Setup complete!"
+echo ""
+echo "🌐 Access points:"
+echo "   Web Interface: http://localhost:3000"
+echo "   API Backend:   http://localhost:5000"
+echo "   Flower Monitor: http://localhost:5555 (production only)"
+echo ""
+echo "🔧 Useful commands:"
+echo "   make logs        # View all logs"
+echo "   make logs-worker # View worker logs"
+echo "   make shell       # Access backend shell"
+echo "   make monitor     # Monitor workers"

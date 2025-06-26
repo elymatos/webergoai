@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ErgoAI Web Interface</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.44.0/min/vs/loader.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .app-container {
+            display: flex;
+            height: 100vh;
+            background: #1e1e1e;
+            color: #d4d4d4;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: #252526;
+            border-right: 1px solid #3e3e42;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar.collapsed {
+            width: 60px;
+        }
+
+        .sidebar-header {
+            padding: 15px;
+            background: #2d2d30;
+            border-bottom: 1px solid #3e3e42;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #cccccc;
+            white-space: nowrap;
+        }
+
+        .sidebar.collapsed .title {
+            display: none;
+        }
+
+        .project-section {
+            padding: 15px;
+            flex: 1;
+        }
+
+        .section-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: #969696;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        .project-list {
+            list-style: none;
+        }
+
+        .project-item {
+            padding: 8px 12px;
+            margin: 2px 0;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+
+        .project-item:hover {
+            background: #37373d;
+        }
+
+        .project-item.active {
+            background: #094771;
+            color: #ffffff;
+        }
+
+        .project-icon {
+            width: 16px;
+            height: 16px;
+            opacity: 0.7;
+        }
+
+        .sidebar.collapsed .project-item span {
+            display: none;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .toolbar {
+            height: 48px;
+            background: #2d2d30;
+            border-bottom: 1px solid #3e3e42;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            gap: 15px;
+        }
+
+        .toolbar-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 6px 12px;
+            background: #0e639c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn:hover {
+            background: #1177bb;
+            transform: translateY(-1px);
+        }
+
+        .btn.secondary {
+            background: #5a5a5a;
+        }
+
+        .btn.secondary:hover {
+            background: #6a6a6a;
+        }
+
+        .btn.success {
+            background: #107c10;
+        }
+
+        .btn.success:hover {
+            background: #138613;
+        }
+
+        .content-area {
+            flex: 1;
+            display: flex;
+        }
+
+        .editor-panel {
+            flex: 1;
+            background: #1e1e1e;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .editor-tabs {
+            height: 36px;
+            background: #2d2d30;
+            border-bottom: 1px solid #3e3e42;
+            display: flex;
+            align-items: center;
+            overflow-x: auto;
+        }
+
+        .tab {
+            padding: 8px 16px;
+            background: #2d2d30;
+            border-right: 1px solid #3e3e42;
+            cursor: pointer;
+            font-size: 13px;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+        }
+
+        .tab.active {
+            background: #1e1e1e;
+            border-bottom: 2px solid #0e639c;
+        }
+
+        .tab:hover {
+            background: #37373d;
+        }
+
+        .tab.active:hover {
+            background: #1e1e1e;
+        }
+
+        .close-tab {
+            opacity: 0.5;
+            cursor: pointer;
+            padding: 2px;
+            border-radius: 2px;
+        }
+
+        .close-tab:hover {
+            opacity: 1;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .editor-container {
+            flex: 1;
+            position: relative;
+        }
+
+        .results-panel {
+            width: 400px;
+            background: #252526;
+            border-left: 1px solid #3e3e42;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+
+        .results-panel.collapsed {
+            width: 40px;
+        }
+
+        .results-header {
+            height: 48px;
+            background: #2d2d30;
+            border-bottom: 1px solid #3e3e42;
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+            gap: 10px;
+        }
+
+        .results-content {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+        }
+
+        .query-result {
+            background: #1e1e1e;
+            border: 1px solid #3e3e42;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .result-header {
+            padding: 10px 15px;
+            background: #2d2d30;
+            border-bottom: 1px solid #3e3e42;
+            font-size: 13px;
+            font-weight: 600;
+            color: #cccccc;
+        }
+
+        .result-body {
+            padding: 15px;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 13px;
+            white-space: pre-wrap;
+            color: #d4d4d4;
+        }
+
+        .status-bar {
+            height: 24px;
+            background: #007acc;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+            font-size: 12px;
+            gap: 20px;
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .toggle-btn {
+            background: none;
+            border: none;
+            color: #cccccc;
+            cursor: pointer;
+            padding: 4px;
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+
+        .toggle-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #107c10;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transform: translateX(400px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .notification.show {
+            transform: translateX(0);
+        }
+
+        .notification.error {
+            background: #e74c3c;
+        }
+
+        .loading-spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #3e3e42;
+            border-top: 2px solid #0e639c;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .file-type-icon {
+            width: 16px;
+            height: 16px;
+            background: #0e639c;
+            border-radius: 2px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        .modal {
+            background: #2d2d30;
+            border-radius: 8px;
+            padding: 20px;
+            width: 500px;
+            max-width: 90vw;
+            border: 1px solid #3e3e42;
+        }
+
+        .modal-header {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #cccccc;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 13px;
+            color: #cccccc;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 8px 12px;
+            background: #1e1e1e;
+            border: 1px solid #3e3e42;
+            border-radius: 4px;
+            color: #d4d4d4;
+            font-size: 13px;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #0e639c;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .splitter {
+            width: 4px;
+            background: #3e3e42;
+            cursor: col-resize;
+            position: relative;
+        }
+
+        .splitter:hover {
+            background: #0e639c;
+        }
+    </style>
+</head>
+<body>
+<div class="app-container">
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">E</div>
+            <div class="title">ErgoAI Studio</div>
+            <button class="toggle-btn" onclick="toggleSidebar()" title="Toggle Sidebar">
+                ⇔
+            </button>
+        </div>
+
+        <div class="project-section">
+            <div class="section-title">Knowledge Bases</div>
+            <ul class="project-list" id="projectList">
+                <li class="project-item active" onclick="selectProject('sample')">
+                    <div class="file-type-icon">E</div>
+                    <span>Sample Knowledge Base</span>
+                </li>
+                <li class="project-item" onclick="selectProject('tutorial')">
+                    <div class="file-type-icon">T</div>
+                    <span>Tutorial Examples</span>
+                </li>
+            </ul>
+
+            <div class="section-title" style="margin-top: 20px;">Recent Files</div>
+            <ul class="project-list" id="recentFiles">
+                <li class="project-item" onclick="openFile('family.ergo')">
+                    <div class="file-type-icon">F</div>
+                    <span>family.ergo</span>
+                </li>
+                <li class="project-item" onclick="openFile('business.ergo')">
+                    <div class="file-type-icon">B</div>
+                    <span>business.ergo</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <div class="toolbar-group">
+                <button class="btn" onclick="newFile()" title="New File">
+                    📄 New
+                </button>
+                <button class="btn secondary" onclick="openFileDialog()" title="Open File">
+                    📁 Open
+                </button>
+                <button class="btn secondary" onclick="saveFile()" title="Save File">
+                    💾 Save
+                </button>
+            </div>
+
+            <div class="toolbar-group">
+                <button class="btn success" onclick="executeQuery()" title="Execute Query">
+                    ▶️ Run Query
+                </button>
+                <button class="btn secondary" onclick="loadKnowledgeBase()" title="Load Knowledge Base">
+                    📊 Load KB
+                </button>
+                <button class="btn secondary" onclick="explainAnswer()" title="Explain Answer">
+                    ❓ Explain
+                </button>
+            </div>
+
+            <div class="toolbar-group" style="margin-left: auto;">
+                <div class="status-item">
+                    <span id="connectionStatus">Connected to ErgoAI</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content-area">
+            <!-- Editor Panel -->
+            <div class="editor-panel">
+                <div class="editor-tabs" id="editorTabs">
+                    <div class="tab active" onclick="selectTab('main.ergo')">
+                        <div class="file-type-icon">E</div>
+                        main.ergo
+                        <span class="close-tab" onclick="closeTab(event, 'main.ergo')" title="Close">×</span>
+                    </div>
+                    <div class="tab" onclick="selectTab('query.ergo')">
+                        <div class="file-type-icon">Q</div>
+                        query.ergo
+                        <span class="close-tab" onclick="closeTab(event, 'query.ergo')" title="Close">×</span>
+                    </div>
+                </div>
+
+                <div class="editor-container" id="editorContainer">
+                    <!-- Monaco Editor will be initialized here -->
+                </div>
+            </div>
+
+            <!-- Splitter -->
+            <div class="splitter" id="splitter"></div>
+
+            <!-- Results Panel -->
+            <div class="results-panel" id="resultsPanel">
+                <div class="results-header">
+                    <span>Query Results</span>
+                    <button class="toggle-btn" onclick="toggleResultsPanel()" title="Toggle Results Panel">
+                        ⇔
+                    </button>
+                </div>
+
+                <div class="results-content" id="resultsContent">
+                    <div class="query-result">
+                        <div class="result-header">
+                            Query: ?X[age->?Age] @ family.
+                        </div>
+                        <div class="result-body">?X = john, ?Age = 30
+                            ?X = mary, ?Age = 25
+                            ?X = peter, ?Age = 5
+
+                            3 solutions found.</div>
+                    </div>
+
+                    <div class="query-result">
+                        <div class="result-header">
+                            Query: parent(?X, ?Y) @ family.
+                        </div>
+                        <div class="result-body">?X = john, ?Y = peter
+                            ?X = mary, ?Y = peter
+
+                            2 solutions found.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Status Bar -->
+<div class="status-bar">
+    <div class="status-item">
+        <span>Line 1, Column 1</span>
+    </div>
+    <div class="status-item">
+        <span>F-Logic (ErgoAI)</span>
+    </div>
+    <div class="status-item">
+        <span id="statusMessage">Ready</span>
+    </div>
+    <div class="status-item" style="margin-left: auto;">
+        <span>ErgoAI Engine v3.0</span>
+    </div>
+</div>
+
+<!-- Notification -->
+<div class="notification" id="notification">
+    Query executed successfully!
+</div>
+
+<!-- Modal for New Project -->
+<div class="modal-overlay hidden" id="modalOverlay">
+    <div class="modal">
+        <div class="modal-header">Create New Knowledge Base</div>
+        <form id="newProjectForm">
+            <div class="form-group">
+                <label class="form-label">Name:</label>
+                <input type="text" class="form-input" id="projectName" placeholder="Enter knowledge base name">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Description:</label>
+                <input type="text" class="form-input" id="projectDescription" placeholder="Optional description">
+            </div>
+            <div class="modal-buttons">
+                <button type="button" class="btn secondary" onclick="closeModal()">Cancel</button>
+                <button type="submit" class="btn">Create</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Global variables
+    let editor;
+    let currentFile = 'main.ergo';
+    let files = {
+        'main.ergo': `% Family relationships knowledge base
+% Facts about family members
+
+john[age->30, profession->teacher, spouse->mary] @ family.
+mary[age->25, profession->doctor, spouse->john] @ family.
+peter[age->5, parents->{john, mary}] @ family.
+
+% Rules for parent relationships
+parent(?X, ?Y) :- ?Y[parents->?Parents]@family, ?X in ?Parents.
+
+% Rules for grandparent relationships
+grandparent(?X, ?Z) :- parent(?X, ?Y), parent(?Y, ?Z).
+
+% Rules for sibling relationships
+sibling(?X, ?Y) :-
+    ?X[parents->?Parents1]@family,
+    ?Y[parents->?Parents2]@family,
+    ?Parents1 = ?Parents2,
+    ?X \\= ?Y.
+
+% Age-related rules
+adult(?X) :- ?X[age->?Age]@family, ?Age >= 18.
+child(?X) :- ?X[age->?Age]@family, ?Age < 18.
+
+% Professional relationships
+colleague(?X, ?Y) :-
+    ?X[profession->?P]@family,
+    ?Y[profession->?P]@family,
+    ?X \\= ?Y.`,
+
+        'query.ergo': `% Sample queries for the family knowledge base
+
+% Query 1: Find all adults
+?- adult(?X).
+
+% Query 2: Find all parent-child relationships
+?- parent(?X, ?Y).
+
+% Query 3: Find people older than 20
+?- ?X[age->?Age]@family, ?Age > 20.
+
+% Query 4: Find spouses
+?- ?X[spouse->?Y]@family.
+
+% Query 5: Find grandparents
+?- grandparent(?X, ?Y).
+
+% Query 6: Find all children
+?- child(?X).
+
+% Query 7: Complex query - Find adult parents
+?- parent(?X, ?Y), adult(?X).`
+    };
+
+    // Initialize the application
+    window.addEventListener('load', function() {
+        initializeMonacoEditor();
+        initializeSplitter();
+        updateStatus('ErgoAI Web Interface loaded successfully');
+    });
+
+    // Initialize Monaco Editor
+    function initializeMonacoEditor() {
+        require.config({
+            paths: {
+                'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.44.0/min/vs'
+            }
+        });
+
+        require(['vs/editor/editor.main'], function() {
+            // Define F-Logic/ErgoAI language
+            monaco.languages.register({ id: 'ergo' });
+
+            monaco.languages.setMonarchTokensProvider('ergo', {
+                tokenizer: {
+                    root: [
+                        [/\%.*$/, 'comment'],
+                        [/\?[A-Z][a-zA-Z0-9_]*/, 'variable'],
+                        [/[a-z][a-zA-Z0-9_]*/, 'identifier'],
+                        [/[A-Z][a-zA-Z0-9_]*/, 'type'],
+                        [/:-/, 'operator'],
+                        [/->/, 'operator'],
+                        [/@/, 'operator'],
+                        [/\[|\]/, 'bracket'],
+                        [/\{|\}/, 'bracket'],
+                        [/\(|\)/, 'bracket'],
+                        [/\d+/, 'number'],
+                        [/".*?"/, 'string'],
+                        [/\\=|=|<|>|>=|<=/, 'operator']
+                    ]
+                }
+            });
+
+            // Define theme
+            monaco.editor.defineTheme('ergo-dark', {
+                base: 'vs-dark',
+                inherit: true,
+                rules: [
+                    { token: 'comment', foreground: '6A9955' },
+                    { token: 'variable', foreground: '9CDCFE' },
+                    { token: 'identifier', foreground: 'D4D4D4' },
+                    { token: 'type', foreground: '4EC9B0' },
+                    { token: 'operator', foreground: 'D4D4D4' },
+                    { token: 'bracket', foreground: 'FFD700' },
+                    { token: 'number', foreground: 'B5CEA8' },
+                    { token: 'string', foreground: 'CE9178' }
+                ],
+                colors: {
+                    'editor.background': '#1e1e1e'
+                }
+            });
+
+            // Create editor
+            editor = monaco.editor.create(document.getElementById('editorContainer'), {
+                value: files[currentFile],
+                language: 'ergo',
+                theme: 'ergo-dark',
+                fontSize: 13,
+                fontFamily: 'Consolas, Monaco, Courier New, monospace',
+                lineNumbers: 'on',
+                minimap: { enabled: true },
+                wordWrap: 'on',
+                automaticLayout: true,
+                scrollBeyondLastLine: false,
+                renderWhitespace: 'selection'
+            });
+
+            // Update cursor position
+            editor.onDidChangeCursorPosition(function(e) {
+                const statusBar = document.querySelector('.status-bar .status-item span');
+                statusBar.textContent = `Line ${e.position.lineNumber}, Column ${e.position.column}`;
+            });
+
+            // Auto-save on change
+            editor.onDidChangeModelContent(function() {
+                files[currentFile] = editor.getValue();
+                markFileAsModified(currentFile);
+            });
+        });
+    }
+
+    // Initialize splitter for resizing panels
+    function initializeSplitter() {
+        const splitter = document.getElementById('splitter');
+        const resultsPanel = document.getElementById('resultsPanel');
+        let isResizing = false;
+
+        splitter.addEventListener('mousedown', function(e) {
+            isResizing = true;
+            document.addEventListener('mousemove', handleResize);
+            document.addEventListener('mouseup', stopResize);
+            e.preventDefault();
+        });
+
+        function handleResize(e) {
+            if (!isResizing) return;
+            const containerWidth = document.querySelector('.content-area').offsetWidth;
+            const newWidth = containerWidth - e.clientX + document.querySelector('.content-area').offsetLeft;
+            const minWidth = 200;
+            const maxWidth = containerWidth - 400;
+
+            if (newWidth >= minWidth && newWidth <= maxWidth) {
+                resultsPanel.style.width = newWidth + 'px';
+            }
+        }
+
+        function stopResize() {
+            isResizing = false;
+            document.removeEventListener('mousemove', handleResize);
+            document.removeEventListener('mouseup', stopResize);
+        }
+    }
+
+    // File management functions
+    function newFile() {
+        const fileName = prompt('Enter file name (with .ergo extension):');
+        if (fileName && !files[fileName]) {
+            files[fileName] = '% New ErgoAI file\n\n';
+            addTab(fileName);
+            selectTab(fileName);
+            showNotification('New file created: ' + fileName);
+        }
+    }
+
+    function openFileDialog() {
+        document.getElementById('modalOverlay').classList.remove('hidden');
+    }
+
+    function closeModal() {
+        document.getElementById('modalOverlay').classList.add('hidden');
+    }
+
+    function saveFile() {
+        // Simulate saving to backend
+        updateStatus('Saving file...');
+        setTimeout(() => {
+            showNotification('File saved successfully: ' + currentFile);
+            updateStatus('File saved');
+            unmarkFileAsModified(currentFile);
+        }, 500);
+    }
+
+    function openFile(fileName) {
+        if (!files[fileName]) {
+            files[fileName] = `% ${fileName}\n% This is a sample file\n\n`;
+        }
+        addTab(fileName);
+        selectTab(fileName);
+    }
+
+    // Tab management
+    function addTab(fileName) {
+        const tabsContainer = document.getElementById('editorTabs');
+        if (document.querySelector(`[onclick="selectTab('${fileName}')"]`)) return;
+
+        const tab = document.createElement('div');
+        tab.className = 'tab';
+        tab.onclick = () => selectTab(fileName);
+        tab.innerHTML = `
+                <div class="file-type-icon">${fileName.split('.')[1]?.charAt(0).toUpperCase() || 'F'}</div>
+                ${fileName}
+                <span class="close-tab" onclick="closeTab(event, '${fileName}')" title="Close">×</span>
+            `;
+        tabsContainer.appendChild(tab);
+    }
+
+    function selectTab(fileName) {
+        // Update tab appearance
+        document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+        event.target.closest('.tab').classList.add('active');
+
+        // Save current file content
+        if (editor && currentFile) {
+            files[currentFile] = editor.getValue();
+        }
+
+        // Switch to new file
+        currentFile = fileName;
+        if (editor) {
+            editor.setValue(files[fileName] || '');
+        }
+
+        updateStatus(`Opened: ${fileName}`);
+    }
+
+    function closeTab(event, fileName) {
+        event.stopPropagation();
+        const tab = event.target.closest('.tab');
+
+        if (Object.keys(files).length > 1) {
+            delete files[fileName];
+            tab.remove();
+
+            if (currentFile === fileName) {
+                const remainingTabs = document.querySelectorAll('.tab');
+                if (remainingTabs.length > 0) {
+                    remainingTabs[0].click();
+                }
+            }
+        } else {
+            showNotification('Cannot close the last tab', 'error');
+        }
+    }
+
+    // Query execution
+    function executeQuery() {
+        const query = getSelectedTextOrCurrentLine();
+        if (!query.trim()) {
+            showNotification('No query selected or cursor not on a query line', 'error');
+            return;
+        }
+
+        updateStatus('Executing query...');
+        addLoadingToResults();
+
+        // Simulate API call to ErgoAI
+        setTimeout(() => {
+            const result = simulateQueryExecution(query);
+            addQueryResult(query, result);
+            updateStatus('Query executed successfully');
+            showNotification('Query executed successfully');
+        }, 1000);
+    }
+
+    function getSelectedTextOrCurrentLine() {
+        if (!editor) return '';
+
+        const selection = editor.getSelection();
+        if (!selection.isEmpty()) {
+            return editor.getModel().getValueInRange(selection);
+        }
+
+        const position = editor.getPosition();
+        const lineContent = editor.getModel().getLineContent(position.lineNumber);
+        return lineContent;
+    }
+
+    function simulateQueryExecution(query) {
+        const cleanQuery = query.trim().replace(/^%.*$/, '').trim();
+
+        if (cleanQuery.includes('adult(?X)')) {
+            return '?X = john\n?X = mary\n\n2 solutions found.';
+        } else if (cleanQuery.includes('parent(?X, ?Y)')) {
+            return '?X = john, ?Y = peter\n?X = mary, ?Y = peter\n\n2 solutions found.';
+        } else if (cleanQuery.includes('age->?Age')) {
+            return '?X = john, ?Age = 30\n?X = mary, ?Age = 25\n?X = peter, ?Age = 5\n\n3 solutions found.';
+        } else if (cleanQuery.includes('spouse->?Y')) {
+            return '?X = john, ?Y = mary\n?X = mary, ?Y = john\n\n2 solutions found.';
+        } else if (cleanQuery.includes('child(?X)')) {
+            return '?X = peter\n\n1 solution found.';
+        } else {
+            return 'Query processed.\n\nNo solutions found or query syntax needs review.';
+        }
+    }
+
+    function addQueryResult(query, result) {
+        const resultsContent = document.getElementById('resultsContent');
+        const loadingDiv = resultsContent.querySelector('.loading-result');
+        if (loadingDiv) {
+            loadingDiv.remove();
+        }
+
+        const resultDiv = document.createElement('div');
+        resultDiv.className = 'query-result';
+        resultDiv.innerHTML = `
+                <div class="result-header">
+                    Query: ${query}
+                </div>
+                <div class="result-body">${result}</div>
+            `;
+
+        resultsContent.insertBefore(resultDiv, resultsContent.firstChild);
+        resultsContent.scrollTop = 0;
+    }
+
+    function addLoadingToResults() {
+        const resultsContent = document.getElementById('resultsContent');
+        const loadingDiv = document.createElement('div');
+        loadingDiv.className = 'query-result loading-result';
+        loadingDiv.innerHTML = `
+                <div class="result-header">
+                    <div class="loading-spinner"></div>
+                    Executing query...
+                </div>
+            `;
+        resultsContent.insertBefore(loadingDiv, resultsContent.firstChild);
+    }
+
+    // Knowledge base management
+    function loadKnowledgeBase() {
+        updateStatus('Loading knowledge base...');
+        setTimeout(() => {
+            showNotification('Knowledge base loaded successfully');
+            updateStatus('Knowledge base loaded');
+        }, 800);
+    }
+
+    function explainAnswer() {
+        const query = getSelectedTextOrCurrentLine();
+        if (!query.trim()) {
+            showNotification('No query selected for explanation', 'error');
+            return;
+        }
+
+        updateStatus('Generating explanation...');
+        setTimeout(() => {
+            const explanation = generateExplanation(query);
+            addQueryResult(`Explanation for: ${query}`, explanation);
+            showNotification('Explanation generated');
+            updateStatus('Explanation complete');
+        }, 1200);
+    }
+
+    function generateExplanation(query) {
+        return `Explanation Tree:
+├─ Query: ${query}
+├─ Rule Applications:
+│  ├─ Rule 1: parent(?X, ?Y) :- ?Y[parents->?Parents]@family, ?X in ?Parents
+│  └─ Fact: peter[parents->{john, mary}] @ family
+└─ Result: john and mary are parents of peter
+
+This explanation shows how the query was resolved using the knowledge base rules and facts.`;
+    }
+
+    // Project management
+    function selectProject(projectId) {
+        document.querySelectorAll('.project-item').forEach(item => {
+            item.classList.remove('active');
+        });
+        event.target.classList.add('active');
+
+        updateStatus(`Switched to project: ${projectId}`);
+        showNotification(`Loaded project: ${projectId}`);
+    }
+
+    // UI controls
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('collapsed');
+    }
+
+    function toggleResultsPanel() {
+        const resultsPanel = document.getElementById('resultsPanel');
+        resultsPanel.classList.toggle('collapsed');
+    }
+
+    // Utility functions
+    function updateStatus(message) {
+        document.getElementById('statusMessage').textContent = message;
+    }
+
+    function showNotification(message, type = 'success') {
+        const notification = document.getElementById('notification');
+        notification.textContent = message;
+        notification.className = `notification ${type}`;
+        notification.classList.add('show');
+
+        setTimeout(() => {
+            notification.classList.remove('show');
+        }, 3000);
+    }
+
+    function markFileAsModified(fileName) {
+        const tab = document.querySelector(`[onclick="selectTab('${fileName}')"]`);
+        if (tab && !tab.textContent.includes('●')) {
+            const text = tab.childNodes[2];
+            text.textContent = '● ' + text.textContent.trim();
+        }
+    }
+
+    function unmarkFileAsModified(fileName) {
+        const tab = document.querySelector(`[onclick="selectTab('${fileName}')"]`);
+        if (tab) {
+            const text = tab.childNodes[2];
+            text.textContent = text.textContent.replace('● ', '');
+        }
+    }
+
+    // New project form handling
+    document.getElementById('newProjectForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('projectName').value;
+        const description = document.getElementById('projectDescription').value;
+
+        if (name) {
+            createNewProject(name, description);
+            closeModal();
+            document.getElementById('newProjectForm').reset();
+        }
+    });
+
+    function createNewProject(name, description) {
+        const projectList = document.getElementById('projectList');
+        const newProject = document.createElement('li');
+        newProject.className = 'project-item';
+        newProject.onclick = () => selectProject(name);
+        newProject.innerHTML = `
+                <div class="file-type-icon">${name.charAt(0).toUpperCase()}</div>
+                <span>${name}</span>
+            `;
+        projectList.appendChild(newProject);
+
+        showNotification(`Created new project: ${name}`);
+        updateStatus(`Created project: ${name}`);
+    }
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey || e.metaKey) {
+            switch(e.key) {
+                case 's':
+                    e.preventDefault();
+                    saveFile();
+                    break;
+                case 'n':
+                    e.preventDefault();
+                    newFile();
+                    break;
+                case 'o':
+                    e.preventDefault();
+                    openFileDialog();
+                    break;
+                case 'Enter':
+                    e.preventDefault();
+                    executeQuery();
+                    break;
+            }
+        }
+
+        if (e.key === 'F5') {
+            e.preventDefault();
+            executeQuery();
+        }
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', function() {
+        if (editor) {
+            editor.layout();
+        }
+    });
+
+    // Prevent accidental page refresh
+    window.addEventListener('beforeunload', function(e) {
+        const hasUnsavedChanges = Object.keys(files).some(fileName => {
+            const tab = document.querySelector(`[onclick="selectTab('${fileName}')"]`);
+            return tab && tab.textContent.includes('●');
+        });
+
+        if (hasUnsavedChanges) {
+            e.preventDefault();
+            e.returnValue = '';
+        }
+    });
+</script>
