@@ -1,0 +1,593 @@
+
+:-(compiler_options([xpp_on,canonical])).
+
+/********** Tabling and Trailer Control Variables ************/
+
+#define EQUALITYnone
+#define INHERITANCEflogic
+#define TABLINGreactive
+#define TABLINGvariant
+#define CUSTOMnone
+
+#define FLORA_INCREMENTAL_TABLING 
+
+/************************************************************************
+  file: headerinc/flrheader_inc.flh
+
+  Author(s): Guizhen Yang
+
+  This file is automatically included by the Flora-2 compiler.
+************************************************************************/
+
+:-(compiler_options([xpp_on])).
+#mode standard Prolog
+
+#include "flrheader.flh"
+#include "flora_porting.flh"
+
+/***********************************************************************/
+
+/************************************************************************
+  file: headerinc/flrheader_prog_inc.flh
+
+  Author(s): Michael Kifer
+
+  This file is automatically included by the Flora-2 compiler.
+************************************************************************/
+
+:-(compiler_options([xpp_on])).
+#mode standard Prolog
+
+#include "flrheader_prog.flh"
+
+/***********************************************************************/
+
+#define FLORA_COMPILATION_ID 1
+
+/************************************************************************
+  file: headerinc/flrheader2_inc.flh
+
+  Author(s): Michael Kifer
+
+  This file is automatically included by the Flora-2 compiler.
+  It has files that must be included in the header and typically
+  contain some Prolog statements. Such files cannot appear
+  in flrheader.flh because flrheader.flh is included in various restricted
+  contexts where Prolog statements are not allowed.
+
+  NOT included in ADDED files (compiled for addition) -- only in LOADED
+  ones and in trailers/patch
+************************************************************************/
+
+:-(compiler_options([xpp_on])).
+
+#define TABLING_CONNECTIVE  :-
+
+%% flora_tabling_methods is included here to affect preprocessing of
+%% flrtable/flrhilogtable.flh dynamically
+#include "flora_tabling_methods.flh"
+
+/* note: inside flrtable.flh there are checks for FLORA_NONTABLED_DATA_MODULE
+   that exclude tabling non-signature frames
+*/
+#ifndef FLORA_NONTABLED_MODULE
+#include "flrtable.flh"
+#endif
+
+/* if normal tabled module, then table hilog */
+#if !defined(FLORA_NONTABLED_DATA_MODULE) && !defined(FLORA_NONTABLED_MODULE)
+#include "flrhilogtable.flh"
+#endif
+
+#include "flrtable_always.flh"
+
+#include "flrauxtables.flh"
+
+%% include list of tabled predicates
+#mode save
+#mode nocomment "%"
+#if defined(FLORA_FLT_FILENAME)
+#include FLORA_FLT_FILENAME
+#endif
+#mode restore
+
+/***********************************************************************/
+
+/************************************************************************
+  file: headerinc/flrdyna_inc.flh
+
+  Author(s): Chang Zhao
+
+  This file is automatically included by the Flora-2 compiler.
+************************************************************************/
+
+:-(compiler_options([xpp_on])).
+
+#define TABLING_CONNECTIVE  :-
+
+#include "flrdyndeclare.flh"
+
+/***********************************************************************/
+
+/************************************************************************
+  file: headerinc/flrindex_P_inc.flh
+
+  Author(s): Michael Kifer
+
+  This file is automatically included by the Flora-2 compiler.
+************************************************************************/
+
+:-(compiler_options([xpp_on])).
+
+#include "flrindex_P.flh"
+
+/***********************************************************************/
+
+#mode save
+#mode nocomment "%"
+#define FLORA_THIS_FILENAME  'flrgclp.ergo'
+#mode restore
+/************************************************************************
+  file: headerinc/flrdefinition_inc.flh
+
+  Author(s): Guizhen Yang
+
+  This file is automatically included by the Flora-2 compiler.
+************************************************************************/
+
+#include "flrdefinition.flh"
+
+/***********************************************************************/
+
+/************************************************************************
+  file: headerinc/flrtrailerregistry_inc.flh
+
+  Author(s): Michael Kifer
+
+  This file is automatically included by the Flora-2 compiler.
+************************************************************************/
+
+#include "flrtrailerregistry.flh"
+
+/***********************************************************************/
+
+/************************************************************************
+  file: headerinc/flrrefreshtable_inc.flh
+
+  Author(s): Michael Kifer
+
+  This file is automatically included by the Flora-2 compiler.
+************************************************************************/
+
+:-(compiler_options([xpp_on])).
+
+#include "flrrefreshtable.flh"
+
+/***********************************************************************/
+
+/************************************************************************
+  file: headerinc/flrdynamic_connectors_inc.flh
+
+  Author(s): Michael Kifer
+
+  This file is automatically included by the Flora-2 compiler.
+************************************************************************/
+
+:-(compiler_options([xpp_on])).
+
+#include "flrdynamic_connectors.flh"
+
+/***********************************************************************/
+
+/************************************************************************
+  file: syslibinc/flrimportedcalls_inc.flh
+
+  Author(s): Michael Kifer
+
+  This file is automatically included by the FLORA-2 compiler.
+************************************************************************/
+
+%% Loads the file with all the import statements for predicates
+%% that must be known everywhere
+
+:-(compiler_options([xpp_on])).
+
+#mode standard Prolog
+
+#if !defined(FLORA_TERMS_FLH)
+#define FLORA_TERMS_FLH
+#include "flora_terms.flh"
+#endif
+
+?-(:(flrlibman,flora_load_library(FLLIBIMPORTEDCALLS))).
+
+/***********************************************************************/
+
+/************************************************************************
+  file: headerinc/flrpatch_inc.flh
+
+  Author(s): Guizhen Yang
+
+  This file is automatically included by the Flora-2 compiler.
+************************************************************************/
+
+#include "flrexportcheck.flh"
+#include "flrpatch.flh"
+/***********************************************************************/
+
+/************************************************************************
+  file: headerinc/flropposes_inc.flh
+
+  Author(s): Michael Kifer
+
+  This file is automatically included by the Flora-2 compiler.
+************************************************************************/
+
+#include "flropposes.flh"
+
+/***********************************************************************/
+
+/************************************************************************
+  file: headerinc/flrhead_dispatch_inc.flh
+
+  Author(s): Michael Kifer
+
+  This file is automatically included by the Flora-2 compiler.
+************************************************************************/
+
+:-(compiler_options([xpp_on])).
+
+#include "flrhead_dispatch.flh"
+
+/***********************************************************************/
+
+/************************************************************************
+  file: syslibinc/flranswer_inc.flh
+
+  Author(s): Guizhen Yang
+
+  This file is automatically included by the FLORA-2 compiler.
+************************************************************************/
+
+:-(compiler_options([xpp_on])).
+
+#mode standard Prolog
+
+#if !defined(FLORA_TERMS_FLH)
+#define FLORA_TERMS_FLH
+#include "flora_terms.flh"
+#endif
+
+?-(:(flrlibman,flora_load_library(FLLIBANSWER))).
+
+/***********************************************************************/
+
+/************************************************************************
+  file: syslibinc/flrexport_inc.flh
+
+  Author(s): Vishal Chowdhary
+
+  This file is automatically included by the FLORA-2 compiler.
+************************************************************************/
+:-(compiler_options([xpp_on])).
+
+#mode standard Prolog
+
+#if !defined(FLORA_TERMS_FLH)
+#define FLORA_TERMS_FLH
+#include "flora_terms.flh"
+#endif
+
+?-(:(flrlibman,flora_load_library(FLLIBEXPORT))).
+
+
+/***********************************************************************/
+
+
+/************************************************************************
+  file: syslibinc/flrdynmod_inc.flh
+
+  Author(s): Guizhen Yang
+
+  This file is automatically included by the FLORA-2 compiler.
+************************************************************************/
+
+:-(compiler_options([xpp_on])).
+
+#mode standard Prolog
+
+#if !defined(FLORA_TERMS_FLH)
+#define FLORA_TERMS_FLH
+#include "flora_terms.flh"
+#endif
+
+?-(:(flrlibman,flora_load_library(FLLIBDYNMOD))).
+
+/***********************************************************************/
+
+/************************************************************************
+  file: syslibinc/flrdynmod_inc.flh
+
+  Author(s): Guizhen Yang
+
+  This file is automatically included by the FLORA-2 compiler.
+************************************************************************/
+
+:-(compiler_options([xpp_on])).
+
+#mode standard Prolog
+
+#if !defined(FLORA_TERMS_FLH)
+#define FLORA_TERMS_FLH
+#include "flora_terms.flh"
+#endif
+
+?-(:(flrlibman,flora_load_library(FLLIBDYNMOD))).
+
+/***********************************************************************/
+
+/************************************************************************
+  file: libinc/flrsystem_inc.flh
+
+  Author(s): Guizhen Yang
+
+  This file is automatically included by the Flora-2 compiler.
+************************************************************************/
+
+:-(compiler_options([xpp_on])).
+
+#mode standard Prolog
+
+#if !defined(FLORA_TERMS_FLH)
+#define FLORA_TERMS_FLH
+#include "flora_terms.flh"
+#endif
+
+?-(':'(flrlibman,flora_load_system_module(FLSYSMODSYSTEM))).
+
+/***********************************************************************/
+
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(\\undefeated)),6),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(\\undefeated)),6)),opaque))).
+:-(FLORA_THIS_WORKSPACE(\\undefeated)(_h710991,_h710993,_h710995,_h710997,_h710999,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(\\undefeated))(_h710991,_h710993,_h710995,_h710997,_h710999,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(beaten_by_strict_rule)),4),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(beaten_by_strict_rule)),4)),opaque))).
+:-(FLORA_THIS_WORKSPACE(beaten_by_strict_rule)(_h711649,_h711651,_h711653,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(beaten_by_strict_rule))(_h711649,_h711651,_h711653,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(beaten_by_strict_rule)),6),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(beaten_by_strict_rule)),6)),opaque))).
+:-(FLORA_THIS_WORKSPACE(beaten_by_strict_rule)(_h712445,_h712447,_h712449,_h712451,_h712453,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(beaten_by_strict_rule))(_h712445,_h712447,_h712449,_h712451,_h712453,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(candidate)),4),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(candidate)),4)),FLORA_FLEX_DYNAMIC_TYPE_CLAUSE))).
+:-(FLORA_THIS_WORKSPACE(candidate)(_h713249,_h713251,_h713253,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(candidate))(_h713249,_h713251,_h713253,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(change_module)),5),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(change_module)),5)),opaque))).
+:-(FLORA_THIS_WORKSPACE(change_module)(_h713853,_h713855,_h713857,_h713859,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(change_module))(_h713853,_h713855,_h713857,_h713859,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(change_module_nocheck)),5),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(change_module_nocheck)),5)),opaque))).
+:-(FLORA_THIS_WORKSPACE(change_module_nocheck)(_h714525,_h714527,_h714529,_h714531,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(change_module_nocheck))(_h714525,_h714527,_h714529,_h714531,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(check_module_to_AT_association)),2),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(check_module_to_AT_association)),2)),opaque))).
+:-(FLORA_THIS_WORKSPACE(check_module_to_AT_association)(_h715325,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(check_module_to_AT_association))(_h715325,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(compromized)),4),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(compromized)),4)),opaque))).
+:-(FLORA_THIS_WORKSPACE(compromized)(_h716257,_h716259,_h716261,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(compromized))(_h716257,_h716259,_h716261,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(conflicts)),6),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(conflicts)),6)),FLORA_FLEX_DYNAMIC_TYPE_CLAUSE))).
+:-(FLORA_THIS_WORKSPACE(conflicts)(_h716893,_h716895,_h716897,_h716899,_h716901,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(conflicts))(_h716893,_h716895,_h716897,_h716899,_h716901,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(defeated)),4),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(defeated)),4)),FLORA_FLEX_DYNAMIC_TYPE_CLAUSE))).
+:-(FLORA_THIS_WORKSPACE(defeated)(_h717505,_h717507,_h717509,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(defeated))(_h717505,_h717507,_h717509,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(defeated_id)),6),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(defeated_id)),6)),opaque))).
+:-(FLORA_THIS_WORKSPACE(defeated_id)(_h718093,_h718095,_h718097,_h718099,_h718101,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(defeated_id))(_h718093,_h718095,_h718097,_h718099,_h718101,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(defeats)),6),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(defeats)),6)),opaque))).
+:-(FLORA_THIS_WORKSPACE(defeats)(_h718737,_h718739,_h718741,_h718743,_h718745,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(defeats))(_h718737,_h718739,_h718741,_h718743,_h718745,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(disqualified)),4),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(disqualified)),4)),opaque))).
+:-(FLORA_THIS_WORKSPACE(disqualified)(_h719317,_h719319,_h719321,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(disqualified))(_h719317,_h719319,_h719321,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(rebuts)),6),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(rebuts)),6)),opaque))).
+:-(FLORA_THIS_WORKSPACE(rebuts)(_h719969,_h719971,_h719973,_h719975,_h719977,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(rebuts))(_h719969,_h719971,_h719973,_h719975,_h719977,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(rebutted)),4),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(rebutted)),4)),opaque))).
+:-(FLORA_THIS_WORKSPACE(rebutted)(_h720533,_h720535,_h720537,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(rebutted))(_h720533,_h720535,_h720537,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(refuted)),4),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(refuted)),4)),opaque))).
+:-(FLORA_THIS_WORKSPACE(refuted)(_h721121,_h721123,_h721125,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(refuted))(_h721121,_h721123,_h721125,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(refutes)),6),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(refutes)),6)),opaque))).
+:-(FLORA_THIS_WORKSPACE(refutes)(_h721693,_h721695,_h721697,_h721699,_h721701,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(refutes))(_h721693,_h721695,_h721697,_h721699,_h721701,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(strict_candidate)),4),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(strict_candidate)),4)),FLORA_FLEX_DYNAMIC_TYPE_CLAUSE))).
+:-(FLORA_THIS_WORKSPACE(strict_candidate)(_h722273,_h722275,_h722277,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(strict_candidate))(_h722273,_h722275,_h722277,FWContext)).
+:-(dynamic(as(','(/(FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(trans_defeats)),6),/(FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(trans_defeats)),6)),FLORA_FLEX_DYNAMIC_TYPE_CLAUSE))).
+:-(FLORA_THIS_WORKSPACE(trans_defeats)(_h722989,_h722991,_h722993,_h722995,_h722997,FWContext),FLORA_THIS_WORKSPACE(FLDYNAPREFIX_UNQ(trans_defeats))(_h722989,_h722991,_h722993,_h722995,_h722997,FWContext)).
+ 
+#if !defined(FLORA_FLM_FILENAME)
+#if !defined(FLORA_LOADDYN_DATA)
+#define FLORA_LOADDYN_DATA
+#endif
+#mode save
+#mode nocomment "%"
+#define FLORA_FLM_FILENAME  'flrgclp.flm'
+#mode restore
+?-(:(flrutils,flora_loaddyn_data(FLORA_FLM_FILENAME,FLORA_THIS_MODULE_NAME,'flm'))).
+#else
+#if !defined(FLORA_READ_CANONICAL_AND_INSERT)
+#define FLORA_READ_CANONICAL_AND_INSERT
+#endif
+?-(:(flrutils,flora_read_descriptor_metafacts_canonical_and_insert(flrgclp,_ErrNum))).
+#endif
+
+ 
+#if !defined(FLORA_FLD_FILENAME)
+#if !defined(FLORA_LOADDYN_DATA)
+#define FLORA_LOADDYN_DATA
+#endif
+#mode save
+#mode nocomment "%"
+#define FLORA_FLD_FILENAME  'flrgclp.fld'
+#mode restore
+?-(:(flrutils,flora_loaddyn_data(FLORA_FLD_FILENAME,FLORA_THIS_MODULE_NAME,'fld'))).
+#else
+#if !defined(FLORA_READ_CANONICAL_AND_INSERT)
+#define FLORA_READ_CANONICAL_AND_INSERT
+#endif
+?-(:(flrutils,flora_read_canonical_and_insert(FLORA_FLD_FILENAME,FLORA_THIS_FLD_STORAGE))).
+#endif
+
+ 
+#if !defined(FLORA_FLS_FILENAME)
+#if !defined(FLORA_LOADDYN_DATA)
+#define FLORA_LOADDYN_DATA
+#endif
+#mode save
+#mode nocomment "%"
+#define FLORA_FLS_FILENAME  'flrgclp.fls'
+#mode restore
+?-(:(flrutils,flora_loaddyn_data(FLORA_FLS_FILENAME,FLORA_THIS_MODULE_NAME,'fls'))).
+#else
+#if !defined(FLORA_READ_CANONICAL_AND_INSERT)
+#define FLORA_READ_CANONICAL_AND_INSERT
+#endif
+?-(:(flrutils,flora_read_symbols_canonical_and_insert(FLORA_FLS_FILENAME,FLORA_THIS_FLS_STORAGE,_SymbolErrNum))).
+#endif
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Rules %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+:-(table(as(','(/(FLORA_THIS_WORKSPACE(candidate),4),/(FLORA_THIS_WORKSPACE(strict_candidate),4)),AUXILIARY_TABLING_TYPE))).
+?-(:(flrprolog,flora_define_modular_prolog([prolog(candidate,3,FLORA_THIS_MODULE_NAME),prolog(strict_candidate,3,FLORA_THIS_MODULE_NAME)]))).
+:-(table(as(/(FLORA_THIS_WORKSPACE(trans_defeats),6),AUXILIARY_TABLING_TYPE))).
+?-(:(flrprolog,flora_define_modular_prolog([prolog(trans_defeats,5,FLORA_THIS_MODULE_NAME)]))).
+:-(table(as(/(FLORA_THIS_WORKSPACE(conflicts),6),AUXILIARY_TABLING_TYPE))).
+?-(:(flrprolog,flora_define_modular_prolog([prolog(conflicts,5,FLORA_THIS_MODULE_NAME)]))).
+:-(table(as(/(FLORA_THIS_WORKSPACE(defeated),4),AUXILIARY_TABLING_TYPE))).
+?-(:(flrprolog,flora_define_modular_prolog([prolog(defeated,3,FLORA_THIS_MODULE_NAME)]))).
+?-(:(flrprolog,flora_define_modular_prolog([prolog(refutes,5,FLORA_THIS_MODULE_NAME),prolog(rebuts,5,FLORA_THIS_MODULE_NAME)]))).
+?-(:(flrprolog,flora_define_modular_prolog([prolog(defeats,5,FLORA_THIS_MODULE_NAME)]))).
+?-(:(flrprolog,flora_define_modular_prolog([prolog(refuted,3,FLORA_THIS_MODULE_NAME),prolog(rebutted,3,FLORA_THIS_MODULE_NAME)]))).
+?-(:(flrprolog,flora_define_modular_prolog([prolog(disqualified,3,FLORA_THIS_MODULE_NAME)]))).
+?-(:(flrprolog,flora_define_modular_prolog([prolog(defeated_id,5,FLORA_THIS_MODULE_NAME)]))).
+?-(:(flrprolog,flora_define_modular_prolog([prolog(compromized,3,FLORA_THIS_MODULE_NAME)]))).
+?-(:(flrprolog,flora_define_modular_prolog([prolog('\\undefeated',5,FLORA_THIS_MODULE_NAME)]))).
+?-(:(flrprolog,flora_define_modular_prolog([prolog(beaten_by_strict_rule,3,FLORA_THIS_MODULE_NAME),prolog(beaten_by_strict_rule,5,FLORA_THIS_MODULE_NAME)]))).
+:-(fllibexport([[flexport(readable,FLORA_THIS_MODULE_NAME,[],FLORA_THIS_WORKSPACE(d^mvd)(__newdontcarevar1,howDefeated,__newdontcarevar2,__newcontextvar5))],[flexport(readable,FLORA_THIS_MODULE_NAME,[],FLORA_THIS_WORKSPACE(d^mvd)(__newdontcarevar6,info,__newdontcarevar7,__newcontextvar10))],[flexport(readable,FLORA_THIS_MODULE_NAME,[],FLORA_THIS_WORKSPACE(d^mvd)(__newdontcarevar11,howDisqualified,__newdontcarevar12,__newcontextvar15))]])).
+:-(fllibexport([[flexport(readable,FLORA_THIS_MODULE_NAME,[],FLORA_THIS_WORKSPACE(d^tblflapply)(opposes,__newdontcarevar1,__newdontcarevar2,__newdontcarevar3,__newdontcarevar4,__newcontextvar7))],[flexport(readable,FLORA_THIS_MODULE_NAME,[],FLORA_THIS_WORKSPACE(d^tblflapply)(overrides,__newdontcarevar8,__newdontcarevar9,__newdontcarevar10,__newdontcarevar11,__newcontextvar14))],[flexport(readable,FLORA_THIS_MODULE_NAME,[],FLORA_THIS_WORKSPACE(d^tblflapply)(refutes,__newdontcarevar15,__newdontcarevar16,__newdontcarevar17,__newdontcarevar18,__newcontextvar21))],[flexport(readable,FLORA_THIS_MODULE_NAME,[],FLORA_THIS_WORKSPACE(d^tblflapply)(rebuts,__newdontcarevar22,__newdontcarevar23,__newdontcarevar24,__newdontcarevar25,__newcontextvar28))],[flexport(readable,FLORA_THIS_MODULE_NAME,[],FLORA_THIS_WORKSPACE(d^tblflapply)(conflicts,__newdontcarevar29,__newdontcarevar30,__newdontcarevar31,__newdontcarevar32,__newcontextvar35))],[flexport(readable,FLORA_THIS_MODULE_NAME,[],FLORA_THIS_WORKSPACE(d^tblflapply)(compromised,__newdontcarevar36,__newdontcarevar37,__newcontextvar40))],[flexport(readable,FLORA_THIS_MODULE_NAME,[],FLORA_THIS_WORKSPACE(d^tblflapply)(candidate,__newdontcarevar41,__newdontcarevar42,__newcontextvar45))],[flexport(readable,FLORA_THIS_MODULE_NAME,[],FLORA_THIS_WORKSPACE(d^tblflapply)(strict_candidate,__newdontcarevar46,__newdontcarevar47,__newcontextvar50))],[flexport(readable,FLORA_THIS_MODULE_NAME,[],FLORA_THIS_WORKSPACE(d^tblflapply)(defeated,__newdontcarevar51,__newdontcarevar52,__newcontextvar55))]])).
+:-(FLORA_THIS_WORKSPACE(\\undefeated)(__Id,__FileName,__Vars,__H,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(4,'flrgclp.flr',FLORA_THIS_MODULE_NAME),flibnafdelay(flora_naf(FLORA_THIS_WORKSPACE(tabled_naf_call)(','(FLORA_THIS_WORKSPACE(defeated_id)(__Id,__FileName,__Vars,__H,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),fllibexecute_delayed_calls([__FileName,__H,__Id,__Mod,__Vars],[]))),[__Id,__FileName,__Vars,__H,__Mod],96,'flrgclp.flr')))).
+:-(FLORA_THIS_WORKSPACE(defeated_id)(__Id,__FileName,__Vars,__H,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(6,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','(:(flrdescriptor_support,get_tag_descriptor_info(__Id,__FileName,__Mod,__T,__Vars)),FLORA_THIS_WORKSPACE(defeated)(__T,__H,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4))),fllibexecute_delayed_calls([__FileName,__H,__Id,__Mod,__T,__Vars],[__FileName,__H,__Id,__Mod,__Vars])))).
+?-(:(flrprolog,flora_define_modular_prolog([prolog(change_module,4,FLORA_THIS_MODULE_NAME),prolog(change_module_nocheck,4,FLORA_THIS_MODULE_NAME),prolog(check_module_to_AT_association,1,FLORA_THIS_MODULE_NAME)]))).
+:-(FLORA_THIS_WORKSPACE(change_module)(__InA,__Mod,__RealNewMod,__OutA,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(8,'change_module.flh',FLORA_THIS_MODULE_NAME),','(:(flrwrapper,flora_change_module(__InA,__OutA,','(FLORA_THIS_MODULE_NAME,__Mod),__RealNewMod,['In ',status,'(Tag,Head)[...]@',FLORA_THIS_MODULE_NAME,': Head must be bound'])),FLORA_THIS_WORKSPACE(check_module_to_AT_association)(__RealNewMod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4))))).
+:-(FLORA_THIS_WORKSPACE(change_module_nocheck)(__InA,__newdontcarevar1,__newdontcarevar2,__OutA,'_$ctxt'(_CallerModuleVar,__newcontextvar3,__newcontextvar4)),','('_$_$_ergo''rule_enabled'(10,'change_module.flh',FLORA_THIS_MODULE_NAME),','(:(flrdatatype,flora_is_var_prim(__InA)),','(!,=(__OutA,__InA))))).
+:-(FLORA_THIS_WORKSPACE(change_module_nocheck)(__InA,__Mod,__RealNewMod,__OutA,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(12,'change_module.flh',FLORA_THIS_MODULE_NAME),','(:(flrwrapper,flora_change_module(__InA,__OutA,','(FLORA_THIS_MODULE_NAME,__Mod),__RealNewMod,'In defeated/overrides/opposes: something wrong')),FLORA_THIS_WORKSPACE(check_module_to_AT_association)(__RealNewMod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4))))).
+:-(FLORA_THIS_WORKSPACE(check_module_to_AT_association)(__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(14,'change_module.flh',FLORA_THIS_MODULE_NAME),','(:(flrwrapper,flora_is_system_module_name(__Mod)),','(!,'\\false')))).
+:-(FLORA_THIS_WORKSPACE(check_module_to_AT_association)(__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(16,'change_module.flh',FLORA_THIS_MODULE_NAME),','(\+(:(flrregistry,flora_defeasible_module_registry(__Mod,FLORA_THIS_MODULE_NAME))),','(\==(__Mod,FLORA_THIS_MODULE_NAME),','(!,FLORA_WORKSPACE(\\system,d^tblflapply)(sysabort,['User module ',__Mod,' is not associated with the argumentation theory residing in module ',FLORA_THIS_MODULE_NAME],'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4))))))).
+:-(FLORA_THIS_WORKSPACE(check_module_to_AT_association)(__newdontcarevar1,'_$ctxt'(_CallerModuleVar,__newcontextvar2,__newcontextvar3)),','('_$_$_ergo''rule_enabled'(18,'change_module.flh',FLORA_THIS_MODULE_NAME),'\\true')).
+:-(FLORA_THIS_WORKSPACE(static^tblflapply)(defeated,__T,__H,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(20,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),','(FLORA_THIS_WORKSPACE(change_module_nocheck)(__H,__Mod,__RealMod,__MH,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),FLORA_THIS_WORKSPACE(defeated)(__T,__MH,__RealMod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)))),fllibexecute_delayed_calls([__H,__MH,__Mod,__RealMod,__T],[__H,__T])))).
+:-(FLORA_THIS_WORKSPACE(static^tblflapply)(opposes,__T1,__H1,__T2,__H2,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(22,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),','(FLORA_THIS_WORKSPACE(change_module_nocheck)(__H1,__Mod,__RealMod,__MH1,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),','(FLORA_THIS_WORKSPACE(change_module_nocheck)(__H2,__Mod,__RealMod,__MH2,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)),'_$_$_ergo''_opposes_aux'(__RealMod,__T1,__MH1,__T2,__MH2)))),fllibexecute_delayed_calls([__H1,__H2,__MH1,__MH2,__Mod,__RealMod,__T1,__T2],[__H1,__H2,__T1,__T2])))).
+:-(FLORA_THIS_WORKSPACE(static^tblflapply)(overrides,__T1,__H1,__T2,__H2,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(24,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),','(FLORA_THIS_WORKSPACE(change_module_nocheck)(__H1,__Mod,__RealMod,__MH1,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),','(FLORA_THIS_WORKSPACE(change_module_nocheck)(__H2,__Mod,__RealMod,__MH2,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)),','(:(flrdescriptor_support,synonymous_tag_with_head(__T1,__RealMod,__T11,__H1)),','(:(flrdescriptor_support,synonymous_tag_with_head(__T2,__RealMod,__T22,__H2)),'_$_$_ergo''_overrides_aux'(__RealMod,__T11,__MH1,__T22,__MH2)))))),fllibexecute_delayed_calls([__H1,__H2,__MH1,__MH2,__Mod,__RealMod,__T1,__T11,__T2,__T22],[__H1,__H2,__T1,__T2])))).
+:-(FLORA_THIS_WORKSPACE(static^tblflapply)(candidate,__T,__H,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(26,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),FLORA_THIS_WORKSPACE(candidate)(__T,__H,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4))),fllibexecute_delayed_calls([__H,__Mod,__T],[__H,__T])))).
+:-(FLORA_THIS_WORKSPACE(static^tblflapply)(strict_candidate,__T,__H,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(28,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),FLORA_THIS_WORKSPACE(strict_candidate)(__T,__H,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4))),fllibexecute_delayed_calls([__H,__Mod,__T],[__H,__T])))).
+:-(FLORA_THIS_WORKSPACE(static^tblflapply)(refutes,__T1,__H1,__T2,__H2,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(30,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),FLORA_THIS_WORKSPACE(refutes)(__T1,__H1,__T2,__H2,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4))),fllibexecute_delayed_calls([__H1,__H2,__Mod,__T1,__T2],[__H1,__H2,__T1,__T2])))).
+:-(FLORA_THIS_WORKSPACE(static^tblflapply)(rebuts,__T1,__H1,__T2,__H2,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(32,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),FLORA_THIS_WORKSPACE(rebuts)(__T1,__H1,__T2,__H2,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4))),fllibexecute_delayed_calls([__H1,__H2,__Mod,__T1,__T2],[__H1,__H2,__T1,__T2])))).
+:-(FLORA_THIS_WORKSPACE(static^tblflapply)(conflicts,__T1,__H1,__T2,__H2,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(34,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),FLORA_THIS_WORKSPACE(conflicts)(__T1,__H1,__T2,__H2,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4))),fllibexecute_delayed_calls([__H1,__H2,__Mod,__T1,__T2],[__H1,__H2,__T1,__T2])))).
+:-(FLORA_THIS_WORKSPACE(static^tblflapply)(compromised,__T,__H,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(36,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),FLORA_THIS_WORKSPACE(compromized)(__T,__H,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4))),fllibexecute_delayed_calls([__H,__Mod,__T],[__H,__T])))).
+:-(FLORA_THIS_WORKSPACE(defeated)(__T,__H,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(38,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','(FLORA_THIS_WORKSPACE(defeats)(__T2,__H2,__T,__H,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),flibnafdelay(flora_naf(FLORA_THIS_WORKSPACE(tabled_naf_call)(','(FLORA_THIS_WORKSPACE(compromized)(__T2,__H2,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)),fllibexecute_delayed_calls([__H2,__Mod,__T2],[]))),[__T2,__H2,__Mod],152,'flrgclp.flr'))),fllibexecute_delayed_calls([__H,__H2,__Mod,__T,__T2],[__H,__Mod,__T])))).
+:-(FLORA_THIS_WORKSPACE(defeated)(__T,__H,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(40,'flrgclp.flr',FLORA_THIS_MODULE_NAME),FLORA_THIS_WORKSPACE(disqualified)(__T,__H,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)))).
+:-(FLORA_THIS_WORKSPACE(defeats)(__T1,__H1,__T2,__H2,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(42,'flrgclp.flr',FLORA_THIS_MODULE_NAME),FLORA_THIS_WORKSPACE(refutes)(__T1,__H1,__T2,__H2,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)))).
+:-(FLORA_THIS_WORKSPACE(defeats)(__T1,__H1,__T2,__H2,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(44,'flrgclp.flr',FLORA_THIS_MODULE_NAME),FLORA_THIS_WORKSPACE(rebuts)(__T1,__H1,__T2,__H2,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)))).
+:-(FLORA_THIS_WORKSPACE(refuted)(__T,__H,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(46,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(FLORA_THIS_WORKSPACE(refutes)(__newdontcarevar3,__newdontcarevar4,__T,__H,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)),fllibexecute_delayed_calls([__H,__Mod,__T,__newdontcarevar7],[__H,__Mod,__T])))).
+:-(FLORA_THIS_WORKSPACE(rebutted)(__T,__H,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(48,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(FLORA_THIS_WORKSPACE(rebuts)(__newdontcarevar3,__newdontcarevar4,__T,__H,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)),fllibexecute_delayed_calls([__H,__Mod,__T,__newdontcarevar7],[__H,__Mod,__T])))).
+:-(FLORA_THIS_WORKSPACE(compromized)(__T,__H,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(50,'flrgclp.flr',FLORA_THIS_MODULE_NAME),FLORA_THIS_WORKSPACE(refuted)(__T,__H,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)))).
+:-(FLORA_THIS_WORKSPACE(disqualified)(__T,__H,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(52,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','(:(flrdescriptor_support,synonymous_tag_with_head(__T,__Mod,__T2,__H)),','(FLORA_THIS_WORKSPACE(trans_defeats)(__T,__H,__T2,__H,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),flibnafdelay(flora_naf(FLORA_THIS_WORKSPACE(tabled_naf_call)(','(FLORA_THIS_WORKSPACE(rebutted)(__T,__H,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)),fllibexecute_delayed_calls([__H,__Mod,__T],[]))),[__T,__H,__Mod],193,'flrgclp.flr')))),fllibexecute_delayed_calls([__H,__Mod,__T,__T2],[__H,__Mod,__T])))).
+:-(FLORA_THIS_WORKSPACE(disqualified)(__T,__H,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(54,'flrgclp.flr',FLORA_THIS_MODULE_NAME),FLORA_THIS_WORKSPACE(beaten_by_strict_rule)(__T,__H,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)))).
+:-(FLORA_THIS_WORKSPACE(disqualified)(__T,__H,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(56,'flrgclp.flr',FLORA_THIS_MODULE_NAME),'_$_$_ergo''_cancel_aux'(__Mod,__T,__H))).
+:-(FLORA_THIS_WORKSPACE(disqualified)(__T,__H,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(58,'flrgclp.flr',FLORA_THIS_MODULE_NAME),'_$_$_ergo''_overriden_cancellation'(__T,__H,__Mod))).
+:-(FLORA_THIS_WORKSPACE(refutes)(__T1,__H1,__T2,__H2,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(60,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','(:(flrdatatype,flora_is_nonvar_prim(__T1)),','(!,','(:(flrdescriptor_support,synonymous_tag_with_head(__T1,__Mod,__T11,__H1)),','('_$_$_ergo''_overrides_aux'(__Mod,__T11,__H1,__T22,__H2),','(:(flrdescriptor_support,synonymous_tag_with_head(__T22,__Mod,__T2,__H2)),','(flibnafdelay(flora_naf(FLORA_THIS_WORKSPACE(tabled_naf_call)(','(FLORA_THIS_WORKSPACE(compromized)(__T11,__H1,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),fllibexecute_delayed_calls([__H1,__Mod,__T11],[]))),[__T11,__H1,__Mod],210,'flrgclp.flr')),FLORA_THIS_WORKSPACE(conflicts)(__T11,__H1,__T22,__H2,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)))))))),fllibexecute_delayed_calls([__H1,__H2,__Mod,__T1,__T11,__T2,__T22],[__H1,__H2,__Mod,__T1,__T2])))).
+:-(FLORA_THIS_WORKSPACE(refutes)(__T1,__H1,__T2,__H2,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(62,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','(:(flrdescriptor_support,synonymous_tag_with_head(__T2,__Mod,__T22,__H2)),','('_$_$_ergo''_overrides_aux'(__Mod,__T11,__H1,__T22,__H2),','(:(flrdescriptor_support,synonymous_tag_with_head(__T11,__Mod,__T1,__H1)),','(flibnafdelay(flora_naf(FLORA_THIS_WORKSPACE(tabled_naf_call)(','(FLORA_THIS_WORKSPACE(compromized)(__T11,__H1,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),fllibexecute_delayed_calls([__H1,__Mod,__T11],[]))),[__T11,__H1,__Mod],218,'flrgclp.flr')),FLORA_THIS_WORKSPACE(conflicts)(__T11,__H1,__T22,__H2,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)))))),fllibexecute_delayed_calls([__H1,__H2,__Mod,__T1,__T11,__T2,__T22],[__H1,__H2,__Mod,__T1,__T2])))).
+:-(FLORA_THIS_WORKSPACE(rebuts)(__T1,__H1,__T2,__H2,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(64,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(:(flora_ground,flrground(+(__T1,__H1))),','(!,','(flibnafdelay(flora_naf(FLORA_THIS_WORKSPACE(tabled_naf_call)(','('_$_$_ergo''_cancel_aux'(__Mod,__T1,__H1),fllibexecute_delayed_calls([__H1,__Mod,__T1],[]))),[__Mod,__T1,__H1],224,'flrgclp.flr')),','(flibnafdelay(flora_naf(FLORA_THIS_WORKSPACE(tabled_naf_call)(','(FLORA_THIS_WORKSPACE(compromized)(__T1,__H1,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),fllibexecute_delayed_calls([__H1,__Mod,__T1],[]))),[__T1,__H1,__Mod],225,'flrgclp.flr')),FLORA_THIS_WORKSPACE(conflicts)(__T1,__H1,__T2,__H2,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)))))))).
+:-(FLORA_THIS_WORKSPACE(rebuts)(__T1,__H1,__T2,__H2,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(66,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(FLORA_THIS_WORKSPACE(conflicts)(__T1,__H1,__T2,__H2,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),','(flibnafdelay(flora_naf(FLORA_THIS_WORKSPACE(tabled_naf_call)(','('_$_$_ergo''_cancel_aux'(__Mod,__T1,__H1),fllibexecute_delayed_calls([__H1,__Mod,__T1],[]))),[__Mod,__T1,__H1],230,'flrgclp.flr')),flibnafdelay(flora_naf(FLORA_THIS_WORKSPACE(tabled_naf_call)(','(FLORA_THIS_WORKSPACE(compromized)(__T1,__H1,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)),fllibexecute_delayed_calls([__H1,__Mod,__T1],[]))),[__T1,__H1,__Mod],231,'flrgclp.flr')))))).
+:-(FLORA_THIS_WORKSPACE(static^mvd)(flapply(status,__T,__H),howDefeated,flapply(refutedBy,__DT,__DH),'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(68,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),','(FLORA_THIS_WORKSPACE(change_module)(__H,__Mod,__RealMod,__HM,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),FLORA_THIS_WORKSPACE(refutes)(__DT,__DH,__T,__HM,__RealMod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)))),fllibexecute_delayed_calls([__DH,__DT,__H,__HM,__Mod,__RealMod,__T],[__DH,__DT,__H,__T])))).
+:-(FLORA_THIS_WORKSPACE(static^mvd)(flapply(status,__T,__H),howDefeated,flapply(rebuttedBy,__DT,__DH),'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(70,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),','(FLORA_THIS_WORKSPACE(change_module)(__H,__Mod,__RealMod,__HM,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),FLORA_THIS_WORKSPACE(rebuts)(__DT,__DH,__T,__HM,__RealMod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)))),fllibexecute_delayed_calls([__DH,__DT,__H,__HM,__Mod,__RealMod,__T],[__DH,__DT,__H,__T])))).
+:-(FLORA_THIS_WORKSPACE(static^mvd)(flapply(status,__T,__H),howDefeated,disqualified,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(72,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),','(FLORA_THIS_WORKSPACE(change_module)(__H,__Mod,__RealMod,__HM,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),FLORA_THIS_WORKSPACE(disqualified)(__T,__HM,__RealMod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)))),fllibexecute_delayed_calls([__H,__HM,__Mod,__RealMod,__T],[__H,__T])))).
+:-(FLORA_THIS_WORKSPACE(static^mvd)(flapply(status,__T,__H),howDefeated,disqualified,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(74,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),','(FLORA_THIS_WORKSPACE(change_module)(__H,__Mod,__RealMod,__HM,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),FLORA_THIS_WORKSPACE(beaten_by_strict_rule)(__T,__HM,__newdontcarevar5,__newdontcarevar6,__RealMod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar7,__newcontextvar8)))),fllibexecute_delayed_calls([__H,__HM,__Mod,__RealMod,__T,__newdontcarevar9],[__H,__T])))).
+:-(FLORA_THIS_WORKSPACE(static^mvd)(flapply(status,__T,__H),info,flapply(refutes,__RefutedT,__RefutedH),'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(76,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),','(FLORA_THIS_WORKSPACE(change_module)(__H,__Mod,__RealMod,__HM,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),FLORA_THIS_WORKSPACE(refutes)(__T,__HM,__RefutedT,__RefutedH,__RealMod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)))),fllibexecute_delayed_calls([__H,__HM,__Mod,__RealMod,__RefutedH,__RefutedT,__T],[__H,__RefutedH,__RefutedT,__T])))).
+:-(FLORA_THIS_WORKSPACE(static^mvd)(flapply(status,__T,__H),info,flapply(rebuts,__RebuttedT,__RebuttedH),'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(78,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),','(FLORA_THIS_WORKSPACE(change_module)(__H,__Mod,__RealMod,__HM,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),FLORA_THIS_WORKSPACE(rebuts)(__T,__HM,__RebuttedT,__RebuttedH,__RealMod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)))),fllibexecute_delayed_calls([__H,__HM,__Mod,__RealMod,__RebuttedH,__RebuttedT,__T],[__H,__RebuttedH,__RebuttedT,__T])))).
+:-(FLORA_THIS_WORKSPACE(static^mvd)(flapply(status,__T,__H),info,flapply(conflictsWith,__ConflictT,__ConflictH),'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(80,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),','(FLORA_THIS_WORKSPACE(change_module)(__H,__Mod,__RealMod,__HM,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),FLORA_THIS_WORKSPACE(conflicts)(__T,__HM,__ConflictT,__ConflictH,__RealMod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)))),fllibexecute_delayed_calls([__ConflictH,__ConflictT,__H,__HM,__Mod,__RealMod,__T],[__ConflictH,__ConflictT,__H,__T])))).
+:-(FLORA_THIS_WORKSPACE(static^mvd)(flapply(status,__T,__H),info,candidate,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(82,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),','(FLORA_THIS_WORKSPACE(change_module)(__H,__Mod,__RealMod,__HM,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),FLORA_THIS_WORKSPACE(candidate)(__T,__HM,__RealMod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)))),fllibexecute_delayed_calls([__H,__HM,__Mod,__RealMod,__T],[__H,__T])))).
+:-(FLORA_THIS_WORKSPACE(static^mvd)(flapply(status,__T,__H),howDisqualified,flapply(defeatCycleEdge,__DefeaterT,__DefeaterH,__DefeatedT,__DefeatedH),'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(84,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),','(FLORA_THIS_WORKSPACE(change_module)(__H,__Mod,__RealMod,__HM,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),','(:(flrdescriptor_support,synonymous_tag_with_head(__T,__Mod,__T2,__HM)),','(FLORA_THIS_WORKSPACE(trans_defeats)(__T,__HM,__T2,__HM,__RealMod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)),','(FLORA_THIS_WORKSPACE(trans_defeats)(__T2,__HM,__DefeaterT,__DefeaterH,__RealMod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar7,__newcontextvar8)),','(FLORA_THIS_WORKSPACE(defeats)(__DefeaterT,__DefeaterH,__DefeatedT,__DefeatedH,__RealMod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar9,__newcontextvar10)),','(fllibdelayedliteral('!=','flrgclp.flr',293,[','(__DefeaterT,'DefeaterH'),','(__DefeatedT,__DefeatedH)]),FLORA_THIS_WORKSPACE(trans_defeats)(__DefeatedT,__DefeatedH,__T2,__HM,__RealMod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar11,__newcontextvar12))))))))),fllibexecute_delayed_calls([__DefeatedH,__DefeatedT,__DefeaterH,__DefeaterT,__H,__HM,__Mod,__RealMod,__T,__T2],[__DefeatedH,__DefeatedT,__DefeaterH,__DefeaterT,__H,__T])))).
+:-(FLORA_THIS_WORKSPACE(static^mvd)(flapply(status,__T,__H),howDisqualified,canceled,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(86,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),','(FLORA_THIS_WORKSPACE(change_module)(__H,__Mod,__RealMod,__HM,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),'_$_$_ergo''_cancel_aux'(__RealMod,__T,__HM))),fllibexecute_delayed_calls([__H,__HM,__Mod,__RealMod,__T],[__H,__T])))).
+:-(FLORA_THIS_WORKSPACE(static^mvd)(flapply(status,__T,__H),howDisqualified,flapply(beatenByStrictRule,__ST,__SH),'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(88,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),','(FLORA_THIS_WORKSPACE(change_module)(__H,__Mod,__RealMod,__HM,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),FLORA_THIS_WORKSPACE(beaten_by_strict_rule)(__T,__HM,__ST,__SH,__RealMod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)))),fllibexecute_delayed_calls([__H,__HM,__Mod,__RealMod,__SH,__ST,__T],[__H,__SH,__ST,__T])))).
+:-(FLORA_THIS_WORKSPACE(static^mvd)(flapply(status,__T,__H),howDisqualified,flapply(overridenCancellation,__T,__HM),'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(90,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','('_$_$_ergo''silent_equal'(_CallerModuleVar,__Mod),','(FLORA_THIS_WORKSPACE(change_module)(__H,__Mod,__RealMod,__HM,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),'_$_$_ergo''_overriden_cancellation'(__T,__HM,__RealMod))),fllibexecute_delayed_calls([__H,__HM,__Mod,__RealMod,__T],[__H,__HM,__T])))).
+:-(FLORA_THIS_WORKSPACE(trans_defeats)(__T1,__H1,__T2,__H2,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(92,'flrgclp.flr',FLORA_THIS_MODULE_NAME),FLORA_THIS_WORKSPACE(defeats)(__T1,__H1,__T2,__H2,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)))).
+:-(FLORA_THIS_WORKSPACE(trans_defeats)(__T1,__H1,__T3,__H3,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(94,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','(FLORA_THIS_WORKSPACE(defeats)(__T1,__H1,__T2,__H2,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),FLORA_THIS_WORKSPACE(trans_defeats)(__T2,__H2,__T3,__H3,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6))),fllibexecute_delayed_calls([__H1,__H2,__H3,__Mod,__T1,__T2,__T3],[__H1,__H3,__Mod,__T1,__T3])))).
+:-(FLORA_THIS_WORKSPACE(candidate)(__T,__Head,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(96,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','(current_prolog_flag(max_table_subgoal_size,__TermDepth),','(set_prolog_flag(max_table_subgoal_size,0),','(','(fllibmodobj(body,libmod_wrapper,__Head,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar4,__newcontextvar5),__newvar3),=(__ModHead,__newvar3)),','(:(flrdescriptor_support,get_ruleid_by_tag_or_head(__T,__ModHead,__Mod,__Id,__FileName)),','(:(flrcanon,show_rule_by_id(__Id,__FileName,__Mod,__ModHead,__Body)),','(:(flrdescriptor_support,is_defeasible_rule(__Id,__FileName,__Mod)),','(fllibmodlit(libmod_wrapper,__Body,'_invalid_flora_module_','_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar6,__newcontextvar7)),set_prolog_flag(max_table_subgoal_size,__TermDepth)))))))),fllibexecute_delayed_calls([__Body,__FileName,__Head,__Id,__Mod,__ModHead,__T,__TermDepth],[__Head,__Mod,__T])))).
+:-(FLORA_THIS_WORKSPACE(conflicts)(__T1,__H1,__T2,__H2,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(98,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','('_$_$_ergo''_opposes_aux'(__Mod,__T1,__H1,__T2,__H2),','(flibnafdelay(flora_naf(FLORA_THIS_WORKSPACE(tabled_naf_call)(','('_$_$_ergo''_cancel_aux'(__Mod,__T1,__H1),fllibexecute_delayed_calls([__H1,__Mod,__T1],[]))),[__Mod,__T1,__H1],354,'flrgclp.flr')),','(flibnafdelay(flora_naf(FLORA_THIS_WORKSPACE(tabled_naf_call)(','('_$_$_ergo''_cancel_aux'(__Mod,__T2,__H2),fllibexecute_delayed_calls([__H2,__Mod,__T2],[]))),[__Mod,__T2,__H2],355,'flrgclp.flr')),','(FLORA_THIS_WORKSPACE(candidate)(__T1,__H1,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),FLORA_THIS_WORKSPACE(candidate)(__T2,__H2,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)))))))).
+:-(FLORA_THIS_WORKSPACE(beaten_by_strict_rule)(__T,__H,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(100,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(FLORA_THIS_WORKSPACE(beaten_by_strict_rule)(__T,__H,__newdontcarevar3,__newdontcarevar4,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6)),fllibexecute_delayed_calls([__H,__Mod,__T,__newdontcarevar7],[__H,__Mod,__T])))).
+:-(FLORA_THIS_WORKSPACE(beaten_by_strict_rule)(__T,__H,__Tstrict,__Hstrict,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(102,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(FLORA_THIS_WORKSPACE(candidate)(__T,__H,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,__newcontextvar4)),','('_$_$_ergo''_opposes_aux'(__Mod,__T,__H,__Tstrict,__Hstrict),';'(->(:(flrstorageutils,'\\isbasefact'(__Hstrict)),'\\true'),FLORA_THIS_WORKSPACE(strict_candidate)(__Tstrict,__Hstrict,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar5,__newcontextvar6))))))).
+:-(FLORA_THIS_WORKSPACE(strict_candidate)(__T,__Head,__Mod,'_$ctxt'(_CallerModuleVar,__newcontextvar1,__newcontextvar2)),','('_$_$_ergo''rule_enabled'(104,'flrgclp.flr',FLORA_THIS_MODULE_NAME),','(','(current_prolog_flag(max_table_subgoal_size,__TermDepth),','(set_prolog_flag(max_table_subgoal_size,0),','(','(fllibmodobj(body,libmod_wrapper,__Head,__Mod,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar4,__newcontextvar5),__newvar3),=(__ModHead,__newvar3)),','(:(flrdescriptor_support,get_ruleid_by_tag_or_head(__T,__ModHead,__Mod,__Id,__FileName)),','(:(flrcanon,show_rule_by_id(__Id,__FileName,__Mod,__ModHead,__Body)),','(:(flrdescriptor_support,is_strict_rule(__Id,__FileName,__Mod)),','(fllibmodlit(libmod_wrapper,__Body,'_invalid_flora_module_','_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar6,__newcontextvar7)),set_prolog_flag(max_table_subgoal_size,__TermDepth)))))))),fllibexecute_delayed_calls([__Body,__FileName,__Head,__Id,__Mod,__ModHead,__T,__TermDepth],[__Head,__Mod,__T])))).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Rule signatures %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Signatures for latent queries %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%% Queries found in the source file %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+?-(fllibprogramans(','('_$_$_ergo''silent_equal'(_CallerModuleVar,FLORA_THIS_MODULE_NAME),:(flrarguments,flora_set_argdef(status,2,[oid,meta],FLORA_THIS_MODULE_NAME))),[])).
+
+ 
+#if !defined(FLORA_FLS2_FILENAME)
+#if !defined(FLORA_LOADDYN_DATA)
+#define FLORA_LOADDYN_DATA
+#endif
+#mode save
+#mode nocomment "%"
+#define FLORA_FLS2_FILENAME  'flrgclp.fls2'
+#mode restore
+?-(:(flrutils,flora_loaddyn_data(FLORA_FLS2_FILENAME,FLORA_THIS_MODULE_NAME,'fls2'))).
+#else
+#if !defined(FLORA_READ_CANONICAL_AND_INSERT)
+#define FLORA_READ_CANONICAL_AND_INSERT
+#endif
+?-(:(flrutils,flora_read_symbols_canonical_and_insert(FLORA_FLS2_FILENAME,FLORA_THIS_FLS_STORAGE,_SymbolErrNum))).
+#endif
+
+?-(:(flrutils,util_load_structdb('flrgclp.ergo',FLORA_THIS_MODULE_NAME))).
+
+/************************************************************************
+  file: headerinc/flrtrailer_inc.flh
+
+  Author(s): Michael Kifer
+
+  This file is automatically included by the Flora-2 compiler.
+************************************************************************/
+
+#include "flrtrailer.flh"
+
+/***********************************************************************/
+
+/************************************************************************
+  file: headerinc/flrpreddef_inc.flh
+
+  Author(s): Chang Zhao
+
+  This file is automatically included by the Flora-2 compiler.
+************************************************************************/
+
+:-(compiler_options([xpp_on])).
+
+#include "flrpreddef.flh"
+
+/***********************************************************************/
+
+:-(FLORA_THIS_WORKSPACE(\\undefeated)(_h747640,_h747642,_h747644,_h747646,_h747648,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(\\undefeated))(_h747640,_h747642,_h747644,_h747646,_h747648,FWContext)).
+:-(FLORA_THIS_WORKSPACE(beaten_by_strict_rule)(_h748293,_h748295,_h748297,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(beaten_by_strict_rule))(_h748293,_h748295,_h748297,FWContext)).
+:-(FLORA_THIS_WORKSPACE(beaten_by_strict_rule)(_h749084,_h749086,_h749088,_h749090,_h749092,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(beaten_by_strict_rule))(_h749084,_h749086,_h749088,_h749090,_h749092,FWContext)).
+:-(FLORA_THIS_WORKSPACE(candidate)(_h749883,_h749885,_h749887,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(candidate))(_h749883,_h749885,_h749887,FWContext)).
+:-(FLORA_THIS_WORKSPACE(change_module)(_h750482,_h750484,_h750486,_h750488,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(change_module))(_h750482,_h750484,_h750486,_h750488,FWContext)).
+:-(FLORA_THIS_WORKSPACE(change_module_nocheck)(_h751149,_h751151,_h751153,_h751155,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(change_module_nocheck))(_h751149,_h751151,_h751153,_h751155,FWContext)).
+:-(FLORA_THIS_WORKSPACE(check_module_to_AT_association)(_h751944,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(check_module_to_AT_association))(_h751944,FWContext)).
+:-(FLORA_THIS_WORKSPACE(compromized)(_h752871,_h752873,_h752875,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(compromized))(_h752871,_h752873,_h752875,FWContext)).
+:-(FLORA_THIS_WORKSPACE(conflicts)(_h753502,_h753504,_h753506,_h753508,_h753510,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(conflicts))(_h753502,_h753504,_h753506,_h753508,_h753510,FWContext)).
+:-(FLORA_THIS_WORKSPACE(defeated)(_h754109,_h754111,_h754113,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(defeated))(_h754109,_h754111,_h754113,FWContext)).
+:-(FLORA_THIS_WORKSPACE(defeated_id)(_h754692,_h754694,_h754696,_h754698,_h754700,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(defeated_id))(_h754692,_h754694,_h754696,_h754698,_h754700,FWContext)).
+:-(FLORA_THIS_WORKSPACE(defeats)(_h755331,_h755333,_h755335,_h755337,_h755339,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(defeats))(_h755331,_h755333,_h755335,_h755337,_h755339,FWContext)).
+:-(FLORA_THIS_WORKSPACE(disqualified)(_h755906,_h755908,_h755910,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(disqualified))(_h755906,_h755908,_h755910,FWContext)).
+:-(FLORA_THIS_WORKSPACE(rebuts)(_h756553,_h756555,_h756557,_h756559,_h756561,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(rebuts))(_h756553,_h756555,_h756557,_h756559,_h756561,FWContext)).
+:-(FLORA_THIS_WORKSPACE(rebutted)(_h757112,_h757114,_h757116,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(rebutted))(_h757112,_h757114,_h757116,FWContext)).
+:-(FLORA_THIS_WORKSPACE(refuted)(_h757695,_h757697,_h757699,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(refuted))(_h757695,_h757697,_h757699,FWContext)).
+:-(FLORA_THIS_WORKSPACE(refutes)(_h758262,_h758264,_h758266,_h758268,_h758270,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(refutes))(_h758262,_h758264,_h758266,_h758268,_h758270,FWContext)).
+:-(FLORA_THIS_WORKSPACE(strict_candidate)(_h758837,_h758839,_h758841,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(strict_candidate))(_h758837,_h758839,_h758841,FWContext)).
+:-(FLORA_THIS_WORKSPACE(trans_defeats)(_h759548,_h759550,_h759552,_h759554,_h759556,FWContext),FLORA_THIS_WORKSPACE(FLDYNZPREFIX_UNQ(trans_defeats))(_h759548,_h759550,_h759552,_h759554,_h759556,FWContext)).

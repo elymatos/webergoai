@@ -1,0 +1,6 @@
+%% Textual information for source file atck1alt.ergo
+%% FL_TEXTUAL_INFO_PRED(StmtNum,ShortStmtFileSpec,BegLn,BegCh,EndLn,EndCh)
+%% Note: StmtNum != RuleId. Their relationship is encoded in rule signatures
+
+
+'_$_$_ergo''textual_info'(47,'atck1alt.flr',38,1,38,51).

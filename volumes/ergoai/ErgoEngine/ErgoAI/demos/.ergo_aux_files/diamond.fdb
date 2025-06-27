@@ -1,0 +1,11 @@
+#include "flrheader.flh"
+#define FLORA_COMPILATION_ID 4
+
+
+FLORA_THIS_WORKSPACE(imvd)(c,f,g,__newcontextvar3).
+FLORA_THIS_WORKSPACE(imvd)(c1,flapply(f,a),a,__newcontextvar5).
+FLORA_THIS_WORKSPACE(sub)(c1,c,__newcontextvar6).
+FLORA_THIS_WORKSPACE(imvd)(c2,flapply(f,b),b,__newcontextvar5).
+FLORA_THIS_WORKSPACE(sub)(c2,c,__newcontextvar6).
+FLORA_THIS_WORKSPACE(isa)(o,c1,__newcontextvar5).
+FLORA_THIS_WORKSPACE(isa)(o,c2,__newcontextvar6).

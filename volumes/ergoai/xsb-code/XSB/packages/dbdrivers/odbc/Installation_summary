@@ -1,0 +1,6 @@
+
+  ODBC support:                                   yes
+  ODBC library directory:                         
+  ODBC C Flags:                                   -DHAVE_UNISTD_H -DHAVE_PWD_H -DHAVE_SYS_TYPES_H -DHAVE_LONG_LONG -DSIZEOF_LONG_INT=8 -I/usr/include 
+  ODBC Loader Flags:                              -L/usr/lib -lodbc
+

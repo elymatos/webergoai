@@ -1,0 +1,18 @@
+#include "flrheader.flh"
+#define FLORA_COMPILATION_ID 1
+
+
+FLORA_THIS_WORKSPACE(imvdsig)(a,b,c,__newcontextvar9).
+FLORA_THIS_WORKSPACE(imvdcondef)(a,b,1,1,__newcontextvar10).
+FLORA_THIS_WORKSPACE(imvdsig)(a,bs,e,__newcontextvar11).
+FLORA_THIS_WORKSPACE(imvdcondef)(a,bs,0,*,__newcontextvar12).
+FLORA_THIS_WORKSPACE(imvdsig)(a,b1,c1,__newcontextvar9).
+FLORA_THIS_WORKSPACE(imvdcondef)(a,b1,1,1,__newcontextvar10).
+FLORA_THIS_WORKSPACE(imvdsig)(a,bs1,e1,__newcontextvar11).
+FLORA_THIS_WORKSPACE(imvdcondef)(a,bs1,0,*,__newcontextvar12).
+FLORA_THIS_WORKSPACE(mvdsig)(aa,b,d,__newcontextvar9).
+FLORA_THIS_WORKSPACE(mvdcondef)(aa,b,1,1,__newcontextvar10).
+FLORA_THIS_WORKSPACE(mvdsig)(aa,bs1,d2,__newcontextvar11).
+FLORA_THIS_WORKSPACE(mvdcondef)(aa,bs1,0,*,__newcontextvar12).
+FLORA_THIS_WORKSPACE(sub)(aaa,a,__newcontextvar3).
+FLORA_THIS_WORKSPACE(isa)(aa,aaa,__newcontextvar3).

@@ -1,0 +1,10 @@
+%% Textual information for source file tree_traversal.ergo
+%% FL_TEXTUAL_INFO_PRED(StmtNum,ShortStmtFileSpec,BegLn,BegCh,EndLn,EndCh)
+%% Note: StmtNum != RuleId. Their relationship is encoded in rule signatures
+
+
+'_$_$_ergo''textual_info'(3,'tree_traversal.flr',5,1,5,76).
+'_$_$_ergo''textual_info'(11,'tree_traversal.flr',30,2,34,43).
+'_$_$_ergo''textual_info'(13,'tree_traversal.flr',39,2,47,21).
+'_$_$_ergo''textual_info'(14,'tree_traversal.flr',49,1,49,16).
+'_$_$_ergo''textual_info'(15,'tree_traversal.flr',50,1,50,23).

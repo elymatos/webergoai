@@ -1,0 +1,7 @@
+:-(dynamic(/(FLORA_THIS_WORKSPACE(negation_axiom),2))).
+:-(index(/(FLORA_THIS_WORKSPACE(negation_axiom),2),'.'(1,'.'(2,[])))).
+:-(import(from(','(/(flora_set_xpp_options_for_read,1),/(flora_clear_xpp_options,0)),flrutils))).
+:-(import(from(/(flora_configuration,2),flrregistry))).
+:-(import(from(','(/(flora_concat_atoms,2),/(flora_slash,1)),flrporting))).
+?-(','(\+(clause('_$_$_ergo''opposes_base'(FLORA_THIS_MODULE_NAME,_h1727,_h1809),_h1929)),assert(:-('_$_$_ergo''opposes_base'(FLORA_THIS_MODULE_NAME,_h2315,_h2397),FLORA_THIS_WORKSPACE(negation_axiom)(_h2315,_h2397))))).
+?-(','(flora_set_xpp_options_for_read(FLORA_THIS_MODULE_NAME),','(flora_configuration(installdir,_h1803),','(flora_slash(_h1999),','(flora_concat_atoms('.'(_h1803,'.'(_h1999,'.'(genincludes,'.'(_h1999,'.'('flropposes_data.flh',[]))))),_h2663),','(load_dyn(_h2663),flora_clear_xpp_options)))))).

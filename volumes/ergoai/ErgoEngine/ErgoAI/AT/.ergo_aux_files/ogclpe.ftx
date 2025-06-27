@@ -1,0 +1,6 @@
+%% Textual information for source file ogclpe.ergo
+%% FL_TEXTUAL_INFO_PRED(StmtNum,ShortStmtFileSpec,BegLn,BegCh,EndLn,EndCh)
+%% Note: StmtNum != RuleId. Their relationship is encoded in rule signatures
+
+
+'_$_$_ergo''textual_info'(47,'ogclpe.flr',37,1,37,51).

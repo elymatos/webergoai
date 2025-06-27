@@ -1,0 +1,6 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 9
+
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,howDefeated,__fldnewvar2,__fldnewvar3).

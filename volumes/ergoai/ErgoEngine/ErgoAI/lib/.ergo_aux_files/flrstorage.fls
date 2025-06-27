@@ -1,0 +1,4 @@
+flora_nowarn_symbol(commit,1,flvar('_',41),predicate_symbol,nontransactional_symbol,'flrstorage.flr').
+flora_symbol(purgedb,1,\@,117,46,predicate_symbol,nontransactional_symbol,'flrstorage.flr').
+flora_symbol(commit,1,\@,76,41,predicate_symbol,nontransactional_symbol,'flrstorage.flr').
+flora_symbol(commit,0,\@,64,38,predicate_symbol,nontransactional_symbol,'flrstorage.flr').

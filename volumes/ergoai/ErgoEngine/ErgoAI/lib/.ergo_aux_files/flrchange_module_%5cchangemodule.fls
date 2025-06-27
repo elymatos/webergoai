@@ -1,0 +1,2 @@
+flora_symbol(ensure_loaded,0,\@,610,49,predicate_symbol,nontransactional_symbol,'flrchange_module.flr').
+flora_symbol(change_module_if_match,4,\@,605,47,prolog_symbol,nontransactional_symbol,'flrchange_module.flr').

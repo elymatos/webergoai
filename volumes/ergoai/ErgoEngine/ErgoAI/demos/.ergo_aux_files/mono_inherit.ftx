@@ -1,0 +1,8 @@
+%% Textual information for source file mono_inherit.ergo
+%% FL_TEXTUAL_INFO_PRED(StmtNum,ShortStmtFileSpec,BegLn,BegCh,EndLn,EndCh)
+%% Note: StmtNum != RuleId. Their relationship is encoded in rule signatures
+
+
+'_$_$_ergo''textual_info'(8,'mono_inherit.flr',10,1,10,21).
+'_$_$_ergo''textual_info'(9,'mono_inherit.flr',11,1,11,24).
+'_$_$_ergo''textual_info'(10,'mono_inherit.flr',12,1,12,16).
