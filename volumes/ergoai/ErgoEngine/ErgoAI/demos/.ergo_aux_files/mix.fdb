@@ -1,0 +1,9 @@
+#include "flrheader.flh"
+#define FLORA_COMPILATION_ID 5
+
+
+FLORA_THIS_WORKSPACE(nontblflapply)(edge,a,b,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(edge,b,c,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(edge,c,b,__newcontextvar3).
+FLORA_THIS_WORKSPACE(mvdsig)(string,reachableTo,string,__newcontextvar5).
+FLORA_THIS_WORKSPACE(mvdcondef)(string,reachableTo,0,*,__newcontextvar6).

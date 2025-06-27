@@ -1,0 +1,36 @@
+#include "flrheader.flh"
+#define FLORA_COMPILATION_ID 3
+
+
+FLORA_THIS_WORKSPACE(nontblflapply)(time_flies_like_an_arrow,__newcontextvar3).
+FLORA_THIS_WORKSPACE(exists)(fruit_flies_like_an_apple,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(e,a,b,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(e,b,a,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(e,b,c,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(e,b,d,__newcontextvar3).
+FLORA_THIS_WORKSPACE(sub)(person,object,__newcontextvar3).
+FLORA_THIS_WORKSPACE(sub)(dangerous_hobby,object,__newcontextvar3).
+FLORA_THIS_WORKSPACE(isa)(john,employee,__newcontextvar3).
+FLORA_THIS_WORKSPACE(sub)(employee,person,__newcontextvar3).
+FLORA_THIS_WORKSPACE(isa)(bob,person,__newcontextvar3).
+FLORA_THIS_WORKSPACE(isa)(tim,person,__newcontextvar3).
+FLORA_THIS_WORKSPACE(isa)(betty,employee,__newcontextvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(person,age,integer,__newcontextvar9).
+FLORA_THIS_WORKSPACE(imvdcondef)(person,age,1,1,__newcontextvar10).
+FLORA_THIS_WORKSPACE(imvdsig)(person,kids,person,__newcontextvar11).
+FLORA_THIS_WORKSPACE(imvdcondef)(person,kids,0,*,__newcontextvar12).
+FLORA_THIS_WORKSPACE(mvd)(mary,age,29,__newcontextvar13).
+FLORA_THIS_WORKSPACE(mvd)(mary,kids,tim,__newcontextvar14).
+FLORA_THIS_WORKSPACE(mvd)(mary,kids,leo,__newcontextvar15).
+FLORA_THIS_WORKSPACE(mvd)(mary,kids,betty,__newcontextvar16).
+FLORA_THIS_WORKSPACE(mvd)(mary,flapply(salary,1998),a_lot,__newcontextvar17).
+FLORA_THIS_WORKSPACE(isa)(mary,employee,__newcontextvar18).
+FLORA_THIS_WORKSPACE(mvd)(tim,hobbies,stamps,__newcontextvar5).
+FLORA_THIS_WORKSPACE(mvd)(tim,hobbies,snowboard,__newcontextvar6).
+FLORA_THIS_WORKSPACE(mvd)(betty,hobbies,fishing,__newcontextvar5).
+FLORA_THIS_WORKSPACE(mvd)(betty,hobbies,diving,__newcontextvar6).
+FLORA_THIS_WORKSPACE(isa)(snowboard,dangerous_hobby,__newcontextvar3).
+FLORA_THIS_WORKSPACE(isa)(diving,dangerous_hobby,__newcontextvar3).
+FLORA_THIS_WORKSPACE(mvd)(___X,self,___X,__newcontextvar3).
+FLORA_THIS_WORKSPACE(imvd)(person,believes_in,something,__newcontextvar5).
+FLORA_THIS_WORKSPACE(imvd)(person,believes_in,something_else,__newcontextvar6).

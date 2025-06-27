@@ -1,0 +1,5 @@
+#include "flrheader.flh"
+#define FLORA_COMPILATION_ID 2
+
+
+FLORA_THIS_WORKSPACE(tblflapply)(callXOnList,___Op,[],___DataOrSign,__newcontextvar3).

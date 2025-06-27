@@ -1,0 +1,24 @@
+
+  ODBC support:                                   yes
+  ODBC library directory:                         
+  ODBC C Flags:                                   -DHAVE_UNISTD_H -DHAVE_PWD_H -DHAVE_SYS_TYPES_H -DHAVE_LONG_LONG -DSIZEOF_LONG_INT=8 -I/usr/include 
+  ODBC Loader Flags:                              -L/usr/lib -lodbc
+
+  MySQL support:                                  yes
+  MySQL library directory:                        /usr/lib
+  MySQL header directory:                         /usr/include/mysql
+  MySQL C Flags:                                  -I/usr/include/mysql -I/usr/include/mysql/mysql
+  MySQL Loader Flags:                             -L/usr/lib/ -lmariadb
+
+  MySQL Embedded Server support:                  yes
+  MySQL Embedded Server library directory:        /usr/lib
+  MySQL Embedded Server header directory:         /usr/include/mysql
+  MySQL Embedded Server C Flags:                  -g -W -Wall -I/usr/include/mysql -I/usr/include/mysql/mysql -g -O2
+  MySQL Embedded Server Loader Flags:             -L/usr/lib/ -lmariadbd -lz -ldl -lm -lssl -lcrypto 
+
+  MariaDB support:                                  no
+  MariaDB library directory:                        /usr/lib
+  MariaDB header directory:                         /usr/include/mysql
+  MariaDB C Flags:                                  -I/usr/include/mysql -I/usr/include/mysql/mysql
+  MariaDB Loader Flags:                             -L/usr/lib/ -lmariadb
+

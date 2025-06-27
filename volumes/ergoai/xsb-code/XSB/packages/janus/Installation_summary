@@ -1,0 +1,2 @@
+  JANUS_XSB support (XSB to Python connector):        no
+  Janus_xsb:       Python development libraries are likely missing (eg. the package python3.XX-dev not installed)

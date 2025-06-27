@@ -1,0 +1,26 @@
+#include "flrheader.flh"
+#define FLORA_COMPILATION_ID 3
+
+
+FLORA_THIS_WORKSPACE(mvd)(n1,val,50,__newcontextvar7).
+FLORA_THIS_WORKSPACE(mvd)(n1,left,n2,__newcontextvar8).
+FLORA_THIS_WORKSPACE(mvd)(n1,right,n3,__newcontextvar9).
+FLORA_THIS_WORKSPACE(mvd)(n2,val,40,__newcontextvar7).
+FLORA_THIS_WORKSPACE(mvd)(n2,left,n4,__newcontextvar8).
+FLORA_THIS_WORKSPACE(mvd)(n2,right,n5,__newcontextvar9).
+FLORA_THIS_WORKSPACE(mvd)(n4,val,20,__newcontextvar7).
+FLORA_THIS_WORKSPACE(mvd)(n4,left,leaf,__newcontextvar8).
+FLORA_THIS_WORKSPACE(mvd)(n4,right,leaf,__newcontextvar9).
+FLORA_THIS_WORKSPACE(mvd)(n5,val,30,__newcontextvar7).
+FLORA_THIS_WORKSPACE(mvd)(n5,left,leaf,__newcontextvar8).
+FLORA_THIS_WORKSPACE(mvd)(n5,right,leaf,__newcontextvar9).
+FLORA_THIS_WORKSPACE(mvd)(n3,val,40,__newcontextvar7).
+FLORA_THIS_WORKSPACE(mvd)(n3,left,n6,__newcontextvar8).
+FLORA_THIS_WORKSPACE(mvd)(n3,right,n7,__newcontextvar9).
+FLORA_THIS_WORKSPACE(mvd)(n6,val,30,__newcontextvar7).
+FLORA_THIS_WORKSPACE(mvd)(n6,left,leaf,__newcontextvar8).
+FLORA_THIS_WORKSPACE(mvd)(n6,right,leaf,__newcontextvar9).
+FLORA_THIS_WORKSPACE(mvd)(n7,val,30,__newcontextvar7).
+FLORA_THIS_WORKSPACE(mvd)(n7,left,leaf,__newcontextvar8).
+FLORA_THIS_WORKSPACE(mvd)(n7,right,leaf,__newcontextvar9).
+FLORA_THIS_WORKSPACE(mvd)(leaf,dfs,0,__newcontextvar3).

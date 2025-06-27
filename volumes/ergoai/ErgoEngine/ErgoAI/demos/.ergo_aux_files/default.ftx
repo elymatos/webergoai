@@ -1,0 +1,19 @@
+%% Textual information for source file default.ergo
+%% FL_TEXTUAL_INFO_PRED(StmtNum,ShortStmtFileSpec,BegLn,BegCh,EndLn,EndCh)
+%% Note: StmtNum != RuleId. Their relationship is encoded in rule signatures
+
+
+'_$_$_ergo''textual_info'(3,'default.flr',6,1,6,29).
+'_$_$_ergo''textual_info'(9,'default.flr',13,1,13,24).
+'_$_$_ergo''textual_info'(10,'default.flr',14,1,14,35).
+'_$_$_ergo''textual_info'(19,'default.flr',37,1,37,40).
+'_$_$_ergo''textual_info'(20,'default.flr',44,1,44,31).
+'_$_$_ergo''textual_info'(21,'default.flr',46,1,46,32).
+'_$_$_ergo''textual_info'(22,'default.flr',48,1,48,14).
+'_$_$_ergo''textual_info'(23,'default.flr',50,1,50,14).
+'_$_$_ergo''textual_info'(24,'default.flr',53,1,54,31).
+'_$_$_ergo''textual_info'(25,'default.flr',56,1,56,28).
+'_$_$_ergo''textual_info'(26,'default.flr',58,1,61,3).
+'_$_$_ergo''textual_info'(27,'default.flr',66,1,66,45).
+'_$_$_ergo''textual_info'(28,'default.flr',68,1,68,55).
+'_$_$_ergo''textual_info'(29,'default.flr',70,1,71,56).

@@ -1,0 +1,5 @@
+%% Textual information for source file ergo_explain.ergo
+%% FL_TEXTUAL_INFO_PRED(StmtNum,ShortStmtFileSpec,BegLn,BegCh,EndLn,EndCh)
+%% Note: StmtNum != RuleId. Their relationship is encoded in rule signatures
+
+
