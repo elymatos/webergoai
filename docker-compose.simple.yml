@@ -1,11 +1,8 @@
-# docker-compose.simple.yml
-# SIMPLE ErgoAI Web Interface - Just the basics!
-
 services:
-  # Database to save your knowledge bases
+  # Database
   postgres:
-    image: postgres:15
-    container_name: ergoai_db
+    image: postgres:15-alpine
+    container_name: ergoai_db_simple
     environment:
       POSTGRES_DB: ergoai_db
       POSTGRES_USER: ergoai_user
@@ -13,35 +10,34 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
+      - "5433:5432"
     restart: unless-stopped
 
-  # Backend API - connects to ErgoAI
+  # Backend API - now with real ErgoAI
   backend:
     build:
       context: ./backend
       dockerfile: Dockerfile.simple
-    container_name: ergoai_backend
+    container_name: ergoai_backend_simple
     environment:
       - FLASK_ENV=development
       - DATABASE_URL=postgresql://ergoai_user:simple_password@postgres:5432/ergoai_db
       - SECRET_KEY=simple-dev-key
       - ERGOAI_PATH=/opt/ergoai
     volumes:
-      - ./backend:/app
-      - ergoai_data:/opt/ergoai
+      - ./ergoai:/opt/ergoai:ro  # Mount your ErgoAI installation
     ports:
       - "5000:5000"
     depends_on:
       - postgres
     restart: unless-stopped
 
-  # Web Interface (using the HTML we created)
+  # Web Interface
   frontend:
     image: nginx:alpine
-    container_name: ergoai_web
+    container_name: ergoai_web_simple
     volumes:
-      - ./frontend:/usr/share/nginx/html
+      - ./frontend:/usr/share/nginx/html:ro
     ports:
       - "3000:80"
     restart: unless-stopped

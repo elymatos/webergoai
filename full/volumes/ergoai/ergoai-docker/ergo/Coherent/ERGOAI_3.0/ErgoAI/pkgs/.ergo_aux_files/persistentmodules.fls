@@ -1,0 +1,10 @@
+flora_symbol(detach,0,\@,286,63,function_symbol,nontransactional_symbol,'persistentmodules.flr').
+flora_symbol(loadDB,0,\@,311,67,function_symbol,nontransactional_symbol,'persistentmodules.flr').
+flora_symbol(set_field_type,1,\@,449,82,predicate_symbol,nontransactional_symbol,'persistentmodules.flr').
+flora_symbol(+,2,\@,211,56,function_symbol,nontransactional_symbol,'persistentmodules.flr').
+flora_symbol(checkModule,2,\@,36,31,prolog_symbol,nontransactional_symbol,'persistentmodules.flr').
+flora_symbol('Cannot dettach database from module',0,\@,295,64,function_symbol,nontransactional_symbol,'persistentmodules.flr').
+flora_symbol('Cannot attach database to module',0,\@,128,46,function_symbol,nontransactional_symbol,'persistentmodules.flr').
+flora_symbol(attach,4,\@,110,45,function_symbol,nontransactional_symbol,'persistentmodules.flr').
+flora_symbol('Cannot load database facts for module',0,\@,320,68,function_symbol,nontransactional_symbol,'persistentmodules.flr').
+flora_symbol(attachNew,4,\@,166,53,function_symbol,nontransactional_symbol,'persistentmodules.flr').

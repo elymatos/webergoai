@@ -1,0 +1,313 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {paragraph}{Well-Founded Semantics}{2}{section*.2}
+\contentsline {paragraph}{Constraint Support}{3}{section*.3}
+\contentsline {paragraph}{Indexing Methods}{4}{section*.4}
+\contentsline {paragraph}{Interfaces}{4}{section*.5}
+\contentsline {paragraph}{Fast Loading of Code}{4}{section*.6}
+\contentsline {paragraph}{HiLog}{5}{section*.7}
+\contentsline {paragraph}{Unification Factoring}{6}{section*.8}
+\contentsline {paragraph}{XSB Packages}{6}{section*.9}
+\contentsline {section}{\numberline {1.1}Using This Manual}{6}{section.1.1}
+\contentsline {chapter}{\numberline {2}Getting Started with XSB}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}Installing XSB under UNIX}{8}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Possible Installation Problems}{12}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Installing XSB under Windows}{13}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Using Cygwin32 and Cygwin64}{13}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Using Microsoft Visual C++}{13}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Invoking XSB}{16}{section.2.3}
+\contentsline {section}{\numberline {2.4}Compiling XSB programs}{17}{section.2.4}
+\contentsline {section}{\numberline {2.5}Sample XSB Programs}{17}{section.2.5}
+\contentsline {section}{\numberline {2.6}Exiting XSB}{19}{section.2.6}
+\contentsline {chapter}{\numberline {3}System Description}{20}{chapter.3}
+\contentsline {section}{\numberline {3.1}Entering and Exiting XSB from the Command Line}{20}{section.3.1}
+\contentsline {section}{\numberline {3.2}The System and its Directories}{21}{section.3.2}
+\contentsline {section}{\numberline {3.3}How XSB Finds Files: Source File Designators}{22}{section.3.3}
+\contentsline {section}{\numberline {3.4}The Module System of XSB}{24}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}How the Compiler Determines the Module of a Term}{27}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Atoms and 0-Ary Structure Symbols}{30}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Importing and Loading On Demand}{30}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Usage Inference and the Module System}{31}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Importing with Pseudo-Modules}{32}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.6}Parameterized Modules in XSB}{33}{subsection.3.4.6}
+\contentsline {subsection}{\numberline {3.4.7}Modules with Explicit File Names}{36}{subsection.3.4.7}
+\contentsline {section}{\numberline {3.5}Standard Predicates in XSB}{38}{section.3.5}
+\contentsline {section}{\numberline {3.6}The On-Demand Loader and its Search Path}{38}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Changing the Default Search Path}{39}{subsection.3.6.1}
+\contentsline {subsubsection}{The user's configuration directory: {\tt .xsb/}}{40}{section*.13}
+\contentsline {subsubsection}{The user's initialization file: {\tt xsbrc.P}}{40}{section*.14}
+\contentsline {subsection}{\numberline {3.6.2}The Packaging System}{41}{subsection.3.6.2}
+\contentsline {section}{\numberline {3.7}Command Line Arguments}{43}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}General Options}{44}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Other Command-line Options}{46}{subsection.3.7.2}
+\contentsline {subsubsection}{Memory Management Options}{47}{section*.15}
+\contentsline {subsubsection}{Options for Developers}{47}{section*.16}
+\contentsline {section}{\numberline {3.8}Memory Management}{48}{section.3.8}
+\contentsline {section}{\numberline {3.9}Compiling, Consulting, and Loading}{49}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}Static Code}{50}{subsection.3.9.1}
+\contentsline {subsection}{\numberline {3.9.2}Dynamic Code}{51}{subsection.3.9.2}
+\contentsline {subsection}{\numberline {3.9.3}The multifile directive}{52}{subsection.3.9.3}
+\contentsline {section}{\numberline {3.10}The Compiler}{53}{section.3.10}
+\contentsline {subsection}{\numberline {3.10.1}Invoking the Compiler}{53}{subsection.3.10.1}
+\contentsline {subsection}{\numberline {3.10.2}Compiler Options}{55}{subsection.3.10.2}
+\contentsline {paragraph}{\it Special considerations for using XSB as a preprocessor.}{59}{section*.17}
+\contentsline {subsection}{\numberline {3.10.3}Specialization}{65}{subsection.3.10.3}
+\contentsline {subsection}{\numberline {3.10.4}Compiler Directives}{67}{subsection.3.10.4}
+\contentsline {subsubsection}{Including Files in a Compilation}{68}{section*.18}
+\contentsline {subsubsection}{Conditional Compilation}{68}{section*.19}
+\contentsline {subsection}{\numberline {3.10.5}Mode Directives}{69}{subsection.3.10.5}
+\contentsline {subsubsection}{Tabling Directives}{71}{section*.20}
+\contentsline {paragraph}{Automatic Tabling for Termination: {\tt auto\_table}}{71}{section*.21}
+\contentsline {paragraph}{Automatic Tabling for Efficiency: {\tt suppl\_table}}{72}{section*.22}
+\contentsline {subsubsection}{Indexing Directives}{73}{section*.23}
+\contentsline {paragraph}{Indexing of Dynamic Code}{73}{section*.24}
+\contentsline {paragraph}{Static Code}{74}{section*.25}
+\contentsline {subsubsection}{Other Directives}{74}{section*.26}
+\contentsline {subsection}{\numberline {3.10.6}Inline Predicates}{75}{subsection.3.10.6}
+\contentsline {section}{\numberline {3.11}A Note on ISO Compatibility}{76}{section.3.11}
+\contentsline {chapter}{\numberline {4}Syntax}{78}{chapter.4}
+\contentsline {section}{\numberline {4.1}Terms}{78}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Integers}{78}{subsection.4.1.1}
+\contentsline {subsubsection}{ISO Integers}{78}{section*.27}
+\contentsline {subsubsection}{Other Integer Representations}{79}{section*.28}
+\contentsline {subsection}{\numberline {4.1.2}Floating-point Numbers}{80}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Atoms}{80}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Variables}{82}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Compound Terms}{82}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}Lists}{84}{subsection.4.1.6}
+\contentsline {section}{\numberline {4.2}From HiLog to Prolog}{85}{section.4.2}
+\contentsline {section}{\numberline {4.3}Operators}{87}{section.4.3}
+\contentsline {section}{\numberline {4.4}Canonical Syntax}{90}{section.4.4}
+\contentsline {chapter}{\numberline {5}Using Tabling in XSB: A Tutorial Introduction}{92}{chapter.5}
+\contentsline {section}{\numberline {5.1}Tabling in the Context of a Prolog System}{93}{section.5.1}
+\contentsline {section}{\numberline {5.2}Definite Programs}{93}{section.5.2}
+\contentsline {paragraph}{Exercises}{95}{section*.29}
+\contentsline {subsection}{\numberline {5.2.1}Call Variance vs. Call Subsumption}{97}{subsection.5.2.1}
+\contentsline {paragraph}{Determining Call Similarity via Variance}{98}{section*.32}
+\contentsline {paragraph}{Determining Call Similarity via Subsumption}{98}{section*.33}
+\contentsline {paragraph}{Declarations for Call Variance and Call Subsumption}{100}{section*.34}
+\contentsline {subsection}{\numberline {5.2.2}Tabling with Interned Ground Terms}{100}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Table Scheduling Strategies}{101}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Interaction Between Prolog Constructs and Tabling}{103}{subsection.5.2.4}
+\contentsline {paragraph}{Cuts and Tabling}{104}{section*.35}
+\contentsline {paragraph}{Call Subsumption and Meta-Logical Predicates}{106}{section*.36}
+\contentsline {subsection}{\numberline {5.2.5}Potential Pitfalls in Tabling}{106}{subsection.5.2.5}
+\contentsline {paragraph}{Over-Tabling}{106}{section*.37}
+\contentsline {paragraph}{Tabled Predicates and Tracing}{107}{section*.38}
+\contentsline {section}{\numberline {5.3}Normal Programs}{108}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Stratified Normal Programs}{108}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Non-stratified Programs}{112}{subsection.5.3.2}
+\contentsline {paragraph}{When Conditional Answers are Needed}{114}{section*.42}
+\contentsline {paragraph}{Programming in the Well-founded Semantics}{115}{section*.43}
+\contentsline {subsection}{\numberline {5.3.3}On Beyond Zebra: Implementing Other Semantics for Non-stratified Programs}{116}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Answer Subsumption}{119}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Types of Answer Subsumption}{119}{subsection.5.4.1}
+\contentsline {subsubsection}{Partial Order Answer Subsumption.}{119}{section*.47}
+\contentsline {subsubsection}{Lattice Answer Subsumption.}{120}{section*.48}
+\contentsline {subsubsection}{Partial Order Answer Subsumption with Abstraction.}{121}{section*.49}
+\contentsline {subsection}{\numberline {5.4.2}Examples of Answer Subsumption}{122}{subsection.5.4.2}
+\contentsline {subsubsection}{Answer Subsumption and Abstract Interpretation}{122}{section*.50}
+\contentsline {subsubsection}{Scalability for multi-valued and quantitative logics}{123}{section*.51}
+\contentsline {subsection}{\numberline {5.4.3}Term-Sets}{124}{subsection.5.4.3}
+\contentsline {section}{\numberline {5.5}Tabling for Termination}{129}{section.5.5}
+\contentsline {paragraph}{An Infinite Number of Subgoals}{129}{section*.52}
+\contentsline {subsection}{\numberline {5.5.1}Term Size Abstraction in XSB}{130}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Subgoal Abstraction}{131}{subsection.5.5.2}
+\contentsline {subsubsection}{Declaring Subgoal Abstraction}{132}{section*.54}
+\contentsline {subsection}{\numberline {5.5.3}XSB's Approach to Bounded Rationality}{133}{subsection.5.5.3}
+\contentsline {subsubsection}{Radial Restraint Through Answer Abstraction}{133}{section*.55}
+\contentsline {subsubsection}{Answer Count{} Restraint}{135}{section*.57}
+\contentsline {subsubsection}{Justifying or Explaining Restraint}{136}{section*.59}
+\contentsline {section}{\numberline {5.6}Incremental Table Maintenance}{136}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Transparent Incremental Tabling}{137}{subsection.5.6.1}
+\contentsline {subsubsection}{View Consistency}{139}{section*.60}
+\contentsline {subsection}{\numberline {5.6.2}Updating in a Three-Valued Logic}{139}{subsection.5.6.2}
+\contentsline {subsubsection}{Declaring Predicates to be Incremental}{141}{section*.61}
+\contentsline {subsection}{\numberline {5.6.3}Incremental Tabling using Interned Tries}{141}{subsection.5.6.3}
+\contentsline {subsection}{\numberline {5.6.4}Abstracting the IDG for Better Performance}{142}{subsection.5.6.4}
+\contentsline {subsection}{\numberline {5.6.5}Summary and Implementation Status}{144}{subsection.5.6.5}
+\contentsline {subsection}{\numberline {5.6.6}Predicates for Incremental Table Maintenance}{144}{subsection.5.6.6}
+\contentsline {paragraph}{A Note on Terminology}{144}{section*.62}
+\contentsline {paragraph}{Declarations}{145}{section*.63}
+\contentsline {paragraph}{Basic Incremental Maintenance Predicates}{146}{section*.64}
+\contentsline {paragraph}{Incremental Maintenance using Interned Tries}{147}{section*.65}
+\contentsline {paragraph}{Inspecting the State of the Incremental Dependency Graph}{147}{section*.66}
+\contentsline {section}{\numberline {5.7}A Weaker Semantics for Tabling}{150}{section.5.7}
+\contentsline {paragraph}{Examples}{151}{section*.67}
+\contentsline {section}{\numberline {5.8}Compatibility of Tabling Modes and Predicate Attributes}{152}{section.5.8}
+\contentsline {chapter}{\numberline {6}Standard and General Predicates}{155}{chapter.6}
+\contentsline {section}{\numberline {6.1}Input and Output}{155}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}I/O Streams in XSB}{155}{subsection.6.1.1}
+\contentsline {subsubsection}{I/O Stream Implementation}{157}{section*.68}
+\contentsline {subsection}{\numberline {6.1.2}Character Sets in XSB}{158}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Predicates for ISO Streams}{158}{subsection.6.1.3}
+\contentsline {subsubsection}{Other Predicates using ISO Streams}{164}{section*.69}
+\contentsline {subsection}{\numberline {6.1.4}DEC-IO Style File Handling}{165}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}Character I/O}{168}{subsection.6.1.5}
+\contentsline {subsection}{\numberline {6.1.6}Term I/O}{174}{subsection.6.1.6}
+\contentsline {subsubsection}{Term Writing to Designated I/O Streams}{183}{section*.70}
+\contentsline {subsection}{\numberline {6.1.7}Special I/O}{184}{subsection.6.1.7}
+\contentsline {section}{\numberline {6.2}Interactions with the Operating System}{190}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}The {\tt path\_sysop/2} interface}{194}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}Evaluating Arithmetic Expressions through {\tt is/2}}{196}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Evaluable Functors for Arithmetic Expressions}{197}{subsection.6.3.1}
+\contentsline {subsubsection}{Mathematical Functions from {\tt math.h}}{200}{section*.71}
+\contentsline {section}{\numberline {6.4}Convenience}{200}{section.6.4}
+\contentsline {section}{\numberline {6.5}Negation and Control}{201}{section.6.5}
+\contentsline {section}{\numberline {6.6}Unification and Comparison of Terms}{205}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Sorting of Terms}{211}{subsection.6.6.1}
+\contentsline {section}{\numberline {6.7}Meta-Logical}{214}{section.6.7}
+\contentsline {section}{\numberline {6.8}Cyclic Terms}{231}{section.6.8}
+\contentsline {subsection}{\numberline {6.8.1}Unification with and without Occurs Check}{231}{subsection.6.8.1}
+\contentsline {subsection}{\numberline {6.8.2}Cyclic Terms}{232}{subsection.6.8.2}
+\contentsline {section}{\numberline {6.9}Manipulation of Atomic Terms}{233}{section.6.9}
+\contentsline {section}{\numberline {6.10}All Solutions and Aggregate Predicates}{246}{section.6.10}
+\contentsline {section}{\numberline {6.11}Meta-Predicates}{251}{section.6.11}
+\contentsline {subsection}{\numberline {6.11.1}Timed Calls and Co-routining}{257}{subsection.6.11.1}
+\contentsline {subsubsection}{Interpreter Indices}{258}{section*.72}
+\contentsline {subsubsection}{Timed Call and related predicates}{258}{section*.73}
+\contentsline {section}{\numberline {6.12}Information about the System State}{263}{section.6.12}
+\contentsline {section}{\numberline {6.13}Execution State}{286}{section.6.13}
+\contentsline {section}{\numberline {6.14}Asserting, Retracting, and Other Database Modifications}{295}{section.6.14}
+\contentsline {subsection}{\numberline {6.14.1}(Fast) Loading of Dynamic Code from Files}{306}{subsection.6.14.1}
+\contentsline {subsection}{\numberline {6.14.2}The {\tt storage} Module: Associative Arrays and Backtrackable Updates}{311}{subsection.6.14.2}
+\contentsline {subsubsection}{Non-backtrackable Storage}{311}{section*.75}
+\contentsline {subsubsection}{Backtrackable Updates}{312}{section*.76}
+\contentsline {subsubsection}{Reclaiming Space}{313}{section*.77}
+\contentsline {section}{\numberline {6.15}Tabling Declarations and Builtins}{313}{section.6.15}
+\contentsline {subsection}{\numberline {6.15.1}Declaring and Modifying Tabled Predicates}{314}{subsection.6.15.1}
+\contentsline {paragraph}{Checking Consistency and Support of Tabling Properties}{316}{section*.80}
+\contentsline {paragraph}{Executing Multiple {\tt table} Directives for a Predicate}{317}{section*.81}
+\contentsline {subsection}{\numberline {6.15.2}Predicates for Table Inspection}{318}{subsection.6.15.2}
+\contentsline {subsection}{\numberline {6.15.3}Predicates for Table Inspection: Lower-level}{325}{subsection.6.15.3}
+\contentsline {subsection}{\numberline {6.15.4}Abolishing Tables and Table Components}{330}{subsection.6.15.4}
+\contentsline {paragraph}{Abolishing a Table that is being Computed}{330}{section*.84}
+\contentsline {paragraph}{View Consistency and Table Garbage Collection}{331}{section*.85}
+\contentsline {paragraph}{Maintenance of the Residual Program}{331}{section*.86}
+\contentsline {paragraph}{Abolishing Incremental Tab;es}{332}{section*.87}
+\contentsline {subsubsection}{Table Deletion Predicates}{333}{section*.88}
+\contentsline {subsection}{\numberline {6.15.5}Indexing Subsumptive Tables}{338}{subsection.6.15.5}
+\contentsline {chapter}{\numberline {7}Storing Facts in Tries}{341}{chapter.7}
+\contentsline {section}{\numberline {7.1}Examples of Using Tries}{342}{section.7.1}
+\contentsline {section}{\numberline {7.2}Space Management for Tries}{344}{section.7.2}
+\contentsline {section}{\numberline {7.3}Predicates for Tries}{345}{section.7.3}
+\contentsline {section}{\numberline {7.4}Low-level Trie Manipulation Utilities}{351}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}A Low-Level API for Interned Tries}{352}{subsection.7.4.1}
+\contentsline {chapter}{\numberline {8}Hooks}{355}{chapter.8}
+\contentsline {section}{\numberline {8.1}Adding and Removing Hooks}{355}{section.8.1}
+\contentsline {section}{\numberline {8.2}Hooks Supported by XSB}{356}{section.8.2}
+\contentsline {chapter}{\numberline {9}Debugging and Profiling}{359}{chapter.9}
+\contentsline {section}{\numberline {9.1}Prolog-style Tracing and Debugging}{359}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}Control of Prolog-Style Tracing and Debugging}{364}{subsection.9.1.1}
+\contentsline {section}{\numberline {9.2}Trace-based Execution Analysis through Forest Logging}{365}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}Tracing a tabled evaluation through forest logging}{366}{subsection.9.2.1}
+\contentsline {subsection}{\numberline {9.2.2}Analyzing the log; seeing the forest through the trees}{372}{subsection.9.2.2}
+\contentsline {subsubsection}{Using abstraction in the analysis}{375}{section*.90}
+\contentsline {subsubsection}{Analyzing Negation}{376}{section*.91}
+\contentsline {subsection}{\numberline {9.2.3}Discussion}{379}{subsection.9.2.3}
+\contentsline {subsection}{\numberline {9.2.4}Predicates for Forest Logging}{379}{subsection.9.2.4}
+\contentsline {section}{\numberline {9.3}Inspecting a Tabled Derivation}{380}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Inspecting Tables with {\tt table\_dump}}{381}{subsection.9.3.1}
+\contentsline {subsection}{\numberline {9.3.2}Inspection Predicates for Dependency Graphs}{384}{subsection.9.3.2}
+\contentsline {subsubsection}{A Prolog Format for Dependency Graphs}{385}{section*.92}
+\contentsline {subsubsection}{Predicates to Access the Subgoal Dependency Graph}{386}{section*.93}
+\contentsline {subsubsection}{Predicates to Access the Incremental Dependency Graph}{388}{section*.94}
+\contentsline {subsubsection}{Predicates to Access the Residual Dependency Graph}{389}{section*.95}
+\contentsline {subsubsection}{Filtering, Manipulating, and Summarizing Dependency Graphs}{393}{section*.96}
+\contentsline {subsection}{\numberline {9.3.3}Summary: Inspection Predicates}{397}{subsection.9.3.3}
+\contentsline {subsection}{\numberline {9.3.4}Setting Tripwires on Tabled Derivations}{398}{subsection.9.3.4}
+\contentsline {subsubsection}{Tripwires Based on Resource Limits}{399}{section*.97}
+\contentsline {paragraph}{Guidelines for Analysis of Resource-based Tripwires}{399}{section*.98}
+\contentsline {subsubsection}{Tripwires Based on Properties of a Tabled Derivation}{401}{section*.99}
+\contentsline {subsubsection}{The Suspend Action for Flag-Based Tripwires}{404}{section*.100}
+\contentsline {subsubsection}{Summary of Flag-Based Tripwires}{405}{section*.101}
+\contentsline {chapter}{\numberline {10}Definite Clause Grammars}{408}{chapter.10}
+\contentsline {section}{\numberline {10.1}General Description}{408}{section.10.1}
+\contentsline {section}{\numberline {10.2}Translation of Definite Clause Grammar rules}{410}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}Definite Clause Grammars and Tabling}{412}{subsection.10.2.1}
+\contentsline {section}{\numberline {10.3}Definite Clause Grammar predicates}{413}{section.10.3}
+\contentsline {section}{\numberline {10.4}Two differences with other Prologs}{417}{section.10.4}
+\contentsline {chapter}{\numberline {11}Exception Handling}{419}{chapter.11}
+\contentsline {section}{\numberline {11.1}The Mechanics of Exception Handling}{419}{section.11.1}
+\contentsline {subsection}{\numberline {11.1.1}Exception Handling in Non-Tabled Evaluations}{419}{subsection.11.1.1}
+\contentsline {subsection}{\numberline {11.1.2}Exception Handling in Tabled Evaluation}{424}{subsection.11.1.2}
+\contentsline {subsubsection}{Obtaining Information about a Tabled Computation after an Exception is Thrown}{426}{section*.102}
+\contentsline {section}{\numberline {11.2}XSB's Standard Format for Errors}{426}{section.11.2}
+\contentsline {subsection}{\numberline {11.2.1}Error Tags}{426}{subsection.11.2.1}
+\contentsline {subsection}{\numberline {11.2.2}XSB-Specific Information in Error Terms}{428}{subsection.11.2.2}
+\contentsline {section}{\numberline {11.3}Predicates to Throw and Handle Errors}{429}{section.11.3}
+\contentsline {subsection}{\numberline {11.3.1}Predicates to Throw Errors}{429}{subsection.11.3.1}
+\contentsline {subsection}{\numberline {11.3.2}Predicates used in Handling Errors}{431}{subsection.11.3.2}
+\contentsline {section}{\numberline {11.4}Convenience Predicates}{432}{section.11.4}
+\contentsline {section}{\numberline {11.5}Backtraces}{433}{section.11.5}
+\contentsline {chapter}{\numberline {12}Foreign Language Interface}{435}{chapter.12}
+\contentsline {section}{\numberline {12.1}Foreign Language Modules}{436}{section.12.1}
+\contentsline {section}{\numberline {12.2}Lower-Level Foreign Language Interface}{437}{section.12.2}
+\contentsline {subsection}{\numberline {12.2.1}Context Parameters}{441}{subsection.12.2.1}
+\contentsline {subsection}{\numberline {12.2.2}Exchanging Basic Data Types}{442}{subsection.12.2.2}
+\contentsline {subsection}{\numberline {12.2.3}Exchanging Complex Data Types}{443}{subsection.12.2.3}
+\contentsline {section}{\numberline {12.3}Foreign Modules That Call XSB Predicates}{454}{section.12.3}
+\contentsline {section}{\numberline {12.4}Foreign Modules That Link Dynamically with Other Libraries}{455}{section.12.4}
+\contentsline {section}{\numberline {12.5}Higher-Level Foreign Language Interface}{457}{section.12.5}
+\contentsline {subsection}{\numberline {12.5.1}Declaration of high level foreign predicates}{457}{subsection.12.5.1}
+\contentsline {section}{\numberline {12.6}Compiling Foreign Modules on Windows and under Cygwin}{460}{section.12.6}
+\contentsline {section}{\numberline {12.7}Functions for Use in Foreign Code}{462}{section.12.7}
+\contentsline {chapter}{\numberline {13}Embedding XSB in a Process}{466}{chapter.13}
+\contentsline {section}{\numberline {13.1}Calling XSB from C}{466}{section.13.1}
+\contentsline {section}{\numberline {13.2}Examples of Calling XSB}{468}{section.13.2}
+\contentsline {subsection}{\numberline {13.2.1}The XSB API for the Sequential Engine Only}{468}{subsection.13.2.1}
+\contentsline {subsubsection}{An Example using Fixed Strings}{471}{section*.103}
+\contentsline {section}{\numberline {13.3}A C API for XSB}{473}{section.13.3}
+\contentsline {subsection}{\numberline {13.3.1}Initializing and Closing XSB}{473}{subsection.13.3.1}
+\contentsline {subsection}{\numberline {13.3.2}Passing Commands to XSB}{474}{subsection.13.3.2}
+\contentsline {subsection}{\numberline {13.3.3}Querying XSB}{476}{subsection.13.3.3}
+\contentsline {subsection}{\numberline {13.3.4}Obtaining Information about Errors}{481}{subsection.13.3.4}
+\contentsline {section}{\numberline {13.4}The Variable-length String Data Type}{482}{section.13.4}
+\contentsline {section}{\numberline {13.5}Passing Data into an XSB Module}{484}{section.13.5}
+\contentsline {section}{\numberline {13.6}Creating an XSB Module that Can be Called from C}{485}{section.13.6}
+\contentsline {paragraph}{Unix instructions:}{486}{section*.104}
+\contentsline {paragraph}{Windows instructions:}{486}{section*.105}
+\contentsline {chapter}{\numberline {14}Library Utilities}{488}{chapter.14}
+\contentsline {section}{\numberline {14.1}List (and Tree) Processing}{488}{section.14.1}
+\contentsline {subsection}{\numberline {14.1.1}Library Predicates for Trees}{491}{subsection.14.1.1}
+\contentsline {subsection}{\numberline {14.1.2}Processing Comma Lists}{492}{subsection.14.1.2}
+\contentsline {section}{\numberline {14.2}Attributed Variables}{492}{section.14.2}
+\contentsline {subsection}{\numberline {14.2.1}Low-level Interface}{492}{subsection.14.2.1}
+\contentsline {section}{\numberline {14.3}{\tt constraintLib}: a library for CLP}{496}{section.14.3}
+\contentsline {section}{\numberline {14.4}Formatted Output}{499}{section.14.4}
+\contentsline {section}{\numberline {14.5}Low-level Atom Manipulation Predicates}{501}{section.14.5}
+\contentsline {section}{\numberline {14.6}Script Writing Utilities}{504}{section.14.6}
+\contentsline {subsection}{\numberline {14.6.1}Communication with Subprocesses}{505}{subsection.14.6.1}
+\contentsline {paragraph}{{\em Important notes about spawned processes\/}:}{508}{section*.106}
+\contentsline {paragraph}{\em Notes:}{511}{section*.107}
+\contentsline {section}{\numberline {14.7}Socket I/O}{514}{section.14.7}
+\contentsline {paragraph}{General socket calls.}{515}{section*.108}
+\contentsline {paragraph}{Buffered, message-based communication.}{516}{section*.109}
+\contentsline {paragraph}{Stream-oriented, character-at-a-time interface.}{517}{section*.110}
+\contentsline {paragraph}{Socket-probing.}{517}{section*.111}
+\contentsline {paragraph}{Error codes.}{518}{section*.112}
+\contentsline {paragraph}{Timeouts.}{518}{section*.113}
+\contentsline {paragraph}{Buffered, stream-oriented communication.}{520}{section*.114}
+\contentsline {section}{\numberline {14.8}Arrays}{521}{section.14.8}
+\contentsline {section}{\numberline {14.9}The Profiling Library}{522}{section.14.9}
+\contentsline {section}{\numberline {14.10}Gensym}{525}{section.14.10}
+\contentsline {section}{\numberline {14.11}Random Number Generation and Sampling Predicates}{525}{section.14.11}
+\contentsline {subsection}{\numberline {14.11.1}Sampling Predicates}{527}{subsection.14.11.1}
+\contentsline {section}{\numberline {14.12}Loading .CSV and Other Delimiter-Separated Files}{528}{section.14.12}
+\contentsline {section}{\numberline {14.13}Scanning in Prolog}{533}{section.14.13}
+\contentsline {section}{\numberline {14.14}XSB Lint}{535}{section.14.14}
+\contentsline {section}{\numberline {14.15}Set Processing and Meta-programming with prolog\_db}{537}{section.14.15}
+\contentsline {section}{\numberline {14.16}Range Trees}{540}{section.14.16}
+\contentsline {section}{\numberline {14.17}Set and Bag Aggregation}{543}{section.14.17}
+\contentsline {section}{\numberline {14.18}Ordered Sets}{545}{section.14.18}
+\contentsline {section}{\numberline {14.19}Further Unicode Support: {\tt xp\_unicode}}{547}{section.14.19}
+\contentsline {section}{\numberline {14.20}Miscellaneous Predicates}{547}{section.14.20}
+\contentsline {chapter}{\numberline {A}GPP - Generic Preprocessor}{549}{appendix.A}
+\contentsline {section}{\numberline {A.1}Description}{549}{section.A.1}
+\contentsline {section}{\numberline {A.2}Syntax}{550}{section.A.2}
+\contentsline {section}{\numberline {A.3}Options}{550}{section.A.3}
+\contentsline {section}{\numberline {A.4}Syntax Specification}{554}{section.A.4}
+\contentsline {section}{\numberline {A.5}Evaluation Rules}{558}{section.A.5}
+\contentsline {section}{\numberline {A.6}Meta-macros}{559}{section.A.6}
+\contentsline {section}{\numberline {A.7}Examples}{564}{section.A.7}
+\contentsline {section}{\numberline {A.8}Advanced Examples}{569}{section.A.8}
+\contentsline {section}{\numberline {A.9}Author}{571}{section.A.9}

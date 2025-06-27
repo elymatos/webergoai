@@ -1,0 +1,318 @@
+
+
+            INSTALLATION SUMMARY
+            --------------------
+
+XSB Version:	   5.0.0
+Code name:	   Green Tea
+Release date:	   2022-05-15
+Configuration:	   x86_64-pc-linux-gnu
+Installation date: Thu Jun 26 17:02:31 -03 2025
+
+  Build process is looking for XSB sources in:	  /tmp/XSB-25-06-26-17_02_22
+  XSB should be installed in:			  /tmp/XSB-25-06-26-17_02_22
+  Configuration-specific executables go in:	  /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/bin
+  Configuration-specific libraries go in:	  /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/lib
+  Object code goes in:				  /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/saved.o
+  Site-specific code goes in:			  /tmp/XSB-25-06-26-17_02_22/site
+  Site configuration-specific code goes in:	  /tmp/XSB-25-06-26-17_02_22/site/config/x86_64-pc-linux-gnu
+  XSB will be built with:			  gcc   -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char   
+  builtin.c will be built with: 		  gcc  -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char 
+  loader_xsb.c will be built with: 		  gcc  -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char 
+  emuloop.c will be built with: 		  gcc  -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char 
+  tr_utils.c will be built with:		  gcc  -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char 
+  Loader flags: 				  -lm -ldl -lpthread
+  Compilation mode:				  optimal
+  XSB abstract machine: 			  slg-wam
+  XSB scheduling strategy:			  local
+  Garbage Collection Stress-Test:		  no
+  Jumptable-based emulator loop:		  yes
+  Demand support:                                 no
+
+  Details of support for modular database drivers:
+
+  ODBC support:                                   yes
+  ODBC library directory:                         
+  ODBC C Flags:                                   -DHAVE_UNISTD_H -DHAVE_PWD_H -DHAVE_SYS_TYPES_H -DHAVE_LONG_LONG -DSIZEOF_LONG_INT=8 -I/usr/include 
+  ODBC Loader Flags:                              -L/usr/lib -lodbc
+
+  MySQL support:                                  yes
+  MySQL library directory:                        /usr/lib
+  MySQL header directory:                         /usr/include/mysql
+  MySQL C Flags:                                  -I/usr/include/mysql -I/usr/include/mysql/mysql
+  MySQL Loader Flags:                             -L/usr/lib/ -lmariadb
+
+  MySQL Embedded Server support:                  yes
+  MySQL Embedded Server library directory:        /usr/lib
+  MySQL Embedded Server header directory:         /usr/include/mysql
+  MySQL Embedded Server C Flags:                  -g -W -Wall -I/usr/include/mysql -I/usr/include/mysql/mysql -g -O2
+  MySQL Embedded Server Loader Flags:             -L/usr/lib/ -lmariadbd -lz -ldl -lm -lssl -lcrypto 
+
+  Native support for Oracle:			  no
+  Support for the old ODBC driver:		  no
+
+  Java compiler:                                  /usr/bin/javac
+  Support for InterProlog's native engine:   	  no
+  -- JDK may not have been installed or
+  -- JAVA_HOME not set. You will still be able
+  -- to use InterProlog's subprocess engine.
+
+  POSIX regexp matching libraries:                yes
+  POSIX wildcard matching libraries:              yes
+
+  Curl support (HTTP protocol library):           yes
+  Curl C flags:        	                          -g -O2
+  Curl loader flags:                              
+
+  XPath support:				  yes
+  XPath C flags:				  -I/usr/include/libxml2
+  XPath loader flags:				  -L/usr/lib -lxml2
+
+  PCRE support (Perl pattern matching):           yes
+  PCRE C flags:        	                          -g -O2
+  PCRE loader flags:                              
+
+  XSBPY support (XSB to Python connector):        no
+       XSBPY: Python.h not found
+  XSBPY:       Python not found
+
+
+make[1]: Entering directory '/tmp/XSB-25-06-26-17_02_22/emu'
+
+Compiling XSB with gcc using -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char   
+
+	[gcc] main_xsb.c
+	[gcc] auxlry.c
+	[gcc] biassert.c
+	[gcc] builtin.c using -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char 
+	[gcc] call_xsb.c
+	[gcc] cinterf.c
+cinterf.c: In function ‘xsb_init_string’:
+cinterf.c:1523:91: warning: ‘%s’ directive output may be truncated writing likely 2049 or more bytes into a region of size 2004 [-Wformat-truncation=]
+ 1523 |             snprintf(cmdline,2*MAXPATHLEN+1,"command used to call XSB server is too long: %s",cmdline_param);
+      |                                                                                           ^~
+cinterf.c:1523:45: note: assuming directive output of 2049 bytes
+ 1523 |             snprintf(cmdline,2*MAXPATHLEN+1,"command used to call XSB server is too long: %s",cmdline_param);
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cinterf.c:1523:13: note: ‘snprintf’ output 46 or more bytes (assuming 2095) into a destination of size 2049
+ 1523 |             snprintf(cmdline,2*MAXPATHLEN+1,"command used to call XSB server is too long: %s",cmdline_param);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	[gcc] conc_compl.c
+	[gcc] debug_xsb.c
+	[gcc] dis.c
+	[gcc] dynload.c
+	[gcc] dynamic_stack.c
+	[gcc] deadlock.c
+	[gcc] emuloop.c using -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char 
+emuloop.c: In function ‘emuloop’:
+emuloop.c:1538:9: warning: multi-line comment [-Wcomment]
+ 1538 |         //      printf("gap sz %d\n",(pb)top_of_localstk - (pb)top_of_heap); \
+      |         ^
+emuloop.c:2578:7: warning: multi-line comment [-Wcomment]
+ 2578 |       //      printf("gap sz %d\n",(pb)top_of_localstk - (pb)top_of_heap); \
+      |       ^
+	[gcc] error_xsb.c
+	[gcc] findall.c
+	[gcc] function.c
+	[gcc] hash_xsb.c
+	[gcc] hashtable_xsb.c
+	[gcc] heap_xsb.c
+heap_xsb.c: In function ‘glstack_realloc’:
+heap_xsb.c:493:32: warning: pointer used after ‘realloc’ [-Wuse-after-free]
+  493 |     heap_offset = new_heap_bot - heap_bot ;
+      |                                ^
+heap_xsb.c:492:26: note: call to ‘realloc’ here
+  492 |     new_heap_bot = (CPtr)realloc(heap_bot, new_size_in_bytes);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	[gcc] init_xsb.c
+	[gcc] inst_xsb.c
+	[gcc] io_builtins_xsb.c
+	[gcc] loader_xsb.c using -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char 
+	[gcc] memory_xsb.c
+	[gcc] orient_xsb.c
+orient_xsb.c: In function ‘set_xsbinfo_dir’:
+orient_xsb.c:98:42: warning: ‘xsbrc’ directive output may be truncated writing 5 bytes into a region of size between 0 and 1023 [-Wformat-truncation=]
+   98 |   snprintf(new_xinitrc, MAXPATHLEN, "%s%cxsbrc", xsbinfo_dir_gl, SLASH);
+      |                                          ^~~~~
+orient_xsb.c:98:3: note: ‘snprintf’ output between 7 and 1030 bytes into a destination of size 1024
+   98 |   snprintf(new_xinitrc, MAXPATHLEN, "%s%cxsbrc", xsbinfo_dir_gl, SLASH);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+orient_xsb.c:99:46: warning: ‘config’ directive output may be truncated writing 6 bytes into a region of size between 0 and 1023 [-Wformat-truncation=]
+   99 |   snprintf(user_config_dir, MAXPATHLEN, "%s%cconfig", xsbinfo_dir_gl, SLASH);
+      |                                              ^~~~~~
+orient_xsb.c:99:3: note: ‘snprintf’ output between 8 and 1031 bytes into a destination of size 1024
+   99 |   snprintf(user_config_dir, MAXPATHLEN, "%s%cconfig", xsbinfo_dir_gl, SLASH);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+orient_xsb.c:100:44: warning: ‘%s’ directive output may be truncated writing 19 bytes into a region of size between 0 and 1023 [-Wformat-truncation=]
+  100 |   snprintf(user_arch_dir, MAXPATHLEN, "%s%c%s", user_config_dir, SLASH, FULL_CONFIG_NAME);
+      |                                            ^~
+orient_xsb.c:100:3: note: ‘snprintf’ output between 21 and 1044 bytes into a destination of size 1024
+  100 |   snprintf(user_arch_dir, MAXPATHLEN, "%s%c%s", user_config_dir, SLASH, FULL_CONFIG_NAME);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+orient_xsb.c: In function ‘xsb_executable_full_path’:
+orient_xsb.c:197:53: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+  197 |     snprintf(executable_path_gl, MAXPATHLEN, "%s%c%s", current_dir_gl, SLASH, myname_augmented);
+      |                                                     ^
+orient_xsb.c:197:5: note: ‘snprintf’ output 2 or more bytes (assuming 1025) into a destination of size 1024
+  197 |     snprintf(executable_path_gl, MAXPATHLEN, "%s%c%s", current_dir_gl, SLASH, myname_augmented);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	[gcc] pathname_xsb.c
+pathname_xsb.c: In function ‘tilde_expand_filename_norectify.part.0’:
+pathname_xsb.c:182:43: warning: ‘%s’ directive output may be truncated writing up to 254 bytes into a region of size 88 [-Wformat-truncation=]
+  182 |       snprintf(message, 100, "[PATHNAME] `%s': unknown user\n", username);
+      |                                           ^~                    ~~~~~~~~
+pathname_xsb.c:182:7: note: ‘snprintf’ output between 29 and 283 bytes into a destination of size 100
+  182 |       snprintf(message, 100, "[PATHNAME] `%s': unknown user\n", username);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pathname_xsb.c: In function ‘rectify_pathname’:
+pathname_xsb.c:440:5: warning: ‘strncpy’ output may be truncated copying 2 bytes from a string of length 1023 [-Wstringop-truncation]
+  440 |     strncpy(names[nameidx], inptr1, length);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pathname_xsb.c: In function ‘expand_filename’:
+pathname_xsb.c:238:46: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+  238 |     snprintf(aux_filename,MAXPATHLEN, "%s%c%s", aux_filename2, SLASH, filename);
+      |                                              ^
+pathname_xsb.c:238:5: note: ‘snprintf’ output 2 or more bytes (assuming 1025) into a destination of size 1024
+  238 |     snprintf(aux_filename,MAXPATHLEN, "%s%c%s", aux_filename2, SLASH, filename);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	[gcc] psc_xsb.c
+psc_xsb.c: In function ‘link_sym’:
+psc_xsb.c:457:95: warning: ‘%s’ directive output may be truncated writing up to 199 bytes into a region of size between 167 and 369 [-Wformat-truncation=]
+  457 |                      "%s/%d (%s) had been defined in %s; those clauses lost in the context of %s.",
+      |                                                                                               ^~
+  458 |                      name, arity, ((umtype==T_PRED)?"static predicate":"dynamic predicate"),modmsg,curmodmsg);
+      |                                                                                                    ~~~~~~~~~
+psc_xsb.c:456:13: note: ‘snprintf’ output 83 or more bytes (assuming 484) into a destination of size 450
+  456 |             snprintf(message,450,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+  457 |                      "%s/%d (%s) had been defined in %s; those clauses lost in the context of %s.",
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  458 |                      name, arity, ((umtype==T_PRED)?"static predicate":"dynamic predicate"),modmsg,curmodmsg);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	[gcc] random_xsb.c
+	[gcc] remove_unf.c
+	[gcc] residual.c
+	[gcc] rw_lock.c
+	[gcc] scc_xsb.c
+	[gcc] slgdelay.c
+	[gcc] socket_xsb.c
+	[gcc] string_xsb.c
+	[gcc] storage_xsb.c
+	[gcc] struct_manager.c
+	[gcc] struct_intern.c
+	[gcc] sub_delete.c
+	[gcc] subp.c
+	[gcc] system_xsb.c
+	[gcc] table_stats.c
+	[gcc] tables.c
+	[gcc] thread_xsb.c
+	[gcc] timer_xsb.c
+	[gcc] token_xsb.c
+token_xsb.c: In function ‘read_character’:
+token_xsb.c:913:19: warning: unused variable ‘stream’ [-Wunused-variable]
+  913 |               int stream = unset_fileptr(card);
+      |                   ^~~~~~
+token_xsb.c: In function ‘SyntaxError’:
+token_xsb.c:324:3: warning: ‘strncpy’ specified bound 2033 equals destination size [-Wstringop-truncation]
+  324 |   strncpy(message+15,description,(MAXBUFSIZE - 15));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	[gcc] tr_utils.c using -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char 
+	[gcc] trace_xsb.c
+	[gcc] trie_lookup.c
+	[gcc] trie_search.c
+	[gcc] tries.c
+tries.c: In function ‘delay_chk_insert’:
+tries.c:1618:10: warning: unused variable ‘interning_terms’ [-Wunused-variable]
+ 1618 |     byte interning_terms = 0;  /* never intern ground terms in delay lists */
+      |          ^~~~~~~~~~~~~~~
+tries.c: In function ‘trie_assert_chk_ins’:
+tries.c:2867:8: warning: unused variable ‘interning_terms’ [-Wunused-variable]
+ 2867 |   byte interning_terms = 0;  /* never intern ground terms in delay lists */
+      |        ^~~~~~~~~~~~~~~
+	[gcc] tst_insert.c
+	[gcc] tst_retrv.c
+	[gcc] tst_unify.c
+	[gcc] tst_utils.c
+	[gcc] varstring.c
+In function ‘vs_prependblk’,
+    inlined from ‘vs_prepend’ at varstring.c:234:3:
+varstring.c:345:3: warning: ‘strncpy’ output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  345 |   strncpy(vstr->string, blk, blk_size);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+varstring.c: In function ‘vs_prepend’:
+varstring.c:234:33: note: length computed here
+  234 |   vs_prependblk(vstr, str, (int)strlen(str));
+      |                                 ^~~~~~~~~~~
+In function ‘vs_appendblk’,
+    inlined from ‘vs_append’ at varstring.c:212:3:
+varstring.c:318:3: warning: ‘strncpy’ output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  318 |   strncpy(vstr->string+vstr->length, blk, blk_size);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+varstring.c: In function ‘vs_append’:
+varstring.c:212:32: note: length computed here
+  212 |   vs_appendblk(vstr, str, (int)strlen(str));
+      |                                ^~~~~~~~~~~
+	[gcc] ubi_BinTree.c
+	[gcc] ubi_SplayTree.c
+	[gcc] hashtable.c
+	[gcc] hashtable_itr.c
+	[gcc] sha1.c
+	[gcc] md5.c
+	[gcc] base64_enc.c
+	[gcc] url_encode.c
+	[gcc] getMemorySize.c
+	[gcc] incr_xsb.c
+	[gcc] call_graph_xsb.c
+
+Making XSB executable /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/bin/xsb 
+
+	[gcc] -o /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/bin/xsb -lm -ldl -lpthread 
+make[1]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/emu'
+make[1]: Entering directory '/tmp/XSB-25-06-26-17_02_22/gpp'
+
+	[gcc] gpp.c using  
+	[gcc] -o gpp
+
+make[1]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/gpp'
+make[1]: Entering directory '/tmp/XSB-25-06-26-17_02_22/packages/xasp'
+make[1]: Nothing to be done for 'nope'.
+make[1]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/packages/xasp'
+
+
+Configuring XSB packages. Wait...
+| ?- yes
+| ?- | ?- | ?- yes
+| ?- 
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/minizinc:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/curl:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/gap:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/pcre:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/regmatch:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/wildmatch:
+-------------------- End --------------------------
+----------------- Warnings ------------------------
+While compiling XSB/cmplib:
+-------------------- End --------------------------
+----------------- Warnings ------------------------
+While compiling XSB/lib:
+-------------------- End --------------------------
+----------------- Warnings ------------------------
+While compiling XSB/syslib:
+-------------------- End --------------------------
+
+
+

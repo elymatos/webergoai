@@ -1,0 +1,2 @@
+flora_symbol(clpr,0,\@,38,9,function_symbol,nontransactional_symbol,'clpdemo.flr').
+flora_symbol(p,1,\@,15,4,predicate_symbol,nontransactional_symbol,'clpdemo.flr').

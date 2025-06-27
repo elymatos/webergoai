@@ -1,0 +1,6 @@
+  MySQL Embedded Server support:                  no
+  MySQL Embedded Server library directory:        /usr/lib/x86_64-linux-gnu
+  MySQL Embedded Server header directory:         /usr/include/mariadb
+  MySQL Embedded Server C Flags:                  -g -W -Wall -I/usr/include/mariadb -I/usr/include/mariadb/mysql -g -O2
+  MySQL Embedded Server Loader Flags:             -L/usr/lib/x86_64-linux-gnu/ -lmariadbd -lz -ldl -lm -lssl -lcrypto 
+

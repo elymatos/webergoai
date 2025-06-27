@@ -1,0 +1,24 @@
+#ErgoAI preferences, in Java Properties format
+#This file must be in the same directory as the jar file
+#Do NOT edit this while Studio is running, as it will overwrite it on exit!
+#Thu Dec 05 09:34:29 GMT-03:00 2024
+FLORADIR=/home/ematos/devel/ergo/ErgoEngine/ErgoAI
+PROLOG=/home/ematos/devel/ergo/XSB/bin/xsb
+com.declarativa.fiji.FijiSubprocessEngineWindow=false\t\:0.1\t750\t1297\t899\t21
+com.declarativa.fiji.FijiSubprocessEngineWindow.compilationPanel=false\t\:0.1\t411\t564\t1744\t442
+com.declarativa.fiji.FijiSubprocessEngineWindow.fileChooser=/home/ematos/Downloads
+com.declarativa.fiji.FijiSubprocessEngineWindow.fileChooser2=/home/ematos
+com.declarativa.fiji.FijiSubprocessEngineWindow.fontSize=13
+com.declarativa.fiji.FijiSubprocessEngineWindow.inputBackground=16777204
+com.declarativa.fiji.FijiSubprocessEngineWindow.projectChooser=/home/ematos/devel/ergo
+com.declarativa.fiji.FijiSubprocessEngineWindow.queryPanel=false\t\:0.0\t636\t810\t2771\t295
+com.declarativa.fiji.FijiSubprocessEngineWindow.reopenWindows=true
+com.declarativa.fiji.FijiSubprocessEngineWindow.verboseListener=false
+com.declarativa.fiji.FijiSubprocessEngineWindow.visibleWindows=
+com.declarativa.fiji.TabsWindow.editors=false\t\:0.1\t1035\t769\t43\t0
+com.declarativa.fiji.TabsWindow.finders=false\t\:0.0\t200\t600\t2460\t0
+com.declarativa.fiji.TabsWindow.justifiers=false\t\:0.0\t200\t600\t2460\t0
+com.declarativa.interprolog.gui.LogicProgramEditor./home/ematos/Downloads/sample_json_queries.ergo=true\t\:0.0\t918\t600\t3509\t0\t597\t597
+com.declarativa.interprolog.gui.LogicProgramEditor./home/ematos/devel/ergo/ergoai-docker/tests/flights.ergo=true\t\:0.0\t918\t600\t2460\t0\t430\t430
+com.declarativa.interprolog.gui.LogicProgramEditor./home/ematos/devel/ergo/ergoai-docker/tests/oo.ergo=true\t\:0.0\t200\t600\t2460\t459\t102\t186
+com.declarativa.interprolog.gui.LogicProgramEditor./mnt/ssd/ely/projects/Framenet/CSP/ergoai/sets.ergo=true\t\:0.0\t217\t600\t2460\t432\t312\t312

@@ -1,0 +1,5 @@
+base_install_dir="/ergo/Coherent/ERGOAI_3.0"
+reasoner_desktop_shortcut="/root/Desktop/ErgoReasoner-3.0.desktop"
+studio_desktop_shortcut="/root/Desktop/ErgoAI-3.0.desktop"
+studio_desktop_shortcut_name="ErgoAI Studio 3.0"
+reasoner_desktop_shortcut_name="ErgoAI Reasoner 3.0"

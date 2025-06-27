@@ -1,0 +1,7 @@
+flora_nowarn_symbol(show,1,\@,any_symbol_context,nontransactional_symbol,'flrshow.flr').
+flora_nowarn_symbol(show,0,\@,any_symbol_context,nontransactional_symbol,'flrshow.flr').
+flora_symbol(oid,0,\@,191,53,function_symbol,nontransactional_symbol,'flrshow.flr').
+flora_symbol(show,1,\@,189,53,function_symbol,nontransactional_symbol,'flrshow.flr').
+flora_symbol(show,0,\@,178,53,function_symbol,nontransactional_symbol,'flrshow.flr').
+flora_symbol(splice,1,\@,109,44,function_symbol,nontransactional_symbol,'flrshow.flr').
+flora_symbol(change_module_if_needed,3,\@,100,40,prolog_symbol,nontransactional_symbol,'flrshow.flr').

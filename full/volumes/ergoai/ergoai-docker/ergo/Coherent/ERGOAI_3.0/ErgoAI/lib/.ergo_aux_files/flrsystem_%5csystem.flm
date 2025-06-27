@@ -1,0 +1,509 @@
+/************************************************************************
+  file: includes/flrheader.flh
+
+  Author(s): Guizhen Yang
+	     Michael Kifer
+
+  Copyright (C) by
+       The Research Foundation of the State University of New York, 1999-2013.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+       http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+
+  This file is automatically included by the FLORA-2 compiler.
+************************************************************************/
+
+
+/************************************************************************
+  Note: This file should contain Macros only!
+
+  If FLORA_DUMP is defined: preprocessing for user-friendly output.
+
+  If any of these macros are changed, the corresponding wrappers in
+  flrwrapper.P must also be changed
+************************************************************************/
+
+
+
+
+/* File:      flora_prefix.flh -- FLORA-2 prefixes
+**
+** Author(s): Michael Kifer
+**	      Guizhen Yang
+**
+** Contact:   see  ../CONTACTS.txt
+**
+** Copyright (C) by
+**      The Research Foundation of the State University of New York, 1999-2023;
+**      and Vulcan, Inc., 2008-2013.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**      http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+**
+*/
+
+
+/******************************************************************************
+  Flora prefix
+
+  All Flora symbols begin with this prefix.
+******************************************************************************/
+/* Prefix for F-logic and HiLog predicates */
+
+/* File:   flrincludes/flrproduct.P  -- the Ergo hook for all kinds of
+**                                      product-related things
+**
+** Author(s): Michael Kifer
+**
+** Contact:   see  ../CONTACTS.txt
+**
+** Copyright (C) Coherent Knowledge Systems, LLC, 2013-2023.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**      http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+**
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************
+  Attaching FLORA_PREFIX
+
+  The argument to this Macro should be quoted.
+******************************************************************************/
+
+
+
+
+/******************************************************************************
+  Strings following FLORA_PREFIX
+
+  These strings should be quoted.
+******************************************************************************/
+/* Keep "mod" in the name of a formula wrapper right after FLORA_PREFIX
+   We rely on this to identify meta wrappers */
+
+
+
+/*  Trie for keeping skeletons of defined facts -- debugging */
+
+
+/*  Trie for storing used symbols names */
+
+
+
+
+/******************************************************************************
+  Module and trie prefixes
+******************************************************************************/
+/* prefix to construct Flora module predicates. */
+
+
+/*  prefix to name Flora storage trie for a module. */
+
+
+
+/* prefix to name Flora fld storage trie for a module. */
+
+
+/* prefix to name Flora fls storage trie for a module. */
+
+
+
+/****************************************************************************
+  F-logic atom prefixes for predicates that are used to distinguish F-logic
+  wrappers in the trailers, the user program, base facts, etc.
+****************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************
+  Lengths of prefixes of F-logic wrappers
+******************************************************************************/
+
+
+
+/****************************************************************************
+  Prefixes that are used for F-logic wrappers in rule bodies of user programs.
+  They are called "debuggin prefixes" because they were introduced to help
+  implement the debugging feature that catches undefined methods.
+  Note:
+     naf^, dyna^, dynz^ are the outermost prefixes
+     neg^ is the next outermost
+****************************************************************************/
+
+
+
+
+
+
+
+
+
+
+/* Prefixes used for checking undefinedness */
+
+
+
+/* Corresponding 1-arg macros */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******* these are used in inheritance closure axioms *******/
+
+
+
+
+
+
+
+
+
+/******* these are for transactions in LIBMOD *******/
+
+
+
+
+
+
+
+/******************************************************************************
+  Lengths of prefixes that are used in the wrappers to the left of module name
+
+  Note: We need to remember that these prefixes are enclosed in quotes.
+        But we need the actual atom length that Prolog uses. So, we deduct 2.
+******************************************************************************/
+
+
+
+/* length of FLORA_PREFIX'FLORA_MODULE_TAG */
+
+
+
+
+
+
+
+
+
+
+
+
+
+%% support for undefinedness checks
+
+
+%% used for generating new oids statically
+%% We had previously #1'FLORA_COMPILATION_ID', but this caused gpp error in
+%% \dump(file). Apparently a gpp bug. So changed to X'FLORA_COMPILATION_ID'
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* File:    flrincludes/ergo_structdb.flh -- include file for rule structure DB
+**
+** Author(s): Michael Kifer
+**
+** Contact:   see  ../CONTACTS.txt
+**
+** Copyright (C) Coherent Knowledge Systems, LLC, 2016.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**      http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+'_$_$_ergo''prop_descriptor'(4,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(4,'flrsystem.flr','\\system',4,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(4,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(4,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(6,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(6,'flrsystem.flr','\\system',6,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(6,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(6,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(8,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(8,'flrsystem.flr','\\system',8,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(8,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(8,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(10,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(10,'flrsystem.flr','\\system',10,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(10,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(10,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(12,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(12,'flrsystem.flr','\\system',12,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(12,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(12,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(14,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(14,'flrsystem.flr','\\system',14,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(14,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(14,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(16,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(16,'flrsystem.flr','\\system',16,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(16,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(16,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(18,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(18,'flrsystem.flr','\\system',18,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(18,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(18,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(20,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(20,'flrsystem.flr','\\system',20,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(20,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(20,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(22,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(22,'flrsystem.flr','\\system',22,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(22,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(22,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(24,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(24,'flrsystem.flr','\\system',24,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(24,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(24,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(26,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(26,'flrsystem.flr','\\system',26,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(26,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(26,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(28,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(28,'flrsystem.flr','\\system',28,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(28,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(28,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(30,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(30,'flrsystem.flr','\\system',30,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(30,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(30,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(32,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(32,'flrsystem.flr','\\system',32,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(32,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(32,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(34,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(34,'flrsystem.flr','\\system',34,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(34,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(34,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(36,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(36,'flrsystem.flr','\\system',36,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(36,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(36,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(38,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(38,'flrsystem.flr','\\system',38,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(38,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(38,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(40,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(40,'flrsystem.flr','\\system',40,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(40,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(40,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(42,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(42,'flrsystem.flr','\\system',42,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(42,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(42,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(44,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(44,'flrsystem.flr','\\system',44,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(44,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(44,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(46,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(46,'flrsystem.flr','\\system',46,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(46,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(46,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(48,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(48,'flrsystem.flr','\\system',48,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(48,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(48,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(50,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(50,'flrsystem.flr','\\system',50,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(50,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(50,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(52,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(52,'flrsystem.flr','\\system',52,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(52,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(52,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(54,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(54,'flrsystem.flr','\\system',54,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(54,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(54,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(56,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(56,'flrsystem.flr','\\system',56,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(56,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(56,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(58,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(58,'flrsystem.flr','\\system',58,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(58,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(58,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(60,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(60,'flrsystem.flr','\\system',60,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(60,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(60,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(62,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(62,'flrsystem.flr','\\system',62,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(62,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(62,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(64,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(64,'flrsystem.flr','\\system',64,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(64,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(64,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(66,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(66,'flrsystem.flr','\\system',66,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(66,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(66,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(68,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(68,'flrsystem.flr','\\system',68,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(68,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(68,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(70,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(70,'flrsystem.flr','\\system',70,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(70,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(70,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(72,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(72,'flrsystem.flr','\\system',72,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(72,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(72,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(74,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(74,'flrsystem.flr','\\system',74,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(74,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(74,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(76,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(76,'flrsystem.flr','\\system',76,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(76,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(76,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(78,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(78,'flrsystem.flr','\\system',78,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(78,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(78,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(80,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(80,'flrsystem.flr','\\system',80,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(80,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(80,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(82,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(82,'flrsystem.flr','\\system',82,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(82,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(82,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(84,'flrsystem.flr','\\system',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(84,'flrsystem.flr','\\system',84,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(84,'flrsystem.flr','\\system').
+'_$_$_ergo''bool_descriptor'(84,'flrsystem.flr','\\system',strict,'_$_$_ergo''descr_vars').

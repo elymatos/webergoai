@@ -1,0 +1,14 @@
+#include "flrheader.flh"
+#define FLORA_COMPILATION_ID 5
+
+
+FLORA_THIS_WORKSPACE(mvd)(a,f,b,__newcontextvar3).
+FLORA_THIS_WORKSPACE(mvd)(a,f,c,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(p,1993,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(p,1994,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(p,1996,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(p,1997,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(p,1998,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(q,2001,110,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(q,2002,111,__newcontextvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(q,2003,100,__newcontextvar3).

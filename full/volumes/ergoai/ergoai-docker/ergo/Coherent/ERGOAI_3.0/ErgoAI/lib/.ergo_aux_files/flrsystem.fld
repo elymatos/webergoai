@@ -1,0 +1,28 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 4
+
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,type,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(abort,__fldnewvar1).
+FLORA_THIS_WORKSPACE(tblflapply)(message,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(warning,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(sysabort,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(abort,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,uninstall,__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,refresh,__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,abolish,__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(mustDefine,off,','(__Pred1,__Pred2)),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(mustDefine,off,__Pred),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(mustDefine,__Mode,__Pred),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(mustDefine,flapply(off,__Module)),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(mustDefine,flapply(on,__Module)),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(mustDefine,flapply(__Flag,__Module)),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(mustDefine,off),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(mustDefine,on),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(mustDefine,__Flag),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(query,___Path),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(query,__Path),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(removeall,__Path),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(remove,__Path),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(add,__Path),__fldnewvar2).

@@ -1,0 +1,5 @@
+%% #include info for source file: /home/kifer/ERGOAI/ErgoEngine/ErgoAI/pkgs/persistentmodules.flr
+
+
+:-(multifile(/('_$_$_ergo''include_prj_info',2))).
+'_$_$_ergo''include_prj_info'('/home/kifer/ERGOAI/ErgoEngine/ErgoAI/pkgs/persistentmodules.flr',null).

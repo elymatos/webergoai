@@ -1,0 +1,10 @@
+Welcome to Coherent ErgoAI!
+
+o  This installer will install ErgoAI 3.01
+   Just sit back and follow the prompts.
+
+o  Some features of ErgoAI rely on Java being installed.
+   However, Java is not required to just run the Ergo reasoner
+   on command line, with no GUI or SPARQL/OWL interfaces.
+
+o  ErgoAI is a product of Coherent Knowledge Systems

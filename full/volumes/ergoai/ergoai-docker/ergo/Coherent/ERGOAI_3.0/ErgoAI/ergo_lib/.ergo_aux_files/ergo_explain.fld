@@ -1,0 +1,35 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 7
+
+FLORA_THIS_WORKSPACE(tblflapply)(ensure_loaded,__fldnewvar1).
+FLORA_THIS_WORKSPACE(tblflapply)(use_unsorted_explanations,__fldnewvar1).
+FLORA_THIS_WORKSPACE(tblflapply)(use_sorted_explanations,__fldnewvar1).
+FLORA_THIS_WORKSPACE(tblflapply)(using_unsorted_explanations,__fldnewvar1).
+FLORA_THIS_WORKSPACE(tblflapply)(using_sorted_explanations,__fldnewvar1).
+FLORA_THIS_WORKSPACE(nontblflapply)(get_max_explanation_depth,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(nontblflapply)(set_max_explanation_depth,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(nontblflapply)(textify,__fldnewvar1,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(info_unify,__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4).
+FLORA_THIS_WORKSPACE(tblflapply)(info_textonly,__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4).
+FLORA_THIS_WORKSPACE(tblflapply)(info_withtext,__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4).
+FLORA_THIS_WORKSPACE(tblflapply)(info_withouttext,__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,isleaf,__fldnewvar2).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(why,full,raw),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(why,full,textonly),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(why,full,withtext),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(why,full),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,text,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,size,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,support,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,reason,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,goal,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,rule,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,toJson,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,why,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,info,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(expand_repeated_subgoals,__fldnewvar1).
+FLORA_THIS_WORKSPACE(nontblflapply)(ignore_repeated_subgoals,__fldnewvar1).
+FLORA_THIS_WORKSPACE(nontblflapply)(clear_max_explanation_depth,__fldnewvar1).
+FLORA_THIS_WORKSPACE(nontblflapply)(initialize,__fldnewvar1).

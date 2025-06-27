@@ -1,0 +1,1302 @@
++++++ Configuring XSB
+----- Current directory = /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0
+
+
+Building XSB Version 5.0.0 (Green Tea) of 2022-05-15
+
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+configure: checking host system type... x86_64-pc-linux-gnu
+creating cache /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/config.cache
+Checking installation directories...
+checking /tmp/XSB-25-06-26-17_02_22/lib... OK
+checking /tmp/XSB-25-06-26-17_02_22/syslib... OK
+checking /tmp/XSB-25-06-26-17_02_22/cmplib... OK
+checking /tmp/XSB-25-06-26-17_02_22/bin... OK
+checking /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/bin... OK
+checking /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/lib... OK
+checking /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/saved.o... OK
+checking /tmp/XSB-25-06-26-17_02_22/site/lib... OK
+checking /tmp/XSB-25-06-26-17_02_22/site/config/x86_64-pc-linux-gnu/lib... OK
+checking /tmp/XSB-25-06-26-17_02_22/emu... OK
+checking /tmp/XSB-25-06-26-17_02_22/lib... OK
+checking /tmp/XSB-25-06-26-17_02_22/syslib... OK
+checking /tmp/XSB-25-06-26-17_02_22/cmplib... OK
+checking /tmp/XSB-25-06-26-17_02_22/bin... OK
+checking /tmp/XSB-25-06-26-17_02_22/build... OK
+checking /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/bin... OK
+checking /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/lib... OK
+checking /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/saved.o... OK
+checking /tmp/XSB-25-06-26-17_02_22/etc... OK
+checking /tmp/XSB-25-06-26-17_02_22/packages... OK
+checking /tmp/XSB-25-06-26-17_02_22/packages/xmc... OK
+checking /tmp/XSB-25-06-26-17_02_22/examples... OK
+checking /tmp/XSB-25-06-26-17_02_22/prolog_includes... OK
+Checking installation directories ... Done
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for gcc... yes
+checking whether we are using SunPro C... no
+***Configuring DB drivers
+***Configuring Curl (WWW protocol library)
+***Configuring XPath support
+***Configuring PCRE (Perl pattern matching library)
+configure: updating cache /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/config.cache
+configure: creating ./config.status
+config.status: creating /tmp/XSB-25-06-26-17_02_22/packages/xsbpy/configvars.sh
+***Configuring XSBPY (XSB to Python connector)
+checking for python build information... 
+checking for python3.11m... no
+checking for python3.11... no
+checking for python3.10m... no
+checking for python3.10... no
+checking for python3.9m... no
+checking for python3.9... no
+checking for python3.8m... no
+checking for python3.8... no
+checking for python3.7m... no
+checking for python3.7... no
+checking for python3.6m... no
+checking for python3.6... no
+checking for python3.5m... no
+checking for python3.5... no
+checking for python3.4m... no
+checking for python3.4... no
+checking for python3.3m... no
+checking for python3.3... no
+checking for python3.2m... no
+checking for python3.2... no
+checking for python3.1m... no
+checking for python3.1... no
+checking for python3.0m... no
+checking for python3.0... no
+  results of the Python check:
+    Binary:          no
+    Config library:  no
+    Library:         no
+    Extra library:   no
+    Include Dir:     no
+
+The Python configuration variables have been set as follows:
+PYTHON_BIN=
+PYTHON_LIB=
+PYTHON_LIB_NAME=
+PYTHON_LIBDIR=.
+PYTHON_EXTRA_LIB=
+PYTHON_CONFLIB=
+PYTHON_CONFLIB_NAME=
+PYTHON_CONFLIBDIR=.
+PYTHON_INCLUDE_DIR=
+XSBCONFIG_LIBDIR=/tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/lib
+XSBCONFIG_EMUDIR=/tmp/XSB-25-06-26-17_02_22/emu
+XSBCONFIG_BINDIR=/tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/bin
+XSB_ROOTDIR=/tmp/XSB-25-06-26-17_02_22
+
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking Python.h usability... no
+checking Python.h presence... no
+checking for Python.h... no
+configure: creating ./config.status
+config.status: creating xsb2py_connect_defs.h
+  XSBPY support (XSB to Python connector):        no
+       XSBPY: Python.h not found
+  XSBPY:       Python not found
+configure: creating ./config.status
+config.status: creating xsb2py_connect_defs.h
+config.status: creating xsbpy_info.P
+checking whether make sets $(MAKE)... yes
+checking size of long int... 8
+
+    Configuring XSB for a 64 bit machine
+
+checking for main in -lm... yes
+checking for main in -ldl... yes
+checking for main in -lnsl... yes
+checking for main in -lpthread... yes
+checking for main in -lsocket... no
+checking for readline in -lreadline... yes
+checking for sched_get_priority_max... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for malloc... yes
+checking for unistd.h... (cached) yes
+checking for string.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking return type of signal handlers... void
+checking for strdup... yes
+checking for mkdir... yes
+checking for gethostbyname... yes
+checking for gettimeofday... yes
+checking for socket... yes
+checking for snprintf... yes
+checking for regexec... yes
+checking for regerror... yes
+checking for regcomp... yes
+checking for fnmatch... yes
+checking for glob... yes
+checking for globfree... yes
+checking for execvp... yes
+checking for itkwish... no
+XMC GUI not supported due to failure to find Incr Tcl/Tk
+checking whether loader understands -Wl,-export-dynamic... no
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking for inline... inline
+    Not using SMODELS
+checking jni.h usability... no
+checking jni.h presence... no
+checking for jni.h... no
+checking jni_md.h usability... no
+checking jni_md.h presence... no
+checking for jni_md.h... no
+configure: updating cache /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/config.cache
+configure: creating ./config.status
+config.status: creating /tmp/XSB-25-06-26-17_02_22/packages/xsbpy/configvars.sh
+config.status: creating /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/topMakefile
+config.status: creating /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/emuMakefile
+config.status: creating /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/modMakefile
+config.status: creating /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/gppMakefile
+config.status: creating /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/smoMakefile
+config.status: creating /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/makedef.sh
+config.status: creating /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/lib/xsb_configuration.P
+config.status: creating windows/xsb_configuration.P
+config.status: creating windows64/xsb_configuration.P
+config.status: creating windows64arm/xsb_configuration.P
+config.status: creating makexsb
+config.status: creating /tmp/XSB-25-06-26-17_02_22/bin/chr_pp
+config.status: creating /tmp/XSB-25-06-26-17_02_22/bin/xsb
+config.status: creating /tmp/XSB-25-06-26-17_02_22/bin/xsb.bat
+config.status: creating /tmp/XSB-25-06-26-17_02_22/bin/xsb64.bat
+config.status: creating /tmp/XSB-25-06-26-17_02_22/bin/xsb64arm.bat
+config.status: creating /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/banner.msg
+config.status: creating windows/banner.msg
+config.status: creating windows64arm/banner.msg
+config.status: creating windows/MSVC_mkfile.mak
+config.status: creating windows64arm/MSVC_mkfile.mak
+config.status: creating /tmp/XSB-25-06-26-17_02_22/packages/xmc/xmc-gui
+config.status: creating /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/xsb_config.h
+config.status: creating windows/xsb_config.h
+config.status: windows/xsb_config.h is unchanged
+config.status: creating windows/xsb_debug.h
+config.status: windows/xsb_debug.h is unchanged
+config.status: creating windows64/xsb_config.h
+config.status: windows64/xsb_config.h is unchanged
+config.status: creating windows64/xsb_debug.h
+config.status: windows64/xsb_debug.h is unchanged
+config.status: creating windows64arm/xsb_config.h
+config.status: windows64arm/xsb_config.h is unchanged
+config.status: creating windows64arm/xsb_debug.h
+config.status: windows64arm/xsb_debug.h is unchanged
+config.status: creating /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/xsb_debug.h
+
+
+            INSTALLATION SUMMARY
+            --------------------
+
+XSB Version:	   5.0.0
+Code name:	   Green Tea
+Release date:	   2022-05-15
+Configuration:	   x86_64-pc-linux-gnu
+Installation date: Thu Jun 26 17:02:31 -03 2025
+
+  Build process is looking for XSB sources in:	  /tmp/XSB-25-06-26-17_02_22
+  XSB should be installed in:			  /tmp/XSB-25-06-26-17_02_22
+  Configuration-specific executables go in:	  /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/bin
+  Configuration-specific libraries go in:	  /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/lib
+  Object code goes in:				  /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/saved.o
+  Site-specific code goes in:			  /tmp/XSB-25-06-26-17_02_22/site
+  Site configuration-specific code goes in:	  /tmp/XSB-25-06-26-17_02_22/site/config/x86_64-pc-linux-gnu
+  XSB will be built with:			  gcc   -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char   
+  builtin.c will be built with: 		  gcc  -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char 
+  loader_xsb.c will be built with: 		  gcc  -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char 
+  emuloop.c will be built with: 		  gcc  -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char 
+  tr_utils.c will be built with:		  gcc  -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char 
+  Loader flags: 				  -lm -ldl -lpthread
+  Compilation mode:				  optimal
+  XSB abstract machine: 			  slg-wam
+  XSB scheduling strategy:			  local
+  Garbage Collection Stress-Test:		  no
+  Jumptable-based emulator loop:		  yes
+  Demand support:                                 no
+
+  Details of support for modular database drivers:
+
+  ODBC support:                                   yes
+  ODBC library directory:                         
+  ODBC C Flags:                                   -DHAVE_UNISTD_H -DHAVE_PWD_H -DHAVE_SYS_TYPES_H -DHAVE_LONG_LONG -DSIZEOF_LONG_INT=8 -I/usr/include 
+  ODBC Loader Flags:                              -L/usr/lib -lodbc
+
+  MySQL support:                                  yes
+  MySQL library directory:                        /usr/lib
+  MySQL header directory:                         /usr/include/mysql
+  MySQL C Flags:                                  -I/usr/include/mysql -I/usr/include/mysql/mysql
+  MySQL Loader Flags:                             -L/usr/lib/ -lmariadb
+
+  MySQL Embedded Server support:                  yes
+  MySQL Embedded Server library directory:        /usr/lib
+  MySQL Embedded Server header directory:         /usr/include/mysql
+  MySQL Embedded Server C Flags:                  -g -W -Wall -I/usr/include/mysql -I/usr/include/mysql/mysql -g -O2
+  MySQL Embedded Server Loader Flags:             -L/usr/lib/ -lmariadbd -lz -ldl -lm -lssl -lcrypto 
+
+  Native support for Oracle:			  no
+  Support for the old ODBC driver:		  no
+
+  Java compiler:                                  /usr/bin/javac
+  Support for InterProlog's native engine:   	  no
+  -- JDK may not have been installed or
+  -- JAVA_HOME not set. You will still be able
+  -- to use InterProlog's subprocess engine.
+
+  POSIX regexp matching libraries:                yes
+  POSIX wildcard matching libraries:              yes
+
+  Curl support (HTTP protocol library):           yes
+  Curl C flags:        	                          -g -O2
+  Curl loader flags:                              
+
+  XPath support:				  yes
+  XPath C flags:				  -I/usr/include/libxml2
+  XPath loader flags:				  -L/usr/lib -lxml2
+
+  PCRE support (Perl pattern matching):           yes
+  PCRE C flags:        	                          -g -O2
+  PCRE loader flags:                              
+
+  XSBPY support (XSB to Python connector):        no
+       XSBPY: Python.h not found
+  XSBPY:       Python not found
+
+
+*** Warning: The command 'makedepend' is not installed.
+***          Install it to speed up compilation of XSB.
+*** Warning: The commands 'todos' and 'unix2dos' are not installed.
+***          Install one of these to speed up compilation of XSB in Windows
+***          Due to this, always run 'makexsb clean' before every 'makexsb'
+chmod: cannot access '../build/MSVC.dep': No such file or directory
+
+XSB is configured for installation in /tmp/XSB-25-06-26-17_02_22
+Site libraries are to be found in /tmp/XSB-25-06-26-17_02_22/site
+Configuration report is saved in ./Installation_summary
+
+***Now compile XSB with:   `./makexsb'
+
+
+make -f ../config/x86_64-pc-linux-gnu/topMakefile  
+
+
+Preparing...
+
+Making emulator...
+make[1]: Entering directory '/tmp/XSB-25-06-26-17_02_22/emu'
+make[1]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/emu'
+*** Warning: The command 'makedepend' is not installed. Install it to speed up compilation of XSB.
+make[1]: Entering directory '/tmp/XSB-25-06-26-17_02_22/emu'
+
+Compiling XSB with gcc using -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char   
+
+	[gcc] main_xsb.c
+	[gcc] auxlry.c
+	[gcc] biassert.c
+	[gcc] builtin.c using -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char 
+	[gcc] call_xsb.c
+	[gcc] cinterf.c
+cinterf.c: In function ‘xsb_init_string’:
+cinterf.c:1523:91: warning: ‘%s’ directive output may be truncated writing likely 2049 or more bytes into a region of size 2004 [-Wformat-truncation=]
+ 1523 |             snprintf(cmdline,2*MAXPATHLEN+1,"command used to call XSB server is too long: %s",cmdline_param);
+      |                                                                                           ^~
+cinterf.c:1523:45: note: assuming directive output of 2049 bytes
+ 1523 |             snprintf(cmdline,2*MAXPATHLEN+1,"command used to call XSB server is too long: %s",cmdline_param);
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cinterf.c:1523:13: note: ‘snprintf’ output 46 or more bytes (assuming 2095) into a destination of size 2049
+ 1523 |             snprintf(cmdline,2*MAXPATHLEN+1,"command used to call XSB server is too long: %s",cmdline_param);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	[gcc] conc_compl.c
+	[gcc] debug_xsb.c
+	[gcc] dis.c
+	[gcc] dynload.c
+	[gcc] dynamic_stack.c
+	[gcc] deadlock.c
+	[gcc] emuloop.c using -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char 
+emuloop.c: In function ‘emuloop’:
+emuloop.c:1538:9: warning: multi-line comment [-Wcomment]
+ 1538 |         //      printf("gap sz %d\n",(pb)top_of_localstk - (pb)top_of_heap); \
+      |         ^
+emuloop.c:2578:7: warning: multi-line comment [-Wcomment]
+ 2578 |       //      printf("gap sz %d\n",(pb)top_of_localstk - (pb)top_of_heap); \
+      |       ^
+	[gcc] error_xsb.c
+	[gcc] findall.c
+	[gcc] function.c
+	[gcc] hash_xsb.c
+	[gcc] hashtable_xsb.c
+	[gcc] heap_xsb.c
+heap_xsb.c: In function ‘glstack_realloc’:
+heap_xsb.c:493:32: warning: pointer used after ‘realloc’ [-Wuse-after-free]
+  493 |     heap_offset = new_heap_bot - heap_bot ;
+      |                                ^
+heap_xsb.c:492:26: note: call to ‘realloc’ here
+  492 |     new_heap_bot = (CPtr)realloc(heap_bot, new_size_in_bytes);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	[gcc] init_xsb.c
+	[gcc] inst_xsb.c
+	[gcc] io_builtins_xsb.c
+	[gcc] loader_xsb.c using -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char 
+	[gcc] memory_xsb.c
+	[gcc] orient_xsb.c
+orient_xsb.c: In function ‘set_xsbinfo_dir’:
+orient_xsb.c:98:42: warning: ‘xsbrc’ directive output may be truncated writing 5 bytes into a region of size between 0 and 1023 [-Wformat-truncation=]
+   98 |   snprintf(new_xinitrc, MAXPATHLEN, "%s%cxsbrc", xsbinfo_dir_gl, SLASH);
+      |                                          ^~~~~
+orient_xsb.c:98:3: note: ‘snprintf’ output between 7 and 1030 bytes into a destination of size 1024
+   98 |   snprintf(new_xinitrc, MAXPATHLEN, "%s%cxsbrc", xsbinfo_dir_gl, SLASH);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+orient_xsb.c:99:46: warning: ‘config’ directive output may be truncated writing 6 bytes into a region of size between 0 and 1023 [-Wformat-truncation=]
+   99 |   snprintf(user_config_dir, MAXPATHLEN, "%s%cconfig", xsbinfo_dir_gl, SLASH);
+      |                                              ^~~~~~
+orient_xsb.c:99:3: note: ‘snprintf’ output between 8 and 1031 bytes into a destination of size 1024
+   99 |   snprintf(user_config_dir, MAXPATHLEN, "%s%cconfig", xsbinfo_dir_gl, SLASH);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+orient_xsb.c:100:44: warning: ‘%s’ directive output may be truncated writing 19 bytes into a region of size between 0 and 1023 [-Wformat-truncation=]
+  100 |   snprintf(user_arch_dir, MAXPATHLEN, "%s%c%s", user_config_dir, SLASH, FULL_CONFIG_NAME);
+      |                                            ^~
+orient_xsb.c:100:3: note: ‘snprintf’ output between 21 and 1044 bytes into a destination of size 1024
+  100 |   snprintf(user_arch_dir, MAXPATHLEN, "%s%c%s", user_config_dir, SLASH, FULL_CONFIG_NAME);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+orient_xsb.c: In function ‘xsb_executable_full_path’:
+orient_xsb.c:197:53: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+  197 |     snprintf(executable_path_gl, MAXPATHLEN, "%s%c%s", current_dir_gl, SLASH, myname_augmented);
+      |                                                     ^
+orient_xsb.c:197:5: note: ‘snprintf’ output 2 or more bytes (assuming 1025) into a destination of size 1024
+  197 |     snprintf(executable_path_gl, MAXPATHLEN, "%s%c%s", current_dir_gl, SLASH, myname_augmented);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	[gcc] pathname_xsb.c
+pathname_xsb.c: In function ‘tilde_expand_filename_norectify.part.0’:
+pathname_xsb.c:182:43: warning: ‘%s’ directive output may be truncated writing up to 254 bytes into a region of size 88 [-Wformat-truncation=]
+  182 |       snprintf(message, 100, "[PATHNAME] `%s': unknown user\n", username);
+      |                                           ^~                    ~~~~~~~~
+pathname_xsb.c:182:7: note: ‘snprintf’ output between 29 and 283 bytes into a destination of size 100
+  182 |       snprintf(message, 100, "[PATHNAME] `%s': unknown user\n", username);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pathname_xsb.c: In function ‘rectify_pathname’:
+pathname_xsb.c:440:5: warning: ‘strncpy’ output may be truncated copying 2 bytes from a string of length 1023 [-Wstringop-truncation]
+  440 |     strncpy(names[nameidx], inptr1, length);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pathname_xsb.c: In function ‘expand_filename’:
+pathname_xsb.c:238:46: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+  238 |     snprintf(aux_filename,MAXPATHLEN, "%s%c%s", aux_filename2, SLASH, filename);
+      |                                              ^
+pathname_xsb.c:238:5: note: ‘snprintf’ output 2 or more bytes (assuming 1025) into a destination of size 1024
+  238 |     snprintf(aux_filename,MAXPATHLEN, "%s%c%s", aux_filename2, SLASH, filename);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	[gcc] psc_xsb.c
+psc_xsb.c: In function ‘link_sym’:
+psc_xsb.c:457:95: warning: ‘%s’ directive output may be truncated writing up to 199 bytes into a region of size between 167 and 369 [-Wformat-truncation=]
+  457 |                      "%s/%d (%s) had been defined in %s; those clauses lost in the context of %s.",
+      |                                                                                               ^~
+  458 |                      name, arity, ((umtype==T_PRED)?"static predicate":"dynamic predicate"),modmsg,curmodmsg);
+      |                                                                                                    ~~~~~~~~~
+psc_xsb.c:456:13: note: ‘snprintf’ output 83 or more bytes (assuming 484) into a destination of size 450
+  456 |             snprintf(message,450,
+      |             ^~~~~~~~~~~~~~~~~~~~~
+  457 |                      "%s/%d (%s) had been defined in %s; those clauses lost in the context of %s.",
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  458 |                      name, arity, ((umtype==T_PRED)?"static predicate":"dynamic predicate"),modmsg,curmodmsg);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	[gcc] random_xsb.c
+	[gcc] remove_unf.c
+	[gcc] residual.c
+	[gcc] rw_lock.c
+	[gcc] scc_xsb.c
+	[gcc] slgdelay.c
+	[gcc] socket_xsb.c
+	[gcc] string_xsb.c
+	[gcc] storage_xsb.c
+	[gcc] struct_manager.c
+	[gcc] struct_intern.c
+	[gcc] sub_delete.c
+	[gcc] subp.c
+	[gcc] system_xsb.c
+	[gcc] table_stats.c
+	[gcc] tables.c
+	[gcc] thread_xsb.c
+	[gcc] timer_xsb.c
+	[gcc] token_xsb.c
+token_xsb.c: In function ‘read_character’:
+token_xsb.c:913:19: warning: unused variable ‘stream’ [-Wunused-variable]
+  913 |               int stream = unset_fileptr(card);
+      |                   ^~~~~~
+token_xsb.c: In function ‘SyntaxError’:
+token_xsb.c:324:3: warning: ‘strncpy’ specified bound 2033 equals destination size [-Wstringop-truncation]
+  324 |   strncpy(message+15,description,(MAXBUFSIZE - 15));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	[gcc] tr_utils.c using -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char 
+	[gcc] trace_xsb.c
+	[gcc] trie_lookup.c
+	[gcc] trie_search.c
+	[gcc] tries.c
+tries.c: In function ‘delay_chk_insert’:
+tries.c:1618:10: warning: unused variable ‘interning_terms’ [-Wunused-variable]
+ 1618 |     byte interning_terms = 0;  /* never intern ground terms in delay lists */
+      |          ^~~~~~~~~~~~~~~
+tries.c: In function ‘trie_assert_chk_ins’:
+tries.c:2867:8: warning: unused variable ‘interning_terms’ [-Wunused-variable]
+ 2867 |   byte interning_terms = 0;  /* never intern ground terms in delay lists */
+      |        ^~~~~~~~~~~~~~~
+	[gcc] tst_insert.c
+	[gcc] tst_retrv.c
+	[gcc] tst_unify.c
+	[gcc] tst_utils.c
+	[gcc] varstring.c
+In function ‘vs_prependblk’,
+    inlined from ‘vs_prepend’ at varstring.c:234:3:
+varstring.c:345:3: warning: ‘strncpy’ output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  345 |   strncpy(vstr->string, blk, blk_size);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+varstring.c: In function ‘vs_prepend’:
+varstring.c:234:33: note: length computed here
+  234 |   vs_prependblk(vstr, str, (int)strlen(str));
+      |                                 ^~~~~~~~~~~
+In function ‘vs_appendblk’,
+    inlined from ‘vs_append’ at varstring.c:212:3:
+varstring.c:318:3: warning: ‘strncpy’ output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  318 |   strncpy(vstr->string+vstr->length, blk, blk_size);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+varstring.c: In function ‘vs_append’:
+varstring.c:212:32: note: length computed here
+  212 |   vs_appendblk(vstr, str, (int)strlen(str));
+      |                                ^~~~~~~~~~~
+	[gcc] ubi_BinTree.c
+	[gcc] ubi_SplayTree.c
+	[gcc] hashtable.c
+	[gcc] hashtable_itr.c
+	[gcc] sha1.c
+	[gcc] md5.c
+	[gcc] base64_enc.c
+	[gcc] url_encode.c
+	[gcc] getMemorySize.c
+	[gcc] incr_xsb.c
+	[gcc] call_graph_xsb.c
+
+Making XSB executable /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/bin/xsb 
+
+	[gcc] -o /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/bin/xsb -lm -ldl -lpthread 
+make[1]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/emu'
+
+Making XSB module...
+make[1]: Entering directory '/tmp/XSB-25-06-26-17_02_22/emu'
+
+Making a C-callable XSB module
+gcc  -o xsb.o -nodefaultlibs -nostartfiles  -r auxlry.o biassert.o builtin.o call_xsb.o cinterf.o conc_compl.o debug_xsb.o dis.o dynload.o dynamic_stack.o deadlock.o emuloop.o error_xsb.o findall.o function.o hash_xsb.o  hashtable_xsb.o heap_xsb.o init_xsb.o inst_xsb.o io_builtins_xsb.o loader_xsb.o memory_xsb.o orient_xsb.o pathname_xsb.o psc_xsb.o random_xsb.o remove_unf.o residual.o rw_lock.o scc_xsb.o slgdelay.o socket_xsb.o string_xsb.o storage_xsb.o struct_manager.o struct_intern.o sub_delete.o subp.o system_xsb.o table_stats.o tables.o thread_xsb.o timer_xsb.o token_xsb.o tr_utils.o trace_xsb.o trie_lookup.o trie_search.o tries.o tst_insert.o tst_retrv.o tst_unify.o tst_utils.o varstring.o ubi_BinTree.o ubi_SplayTree.o hashtable.o hashtable_itr.o sha1.o md5.o base64_enc.o url_encode.o getMemorySize.o incr_xsb.o call_graph_xsb.o    
+
+make[1]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/emu'
+
+Making DLL... (if Cygwin)
+make[1]: Entering directory '/tmp/XSB-25-06-26-17_02_22/emu'
+make[1]: Nothing to be done for 'dll'.
+make[1]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/emu'
+
+Making gpp
+make[1]: Entering directory '/tmp/XSB-25-06-26-17_02_22/gpp'
+
+	[gcc] gpp.c using  
+	[gcc] -o gpp
+
+make[1]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/gpp'
+make[1]: Entering directory '/tmp/XSB-25-06-26-17_02_22'
+
+cd cmplib; make
+make[2]: Entering directory '/tmp/XSB-25-06-26-17_02_22/cmplib'
+rm -f 'cmd...'
+rm -f '../build/.xsb_cmplib_warn.tmp'
+echo 'mc(compile, [sysmod,optimize,spec_repr,quit_on_error]).' >> 'cmd...'
+/tmp/XSB-25-06-26-17_02_22/bin/xsb -e "segfault_handler(warn)." < 'cmd...'
+[Compiling /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/lib/xsb_configuration]
+% Specialising partially instantiated calls to xsb_configuration/2
+[Module xsb_configuration compiled, cpu time used: 0.005 seconds]
+[xsb_configuration loaded]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 5.0.0 (Green Tea) of May 15, 2022
+[x86_64-pc-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2025-06-26]
+
+
+Evaluating command line goal:  
+| ?-  segfault_handler(warn).
+
+| ?- 
+yes
+| ?- 
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- [gpp: Preprocessing compile.P]
+[Compiling compile]
+% Specialising partially instantiated calls to compile_pred_block/4
+% Specialising partially instantiated calls to compile_predicate2/3
+[Module compile compiled, cpu time used: 0.009 seconds]
+
+yes
+| ?- 
+yes
+| ?- 
+End XSB (cputime 0.02 secs, elapsetime 0.03 secs)
+/bin/rm 'cmd...'
+----------------- Warnings ------------------------
+While compiling XSB/cmplib:
+-------------------- End --------------------------
+make[2]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/cmplib'
+
+cd syslib; make
+make[2]: Entering directory '/tmp/XSB-25-06-26-17_02_22/syslib'
+rm -f '../build/.xsb_syslib_warn.tmp'
+echo 'mc(loader, [sysmod,optimize,quit_on_error]).' >> cmd...
+echo 'mc(standard, [sysmod,optimize,quit_on_error]).' >> cmd...
+./CompileChangedFiles.sh /tmp/XSB-25-06-26-17_02_22/bin/xsb -e "segfault_handler(warn)."
+[xsb_configuration loaded]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 5.0.0 (Green Tea) of May 15, 2022
+[x86_64-pc-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2025-06-26]
+
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- [gpp: Preprocessing loader.P]
+[Compiling loader]
+% Specialising partially instantiated calls to str_cat_list/2
+[Module loader compiled, cpu time used: 0.017 seconds]
+
+yes
+| ?- [gpp: Preprocessing standard.P]
+[Compiling standard]
+% Specialising partially instantiated calls to see/1
+% Specialising partially instantiated calls to tell/1
+% Specialising partially instantiated calls to close/1
+% Specialising partially instantiated calls to close/2
+% Specialising partially instantiated calls to close/4
+% Specialising partially instantiated calls to read_term_check/2
+% Specialising partially instantiated calls to length/3
+% Specialising partially instantiated calls to operator_specifier/2
+% Specialising partially instantiated calls to hack_consult/2
+% Specialising partially instantiated calls to message/2
+% Specialising partially instantiated calls to import/1
+% Specialising partially instantiated calls to read_alphanumeric_list/3
+% Specialising partially instantiated calls to expand_atom_1/2
+[Module standard compiled, cpu time used: 0.083 seconds]
+
+yes
+| ?- 
+yes
+| ?- 
+End XSB (cputime 0.11 secs, elapsetime 0.12 secs)
+----------------- Warnings ------------------------
+While compiling XSB/syslib:
+-------------------- End --------------------------
+
+make[2]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/syslib'
+
+cd lib; make
+make[2]: Entering directory '/tmp/XSB-25-06-26-17_02_22/lib'
+/bin/rm -f '../build/.xsb_lib_warn.tmp'
+/tmp/XSB-25-06-26-17_02_22/bin/xsb -e "segfault_handler(warn)." < cmd...
+[xsb_configuration loaded, cpu time used: 0.001 seconds]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 5.0.0 (Green Tea) of May 15, 2022
+[x86_64-pc-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2025-06-26]
+
+
+Evaluating command line goal:  
+| ?-  segfault_handler(warn).
+
+| ?- 
+yes
+| ?- 
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+End XSB (cputime 0.01 secs, elapsetime 0.01 secs)
+/bin/rm -f cmd...
+----------------- Warnings ------------------------
+While compiling XSB/lib:
+-------------------- End --------------------------
+make[2]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/lib'
+make[1]: Leaving directory '/tmp/XSB-25-06-26-17_02_22'
+Compiling xasp interface
+make[1]: Entering directory '/tmp/XSB-25-06-26-17_02_22/packages/xasp'
+make[1]: Nothing to be done for 'nope'.
+make[1]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/packages/xasp'
+# Do not uncomment below or *lib*/ errors won't be displayed
+#@rm -f /tmp/XSB-25-06-26-17_02_22/build/.*.tmp
+make[1]: Entering directory '/tmp/XSB-25-06-26-17_02_22'
+
+cd packages; make
+make[2]: Entering directory '/tmp/XSB-25-06-26-17_02_22/packages'
+/bin/rm -f '../build/.apkgs.tmp'
+
+cd clpqr; make
+make[3]: Entering directory '/tmp/XSB-25-06-26-17_02_22/packages/clpqr'
+Nothing to be done for this package
+make[3]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/packages/clpqr'
+
+cd curl; make
+make[3]: Entering directory '/tmp/XSB-25-06-26-17_02_22/packages/curl'
+rm -f '../../build/.curl_warn.tmp'
+/tmp/XSB-25-06-26-17_02_22/bin/xsb -i -m 2000 -c 2000 < cmd...
+[xsb_configuration loaded]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 5.0.0 (Green Tea) of May 15, 2022
+[x86_64-pc-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2025-06-26]
+
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+End XSB (cputime 0.00 secs, elapsetime 0.01 secs)
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/curl:
+-------------------- End --------------------------
+make[3]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/packages/curl'
+
+cd pcre; make
+make[3]: Entering directory '/tmp/XSB-25-06-26-17_02_22/packages/pcre'
+rm -f '../../build/.pcre_warn.tmp'
+/tmp/XSB-25-06-26-17_02_22/bin/xsb -i -m 2000 -c 2000 < cmd...
+[xsb_configuration loaded]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 5.0.0 (Green Tea) of May 15, 2022
+[x86_64-pc-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2025-06-26]
+
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+End XSB (cputime 0.01 secs, elapsetime 0.01 secs)
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/pcre:
+-------------------- End --------------------------
+make[3]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/packages/pcre'
+
+cd slx; make
+make[3]: Entering directory '/tmp/XSB-25-06-26-17_02_22/packages/slx'
+/tmp/XSB-25-06-26-17_02_22/bin/xsb -i -m 2000 -c 2000 < cmd...
+[xsb_configuration loaded]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 5.0.0 (Green Tea) of May 15, 2022
+[x86_64-pc-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2025-06-26]
+
+| ?- 
+End XSB (cputime 0.00 secs, elapsetime 0.01 secs)
+/bin/rm cmd...
+make[3]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/packages/slx'
+
+cd gap; make
+make[3]: Entering directory '/tmp/XSB-25-06-26-17_02_22/packages/gap'
+/bin/rm -f '../../build/.gap_warn.tmp'
+/tmp/XSB-25-06-26-17_02_22/bin/xsb -e 'segfault_handler(warn).' < cmd...
+[xsb_configuration loaded, cpu time used: 0.001 seconds]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 5.0.0 (Green Tea) of May 15, 2022
+[x86_64-pc-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2025-06-26]
+
+
+Evaluating command line goal:  
+| ?-  segfault_handler(warn).
+
+| ?- 
+yes
+| ?- 
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+End XSB (cputime 0.00 secs, elapsetime 0.01 secs)
+make[3]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/packages/gap'
+
+cd regmatch; make
+make[3]: Entering directory '/tmp/XSB-25-06-26-17_02_22/packages/regmatch'
+rm -f '../../build/.regmatch_warn.tmp'
+/tmp/XSB-25-06-26-17_02_22/bin/xsb -i -m 2000 -c 2000 < cmd...
+[xsb_configuration loaded]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 5.0.0 (Green Tea) of May 15, 2022
+[x86_64-pc-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2025-06-26]
+
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+End XSB (cputime 0.00 secs, elapsetime 0.01 secs)
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/regmatch:
+-------------------- End --------------------------
+make[3]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/packages/regmatch'
+
+cd wildmatch; make
+make[3]: Entering directory '/tmp/XSB-25-06-26-17_02_22/packages/wildmatch'
+/bin/rm -f '../../build/.wildmatch_warn.tmp'
+/tmp/XSB-25-06-26-17_02_22/bin/xsb -i -m 2000 -c 2000 < cmd...
+[xsb_configuration loaded, cpu time used: 0.001 seconds]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 5.0.0 (Green Tea) of May 15, 2022
+[x86_64-pc-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2025-06-26]
+
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+End XSB (cputime 0.00 secs, elapsetime 0.01 secs)
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/wildmatch:
+-------------------- End --------------------------
+make[3]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/packages/wildmatch'
+
+cd justify; make
+make[3]: Entering directory '/tmp/XSB-25-06-26-17_02_22/packages/justify'
+| ?- yes
+| ?- -------------- Warnings/Errors --------------------
+While compiling XSB/packages/justify:
+make[3]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/packages/justify'
+
+cd minizinc; make
+make[3]: Entering directory '/tmp/XSB-25-06-26-17_02_22/packages/minizinc'
+/bin/rm -f '../../build/.apkgs.mzn.tmp'
+/tmp/XSB-25-06-26-17_02_22/bin/xsb -i -m 2000 -c 2000 < cmd...
+[xsb_configuration loaded]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 5.0.0 (Green Tea) of May 15, 2022
+[x86_64-pc-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2025-06-26]
+
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+End XSB (cputime 0.01 secs, elapsetime 0.01 secs)
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/minizinc:
+-------------------- End --------------------------
+make[3]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/packages/minizinc'
+/tmp/XSB-25-06-26-17_02_22/bin/xsb -i -m 2000 -c 2000 < cmd...
+[xsb_configuration loaded]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 5.0.0 (Green Tea) of May 15, 2022
+[x86_64-pc-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2025-06-26]
+
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+yes
+| ?- 
+End XSB (cputime 0.00 secs, elapsetime 0.01 secs)
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages:
+-------------------- End --------------------------
+make[2]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/packages'
+make[1]: Leaving directory '/tmp/XSB-25-06-26-17_02_22'
+
+
+Configuring XSB packages. Wait...
+[xsb_configuration loaded, cpu time used: 0.001 seconds]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 5.0.0 (Green Tea) of May 15, 2022
+[x86_64-pc-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2025-06-26]
+
+| ?- [gap loaded]
+[gapmeta loaded]
+
+yes
+| ?- [wildmatch loaded]
+[wldmtchconfig loaded, cpu time used: 0.001 seconds]
+[Compiling Foreign Module /tmp/XSB-25-06-26-17_02_22/packages/wildmatch/cc/xsb_wildmatch (Prolog compiler options are ignored)]
+[xsb_wildmatch compiled, cpu time used: 0.000 seconds]
+[Compiling C file /tmp/XSB-25-06-26-17_02_22/packages/wildmatch/cc/xsb_wildmatch.c using gcc]
+gcc -s -o /tmp/XSB-25-06-26-17_02_22/packages/wildmatch/cc/xsb_wildmatch.so -shared /tmp/XSB-25-06-26-17_02_22/packages/wildmatch/cc/xsb_wildmatch.c   -Wall -fPIC -I/tmp/XSB-25-06-26-17_02_22/emu -I/tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu    -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char      -lm -ldl -lpthread    -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char      -lm -ldl -lpthread   -lm -ldl -lpthread 
+
+++Error[XSB]: [Runtime/C] /tmp/XSB-25-06-26-17_02_22/packages/wildmatch/cc/xsb_wildmatch.so: undefined symbol: VarStrOps
+++Error[XSB/Runtime/P]: [Miscellaneous] Error in loading file /tmp/XSB-25-06-26-17_02_22/packages/wildmatch/cc/xsb_wildmatch.xwam.kenobi-375769
+Forward Continuation...
+... machine:xsb_backtrace/1  From /tmp/XSB-25-06-26-17_02_22/syslib/machine.xwam
+... standard:call/1  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... standard:catch/3  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... consult:reconsult0/3  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... consult:reconsult/2  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... consult:consult/2  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... standard:call/1  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... standard:catch/3  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... consult:load_exec/2  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... consult:reconsult0/3  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... consult:reconsult/1  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... consult:./2  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... standard:call/1  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... standard:catch/3  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... consult:load_exec/2  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... consult:reconsult0/3  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... x_interp:_$call/1  From /tmp/XSB-25-06-26-17_02_22/syslib/x_interp.xwam
+... x_interp:call_query/1  From /tmp/XSB-25-06-26-17_02_22/syslib/x_interp.xwam
+... standard:call/1  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... standard:catch/3  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... x_interp:interpreter/0  From /tmp/XSB-25-06-26-17_02_22/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /tmp/XSB-25-06-26-17_02_22/syslib/loader.xwam
+... loader:find_ofile_and_load/7  From /tmp/XSB-25-06-26-17_02_22/syslib/loader.xwam
+... standard:call/1  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... standard:catch/3  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+| ?- [regmatch loaded]
+[regmtchconfig loaded]
+[Compiling Foreign Module /tmp/XSB-25-06-26-17_02_22/packages/regmatch/cc/xsb_re_match (Prolog compiler options are ignored)]
+[xsb_re_match compiled, cpu time used: 0.001 seconds]
+[Compiling C file /tmp/XSB-25-06-26-17_02_22/packages/regmatch/cc/xsb_re_match.c using gcc]
+gcc -s -o /tmp/XSB-25-06-26-17_02_22/packages/regmatch/cc/xsb_re_match.so -shared /tmp/XSB-25-06-26-17_02_22/packages/regmatch/cc/xsb_re_match.c   -Wall -fPIC -I/tmp/XSB-25-06-26-17_02_22/emu -I/tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu    -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char      -lm -ldl -lpthread    -O3 -fno-strict-aliasing   -fPIC -Wall -pipe -fsigned-char      -lm -ldl -lpthread   -lm -ldl -lpthread 
+
+++Error[XSB]: [Runtime/C] /tmp/XSB-25-06-26-17_02_22/packages/regmatch/cc/xsb_re_match.so: undefined symbol: VarStrOps
+++Error[XSB/Runtime/P]: [Miscellaneous] Error in loading file /tmp/XSB-25-06-26-17_02_22/packages/regmatch/cc/xsb_re_match.xwam.kenobi-375769
+Forward Continuation...
+... machine:xsb_backtrace/1  From /tmp/XSB-25-06-26-17_02_22/syslib/machine.xwam
+... standard:call/1  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... standard:catch/3  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... consult:reconsult0/3  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... consult:reconsult/2  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... consult:consult/2  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... standard:call/1  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... standard:catch/3  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... consult:load_exec/2  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... consult:reconsult0/3  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... consult:reconsult/1  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... consult:./2  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... standard:call/1  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... standard:catch/3  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... consult:load_exec/2  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... consult:reconsult0/3  From /tmp/XSB-25-06-26-17_02_22/syslib/consult.xwam
+... x_interp:_$call/1  From /tmp/XSB-25-06-26-17_02_22/syslib/x_interp.xwam
+... x_interp:call_query/1  From /tmp/XSB-25-06-26-17_02_22/syslib/x_interp.xwam
+... standard:call/1  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... standard:catch/3  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... x_interp:interpreter/0  From /tmp/XSB-25-06-26-17_02_22/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /tmp/XSB-25-06-26-17_02_22/syslib/loader.xwam
+... loader:find_ofile_and_load/7  From /tmp/XSB-25-06-26-17_02_22/syslib/loader.xwam
+... standard:call/1  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+... standard:catch/3  From /tmp/XSB-25-06-26-17_02_22/syslib/standard.xwam
+| ?- [slx loaded]
+[slxshell loaded]
+
+yes
+| ?- 
+End XSB (cputime 0.01 secs, elapsetime 0.17 secs)
+
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/minizinc:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/curl:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/gap:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/pcre:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/regmatch:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/wildmatch:
+-------------------- End --------------------------
+----------------- Warnings ------------------------
+While compiling XSB/cmplib:
+-------------------- End --------------------------
+----------------- Warnings ------------------------
+While compiling XSB/lib:
+-------------------- End --------------------------
+----------------- Warnings ------------------------
+While compiling XSB/syslib:
+-------------------- End --------------------------
+
+
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/minizinc:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/curl:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/gap:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/pcre:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/regmatch:
+-------------------- End --------------------------
+-------------- Warnings/Errors --------------------
+While compiling XSB/packages/wildmatch:
+-------------------- End --------------------------
+----------------- Warnings ------------------------
+While compiling XSB/cmplib:
+-------------------- End --------------------------
+----------------- Warnings ------------------------
+While compiling XSB/lib:
+-------------------- End --------------------------
+----------------- Warnings ------------------------
+While compiling XSB/syslib:
+-------------------- End --------------------------
+
+
+Now you can run XSB using the shell script:
+       /tmp/XSB-25-06-26-17_02_22/bin/xsb
+
+make -f ../config/x86_64-pc-linux-gnu/topMakefile dynmodule
+
+Preparing...
+make[1]: Entering directory '/tmp/XSB-25-06-26-17_02_22/emu'
+Making XSB Shared Library /tmp/XSB-25-06-26-17_02_22/config/x86_64-pc-linux-gnu/bin/libxsb.so
+
+make[1]: Leaving directory '/tmp/XSB-25-06-26-17_02_22/emu'
+... done ...
+
+### Running XSB for the first time.
+
++++ Python does not seem to be configured properly.
++++ XSB-Python bridge will not be supported in this installation.
+
++++++ Configuring ErgoAI
+
++++++ Using Prolog engine: /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/bin/xsb
+
+[xsb_configuration loaded]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 5.0.0 (Green Tea) of May 15, 2022
+[x86_64-pc-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2025-06-26]
+
+
+Evaluating command line goal:  
+| ?-  [flrconfig]. halt.
+
+| ?- [flrconfig loaded]
+
+yes
+| ?- 
+End XSB (cputime 0.01 secs, elapsetime 0.01 secs)
+
++++++ All is well: you can now run ErgoAI Reasoner with the script
++++++    ./ErgoAI/runergo
+
++++++ Setting up icons
++++++ Running ErgoAI for the first time
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c: In function ‘hilog2prolog’:
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:196:27: error: passing argument 1 of ‘map_list’ from incompatible pointer type [-Wincompatible-pointer-types]
+  196 |     return map_list(CTXTc hilog2prolog,hterm,apply,unify_vars);
+      |                           ^~~~~~~~~~~~
+      |                           |
+      |                           prolog_term (*)(prolog_term,  char *, Integer) {aka long unsigned int (*)(long unsigned int,  char *, long int)}
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:84:51: note: expected ‘prolog_term (*)(void)’ {aka ‘long unsigned int (*)(void)’} but argument is of type ‘prolog_term (*)(prolog_term,  char *, Integer)’ {aka ‘long unsigned int (*)(long unsigned int,  char *, long int)’}
+   84 | static prolog_term map_list(CTXTdeclc prolog_term func(), prolog_term term, char *apply, Integer unify_vars);
+      |                                       ~~~~~~~~~~~~^~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:183:20: note: ‘hilog2prolog’ declared here
+  183 | static prolog_term hilog2prolog(CTXTdeclc prolog_term hterm, char *apply, Integer unify_vars)
+      |                    ^~~~~~~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:198:42: error: passing argument 1 of ‘map_special_form_binary’ from incompatible pointer type [-Wincompatible-pointer-types]
+  198 |     return map_special_form_binary(CTXTc hilog2prolog,hterm,apply,unify_vars);
+      |                                          ^~~~~~~~~~~~
+      |                                          |
+      |                                          prolog_term (*)(prolog_term,  char *, Integer) {aka long unsigned int (*)(long unsigned int,  char *, long int)}
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:82:68: note: expected ‘prolog_term (*)(void)’ {aka ‘long unsigned int (*)(void)’} but argument is of type ‘prolog_term (*)(prolog_term,  char *, Integer)’ {aka ‘long unsigned int (*)(long unsigned int,  char *, long int)’}
+   82 | static prolog_term map_special_form_binary(CTXTdeclc prolog_term (*func)(), prolog_term term, char *apply, Integer unify_vars);
+      |                                                      ~~~~~~~~~~~~~~^~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:183:20: note: ‘hilog2prolog’ declared here
+  183 | static prolog_term hilog2prolog(CTXTdeclc prolog_term hterm, char *apply, Integer unify_vars)
+      |                    ^~~~~~~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:200:41: error: passing argument 1 of ‘map_special_form_unary’ from incompatible pointer type [-Wincompatible-pointer-types]
+  200 |     return map_special_form_unary(CTXTc hilog2prolog,hterm,apply,unify_vars);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         prolog_term (*)(prolog_term,  char *, Integer) {aka long unsigned int (*)(long unsigned int,  char *, long int)}
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:83:67: note: expected ‘prolog_term (*)(void)’ {aka ‘long unsigned int (*)(void)’} but argument is of type ‘prolog_term (*)(prolog_term,  char *, Integer)’ {aka ‘long unsigned int (*)(long unsigned int,  char *, long int)’}
+   83 | static prolog_term map_special_form_unary(CTXTdeclc prolog_term (*func)(), prolog_term term, char *apply, Integer unify_vars);
+      |                                                     ~~~~~~~~~~~~~~^~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:183:20: note: ‘hilog2prolog’ declared here
+  183 | static prolog_term hilog2prolog(CTXTdeclc prolog_term hterm, char *apply, Integer unify_vars)
+      |                    ^~~~~~~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c: In function ‘prolog2hilog’:
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:259:27: error: passing argument 1 of ‘map_list’ from incompatible pointer type [-Wincompatible-pointer-types]
+  259 |     return map_list(CTXTc prolog2hilog,pterm,apply, unify_vars);
+      |                           ^~~~~~~~~~~~
+      |                           |
+      |                           prolog_term (*)(prolog_term,  char *, Integer) {aka long unsigned int (*)(long unsigned int,  char *, long int)}
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:84:51: note: expected ‘prolog_term (*)(void)’ {aka ‘long unsigned int (*)(void)’} but argument is of type ‘prolog_term (*)(prolog_term,  char *, Integer)’ {aka ‘long unsigned int (*)(long unsigned int,  char *, long int)’}
+   84 | static prolog_term map_list(CTXTdeclc prolog_term func(), prolog_term term, char *apply, Integer unify_vars);
+      |                                       ~~~~~~~~~~~~^~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:247:20: note: ‘prolog2hilog’ declared here
+  247 | static prolog_term prolog2hilog(CTXTdeclc prolog_term pterm, char *apply, Integer unify_vars)
+      |                    ^~~~~~~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:261:42: error: passing argument 1 of ‘map_special_form_binary’ from incompatible pointer type [-Wincompatible-pointer-types]
+  261 |     return map_special_form_binary(CTXTc prolog2hilog,pterm,apply, unify_vars);
+      |                                          ^~~~~~~~~~~~
+      |                                          |
+      |                                          prolog_term (*)(prolog_term,  char *, Integer) {aka long unsigned int (*)(long unsigned int,  char *, long int)}
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:82:68: note: expected ‘prolog_term (*)(void)’ {aka ‘long unsigned int (*)(void)’} but argument is of type ‘prolog_term (*)(prolog_term,  char *, Integer)’ {aka ‘long unsigned int (*)(long unsigned int,  char *, long int)’}
+   82 | static prolog_term map_special_form_binary(CTXTdeclc prolog_term (*func)(), prolog_term term, char *apply, Integer unify_vars);
+      |                                                      ~~~~~~~~~~~~~~^~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:247:20: note: ‘prolog2hilog’ declared here
+  247 | static prolog_term prolog2hilog(CTXTdeclc prolog_term pterm, char *apply, Integer unify_vars)
+      |                    ^~~~~~~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:263:41: error: passing argument 1 of ‘map_special_form_unary’ from incompatible pointer type [-Wincompatible-pointer-types]
+  263 |     return map_special_form_unary(CTXTc prolog2hilog,pterm,apply, unify_vars);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         prolog_term (*)(prolog_term,  char *, Integer) {aka long unsigned int (*)(long unsigned int,  char *, long int)}
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:83:67: note: expected ‘prolog_term (*)(void)’ {aka ‘long unsigned int (*)(void)’} but argument is of type ‘prolog_term (*)(prolog_term,  char *, Integer)’ {aka ‘long unsigned int (*)(long unsigned int,  char *, long int)’}
+   83 | static prolog_term map_special_form_unary(CTXTdeclc prolog_term (*func)(), prolog_term term, char *apply, Integer unify_vars);
+      |                                                     ~~~~~~~~~~~~~~^~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:247:20: note: ‘prolog2hilog’ declared here
+  247 | static prolog_term prolog2hilog(CTXTdeclc prolog_term pterm, char *apply, Integer unify_vars)
+      |                    ^~~~~~~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c: In function ‘map_list’:
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:314:19: error: too many arguments to function ‘func’; expected 0, have 3
+  314 |       temp_term = func(CTXTc listHead,apply, unify_vars);
+      |                   ^~~~       ~~~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c: In function ‘map_special_form_binary’:
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:343:19: error: too many arguments to function ‘func’; expected 0, have 3
+  343 |   formArg1_temp = func(CTXTc extern_p2p_arg(special_form,1),apply,unify_vars);
+      |                   ^~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:344:19: error: too many arguments to function ‘func’; expected 0, have 3
+  344 |   formArg2_temp = func(CTXTc extern_p2p_arg(special_form,2),apply,unify_vars);
+      |                   ^~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c: In function ‘map_special_form_unary’:
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:364:19: error: too many arguments to function ‘func’; expected 0, have 3
+  364 |   formArg1_temp = func(CTXTc extern_p2p_arg(special_form,1),apply,unify_vars);
+      |                   ^~~~
+
+++Error[XSB]: [Runtime/C] /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.so: cannot open shared object file: No such file or directory
+++Error[XSB/Runtime/P]: [Miscellaneous] Error in loading file /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.xwam.kenobi-376142
+Forward Continuation...
+... machine:xsb_backtrace/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/machine.xwam
+... standard:call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... consult:reconsult0/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/consult.xwam
+... consult:reconsult/2  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/consult.xwam
+... consult:consult/2  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/consult.xwam
+... _$_$_flora_load_cc/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/cc_config.xwam
+... standard:call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... standard:call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... consult:reconsult0/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/consult.xwam
+... consult:reconsult/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/consult.xwam
+... consult:./2  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/consult.xwam
+... flora2:bootstrap_internal_base/0  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/flora2.xwam
+... flora2:bootstrap_flora/0  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/flora2.xwam
+... x_interp:_$call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/x_interp.xwam
+... x_interp:call_query/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/x_interp.xwam
+... standard:call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... x_interp:interpreter/0  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/loader.xwam
+... loader:find_ofile_and_load/7  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/loader.xwam
+... standard:call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+++Error[XSB/Runtime/P]: [Existence (No predicate usermod : \ / 1 exists)] []
+Forward Continuation...
+... machine:xsb_backtrace/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/machine.xwam
+... x_interp:_$call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/x_interp.xwam
+... x_interp:call_query/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/x_interp.xwam
+... standard:call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... x_interp:interpreter/0  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/loader.xwam
+... loader:find_ofile_and_load/7  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/loader.xwam
+... standard:call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+
+***** ERRORS occurred during installation of ErgoAI

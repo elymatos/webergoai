@@ -1,0 +1,125 @@
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c: In function ‘hilog2prolog’:
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:196:27: error: passing argument 1 of ‘map_list’ from incompatible pointer type [-Wincompatible-pointer-types]
+  196 |     return map_list(CTXTc hilog2prolog,hterm,apply,unify_vars);
+      |                           ^~~~~~~~~~~~
+      |                           |
+      |                           prolog_term (*)(prolog_term,  char *, Integer) {aka long unsigned int (*)(long unsigned int,  char *, long int)}
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:84:51: note: expected ‘prolog_term (*)(void)’ {aka ‘long unsigned int (*)(void)’} but argument is of type ‘prolog_term (*)(prolog_term,  char *, Integer)’ {aka ‘long unsigned int (*)(long unsigned int,  char *, long int)’}
+   84 | static prolog_term map_list(CTXTdeclc prolog_term func(), prolog_term term, char *apply, Integer unify_vars);
+      |                                       ~~~~~~~~~~~~^~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:183:20: note: ‘hilog2prolog’ declared here
+  183 | static prolog_term hilog2prolog(CTXTdeclc prolog_term hterm, char *apply, Integer unify_vars)
+      |                    ^~~~~~~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:198:42: error: passing argument 1 of ‘map_special_form_binary’ from incompatible pointer type [-Wincompatible-pointer-types]
+  198 |     return map_special_form_binary(CTXTc hilog2prolog,hterm,apply,unify_vars);
+      |                                          ^~~~~~~~~~~~
+      |                                          |
+      |                                          prolog_term (*)(prolog_term,  char *, Integer) {aka long unsigned int (*)(long unsigned int,  char *, long int)}
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:82:68: note: expected ‘prolog_term (*)(void)’ {aka ‘long unsigned int (*)(void)’} but argument is of type ‘prolog_term (*)(prolog_term,  char *, Integer)’ {aka ‘long unsigned int (*)(long unsigned int,  char *, long int)’}
+   82 | static prolog_term map_special_form_binary(CTXTdeclc prolog_term (*func)(), prolog_term term, char *apply, Integer unify_vars);
+      |                                                      ~~~~~~~~~~~~~~^~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:183:20: note: ‘hilog2prolog’ declared here
+  183 | static prolog_term hilog2prolog(CTXTdeclc prolog_term hterm, char *apply, Integer unify_vars)
+      |                    ^~~~~~~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:200:41: error: passing argument 1 of ‘map_special_form_unary’ from incompatible pointer type [-Wincompatible-pointer-types]
+  200 |     return map_special_form_unary(CTXTc hilog2prolog,hterm,apply,unify_vars);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         prolog_term (*)(prolog_term,  char *, Integer) {aka long unsigned int (*)(long unsigned int,  char *, long int)}
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:83:67: note: expected ‘prolog_term (*)(void)’ {aka ‘long unsigned int (*)(void)’} but argument is of type ‘prolog_term (*)(prolog_term,  char *, Integer)’ {aka ‘long unsigned int (*)(long unsigned int,  char *, long int)’}
+   83 | static prolog_term map_special_form_unary(CTXTdeclc prolog_term (*func)(), prolog_term term, char *apply, Integer unify_vars);
+      |                                                     ~~~~~~~~~~~~~~^~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:183:20: note: ‘hilog2prolog’ declared here
+  183 | static prolog_term hilog2prolog(CTXTdeclc prolog_term hterm, char *apply, Integer unify_vars)
+      |                    ^~~~~~~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c: In function ‘prolog2hilog’:
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:259:27: error: passing argument 1 of ‘map_list’ from incompatible pointer type [-Wincompatible-pointer-types]
+  259 |     return map_list(CTXTc prolog2hilog,pterm,apply, unify_vars);
+      |                           ^~~~~~~~~~~~
+      |                           |
+      |                           prolog_term (*)(prolog_term,  char *, Integer) {aka long unsigned int (*)(long unsigned int,  char *, long int)}
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:84:51: note: expected ‘prolog_term (*)(void)’ {aka ‘long unsigned int (*)(void)’} but argument is of type ‘prolog_term (*)(prolog_term,  char *, Integer)’ {aka ‘long unsigned int (*)(long unsigned int,  char *, long int)’}
+   84 | static prolog_term map_list(CTXTdeclc prolog_term func(), prolog_term term, char *apply, Integer unify_vars);
+      |                                       ~~~~~~~~~~~~^~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:247:20: note: ‘prolog2hilog’ declared here
+  247 | static prolog_term prolog2hilog(CTXTdeclc prolog_term pterm, char *apply, Integer unify_vars)
+      |                    ^~~~~~~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:261:42: error: passing argument 1 of ‘map_special_form_binary’ from incompatible pointer type [-Wincompatible-pointer-types]
+  261 |     return map_special_form_binary(CTXTc prolog2hilog,pterm,apply, unify_vars);
+      |                                          ^~~~~~~~~~~~
+      |                                          |
+      |                                          prolog_term (*)(prolog_term,  char *, Integer) {aka long unsigned int (*)(long unsigned int,  char *, long int)}
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:82:68: note: expected ‘prolog_term (*)(void)’ {aka ‘long unsigned int (*)(void)’} but argument is of type ‘prolog_term (*)(prolog_term,  char *, Integer)’ {aka ‘long unsigned int (*)(long unsigned int,  char *, long int)’}
+   82 | static prolog_term map_special_form_binary(CTXTdeclc prolog_term (*func)(), prolog_term term, char *apply, Integer unify_vars);
+      |                                                      ~~~~~~~~~~~~~~^~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:247:20: note: ‘prolog2hilog’ declared here
+  247 | static prolog_term prolog2hilog(CTXTdeclc prolog_term pterm, char *apply, Integer unify_vars)
+      |                    ^~~~~~~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:263:41: error: passing argument 1 of ‘map_special_form_unary’ from incompatible pointer type [-Wincompatible-pointer-types]
+  263 |     return map_special_form_unary(CTXTc prolog2hilog,pterm,apply, unify_vars);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         prolog_term (*)(prolog_term,  char *, Integer) {aka long unsigned int (*)(long unsigned int,  char *, long int)}
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:83:67: note: expected ‘prolog_term (*)(void)’ {aka ‘long unsigned int (*)(void)’} but argument is of type ‘prolog_term (*)(prolog_term,  char *, Integer)’ {aka ‘long unsigned int (*)(long unsigned int,  char *, long int)’}
+   83 | static prolog_term map_special_form_unary(CTXTdeclc prolog_term (*func)(), prolog_term term, char *apply, Integer unify_vars);
+      |                                                     ~~~~~~~~~~~~~~^~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:247:20: note: ‘prolog2hilog’ declared here
+  247 | static prolog_term prolog2hilog(CTXTdeclc prolog_term pterm, char *apply, Integer unify_vars)
+      |                    ^~~~~~~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c: In function ‘map_list’:
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:314:19: error: too many arguments to function ‘func’; expected 0, have 3
+  314 |       temp_term = func(CTXTc listHead,apply, unify_vars);
+      |                   ^~~~       ~~~~~~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c: In function ‘map_special_form_binary’:
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:343:19: error: too many arguments to function ‘func’; expected 0, have 3
+  343 |   formArg1_temp = func(CTXTc extern_p2p_arg(special_form,1),apply,unify_vars);
+      |                   ^~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:344:19: error: too many arguments to function ‘func’; expected 0, have 3
+  344 |   formArg2_temp = func(CTXTc extern_p2p_arg(special_form,2),apply,unify_vars);
+      |                   ^~~~
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c: In function ‘map_special_form_unary’:
+/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.c:364:19: error: too many arguments to function ‘func’; expected 0, have 3
+  364 |   formArg1_temp = func(CTXTc extern_p2p_arg(special_form,1),apply,unify_vars);
+      |                   ^~~~
+
+++Error[XSB]: [Runtime/C] /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.so: cannot open shared object file: No such file or directory
+++Error[XSB/Runtime/P]: [Miscellaneous] Error in loading file /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/prolog2hilog.xwam.kenobi-376142
+Forward Continuation...
+... machine:xsb_backtrace/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/machine.xwam
+... standard:call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... consult:reconsult0/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/consult.xwam
+... consult:reconsult/2  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/consult.xwam
+... consult:consult/2  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/consult.xwam
+... _$_$_flora_load_cc/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/cc/cc_config.xwam
+... standard:call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... standard:call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... consult:reconsult0/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/consult.xwam
+... consult:reconsult/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/consult.xwam
+... consult:./2  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/consult.xwam
+... flora2:bootstrap_internal_base/0  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/flora2.xwam
+... flora2:bootstrap_flora/0  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/ErgoAI/flora2.xwam
+... x_interp:_$call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/x_interp.xwam
+... x_interp:call_query/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/x_interp.xwam
+... standard:call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... x_interp:interpreter/0  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/loader.xwam
+... loader:find_ofile_and_load/7  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/loader.xwam
+... standard:call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+++Error[XSB/Runtime/P]: [Existence (No predicate usermod : \ / 1 exists)] []
+Forward Continuation...
+... machine:xsb_backtrace/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/machine.xwam
+... x_interp:_$call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/x_interp.xwam
+... x_interp:call_query/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/x_interp.xwam
+... standard:call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... x_interp:interpreter/0  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/loader.xwam
+... loader:find_ofile_and_load/7  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/loader.xwam
+... standard:call/1  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0/XSB/syslib/standard.xwam
+

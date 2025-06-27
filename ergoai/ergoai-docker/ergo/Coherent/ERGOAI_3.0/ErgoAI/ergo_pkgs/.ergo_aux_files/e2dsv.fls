@@ -1,0 +1,8 @@
+flora_symbol(add_key_info,3,\@,356,68,predicate_symbol,nontransactional_symbol,'e2dsv.ergo').
+flora_symbol(dsv_save,4,\@,271,60,predicate_symbol,nontransactional_symbol,'e2dsv.ergo').
+flora_symbol(url,1,\@,192,51,function_symbol,nontransactional_symbol,'e2dsv.ergo').
+flora_symbol(dsv_load,3,\@,190,51,predicate_symbol,nontransactional_symbol,'e2dsv.ergo').
+flora_symbol(reinitialize,0,\@,176,49,predicate_symbol,nontransactional_symbol,'e2dsv.ergo').
+flora_symbol(add,1,'\\system',136,41,function_symbol,nontransactional_symbol,'e2dsv.ergo').
+flora_symbol('Libpath',0,\@,134,41,function_symbol,nontransactional_symbol,'e2dsv.ergo').
+flora_symbol(init,0,\@,84,37,predicate_symbol,transactional_symbol,'e2dsv.ergo').

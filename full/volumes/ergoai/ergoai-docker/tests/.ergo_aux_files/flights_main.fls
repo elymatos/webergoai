@@ -1,0 +1,35 @@
+flora_symbol('United4',0,\@,175,24,function_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(query3_2,1,\@,862,171,predicate_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(query1_2,1,\@,301,67,predicate_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(t4,0,\@,116,17,function_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol('\\dateTime',0,\@,28,8,function_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(query4,1,\@,997,198,predicate_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(t5,0,\@,156,21,function_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(t3,0,\@,57,11,function_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(query3,1,\@,809,157,predicate_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(query3_3,1,\@,939,184,predicate_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(query2_4,1,\@,723,141,predicate_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol('Calvin Curtis',0,\@,159,21,function_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol('John Smith',0,\@,63,11,function_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(query2,1,\@,478,96,predicate_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(passenger,1,\@,197,40,predicate_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(query2_3,1,\@,645,129,predicate_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol('United2',0,\@,76,14,function_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol('Ben Jones',0,\@,60,11,function_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol('Ticket',3,\@,36,9,predicate_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol('United3',0,\@,135,20,function_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(query2_2,1,\@,562,114,predicate_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(t1,0,\@,38,9,function_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol('San Francisco',0,\@,141,20,function_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol('Mary Smith',0,\@,44,9,function_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(query1,1,\@,219,49,predicate_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol('Abe Smith',0,\@,41,9,function_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(t2,0,\@,97,15,function_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol('Flight',5,\@,15,8,predicate_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol('United1',0,\@,17,8,function_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol('Itinerary',2,\@,47,10,predicate_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(travelAgent,1,\@,792,154,predicate_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(query1_3,1,\@,387,82,predicate_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol('NYC',0,\@,20,8,function_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol(query5,1,\@,1049,208,predicate_symbol,nontransactional_symbol,'flights.ergo').
+flora_symbol('Seattle',0,\@,23,8,function_symbol,nontransactional_symbol,'flights.ergo').

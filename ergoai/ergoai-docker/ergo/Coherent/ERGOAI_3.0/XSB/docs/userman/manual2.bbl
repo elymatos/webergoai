@@ -1,0 +1,161 @@
+\begin{thebibliography}{10}
+
+\bibitem{BGJM17}
+P.~Bojanowski, E.~Grave, A.~Joulin, and T.~Mikolov.
+\newblock Enriching word vectors with subword information.
+\newblock {\em Transactions of the Association for Computational Linguistics},
+  5:135--146, 2017.
+
+\bibitem{ChWa96}
+W.~Chen and D.~S. Warren.
+\newblock Tabled {E}valuation with {D}elaying for {G}eneral {L}ogic {P}rograms.
+\newblock {\em Journal of the ACM}, 43(1):20--74, January 1996.
+
+\bibitem{Drax92}
+C.~Draxler.
+\newblock Prolog to {SQL} compiler, {Version} 1.0.
+\newblock Technical report, CIS Centre for Information and Speech Processing
+  Ludwig-Maximilians-University, Munich, 1992.
+
+\bibitem{DBLP:conf/iclp/DuboisLP91}
+D.~Dubois, J.~Lang, and H.~Prade.
+\newblock Towards possibilistic logic programming.
+\newblock In {\em ICLP}, pages 581--595, 1991.
+
+\bibitem{DubLanPra-poss-94}
+D.~Dubois, J.~Lang, and H.~Prade.
+\newblock Possibilistic logic.
+\newblock In D.~M. Gabbay, C.~J. Hogger, and J.~A. Robinson, editors, {\em
+  Handbook of logic in artificial intelligence and logic programming,vol. 3},
+  pages 439--514. Oxford University Press, 1994.
+
+\bibitem{chr_site}
+T.~Fruehwirth.
+\newblock {Thom Fruehwirth's Constraint Handling Rules website}.
+\newblock
+  \url{http://www.informatik.uni-ulm.de/pm/mitarbeiter/fruehwirth/chr-intro.html}.
+
+\bibitem{chr_survey}
+T.~Fr\"uhwirth.
+\newblock {Theory and Practice of Constraint Handling Rules}.
+\newblock In P.~Stuckey and K.~Marriot, editors, {\em Special Issue on
+  Constraint Logic Programming}, volume~37, October 1998.
+
+\bibitem{FBFJM18}
+E.~Grave, P.~Bojanowski, P.~Gupta, A.~Joulin, and T.~Mikolov.
+\newblock Learning word vectors for 157 languages.
+\newblock In {\em International Conference on Language Resources and
+  Evaluation}, 2018.
+
+\bibitem{GroS13}
+B.~Grosof and T.~Swift.
+\newblock Radial restraint: A semantically clean approach to bounded
+  rationality for logic programs.
+\newblock In {\em AAAI}, 2013.
+
+\bibitem{Holz95}
+C.~Holzbaur.
+\newblock Ofai clp(q,r) manual, edition 1.3.3.
+\newblock Technical report, Austrian Research Institute for Artificial
+  Intelligence, 1995.
+
+\bibitem{JDH17}
+J.~Johnson, M.~Douze, and H.~J{\'e}gou.
+\newblock Billion-scale similarity search with gpus.
+\newblock {\em arXiv preprint arXiv:1702.08734}, 2017.
+
+\bibitem{sicstus-manual}
+T.~I.~S. Laboratory.
+\newblock {\em {SICS}tus {P}rolog User's Manual Version 3.12.5}.
+\newblock Swedish Institute of Computer Science, 2006.
+
+\bibitem{MUSE2018}
+G.~Lample, A.~Conneau, M.~Ranzato, L.~Denoyer, and H.~J{\'e}gou.
+\newblock Word translation without parallel data.
+\newblock In {\em International Conference on Learning Representations}, 2018.
+
+\bibitem{smodels:engine}
+I.~Niemel{\"a} and P.~Simons.
+\newblock Smodels: An implementation of the stable model and well-founded
+  semantics for normal {LP}.
+\newblock In J.~Dix, U.~Furbach, and A.~Nerode, editors, {\em Proceedings of
+  the 4th International Conference on Logic Programing and Nonmonotonic
+  Reasoning}, volume 1265 of {\em LNAI}, pages 420--429, Berlin, July~28--31
+  1997. Springer.
+
+\bibitem{RigS11a}
+F.~Riguzzi and T.~Swift.
+\newblock The {PITA} system: Tabling and answer subsumption for reasoning under
+  uncertainty.
+\newblock {\em Theory and Practice of Logic Programming}, 11(4-5):433--449,
+  2011.
+
+\bibitem{RigS13}
+F.~Riguzzi and T.~Swift.
+\newblock Well\--definedness and efficient inference for probabilistic logic
+  programming under the distribution semantics.
+\newblock {\em Theory and Practice of Logic Programming}, 13(2):279--302, 2013.
+
+\bibitem{RigS15}
+F.~Riguzzi and T.~Swift.
+\newblock A survey of probabilistic logic programming.
+\newblock In {\em Declarative Logic Programming: Theory, Systems, and
+  Applications}, volume~20 of {\em ACM Books}, pages 185--233, 2018.
+
+\bibitem{SaSr06a}
+B.~Sanna-Starosta.
+\newblock Chrd: A set-based solver for constraint hanlding rules.
+\newblock available at www.cs.msu.edu/\~{}bss/chr-d, 2006.
+
+\bibitem{SaSR06b}
+B.~Sanna-Starosta and C.~Ramakrishnan.
+\newblock Compiling constraint handling rules for efficient tabled evaluation.
+\newblock available at www.cs.msu.edu/\~{}bss/chr-d, 2006.
+
+\bibitem{Sato95astatistical}
+T.~Sato.
+\newblock A statistical learning method for logic programs with distribution
+  semantics.
+\newblock In {\em International Conference on Logic Programming}, pages
+  715--729. MIT Press, 1995.
+
+\bibitem{DBLP:conf/ijcai/SatoK97}
+T.~Sato and Y.~Kameya.
+\newblock Prism: A language for symbolic-statistical modeling.
+\newblock In {\em International Joint Conference on Artificial Intelligence},
+  pages 1330--1339, 1997.
+
+\bibitem{SiNS02}
+P.~Simons, I.~Niemel{\"a}, and T.~Soininen.
+\newblock Extending and implementing the stable model semantics.
+\newblock {\em Artificial Intelligence}, 138:181--234, 2002.
+
+\bibitem{VenDenBru-JELIA06}
+J.~Vennekens, M.~Denecker, and M.~Bruynooghe.
+\newblock Representing causal information about a probabilistic process.
+\newblock In {\em Proceedings of the 10th European Conference on Logics in
+  Artificial Intelligence}, LNAI. Springer, September 2006.
+
+\bibitem{DBLP:journals/tplp/VennekensDB09}
+J.~Vennekens, M.~Denecker, and M.~Bruynooghe.
+\newblock {CP}-logic: A language of causal probabilistic events and its
+  relation to logic programming.
+\newblock {\em Theory Pract. Log. Program.}, 9(3):245--308, 2009.
+
+\bibitem{VenVer03-TR}
+J.~Vennekens and S.~Verbaeten.
+\newblock Logic programs with annotated disjunctions.
+\newblock Technical Report CW386, K. U. Leuven, 2003.
+
+\bibitem{VenVer04-ICLP04-IC}
+J.~Vennekens, S.~Verbaeten, and M.~Bruynooghe.
+\newblock Logic programs with annotated disjunctions.
+\newblock In {\em International Conference on Logic Programming}, volume 3131
+  of {\em LNCS}, pages 195--209. Springer, 2004.
+
+\bibitem{SWI-manual}
+J.~Wielemaker.
+\newblock {\em SWI Prolog version 5.6: Reference Manual}.
+\newblock University of Amsterdam, 2007.
+
+\end{thebibliography}

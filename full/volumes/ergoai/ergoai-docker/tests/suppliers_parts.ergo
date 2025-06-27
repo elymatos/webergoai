@@ -1,0 +1,280 @@
+/*
+- KB facts:
+Suppliers(sid: integer, sname: string, address: string)
+Parts(pid: integer, pname: string, color: string)
+Catalog(sid: integer, pid: integer, cost: real)
+*/
+
+Suppliers(1111, 'ACME', '1 Main St').
+Suppliers(2222, 'Bob Inc.', '2 Main St').
+Suppliers(3333, 'Cambo Inc.', '3 Main St').
+Suppliers(4444, 'Disco Inc.', '4 Main St').
+
+Parts(1, 'Screw 1', red).
+Parts(2, 'Screw 2', blue).
+Parts(3, 'Screw 3', green).
+Parts(4, 'Screw 4', yellow).
+Parts(5, 'Screw 5', red).
+
+Catalog(1111, 1, 10).
+Catalog(1111, 2, 10).
+Catalog(1111, 3, 10).
+Catalog(1111, 4, 10).
+Catalog(1111, 5, 10).
+
+Catalog(2222, 1, 20).
+Catalog(2222, 2, 20).
+Catalog(2222, 3, 20).
+Catalog(2222, 4, 20).
+
+Catalog(3333, 1, 30).
+Catalog(3333, 2, 30).
+Catalog(3333, 3, 30).
+
+Catalog(4444, 1, 40).
+Catalog(4444, 2, 40).
+
+/*********************************************************************************/
+/*
+a. Find the names of suppliers who supply some red part.
+*/
+query1(?sname) :-
+    Suppliers(?sid, ?sname, ?_address),
+    Catalog(?sid, ?pid, ?_cost),
+    Parts(?pid, ?_pname, red).
+//?- query1(?sname).
+
+/*********************************************************************************/
+/*
+b. Find the sids of suppliers who supply some red or green part.
+*/
+query2(?sid) :-
+    Suppliers(?sid, ?_sname, ?_address),
+    Catalog(?sid, ?pid, ?_cost),
+    (
+        Parts(?pid, ?_pname, red);
+        Parts(?pid, ?_pname, green)
+    ).
+//?- query2(?sid).
+
+/*********************************************************************************/
+/*
+c. Find the sids of suppliers who supply some red part or are at 1 Main St.
+*/
+query3(?sid) :-
+    (
+        Suppliers(?sid, ?_sname, ?_address),
+        Catalog(?sid, ?pid, ?_cost),
+        Parts(?pid, ?_pname, red)
+    );
+    Suppliers(?sid, ?_sname, '1 Main St').
+//?- query3(?sid).
+
+/*********************************************************************************/
+/*
+d. Find the sids of suppliers who supply some red part AND some green part.
+*/
+query4(?sid) :-
+    Suppliers(?sid, ?_sname, ?_address),
+    Catalog(?sid, ?pid, ?_cost),
+    Parts(?pid, ?_pname, red),
+    Catalog(?sid, ?pid2, ?_cost2),
+    Parts(?pid2, ?_pname2, green).
+//?- query4(?sid).
+
+/*********************************************************************************/
+/*
+e. Find the sids of suppliers who supply every part.
+*/
+part(?pid):-
+    Parts(?pid, ?_pname, ?_color).
+   
+query5(?sid) :-
+    Suppliers(?sid, ?_sname, ?_address),
+    forall(?pid)^(
+        part(?pid)
+        ~~>
+        exists(?cost)^(
+            Catalog(?sid, ?pid, ?cost)
+        )
+    ).
+//?- query5(?sid).
+
+query5_2(?sid) :-
+    ?TotalNumberOfParts = count{?pid | part(?pid)},
+    Suppliers(?sid, ?_sname, ?_address),
+    ?TotalNumberOfParts = count{?pid2 | Catalog(?sid, ?pid2, ?_cost)}.
+//?- query5_2(?sid).
+
+/*********************************************************************************/
+/*
+f. Find the sids of suppliers who supply every red part.
+*/
+redPart(?pid):-
+    Parts(?pid, ?_pname, red).
+
+query6(?sid) :-
+    Suppliers(?sid, ?_sname, ?_address),
+    forall(?pid)^(
+        redPart(?pid)
+        ~~>
+        exists(?cost)^(
+            Catalog(?sid, ?pid, ?cost)
+        )
+    ).
+//?- query6(?sid).
+
+query6_2(?sid) :-
+    ?TotalNumberOfRedParts = count{?pid | redPart(?pid)},
+    Suppliers(?sid, ?_sname, ?_address),
+    ?TotalNumberOfRedParts = count{?pid2 | redPart(?pid2), Catalog(?sid, ?pid2, ?_cost)}.
+//?- query6_2(?sid).
+
+/*********************************************************************************/
+/*
+g. Find the sids of suppliers who supply every red or green part.
+*/
+redOrGreenPart(?pid):-
+    Parts(?pid, ?_pname, red).
+redOrGreenPart(?pid):-
+    Parts(?pid, ?_pname, green).
+
+query7(?sid) :-
+    Suppliers(?sid, ?_sname, ?_address),
+    forall(?pid)^(
+        redOrGreenPart(?pid)
+        ~~>
+        exists(?cost)^(
+            Catalog(?sid, ?pid, ?cost)
+        )
+    ).
+//?- query7(?sid).
+
+query7_2(?sid) :-
+    ?TotalNumberOfRedOrGreenParts = count{?pid | redOrGreenPart(?pid)},
+    Suppliers(?sid, ?_sname, ?_address),
+    ?TotalNumberOfRedOrGreenParts = count{?pid2 | redOrGreenPart(?pid2), Catalog(?sid, ?pid2, ?_cost)}.
+//?- query7_2(?sid).
+
+/*********************************************************************************/
+/*
+h. Find the sids of suppliers who supply every red part or supply every green part.
+*/
+greenPart(?pid):-
+    Parts(?pid, ?_pname, green).
+
+query8(?sid) :-
+    query6(?sid).
+query8(?sid) :-
+    Suppliers(?sid, ?_sname, ?_address),
+    forall(?pid)^(
+        greenPart(?pid)
+        ~~>
+        exists(?cost)^(
+            Catalog(?sid, ?pid, ?cost)
+        )
+    ).
+//?- query8(?sid).
+
+query8_2(?sid) :-
+    query6_2(?sid).
+query8_2(?sid) :-
+    ?TotalNumberOfGreenParts = count{?pid | greenPart(?pid)},
+    Suppliers(?sid, ?_sname, ?_address),
+    ?TotalNumberOfGreenParts = count{?pid2 | greenPart(?pid2), Catalog(?sid, ?pid2, ?_cost)}.
+//?- query8_2(?sid).
+
+/*********************************************************************************/
+/*
+i. Find pairs of sids such that the supplier with the first sid charges more for some part than the supplier with the second sid.
+*/
+query9(?sid1, ?pid, ?cost1, ?sid2, ?cost2) :-
+    Catalog(?sid1, ?pid, ?cost1),
+    Catalog(?sid2, ?pid, ?cost2),
+    ?cost1 > ?cost2.
+//?- query9(?sid1, ?pid, ?cost1, ?sid2, ?cost2).
+
+/*********************************************************************************/
+/*
+j. Find the minimum cost and supplier for each part.
+*/
+minPrice(?pid, ?minCost) :-
+    part(?pid),
+    ?minCost = min{?cost | Catalog(?_sid, ?pid, ?cost)}.
+
+query10(?pid, ?sid, ?minCost) :-
+    minPrice(?pid, ?minCost),
+    Catalog(?sid, ?pid, ?minCost).
+//?- query10(?pid, ?sid, ?minCost).
+
+/*********************************************************************************/
+/*
+k. Find the pids of parts supplied by at least two different suppliers.
+*/
+query11(?pid, ?sid1, ?sid2) :-
+    Catalog(?sid1, ?pid, ?_minCost1),
+    Catalog(?sid2, ?pid, ?_minCost2),
+    ?sid1 != ?sid2.
+//?- query11(?pid, ?_sid1, ?_sid2).
+
+/*********************************************************************************/
+/*
+k.2. Find the pids of parts not supplied by any supplier.
+*/
+query12(?pid) :-
+    part(?pid),
+    \naf exists(?sid,?cost)^Catalog(?sid, ?pid, ?cost).
+//?- query12(?pid).
+
+/*********************************************************************************/
+/*
+k. Find the pids of parts supplied by exactly one supplier.
+*/
+query13(?pid, ?sid1) :-
+    part(?pid),
+    Catalog(?sid1, ?pid, ?_cost),
+    \naf exists(?sid2,?cost2)^(
+        Catalog(?sid2, ?pid, ?cost2),
+        ?sid1 != ?sid2
+    ).
+//?- query13(?pid, ?sid1).
+
+/*********************************************************************************/
+/*
+l. Write SQL to find the pids of the most expensive parts supplied by suppliers named ‘ACME’.
+*/
+maxPriceItemsSoldByAcme(?maxCost) :-
+    Suppliers(?sid, 'ACME', ?_address),
+    ?maxCost = max{?cost | Catalog(?sid, ?_pid, ?cost)}.
+
+query14(?pid) :-
+    maxPriceItemsSoldByAcme(?maxCost),
+    Suppliers(?sid, 'ACME', ?_address),
+    Catalog(?sid, ?pid, ?maxCost).
+//?- query14(?pid).
+
+/*********************************************************************************/
+/*
+m. Find the pids of parts supplied by every supplier.
+*/
+supplier(?sid) :-
+    Suppliers(?sid, ?_sname, ?_address).
+
+query15(?pid) :-
+    part(?pid),
+    forall(?sid)^(
+        supplier(?sid)
+        ~~>
+        exists(?cost)^(
+            Catalog(?sid, ?pid, ?cost)
+        )
+    ).
+//?- query15(?pid).
+
+query15_2(?pid) :-
+    ?countSuppliers = countdistinct{ ?sid | supplier(?sid)},
+    part(?pid),
+    ?countSuppliers = countdistinct{ ?sid | 
+        Catalog(?sid, ?pid, ?_cost)
+    }.
+//?- query15_2(?pid).

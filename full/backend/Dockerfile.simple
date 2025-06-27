@@ -1,0 +1,19 @@
+# backend/Dockerfile.simple
+# Simple Dockerfile without all the complexity
+
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install basic dependencies
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+
+# Install Python packages
+COPY requirements.simple.txt requirements.txt
+RUN pip install -r requirements.txt
+
+# Copy app
+COPY . .
+
+# Simple startup
+CMD ["python", "app_simple.py"]

@@ -1,0 +1,10 @@
+flora_symbol('Libpath',0,\@,162,44,function_symbol,nontransactional_symbol,'evidential_probability.ergo').
+flora_symbol(ep_prolog,0,\@,174,45,function_symbol,nontransactional_symbol,'evidential_probability.ergo').
+flora_symbol(pct,5,\@,214,52,predicate_symbol,nontransactional_symbol,'evidential_probability.ergo').
+flora_symbol('\\ep',4,\@,177,47,predicate_symbol,nontransactional_symbol,'evidential_probability.ergo').
+flora_symbol('\\pct',4,flvar('Mod',240),229,53,predicate_symbol,nontransactional_symbol,'evidential_probability.ergo').
+flora_symbol(add,1,'\\system',164,44,function_symbol,nontransactional_symbol,'evidential_probability.ergo').
+flora_symbol(ensure_loaded,0,'\\sub',82,35,predicate_symbol,nontransactional_symbol,'evidential_probability.ergo').
+flora_symbol(ergo_ep,0,\@,115,39,function_symbol,nontransactional_symbol,'evidential_probability.ergo').
+flora_symbol(sysabort,1,'\\system',123,40,predicate_symbol,nontransactional_symbol,'evidential_probability.ergo').
+flora_symbol('the package evidential_probability.ergo must be loaded into the module ',0,\@,126,40,function_symbol,nontransactional_symbol,'evidential_probability.ergo').

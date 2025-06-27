@@ -1,0 +1,9 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 5
+
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,f,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(q,__fldnewvar1,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(nontblflapply)(p,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(nontblflapply)(rr,__fldnewvar1,__fldnewvar2).

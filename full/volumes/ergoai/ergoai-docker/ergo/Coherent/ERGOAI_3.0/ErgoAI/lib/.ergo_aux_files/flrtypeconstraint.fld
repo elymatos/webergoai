@@ -1,0 +1,9 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 9
+
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(check,__Spec,___Mod,___Result),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(check,__Spec,__CallerMod,__Result),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(check,__Spec,__Result),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(check,__Spec),__fldnewvar2).

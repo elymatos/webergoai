@@ -1,0 +1,15 @@
+flora_nowarn_symbol(open,5,\@,any_symbol_context,nontransactional_symbol,'ergo2sql.ergo').
+flora_symbol(qclose,0,\@,978,131,function_symbol,nontransactional_symbol,'ergo2sql.ergo').
+flora_symbol('mysql[open(...)]: all arguments must be Prolog atoms',0,\@,797,77,function_symbol,nontransactional_symbol,'ergo2sql.ergo').
+flora_symbol(close,0,\@,836,83,function_symbol,nontransactional_symbol,'ergo2sql.ergo').
+flora_symbol(sysabort,1,'\\system',695,61,predicate_symbol,nontransactional_symbol,'ergo2sql.ergo').
+flora_symbol(open,5,\@,735,71,function_symbol,nontransactional_symbol,'ergo2sql.ergo').
+flora_symbol(open,4,\@,651,59,function_symbol,nontransactional_symbol,'ergo2sql.ergo').
+flora_symbol(dbdrivers,0,\@,637,46,function_symbol,nontransactional_symbol,'ergo2sql.ergo').
+flora_symbol(prepare,2,\@,905,113,function_symbol,nontransactional_symbol,'ergo2sql.ergo').
+flora_symbol('odbc[open(...)]: all arguments must be Prolog atoms',0,\@,697,61,function_symbol,nontransactional_symbol,'ergo2sql.ergo').
+flora_symbol(execute,2,\@,942,126,function_symbol,nontransactional_symbol,'ergo2sql.ergo').
+flora_symbol(odbc,0,\@,649,59,function_symbol,nontransactional_symbol,'ergo2sql.ergo').
+flora_symbol(ensure_loaded,0,\@,641,50,predicate_symbol,nontransactional_symbol,'ergo2sql.ergo').
+flora_symbol(mysql,0,\@,733,71,function_symbol,nontransactional_symbol,'ergo2sql.ergo').
+flora_symbol(query,3,\@,858,95,function_symbol,nontransactional_symbol,'ergo2sql.ergo').

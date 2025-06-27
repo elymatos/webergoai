@@ -1,0 +1,13 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 2
+
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,qclose,__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,close,__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(execute,__BindList,__ReturnList),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(prepare,__QueryId,__QueryList),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(query,__QueryId,__QueryList,__ReturnList),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(open,__ConnectId,__Server,__Database,__User,__Password),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(open,__ConnectId,__DSN,__User,__Password),__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(ensure_loaded,__fldnewvar1).

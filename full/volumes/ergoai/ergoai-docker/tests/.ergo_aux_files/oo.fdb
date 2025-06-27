@@ -1,0 +1,17 @@
+#include "flrheader.flh"
+#define FLORA_COMPILATION_ID 17
+
+
+FLORA_THIS_WORKSPACE(mvd)(___X,self,___X,__newcontextvar3).
+FLORA_THIS_WORKSPACE(sub)('Set','Thing',__newcontextvar3).
+FLORA_THIS_WORKSPACE(imvd)('Set',a,7,__newcontextvar7).
+FLORA_THIS_WORKSPACE(imvddef)('Set',members,__newcontextvar8).
+FLORA_THIS_WORKSPACE(imvd)('Set',b,flapply(->,self,a),__newcontextvar9).
+FLORA_THIS_WORKSPACE(mvd)(set1,members,'Ely',__newcontextvar7).
+FLORA_THIS_WORKSPACE(mvd)(set1,members,'Ligia',__newcontextvar8).
+FLORA_THIS_WORKSPACE(isa)(set1,'Set',__newcontextvar9).
+FLORA_THIS_WORKSPACE(mvd)(set1,members,'Paulo',__newcontextvar3).
+FLORA_THIS_WORKSPACE(mvd)(set2,members,'A',__newcontextvar9).
+FLORA_THIS_WORKSPACE(mvd)(set2,members,'B',__newcontextvar10).
+FLORA_THIS_WORKSPACE(mvd)(set2,members,'C',__newcontextvar11).
+FLORA_THIS_WORKSPACE(isa)(set2,'Set',__newcontextvar12).

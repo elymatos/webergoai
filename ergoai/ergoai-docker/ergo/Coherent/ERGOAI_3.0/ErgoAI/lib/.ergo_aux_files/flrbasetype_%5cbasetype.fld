@@ -1,0 +1,664 @@
+/************************************************************************
+  file: includes/flrheader.flh
+
+  Author(s): Guizhen Yang
+	     Michael Kifer
+
+  Copyright (C) by
+       The Research Foundation of the State University of New York, 1999-2013.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+       http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+
+  This file is automatically included by the FLORA-2 compiler.
+************************************************************************/
+
+
+/************************************************************************
+  Note: This file should contain Macros only!
+
+  If FLORA_DUMP is defined: preprocessing for user-friendly output.
+
+  If any of these macros are changed, the corresponding wrappers in
+  flrwrapper.P must also be changed
+************************************************************************/
+
+
+
+
+/* File:      flora_prefix.flh -- FLORA-2 prefixes
+**
+** Author(s): Michael Kifer
+**	      Guizhen Yang
+**
+** Contact:   see  ../CONTACTS.txt
+**
+** Copyright (C) by
+**      The Research Foundation of the State University of New York, 1999-2023;
+**      and Vulcan, Inc., 2008-2013.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**      http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+**
+*/
+
+
+/******************************************************************************
+  Flora prefix
+
+  All Flora symbols begin with this prefix.
+******************************************************************************/
+/* Prefix for F-logic and HiLog predicates */
+
+/* File:   flrincludes/flrproduct.P  -- the Ergo hook for all kinds of
+**                                      product-related things
+**
+** Author(s): Michael Kifer
+**
+** Contact:   see  ../CONTACTS.txt
+**
+** Copyright (C) Coherent Knowledge Systems, LLC, 2013-2023.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**      http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+**
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************
+  Attaching FLORA_PREFIX
+
+  The argument to this Macro should be quoted.
+******************************************************************************/
+
+
+
+
+/******************************************************************************
+  Strings following FLORA_PREFIX
+
+  These strings should be quoted.
+******************************************************************************/
+/* Keep "mod" in the name of a formula wrapper right after FLORA_PREFIX
+   We rely on this to identify meta wrappers */
+
+
+
+/*  Trie for keeping skeletons of defined facts -- debugging */
+
+
+/*  Trie for storing used symbols names */
+
+
+
+
+/******************************************************************************
+  Module and trie prefixes
+******************************************************************************/
+/* prefix to construct Flora module predicates. */
+
+
+/*  prefix to name Flora storage trie for a module. */
+
+
+
+/* prefix to name Flora fld storage trie for a module. */
+
+
+/* prefix to name Flora fls storage trie for a module. */
+
+
+
+/****************************************************************************
+  F-logic atom prefixes for predicates that are used to distinguish F-logic
+  wrappers in the trailers, the user program, base facts, etc.
+****************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************
+  Lengths of prefixes of F-logic wrappers
+******************************************************************************/
+
+
+
+/****************************************************************************
+  Prefixes that are used for F-logic wrappers in rule bodies of user programs.
+  They are called "debuggin prefixes" because they were introduced to help
+  implement the debugging feature that catches undefined methods.
+  Note:
+     naf^, dyna^, dynz^ are the outermost prefixes
+     neg^ is the next outermost
+****************************************************************************/
+
+
+
+
+
+
+
+
+
+
+/* Prefixes used for checking undefinedness */
+
+
+
+/* Corresponding 1-arg macros */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******* these are used in inheritance closure axioms *******/
+
+
+
+
+
+
+
+
+
+/******* these are for transactions in LIBMOD *******/
+
+
+
+
+
+
+
+/******************************************************************************
+  Lengths of prefixes that are used in the wrappers to the left of module name
+
+  Note: We need to remember that these prefixes are enclosed in quotes.
+        But we need the actual atom length that Prolog uses. So, we deduct 2.
+******************************************************************************/
+
+
+
+/* length of FLORA_PREFIX'FLORA_MODULE_TAG */
+
+
+
+
+
+
+
+
+
+
+
+
+
+%% support for undefinedness checks
+
+
+%% used for generating new oids statically
+%% We had previously #1'FLORA_COMPILATION_ID', but this caused gpp error in
+%% \dump(file). Apparently a gpp bug. So changed to X'FLORA_COMPILATION_ID'
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* File:    flrincludes/ergo_structdb.flh -- include file for rule structure DB
+**
+** Author(s): Michael Kifer
+**
+** Contact:   see  ../CONTACTS.txt
+**
+** Copyright (C) Coherent Knowledge Systems, LLC, 2016.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**      http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+*/
+
+
+
+
+
+
+
+
+
+
+/************************************************************************
+  file: includes/flr_fld_standardtypes.flh
+
+  Author(s): Michael Kifer
+
+  Copyright (C) by
+       The Research Foundation of the State University of New York, 1999-2018.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+       http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+
+  This file is automatically included by the FLORA-2 compiler in every FLD file.
+  This file is for comands that are to be executed once per module.
+
+  Makes the builtin classes \integer, \decimal, etc., defined
+************************************************************************/
+
+/* File:      flora_datatype_symbols.flh -- FLORA-2 datatype names
+**
+** Author(s): Michael Kifer
+**
+** Contact:   see  ../CONTACTS.txt
+**
+** Copyright (C) by
+**      The Research Foundation of the State University of New York, 1999-2018.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**      http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+**
+*/
+
+
+
+/* Data types */
+
+
+
+
+
+
+
+
+
+
+
+
+/* \real is synonymized with \double */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* constants used for parsing */
+
+
+
+/* Constant used in the parsed result */
+
+
+
+/* these prefixes are added to atoms that are supposed to represent the
+   data types \string, \iri, etc. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\object',__newvar2).
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\long',__newvar2).
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\integer',__newvar2).
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\short',__newvar2).
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\decimal',__newvar2).
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\double',__newvar2).
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\real',__newvar2).
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\float',__newvar2).
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\symbol',__newvar2).
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\string',__newvar2).
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\dateTime' ,__newvar2).
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\date' ,__newvar2).
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\duration' ,__newvar2).
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\time' ,__newvar2).
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\iri' ,__newvar2).
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\boolean',__newvar2).
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\list' ,__newvar2).
+'_$_$_ergo''mod''\\basetype''sub'(__newvar1,'\\charlist',__newvar2).
+
+
+
+
+'_$_$_ergo''mod''\\basetype''tblflapply'(pcrelib_missing_handler,__fldnewvar1).
+'_$_$_ergo''mod''\\basetype''tblflapply'(check_pcrelib,__fldnewvar1).
+'_$_$_ergo''mod''\\basetype''iboolsig'(__fldnewvar1,flapply(subset,'\\list'),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''iboolsig'(__fldnewvar1,flapply(member,'\\object'),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''iboolsig'(__fldnewvar1,flapply(contains,list),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''iboolsig'(__fldnewvar1,flapply(endsWith,'\\list'),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''iboolsig'(__fldnewvar1,flapply(endsWith,'\\string'),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''iboolsig'(__fldnewvar1,flapply(startsWith,'\\list'),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''iboolsig'(__fldnewvar1,flapply(startsWith,'\\string'),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''iboolsig'(__fldnewvar1,flapply(+>>,'\\string'),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''iboolsig'(__fldnewvar1,flapply(lessThan,'\\object'),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''iboolsig'(__fldnewvar1,flapply(equals,'\\object'),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''meth'(__fldnewvar1,islocaltime,__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''meth'(__fldnewvar1,flapply(equals,___D),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''meth'(__fldnewvar1,flapply(lessEq,__N2),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''meth'(__fldnewvar1,flapply(lessEq,__D2),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''meth'(__fldnewvar1,flapply(gtEq,__Y),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''meth'(__fldnewvar1,flapply(contains,__Y),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''meth'(__fldnewvar1,flapply(endsWith,__Y),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''meth'(__fldnewvar1,flapply(gt,__Y),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''meth'(__fldnewvar1,flapply(subset,__Y),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''meth'(__fldnewvar1,flapply(startsWith,__Y),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''meth'(__fldnewvar1,flapply(isTypeOf,___V),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''meth'(__fldnewvar1,flapply(isTypeOf,__newdontcarevar1),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''meth'(__fldnewvar1,flapply(isTypeOf,__V),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''meth'(__fldnewvar1,flapply(member,__Y),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''meth'(__fldnewvar1,flapply(lessThan,__N2),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''meth'(__fldnewvar1,flapply(lessThan,__D2),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(matchOne,__Pattern),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(concat,__Y),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(concat,__List),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(times,__Y),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(matchAll,__Pattern),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(ratio,__Y),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(toDateTime,__X),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(toDateTime,__X,__Y,__Z),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply('_$concat',[__Item|__List]),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply('_$concat',[]),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(ith,__N),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(contains,__Y),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(select,__Y),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(days_until,__Dt2),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(nextday,__Increment),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(nextmonth,__Increment),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(toUTC,__H,__M),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(now,utc),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(now,__TZ),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(nextyear,__Increment),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(toType,__A1,__A2,__A3,__A4,__A5,__A6,__A7,__A8,__A9,__A10),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(toType,__newdontcarevar1,__newdontcarevar2,__newdontcarevar3,__newdontcarevar4,__newdontcarevar5,__newdontcarevar6,__newdontcarevar7,__newdontcarevar8,__newdontcarevar9,__newdontcarevar10),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(toType,__A1,__A2,__A3,__A4,__A5,__A6,__A7),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(toType,__newdontcarevar1,__newdontcarevar2,__newdontcarevar3,__newdontcarevar4,__newdontcarevar5,__newdontcarevar6,__newdontcarevar7),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(toType,__A1,__A2,__A3,__A4,__A5,__A6),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(toType,__newdontcarevar1,__newdontcarevar2,__newdontcarevar3,__newdontcarevar4,__newdontcarevar5,__newdontcarevar6),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(toType,__A1,__A2),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(toType,__newdontcarevar1,__newdontcarevar2),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(toType,__A),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(toType,__newdontcarevar1),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(nexthour,__Increment),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(append,[__L|__Ls]),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(append,[]),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(append,__Y),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(nextminute,__Increment),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(toTZ,__H,__M),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(substring,__Beg,__End),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(add,-(__Y)),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(add,__Y),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(add,__T1),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(nextsecond,__Increment),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(minus,__D2),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(substitute,__Pattern,__Substitution),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flapply(delete,__Y),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,time,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,date,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,minute,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,amount,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,toTuple,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,toList,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,second,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,description,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,fragment,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,dateSign,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,toUpper,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,sort,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,query,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,host,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,year,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,round,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,month,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,rawValue,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,day,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,floor,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,monthstart,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,zoneSign,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,port,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,zoneHour,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,length,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,user,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,zoneMinute,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,toNumber,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,localtime,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,reverse,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,inverse,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,weekday,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,now,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,monthend,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,path,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,toSymbol,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,weeknum,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,sign,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,flatten,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,ceiling,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,scheme,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,weekstart,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,toLower,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,toDate,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,weekend,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,hour,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,unit,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvd'(__fldnewvar1,typeName,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvdsig'(__fldnewvar1,toSymbol,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvdsig'(__fldnewvar1,flapply(append,'\\list'),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvdsig'(__fldnewvar1,flapply(toType,'\\integer','\\integer','\\integer','\\integer','\\integer','\\integer'),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvdsig'(__fldnewvar1,flapply(toType,'\\integer','\\integer','\\decimal','\\integer','\\integer','\\integer'),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvdsig'(__fldnewvar1,flapply(toType,'\\integer','\\integer','\\integer','\\integer','\\integer','\\integer','\\integer'),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvdsig'(__fldnewvar1,flapply(toType,'\\integer','\\integer','\\integer','\\integer','\\integer','\\integer','\\decimal','\\integer','\\integer','\\integer'),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvdsig'(__fldnewvar1,flapply(toType,'\\long'),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvdsig'(__fldnewvar1,flapply(toType,'\\decimal'),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvdsig'(__fldnewvar1,flapply(toType,'\\integer'),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''mvdsig'(__fldnewvar1,flapply(toType,'\\string'),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,flapply(delete,'\\object'),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,flapply(select,'\\object'),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,flapply(append,'\\list'),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,flapply(ith,'\\long'),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,flapply(substring,'\\integer','\\integer'),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,flapply(concat,'\\string'),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,flapply(add,'\\duration'),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,flapply(now,'\\decimal'),__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,minute,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,second,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,dateSign,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,fragment,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,sort,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,toUpper,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,year,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,host,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,query,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,round,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,month,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,rawValue,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,day,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,floor,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,zoneSign,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,zoneHour,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,port,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,length,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,user,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,zoneMinute,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,reverse,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,now,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,path,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,toSymbol,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,ceiling,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,scheme,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,toLower,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,hour,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''imvdsig'(__fldnewvar1,typeName,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''tblflapply'(next,__fldnewvar1,__fldnewvar2,__fldnewvar3,__fldnewvar4,__fldnewvar5).
+'_$_$_ergo''mod''\\basetype''tblflapply'('\\opaqueJustification',__fldnewvar1,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''\\basetype''boolsig'(__fldnewvar1,flapply(isTypeOf,'\\object'),__fldnewvar2).
+'_$_$_ergo''mod''\\basetype''boolsig'(__fldnewvar1,flapply('\\isTypeOf','\\object'),__fldnewvar2).

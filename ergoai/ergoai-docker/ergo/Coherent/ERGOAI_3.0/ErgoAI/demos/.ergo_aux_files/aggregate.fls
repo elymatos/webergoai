@@ -1,0 +1,4 @@
+flora_symbol(unknown,0,\@,228,22,function_symbol,nontransactional_symbol,'aggregate.flr').
+flora_symbol(mary,0,\@,123,14,function_symbol,nontransactional_symbol,'aggregate.flr').
+flora_symbol(salary,1,\@,17,4,function_symbol,nontransactional_symbol,'aggregate.flr').
+flora_symbol(john,0,\@,15,4,function_symbol,nontransactional_symbol,'aggregate.flr').

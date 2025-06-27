@@ -1,0 +1,24 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 2
+
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,sister,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,uncle,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,aunt,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,ancestor,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,parent,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,mother,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,father,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,spouse,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,husband,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,son,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,daughter,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,brother,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,father,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,mother,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,spouse,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,type,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,female,__fldnewvar2).
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,person,__fldnewvar2).
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,male,__fldnewvar2).

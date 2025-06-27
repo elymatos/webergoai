@@ -1,0 +1,16 @@
+#include "flrheader.flh"
+#define FLORA_COMPILATION_ID 7
+
+
+FLORA_THIS_WORKSPACE(mvdsig)(department,faculty,professor,__newcontextvar9).
+FLORA_THIS_WORKSPACE(mvdcondef)(department,faculty,0,*,__newcontextvar10).
+FLORA_THIS_WORKSPACE(mvdsig)(department,coursesOffered,string,__newcontextvar11).
+FLORA_THIS_WORKSPACE(mvdcondef)(department,coursesOffered,0,*,__newcontextvar12).
+FLORA_THIS_WORKSPACE(mvdsig)(professor,flapply(teaches,string,number),string,__newcontextvar5).
+FLORA_THIS_WORKSPACE(mvdcondef)(professor,flapply(teaches,string,number),0,*,__newcontextvar6).
+FLORA_THIS_WORKSPACE(mvd)(cse,faculty,smith,__newcontextvar5).
+FLORA_THIS_WORKSPACE(isa)(cse,department,__newcontextvar6).
+FLORA_THIS_WORKSPACE(isa)(smith,professor,__newcontextvar3).
+FLORA_THIS_WORKSPACE(mvd)(smith,flapply(teaches,fall,1998),cse220,__newcontextvar3).
+FLORA_THIS_WORKSPACE(mvd)(smith,flapply(teaches,spring,1999),cse310,__newcontextvar3).
+FLORA_THIS_WORKSPACE(mvd)(smith,flapply(teaches,spring,1999),cse530,__newcontextvar3).

@@ -1,0 +1,16 @@
+flora_symbol('Thing',0,\@,25,3,function_symbol,nontransactional_symbol,'oo.ergo').
+flora_symbol('Ligia',0,\@,62,11,function_symbol,nontransactional_symbol,'oo.ergo').
+flora_symbol('Paulo',0,\@,71,12,function_symbol,nontransactional_symbol,'oo.ergo').
+flora_symbol(members,2,\@,90,17,predicate_symbol,nontransactional_symbol,'oo.ergo').
+flora_symbol(members,0,\@,36,7,function_symbol,nontransactional_symbol,'oo.ergo').
+flora_symbol('Ely',0,\@,60,11,function_symbol,nontransactional_symbol,'oo.ergo').
+flora_symbol(b,0,\@,42,8,function_symbol,nontransactional_symbol,'oo.ergo').
+flora_symbol('C',0,\@,86,14,function_symbol,nontransactional_symbol,'oo.ergo').
+flora_symbol('Set',0,\@,23,3,function_symbol,nontransactional_symbol,'oo.ergo').
+flora_symbol(set1,0,\@,53,11,function_symbol,nontransactional_symbol,'oo.ergo').
+flora_symbol(a,0,\@,30,6,function_symbol,nontransactional_symbol,'oo.ergo').
+flora_symbol('B',0,\@,84,14,function_symbol,nontransactional_symbol,'oo.ergo').
+flora_symbol(set2,0,\@,75,14,function_symbol,nontransactional_symbol,'oo.ergo').
+flora_symbol(->,2,\@,47,8,function_symbol,nontransactional_symbol,'oo.ergo').
+flora_symbol('A',0,\@,82,14,function_symbol,nontransactional_symbol,'oo.ergo').
+flora_symbol(self,0,\@,15,1,function_symbol,nontransactional_symbol,'oo.ergo').

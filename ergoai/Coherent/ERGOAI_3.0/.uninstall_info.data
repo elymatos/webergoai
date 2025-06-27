@@ -1,0 +1,5 @@
+base_install_dir="/home/ematos/devel/webergoai/ergoai/Coherent/ERGOAI_3.0"
+reasoner_desktop_shortcut="/home/ematos/Desktop/ErgoReasoner-3.0.desktop"
+studio_desktop_shortcut="/home/ematos/Desktop/ErgoAI-3.0.desktop"
+studio_desktop_shortcut_name="ErgoAI Studio 3.0"
+reasoner_desktop_shortcut_name="ErgoAI Reasoner 3.0"

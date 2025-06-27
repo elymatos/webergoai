@@ -1,0 +1,15 @@
+flora_symbol(cse530,0,\@,158,23,function_symbol,nontransactional_symbol,'mod1.flr').
+flora_symbol(number,0,\@,52,11,function_symbol,nontransactional_symbol,'mod1.flr').
+flora_symbol(string,0,\@,43,10,function_symbol,nontransactional_symbol,'mod1.flr').
+flora_symbol(spring,0,\@,141,22,function_symbol,nontransactional_symbol,'mod1.flr').
+flora_symbol(mod2,0,\@,27,8,function_symbol,nontransactional_symbol,'mod1.flr').
+flora_symbol(cse310,0,\@,146,22,function_symbol,nontransactional_symbol,'mod1.flr').
+flora_symbol(cse,0,\@,112,19,function_symbol,nontransactional_symbol,'mod1.flr').
+flora_symbol(smith,0,\@,118,19,function_symbol,nontransactional_symbol,'mod1.flr').
+flora_symbol(teaches,2,\@,48,11,function_symbol,nontransactional_symbol,'mod1.flr').
+flora_symbol(fall,0,\@,129,21,function_symbol,nontransactional_symbol,'mod1.flr').
+flora_symbol(cse220,0,\@,134,21,function_symbol,nontransactional_symbol,'mod1.flr').
+flora_symbol(department,0,\@,34,10,function_symbol,nontransactional_symbol,'mod1.flr').
+flora_symbol(faculty,0,\@,36,10,function_symbol,nontransactional_symbol,'mod1.flr').
+flora_symbol(professor,0,\@,38,10,function_symbol,nontransactional_symbol,'mod1.flr').
+flora_symbol(coursesOffered,0,\@,41,10,function_symbol,nontransactional_symbol,'mod1.flr').

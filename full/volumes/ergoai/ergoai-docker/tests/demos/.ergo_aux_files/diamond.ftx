@@ -1,0 +1,6 @@
+%% Textual information for source file diamond.ergo
+%% FL_TEXTUAL_INFO_PRED(StmtNum,ShortStmtFileSpec,BegLn,BegCh,EndLn,EndCh)
+%% Note: StmtNum != RuleId. Their relationship is encoded in rule signatures
+
+
+'_$_$_ergo''textual_info'(8,'diamond.flr',9,1,9,15).
