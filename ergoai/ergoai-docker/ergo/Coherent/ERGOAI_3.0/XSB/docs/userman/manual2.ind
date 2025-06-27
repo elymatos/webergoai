@@ -1,0 +1,243 @@
+\begin{theindex}
+
+  \item \texttt  {assoc\_xsb}
+    \subitem \texttt  {assoc\_to\_list/2}, \hyperpage{30}
+    \subitem \texttt  {assoc\_vals\_to\_list/2}, \hyperpage{30}
+    \subitem \texttt  {del\_assoc/4}, \hyperpage{31}
+    \subitem \texttt  {gen\_assoc/3}, \hyperpage{31}
+    \subitem \texttt  {get\_assoc/5}, \hyperpage{31}
+    \subitem \texttt  {is\_assoc/1}, \hyperpage{30}
+    \subitem \texttt  {list\_to\_assoc/2}, \hyperpage{30}
+    \subitem \texttt  {put\_assoc/4}, \hyperpage{31}
+  \item \texttt  {bounds}
+    \subitem \texttt  {\#</2}, \hyperpage{80}
+    \subitem \texttt  {\#=/2}, \hyperpage{80}
+    \subitem \texttt  {\#=</2}, \hyperpage{80}
+    \subitem \texttt  {\#>/2}, \hyperpage{80, 81}
+    \subitem \texttt  {\#>=/2}, \hyperpage{80}
+    \subitem \texttt  {\#\=/2}, \hyperpage{81}
+    \subitem \texttt  {all\_different/1}, \hyperpage{81}
+    \subitem \texttt  {in/2}, \hyperpage{80}
+    \subitem \texttt  {indomain/1}, \hyperpage{82}
+    \subitem \texttt  {label/1}, \hyperpage{82}
+    \subitem \texttt  {labeling/2}, \hyperpage{81}
+    \subitem \texttt  {lex\_chain/1}, \hyperpage{82}
+    \subitem \texttt  {serialized/2}, \hyperpage{82}
+    \subitem \texttt  {sum/3}, \hyperpage{81}
+  \item \texttt  {chr\_pp}
+    \subitem \texttt  {load\_chr/1}, \hyperpage{88}
+    \subitem \texttt  {preprocess/2}, \hyperpage{88}
+  \item \texttt  {chr}
+    \subitem \texttt  {get\_chr\_answer\_store/1}, \hyperpage{95}
+    \subitem \texttt  {get\_chr\_store/1}, \hyperpage{95}
+    \subitem \texttt  {merge\_answer\_store/1}, \hyperpage{95}
+    \subitem \texttt  {set\_chr\_store/1}, \hyperpage{95}
+    \subitem \texttt  {show\_store/1}, \hyperpage{88}
+    \subitem \texttt  {suspended\_chr\_constraints/2}, \hyperpage{88}
+  \item \texttt  {clpr}
+    \subitem \texttt  {\{\}/1}, \hyperpage{73}
+    \subitem \texttt  {bb\_inf/3}, \hyperpage{76}
+    \subitem \texttt  {bb\_inf/4}, \hyperpage{76}
+    \subitem \texttt  {dump/3}, \hyperpage{77}
+    \subitem \texttt  {entailed/1}, \hyperpage{74}
+    \subitem \texttt  {inf/2}, \hyperpage{74}
+    \subitem \texttt  {inf/4}, \hyperpage{75}
+    \subitem \texttt  {maximize/1}, \hyperpage{74}
+    \subitem \texttt  {minimize/1}, \hyperpage{74}
+    \subitem \texttt  {sup/2}, \hyperpage{74}
+    \subitem \texttt  {sup/4}, \hyperpage{75}
+  \item \texttt  {curl}
+    \subitem \texttt  {close/2}, \hyperpage{48}
+    \subitem \texttt  {close/4}, \hyperpage{48}
+    \subitem \texttt  {encode\_url/2}, \hyperpage{50}
+    \subitem \texttt  {load\_page/5}, \hyperpage{48}
+    \subitem \texttt  {open/3}, \hyperpage{47}
+    \subitem \texttt  {open/4}, \hyperpage{47}
+    \subitem \texttt  {see/1}, \hyperpage{47}
+    \subitem \texttt  {url\_properties/2}, \hyperpage{49}
+    \subitem \texttt  {url\_properties/3}, \hyperpage{49}
+  \item \texttt  {dump}
+    \subitem \texttt  {projecting\_assert/1}, \hyperpage{77}
+  \item \texttt  {view\_sys}
+    \subitem \texttt  {generate\_new\_instance/2}, \hyperpage{103}
+  \item \texttt  {xasp}
+    \subitem \texttt  {\texttt  {smcReInit}}, \hyperpage{185}
+    \subitem \texttt  {a\_stable\_model/0}, \hyperpage{187}
+    \subitem \texttt  {atom\_handle/2}, \hyperpage{187}
+    \subitem \texttt  {current\_stable\_model/1}, \hyperpage{187}
+    \subitem \texttt  {in\_all\_stable\_models/2}, \hyperpage{187}
+    \subitem \texttt  {in\_current\_stable\_model/1}, \hyperpage{187}
+    \subitem \texttt  {init\_smodels/1}, \hyperpage{187}
+    \subitem \texttt  {print\_cache/0}, \hyperpage{186}
+    \subitem \texttt  {print\_current\_stable\_model/0}, 
+		\hyperpage{188}
+    \subitem \texttt  {pstable\_model/3}, \hyperpage{187}
+    \subitem \texttt  {smcAddRule/2}, \hyperpage{185}
+    \subitem \texttt  {smcCommitProgram/0}, \hyperpage{186}
+    \subitem \texttt  {smcCompute/1}, \hyperpage{185}
+    \subitem \texttt  {smcComputeModel/0}, \hyperpage{186}
+    \subitem \texttt  {smcEnd/0}, \hyperpage{186}
+    \subitem \texttt  {smcExamineModel/2}, \hyperpage{186}
+    \subitem \texttt  {smcInit/0}, \hyperpage{185}
+  \item \texttt  {xp\_fasttext}
+    \subitem \texttt  {cosine\_similarity/3}, \hyperpage{148}
+    \subitem \texttt  {get\_nearest\_neighbors/3}, \hyperpage{148}
+    \subitem \texttt  {get\_word\_vec/3}, \hyperpage{149}
+    \subitem \texttt  {load\_model/2}, \hyperpage{148}
+  \item \texttt  {xp\_spacy}
+    \subitem \texttt  {dependent\_tokens/2}, \hyperpage{156}
+    \subitem \texttt  {get\_dep/2}, \hyperpage{156}
+    \subitem \texttt  {get\_lemma/2}, \hyperpage{156}
+    \subitem \texttt  {get\_ner\_type/2}, \hyperpage{156}
+    \subitem \texttt  {get\_pos/2}, \hyperpage{156}
+    \subitem \texttt  {get\_tag/2}, \hyperpage{156}
+    \subitem \texttt  {get\_text/2}, \hyperpage{156}
+    \subitem \texttt  {load\_model/1}, \hyperpage{154}
+    \subitem \texttt  {load\_model/2}, \hyperpage{154}
+    \subitem \texttt  {proc\_file/3}, \hyperpage{155}
+    \subitem \texttt  {proc\_file/4}, \hyperpage{155}
+    \subitem \texttt  {proc\_string/3}, \hyperpage{154}
+    \subitem \texttt  {proc\_string/4}, \hyperpage{154}
+    \subitem \texttt  {sentence\_root/1}, \hyperpage{156}
+    \subitem \texttt  {show\_all\_trees/0}, \hyperpage{156}
+    \subitem \texttt  {token\_assert/1}, \hyperpage{155}
+    \subitem \texttt  {token\_info/7}, \hyperpage{156}
+  \item \texttt  {xp\_utils}
+    \subitem \texttt  {items/2}, \hyperpage{146}
+    \subitem \texttt  {key/2}, \hyperpage{146}
+    \subitem \texttt  {keys/2}, \hyperpage{146}
+    \subitem \texttt  {obj\_dict/2}, \hyperpage{146}
+    \subitem \texttt  {obj\_dir/2}, \hyperpage{146}
+    \subitem \texttt  {values/3}, \hyperpage{145}
+  \item \texttt  {xp\_wdi}
+    \subitem \texttt  {wdi\_get\_dict(+Qnode,-Dict)}, \hyperpage{160}
+    \subitem \texttt  {wdi\_get\_entity/2}, \hyperpage{160}
+    \subitem \texttt  {wdi\_sparql\_query/3}, \hyperpage{160}
+  \item \texttt  {xp\_xmldict}
+    \subitem \texttt  {xmldict\_read/2}, \hyperpage{159}
+  \item \texttt  {xsbpy}
+    \subitem \texttt  {add\_py\_lib\_dir/1}, \hyperpage{145}
+    \subitem \texttt  {hdt\_load/2}, \hyperpage{153}
+    \subitem \texttt  {hdt\_query/4}, \hyperpage{153}
+    \subitem \texttt  {pp\_py/1}, \hyperpage{145}
+    \subitem \texttt  {pp\_py/2}, \hyperpage{145}
+    \subitem \texttt  {py\_lib\_dirs/1}, \hyperpage{145}
+    \subitem \texttt  {pydot/4}, \hyperpage{144}
+    \subitem \texttt  {pydot/5}, \hyperpage{144}
+    \subitem \texttt  {pyfunc/3}, \hyperpage{143}
+    \subitem \texttt  {pyfunc/4}, \hyperpage{143}
+    \subitem \texttt  {pyfunc/5}, \hyperpage{143}
+  \item \texttt{CDATA}, \hyperpage{53, 54}
+  \item \texttt{DOCTYPE} declaration, \hyperpage{62}
+  \item \texttt{NAMES}, \hyperpage{54}
+  \item \texttt{NDATA}, \hyperpage{55}
+  \item \texttt{NUMBER}, \hyperpage{54}
+  \item \texttt{SDATA}, \hyperpage{55}
+  \item \texttt{declaration}, \hyperpage{61}
+  \item \texttt{default} space mode, \hyperpage{57}
+  \item \texttt{doctype}, \hyperpage{59}
+  \item \texttt{dtd/3}, \hyperpage{59}
+  \item \texttt{element}, \hyperpage{61}
+  \item \texttt{false}, \hyperpage{56}
+  \item \texttt{file}, \hyperpage{61}
+  \item \texttt{findall\_odbc\_sql/3}, \hyperpage{5}
+  \item \texttt{findall\_odbc\_sql/4}, \hyperpage{5}
+  \item \texttt{free\_dtd/1}, \hyperpage{58}
+  \item \texttt{free\_sgml\_parser/1}, \hyperpage{59}
+  \item \texttt{informational}, \hyperpage{61}
+  \item \texttt{integer}, \hyperpage{55}
+  \item \texttt{load\_html\_structure/3}, \hyperpage{54}
+  \item \texttt{load\_sgml\_structure/3}, \hyperpage{54}
+  \item \texttt{load\_structure/4}, \hyperpage{54}
+  \item \texttt{load\_xhtml\_structure/3}, \hyperpage{54}
+  \item \texttt{load\_xml\_structure/3}, \hyperpage{54}
+  \item \texttt{new\_dtd/2}, \hyperpage{58}
+  \item \texttt{new\_sgml\_parser/2}, \hyperpage{59}
+  \item \texttt{odbc\_close/0}, \hyperpage{3}
+  \item \texttt{odbc\_close/1}, \hyperpage{3}
+  \item \texttt{odbc\_create\_index/3}, \hyperpage{15}
+  \item \texttt{odbc\_create\_table/2}, \hyperpage{15}
+  \item \texttt{odbc\_data\_sources/2}, \hyperpage{3}
+  \item \texttt{odbc\_delete/\{2,3\}}, \hyperpage{14}
+  \item \texttt{odbc\_delete\_index/1}, \hyperpage{15}
+  \item \texttt{odbc\_delete\_table/1}, \hyperpage{15}
+  \item \texttt{odbc\_delete\_view/1}, \hyperpage{15}
+  \item \texttt{odbc\_flag/2}, \hyperpage{16}
+  \item \texttt{odbc\_get\_schema/2}, \hyperpage{14}
+  \item \texttt{odbc\_import/2}, \hyperpage{6}
+  \item \texttt{odbc\_import/4}, \hyperpage{7}
+  \item \texttt{odbc\_insert/\{2,3\}}, \hyperpage{13}
+  \item \texttt{odbc\_open/3}, \hyperpage{3}
+  \item \texttt{odbc\_open/4}, \hyperpage{3}
+  \item \texttt{odbc\_query/2}, \hyperpage{10}
+  \item \texttt{odbc\_query/3}, \hyperpage{13}
+  \item \texttt{odbc\_show\_schema/1}, \hyperpage{14}
+  \item \texttt{odbc\_sql/3}, \hyperpage{4}
+  \item \texttt{odbc\_sql/4}, \hyperpage{4}
+  \item \texttt{odbc\_sql\_cnt/4}, \hyperpage{5}
+  \item \texttt{odbc\_transaction/1}, \hyperpage{15}
+  \item \texttt{open\_dtd/3}, \hyperpage{58}
+  \item \texttt{parse\_xpath/4}, \hyperpage{65}
+  \item \texttt{preserve} space mode, \hyperpage{57}
+  \item \texttt{remove} space mode, \hyperpage{57}
+  \item \texttt{set\_odbc\_flag/2}, \hyperpage{16}
+  \item \texttt{set\_sgml\_parser/2}, \hyperpage{59}
+  \item \texttt{sgml\_parse/3}, \hyperpage{61}
+  \item \texttt{sgml}, \hyperpage{55}, \hyperpage{57}, \hyperpage{60}
+  \item \texttt{sgml} space mode, \hyperpage{56}
+  \item \texttt{token}, \hyperpage{55}
+  \item \texttt{xmlns}, \hyperpage{55}, \hyperpage{60}
+  \item \texttt{xmlns} dialect, \hyperpage{58}
+  \item \texttt{xml}, \hyperpage{55}, \hyperpage{57}, \hyperpage{60}
+
+  \indexspace
+
+  \item Code authors
+    \subitem Carlsson, Mats, \hyperpage{30, 31}
+    \subitem O'Keefe, Richard, \hyperpage{31}
+  \item constraints
+    \subitem asserting dynamic code with, \hyperpage{77}
+  \item CP-logic, \hyperpage{121}
+
+  \indexspace
+
+  \item files
+    \subitem {\tt  (}, \hyperpage{118}
+
+  \indexspace
+
+  \item Logic Programs with Annotated Disjunction, \hyperpage{121}
+  \item LPADs, \hyperpage{121}
+
+  \indexspace
+
+  \item PITA, \hyperpage{121}
+  \item Possibilistic Logic Programming, \hyperpage{121}
+  \item PRISM, \hyperpage{121}
+  \item Probabilistic Logic Programming, \hyperpage{121}
+  \item Prologs
+    \subitem Sicstus, \hyperpage{78}
+    \subitem SWI, \hyperpage{71}, \hyperpage{78}
+  \item px\_term, \hyperpage{141}
+  \item Python functions
+    \subitem \texttt  {add\_prolog\_path()}, \hyperpage{177}
+    \subitem \texttt  {consult()}, \hyperpage{177}
+    \subitem \texttt  {ensure\_loaded()}, \hyperpage{177}
+    \subitem \texttt  {pp\_px\_cmd()}, \hyperpage{176}
+    \subitem \texttt  {pp\_px\_comp()}, \hyperpage{176}
+    \subitem \texttt  {pp\_px\_qdet()}, \hyperpage{176}
+    \subitem \texttt  {prolog\_paths()}, \hyperpage{177}
+    \subitem \texttt  {px\_cmd()}, \hyperpage{174}
+    \subitem \texttt  {px\_com()}, \hyperpage{175}
+    \subitem \texttt  {px\_get\_error\_message()}, \hyperpage{176}
+    \subitem \texttt  {px\_qdet()}, \hyperpage{175}
+
+  \indexspace
+
+  \item term form (of a structure, \hyperpage{141}
+
+  \indexspace
+
+  \item xp\_struct, \hyperpage{141}
+
+\end{theindex}

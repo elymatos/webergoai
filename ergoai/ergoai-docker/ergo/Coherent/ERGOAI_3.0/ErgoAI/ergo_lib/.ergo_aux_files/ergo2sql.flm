@@ -1,0 +1,36 @@
+#include "flrheader.flh"
+#define FLORA_COMPILATION_ID 2
+
+
+'_$_$_ergo''prop_descriptor'(4,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(4,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,4,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(4,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME).
+'_$_$_ergo''bool_descriptor'(4,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(6,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(6,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,6,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(6,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME).
+'_$_$_ergo''bool_descriptor'(6,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(8,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(8,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,8,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(8,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME).
+'_$_$_ergo''bool_descriptor'(8,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(10,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(10,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,10,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(10,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME).
+'_$_$_ergo''bool_descriptor'(10,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(12,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(12,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,12,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(12,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME).
+'_$_$_ergo''bool_descriptor'(12,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(14,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(14,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,14,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(14,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME).
+'_$_$_ergo''bool_descriptor'(14,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(16,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(16,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,16,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(16,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME).
+'_$_$_ergo''bool_descriptor'(16,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(18,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(18,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,18,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(18,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME).
+'_$_$_ergo''bool_descriptor'(18,'ergo2sql.ergo',FLORA_THIS_MODULE_NAME,strict,'_$_$_ergo''descr_vars').

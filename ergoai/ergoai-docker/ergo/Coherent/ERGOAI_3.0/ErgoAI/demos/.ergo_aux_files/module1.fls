@@ -1,0 +1,5 @@
+flora_symbol(mary,0,\@,245,27,function_symbol,nontransactional_symbol,'module1.flr').
+flora_symbol(module2,0,\@,142,20,function_symbol,nontransactional_symbol,'module1.flr').
+flora_symbol(salary,1,\@,21,10,function_symbol,nontransactional_symbol,'module1.flr').
+flora_symbol(employee,0,\@,17,8,function_symbol,nontransactional_symbol,'module1.flr').
+flora_symbol(john,0,\@,15,8,function_symbol,nontransactional_symbol,'module1.flr').

@@ -1,0 +1,30 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 1
+
+FLORA_THIS_WORKSPACE(tran)(__fldnewvar1,procedural,__fldnewvar2).
+FLORA_THIS_WORKSPACE(itransig)(__fldnewvar1,procedural,__fldnewvar2).
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,foo_parent2,__fldnewvar2).
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,foo_parent1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,foo,__fldnewvar2).
+FLORA_THIS_WORKSPACE(boolsig)(__fldnewvar1,procedural,__fldnewvar2).
+FLORA_THIS_WORKSPACE(boolsig)(__fldnewvar1,boolean2,__fldnewvar2).
+FLORA_THIS_WORKSPACE(boolsig)(__fldnewvar1,flapply(boolean,person),__fldnewvar2).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,ancestors,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,inheritableMeth,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,flapply(age,2000),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvdsig)(__fldnewvar1,flapply(bonus,year,month),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvdsig)(__fldnewvar1,flapply(age,year),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(iboolsig)(__fldnewvar1,boolean2,__fldnewvar2).
+FLORA_THIS_WORKSPACE(iboolsig)(__fldnewvar1,boolean,__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(p,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(imeth)(__fldnewvar1,boolean,__fldnewvar2).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,inheritableMeth,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,ancestors,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvdsig)(__fldnewvar1,flapply(age,year),__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvd)(__fldnewvar1,inheritableMeth,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvd)(__fldnewvar1,ancestors,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(transig)(__fldnewvar1,flapply(procedural,person),__fldnewvar2).
+FLORA_THIS_WORKSPACE(transig)(__fldnewvar1,procedural2,__fldnewvar2).
+FLORA_THIS_WORKSPACE(transig)(__fldnewvar1,procedural,__fldnewvar2).

@@ -1,0 +1,71 @@
+flora_nowarn_symbol(union,0,\@,any_symbol_context,nontransactional_symbol,'ergo_set.ergo').
+flora_nowarn_symbol(minus,0,\@,any_symbol_context,nontransactional_symbol,'ergo_set.ergo').
+flora_nowarn_symbol(insert,0,\@,any_symbol_context,nontransactional_symbol,'ergo_set.ergo').
+flora_nowarn_symbol(delete,0,\@,any_symbol_context,nontransactional_symbol,'ergo_set.ergo').
+flora_nowarn_symbol(mapinsert,0,\@,any_symbol_context,nontransactional_symbol,'ergo_set.ergo').
+flora_nowarn_symbol(mapdelete,0,\@,any_symbol_context,nontransactional_symbol,'ergo_set.ergo').
+flora_nowarn_symbol(maperase,0,\@,any_symbol_context,nontransactional_symbol,'ergo_set.ergo').
+flora_nowarn_symbol(mapfind,0,\@,any_symbol_context,nontransactional_symbol,'ergo_set.ergo').
+flora_nowarn_symbol(subset,0,\@,any_symbol_context,nontransactional_symbol,'ergo_set.ergo').
+flora_nowarn_symbol(equal,0,\@,any_symbol_context,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(mapinsert,1,\@,2008,206,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(exists,0,\@,921,94,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(insert_facts,2,\@,819,71,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(mapdelete,1,\@,2150,221,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(sysabort,1,'\\system',1591,159,predicate_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(mvm,0,\@,2331,239,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(maperase,1,\@,2203,227,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(copy_into_intersect,4,\@,809,69,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(subset,1,\@,1831,187,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(mapfind,1,\@,2253,232,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(genericintersect,3,\@,859,79,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(genericinsert,3,\@,844,76,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(copy_into_minus,4,\@,804,68,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(empty,0,\@,955,96,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(delete_all_pairs,2,\@,829,73,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(equal,1,\@,1914,197,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(copy_into,3,\@,799,67,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(toList,0,\@,2542,262,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol('> Set1[minus(Set2)->Set3]: Set2 must be != Set3',0,\@,1788,177,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(intersect,1,\@,1476,152,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol('> Set1[intersect(Set2)->Set3]: Set2 must be != Set3',0,\@,1623,163,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(check_set_name,2,\@,834,74,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(' was created for ',0,\@,2853,291,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(union,1,\@,1307,140,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(copy,0,\@,1454,148,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(registry_of_sets,3,\@,874,82,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(mapreplace,1,\@,2075,212,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(set,0,\@,1001,102,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol('regular map',0,\@,3330,359,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(': structure ',0,\@,2847,291,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(genericsubset,2,\@,854,78,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(delete_facts,2,\@,824,72,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(mvminsert,1,\@,2314,238,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol('> Set1[intersect(Set2)->Set3]: Set1 must be != Set3',0,\@,1599,160,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(<,0,\@,1594,159,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(get_storage_name,4,\@,879,83,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(destroy,0,\@,1238,129,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(' operation',0,\@,2865,293,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(minus,1,\@,1656,169,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(goal,0,\@,2832,290,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(genericunion,3,\@,864,80,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(delete_from,2,\@,814,70,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol('s but used with a ',0,\@,2859,292,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(delete,1,\@,1077,112,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(insert,1,\@,989,102,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(map,0,\@,2025,207,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol('\\set',0,\@,1596,159,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(genericmember,3,\@,839,75,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol('MV-map',0,\@,3338,360,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(ensure_loaded,0,\@,913,92,predicate_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(struct_printable_type,2,\@,794,66,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(show,1,'\\show',2830,290,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(': non-symbol set name in a set operation',0,\@,3313,356,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(mvmfind,1,\@,2481,255,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(mvmdelete,1,\@,2376,244,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(type,0,\@,937,95,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(genericminus,3,\@,869,81,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(genericdelete,3,\@,849,77,prolog_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(tolist,0,\@,2551,262,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(mvmerase,1,\@,2438,250,function_symbol,nontransactional_symbol,'ergo_set.ergo').
+flora_symbol(member,0,\@,978,98,function_symbol,nontransactional_symbol,'ergo_set.ergo').

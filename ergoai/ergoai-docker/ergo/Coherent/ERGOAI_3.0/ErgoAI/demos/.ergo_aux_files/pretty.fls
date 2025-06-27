@@ -1,0 +1,12 @@
+flora_symbol(pp_self,1,pp,69,9,function_symbol,nontransactional_symbol,'pretty.flr').
+flora_symbol(student,0,\@,67,9,function_symbol,nontransactional_symbol,'pretty.flr').
+flora_symbol(pretty_data,0,\@,24,4,function_symbol,nontransactional_symbol,'pretty.flr').
+flora_symbol(on,0,\@,35,5,function_symbol,nontransactional_symbol,'pretty.flr').
+flora_symbol(off,1,'\\system',48,7,function_symbol,nontransactional_symbol,'pretty.flr').
+flora_symbol(prettyprint,0,\@,16,2,function_symbol,nontransactional_symbol,'pretty.flr').
+flora_symbol(pp_isa,1,pp,109,11,function_symbol,nontransactional_symbol,'pretty.flr').
+flora_symbol(taught,0,\@,125,13,function_symbol,nontransactional_symbol,'pretty.flr').
+flora_symbol(data,0,\@,26,4,function_symbol,nontransactional_symbol,'pretty.flr').
+flora_symbol('Method',0,\@,31,5,function_symbol,nontransactional_symbol,'pretty.flr').
+flora_symbol(pp_class,1,pp,89,10,function_symbol,nontransactional_symbol,'pretty.flr').
+flora_symbol(pp,0,\@,18,2,function_symbol,nontransactional_symbol,'pretty.flr').

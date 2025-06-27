@@ -1,0 +1,15 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 3
+
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(flapply(readAll,__Mod),__CodeList),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(flapply(readAll,__Mod),__Code,__Stat),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(flapply(read,__Mod),__Code,__Stat),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(readAll,__CodeList),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(readAll,__Code,__Stat),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(read,__Code,__Stat),__fldnewvar2).
+FLORA_THIS_WORKSPACE(tblflapply)(flapply(readAll,__Mod),__fldnewvar1,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(flapply(read,__Mod),__fldnewvar1,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(readAll,__fldnewvar1,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(read,__fldnewvar1,__fldnewvar2,__fldnewvar3).

@@ -1,0 +1,84 @@
+/*
+   THIS FILE IS IN THE PUBLIC DOMAIN.
+
+   IT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+   INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+   IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+   OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+   ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+   OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+/******************************************************************************
+    This example shows how Ergo can be used to populate SQL databases from
+    tabular data. Of course, one could just go into MySQL and PostgreSQL
+    and populate them via their native utilities. The point here is that this
+    can be done dynamically from within Ergo, while doing all kinds of other
+    information integration tasks.
+
+    Assume that the setup described in the document that is found in the same
+    folder as this file.
+******************************************************************************/
+
+:- prolog{name/2, salary/2}.
+
+:- symbol_context{open/5, prlg name(?,?), name/2, prlg salary(?,?), salary/2}.
+
+// Note: %connect_to_both_databases, %close_connections, %create_tables, etc.,
+//       have side effects, so we prefix them with the %-sign.
+
+%connect_to_both_databases :-
+    // Open a connection to Postgres, to get salaries;
+    // use the generic ODBC driver 'odbc'
+    odbc[open(salariesConnection,empl_salaries_source,ergo,'ergo*ps')]@\sql,
+    // Open a connection to MySQL, to get names;
+    // use the native 'mysql' driver for MySQL
+    mysql[open(namesConnection,localhost,empl_names,ergo,'ergo*ps')]@\sql.
+
+%close_connections :-
+        salariesConnection[close]@\sql,
+        namesConnection[close]@\sql.
+
+// create tables in each of the databases
+%create_tables :-
+    // create table in the database empl_salaries in PostgreSQL
+    salariesConnection[query(MkSalaryTbl, ['CREATE TABLE salaries(id INTEGER, salary INTEGER)'], []) ]@\sql,
+    // create table in the database empl_names in MySQL
+    namesConnection[query(MkNameTbl, ['CREATE TABLE names(id INTEGER, name VARCHAR(40))'], []) ]@\sql.
+
+// Import tabular data from names.csv and salaries.psv
+// Data goes into the Ergo tables name/2 and salary/2.
+// Making sure that id and salary fields get imported as integers.
+%import_tabular :-
+    [e2dsv>>tabular],  // tabular data will be in Ergo's module 'tabular'
+    /*
+       ADD PATH NAMES to salaries.psv and names.csv or RUN THIS IN THE
+       DIRECTORY of these files.
+    */
+    dsv_load('salaries.psv', salary(integer,integer), psv+titles)@tabular,
+    dsv_load('names.csv', name(integer,atom), csv+titles)@tabular.
+
+// use fail-loop to copy every name(...)-fact into the SQL DB
+%populate_names_table :-
+    name(?id,?name)@tabular,
+    // NOTE: SQL strings must be in "..." so we add them in the command
+    namesConnection[query(PopulateNames, ['INSERT INTO names(id, name) VALUES (', ?id, ', "', ?name, '")'], []) ]@\sql,
+    \false.
+%populate_names_table :- !.
+
+// use fail-loop to copy every name(...)-fact into the SQL DB
+%populate_salaries_table :-
+    salary(?id,?salary)@tabular,
+    // NOTE: SQL strings must be in "..." so we add them in the command
+    salariesConnection[query(PopulateSalaries, ['INSERT INTO salaries(id, salary) VALUES (', ?id, ', ', ?salary, ')'], []) ]@\sql,
+    \false.
+%populate_salaries_table :- !.
+
+
+?- %connect_to_both_databases,
+        %create_tables,
+        %import_tabular,
+        %populate_names_table,
+        %populate_salaries_table,
+        %close_connections.

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple ErgoAI Interface</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; }
+        .section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; border-radius: 6px; }
+        .section h2 { margin-top: 0; color: #333; }
+        button { padding: 10px 15px; margin: 5px; background: #007acc; color: white; border: none; cursor: pointer; border-radius: 4px; }
+        button:hover { background: #005fa3; }
+        textarea { width: 100%; height: 150px; margin: 10px 0; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-family: monospace; }
+        .result { background: #f8f8f8; padding: 15px; margin: 10px 0; white-space: pre-wrap; border-radius: 4px; border-left: 4px solid #007acc; font-family: monospace; }
+        .status { padding: 10px; margin: 10px 0; border-radius: 4px; }
+        .status.success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .status.error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Simple ErgoAI Web Interface</h1>
+        <p>Basic ErgoAI web interface for testing queries and managing knowledge bases.</p>
+        
+        <div class="grid">
+            <div class="section">
+                <h2>🔍 Execute Query</h2>
+                <textarea id="queryInput" placeholder="Enter your ErgoAI query here, e.g.: ?- adult(?X).">?- adult(?X).</textarea>
+                <br>
+                <button onclick="executeQuery()">Execute Query</button>
+                <button onclick="loadSampleQuery()">Load Sample Query</button>
+                <div id="queryResult" class="result"></div>
+            </div>
+            
+            <div class="section">
+                <h2>📊 System Status</h2>
+                <button onclick="checkHealth()">Check Health</button>
+                <div id="healthResult" class="result"></div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📁 Projects & Knowledge Bases</h2>
+            <button onclick="loadProjects()">Load Projects</button>
+            <button onclick="createSampleProject()">Create Sample Project</button>
+            <div id="projectsResult" class="result"></div>
+        </div>
+        
+        <div class="section">
+            <h2>🧪 Test Queries</h2>
+            <p>Try these sample queries:</p>
+            <button onclick="testQuery('?- 1+1.')">Simple Math</button>
+            <button onclick="testQuery('?- adult(?X).')">Find Adults</button>
+            <button onclick="testQuery('?- parent(?X, ?Y).')">Find Parents</button>
+            <button onclick="testQuery('?- child(?X).')">Find Children</button>
+            <div id="testResult" class="result"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:5000/api';
+        
+        async function executeQuery() {
+            const query = document.getElementById('queryInput').value;
+            const resultDiv = document.getElementById('queryResult');
+            
+            if (!query.trim()) {
+                resultDiv.innerHTML = '<div class="status error">Please enter a query</div>';
+                return;
+            }
+            
+            resultDiv.innerHTML = '<div class="status">Executing query...</div>';
+            
+            try {
+                const response = await fetch(`${API_URL}/execute`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query: query })
+                });
+                
+                const result = await response.json();
+                const statusClass = result.status === 'success' ? 'success' : 'error';
+                resultDiv.innerHTML = `
+                    <div class="status ${statusClass}">Status: ${result.status}</div>
+                    <strong>Result:</strong>
+                    ${result.result || result.message}
+                `;
+            } catch (error) {
+                resultDiv.innerHTML = `<div class="status error">Error: ${error.message}</div>`;
+            }
+        }
+        
+        async function testQuery(query) {
+            document.getElementById('queryInput').value = query;
+            const resultDiv = document.getElementById('testResult');
+            
+            resultDiv.innerHTML = '<div class="status">Executing test query...</div>';
+            
+            try {
+                const response = await fetch(`${API_URL}/execute`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query: query })
+                });
+                
+                const result = await response.json();
+                const statusClass = result.status === 'success' ? 'success' : 'error';
+                resultDiv.innerHTML = `
+                    <div class="status ${statusClass}">Query: ${query}</div>
+                    <strong>Result:</strong>
+                    ${result.result || result.message}
+                `;
+            } catch (error) {
+                resultDiv.innerHTML = `<div class="status error">Error: ${error.message}</div>`;
+            }
+        }
+        
+        async function checkHealth() {
+            const resultDiv = document.getElementById('healthResult');
+            
+            resultDiv.innerHTML = '<div class="status">Checking health...</div>';
+            
+            try {
+                const response = await fetch(`${API_URL}/health`);
+                const result = await response.json();
+                
+                const ergoStatus = result.ergoai_available ? 
+                    '<div class="status success">✅ ErgoAI Available</div>' : 
+                    '<div class="status error">⚠️ ErgoAI Not Found (using simulation)</div>';
+                
+                resultDiv.innerHTML = `
+                    <div class="status success">✅ API: ${result.status}</div>
+                    ${ergoStatus}
+                    <strong>Details:</strong>
+                    ${JSON.stringify(result, null, 2)}
+                `;
+            } catch (error) {
+                resultDiv.innerHTML = `<div class="status error">❌ API Connection Failed: ${error.message}</div>`;
+            }
+        }
+        
+        async function loadProjects() {
+            const resultDiv = document.getElementById('projectsResult');
+            
+            resultDiv.innerHTML = '<div class="status">Loading projects...</div>';
+            
+            try {
+                const response = await fetch(`${API_URL}/projects`);
+                const result = await response.json();
+                
+                if (result.length === 0) {
+                    resultDiv.innerHTML = '<div class="status">No projects found. Create one!</div>';
+                } else {
+                    resultDiv.innerHTML = `
+                        <div class="status success">Found ${result.length} project(s)</div>
+                        <strong>Projects:</strong>
+                        ${JSON.stringify(result, null, 2)}
+                    `;
+                }
+            } catch (error) {
+                resultDiv.innerHTML = `<div class="status error">Error: ${error.message}</div>`;
+            }
+        }
+        
+        async function createSampleProject() {
+            const resultDiv = document.getElementById('projectsResult');
+            
+            try {
+                const response = await fetch(`${API_URL}/projects`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        name: 'Test Project', 
+                        description: 'A test project created from the web interface' 
+                    })
+                });
+                
+                const result = await response.json();
+                resultDiv.innerHTML = `
+                    <div class="status success">✅ Project created: ${result.name}</div>
+                    <strong>Details:</strong>
+                    ${JSON.stringify(result, null, 2)}
+                `;
+            } catch (error) {
+                resultDiv.innerHTML = `<div class="status error">Error: ${error.message}</div>`;
+            }
+        }
+        
+        function loadSampleQuery() {
+            document.getElementById('queryInput').value = `% Sample F-Logic query
+?- adult(?X).`;
+        }
+        
+        // Auto-load on page start
+        window.onload = () => {
+            checkHealth();
+            loadProjects();
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+(TeX-add-style-hook "table_builtins"
+ (lambda ()
+    (LaTeX-add-index-entries
+     "TableEntryHandle"
+     "ReturnHandle"
+     "answer substitution"
+     "substitution factor"
+     "skeleton"
+     "tabling!directives"
+     "tabling!strategy selection"
+     "tabling!call subsumption"
+     "tabling!call variance"
+     "tabling!answer subsumption"
+     "tabling!incremental"
+     "tabling!dynamic predicates"
+     "tabling!private"
+     "tabling!shared"
+     "tabling!opaque"
+     "tabling!table inspection"
+     "residual program"
+     "Prolog flags!{\\tt exception\\_pre\\_action}"
+     "strongly connected components (SCCs)"
+     "tabling!and exceptions"
+     "tabling!table deletion"
+     "view consistency"
+     "tabling!conditional answers"
+     "Prolog flags!{\\tt table\\_gc\\_action}"
+     "tabling!multi-threaded"
+     "tabling!abolishes"
+     "tabling!abolishes!transitive vs. single"
+     "tabling!abolishes!multi-threading"
+     "Incremental Dependency Graph (IDG)"
+     "tabling!abolishes!incremental"
+     "tabling!abolishes!"
+     "garbage collection!tables"
+     "table\\_index")
+    (LaTeX-add-labels
+     "sec:TablingPredicates"
+     "sec:TablePred:Decl&Mod"
+     "table-declaration"
+     "sec:table-inspection"
+     "sec:TablePred:Inspection"
+     "ex:residual-program"
+     "sec:TablePred:Deleting"
+     "ex:deletion")
+    (TeX-add-symbols
+     "retn")))
+

@@ -1,0 +1,70 @@
+/*
+   THIS FILE IS IN THE PUBLIC DOMAIN.
+
+   IT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+   INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+   IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+   OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+   ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+   OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+/******************************************************************************
+    This example shows how Ergo can be used to query multiple heterogeneous
+    SQL databases then bring the results back and further process the results
+    in Ergo.
+
+    Assume that the setup described in the document that is found in the same
+    folder as this file. 
+    Also assumes that the database were created and populated by loading
+    the Ergo file populate_SQL_DBs_from_tabular_data.ergo
+
+******************************************************************************/
+
+:- symbol_context{open/5}.
+
+// Note: %connect_to_both_databases, %close_connections, %drop_tables
+//       have side effects, so we prefix them with the %-sign.
+
+%connect_to_both_databases :-
+    // Open a connection to Postgres, to get salaries;
+    // use the generic ODBC driver 'odbc'
+    odbc[open(salariesConnection,empl_salaries_source,ergo,'ergo*ps')]@\sql,
+    // Open a connection to MySQL, to get names;
+    // use the native 'mysql' driver for MySQL
+    mysql[open(namesConnection,localhost,empl_names,ergo,'ergo*ps')]@\sql.
+
+%close_connections :-
+        salariesConnection[close]@\sql,
+        namesConnection[close]@\sql.
+
+
+/*
+    Ask query: Give names of people who earn more than a certain threshold
+               given asn an argument.
+*/
+query(?Threshold) :-
+    salariesConnection[query(GetSalaries,
+                             ['SELECT id, salary FROM salaries WHERE salary > ', ?Threshold],
+                             [?Id, ?Salary])]@\sql,
+    namesConnection[query(GetNames,
+                          ['SELECT id, name FROM names'],
+                          [?Id, ?Name])]@\sql,
+    (write('    '),write(name=?Name),write('  '),writeln(salary=?Salary))@\io.
+
+// drop tables so we could run these examples again
+%drop_tables :-
+    salariesConnection[query(DropSalaries, ['DROP TABLE salaries'],[])]@\sql,
+    namesConnection[query(DropNames, ['DROP TABLE names'],[])]@\sql.
+    
+
+?-  %connect_to_both_databases,
+    writeln('\nPeople earning more than 70K:')@\io,
+    query(70000),
+    writeln('\nPeople earning more than 100K:')@\io,
+    query(100000),
+    writeln('\nPeople earning more than 150K:')@\io,
+    query(150000),
+    %drop_tables,
+    %close_connections.

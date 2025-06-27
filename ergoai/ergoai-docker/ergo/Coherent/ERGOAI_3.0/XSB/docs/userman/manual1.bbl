@@ -1,0 +1,525 @@
+\begin{thebibliography}{10}
+
+\bibitem{AitK90}
+H.~Ait-Kaci.
+\newblock {\em The {WAM}: a (Real) Tutorial}.
+\newblock 1990.
+\newblock Available at http://wambook.sourceforge.net.
+
+\bibitem{ADP94}
+J.~Alferes, C.~Damasio, and L.~Pereira.
+\newblock {SLX}: a top-down derivation procedure for programs with explicit
+  negation.
+\newblock In M.~Bruynooghe, editor, {\em International Logic Programming
+  Symposium}, pages 424--439, 1994.
+
+\bibitem{ADP95}
+J.~Alferes, C.~Damasio, and L.~Pereira.
+\newblock A logic programming system for non-monotonic reasoning.
+\newblock {\em Journal of Automated Reasoning}, 14:93--147, 1995.
+
+\bibitem{BMSU86}
+F.~Banchilhon, D.~Maier, Y.~Sagiv, and J.~Ullman.
+\newblock Magic sets and other strange ways to implement logic programs.
+\newblock In {\em ACM Principles of Database Systems}. ACM, 1986.
+
+\bibitem{BeRa91}
+C.~Beeri and R.~Ramakrishnan.
+\newblock On the power of magic.
+\newblock {\em Journal of Logic Programming}, 10(3):255--299, 1991.
+
+\bibitem{BoKi94}
+A.~Bonner and M.~Kifer.
+\newblock An overview of transaction logic.
+\newblock {\em Theoretical Computer Science}, 133:205--265, October 1994.
+
+\bibitem{Boul97}
+D.~Boulanger.
+\newblock Fine-grained goal-directed declarative analysis of logic programs.
+\newblock {\em Proceedings of the International Workshop on Verification, Model
+  Checking and Abstract Interpretation}, 1997.
+\newblock Available through http://www.dsi.unive.it/~bossi/VMCAI.html.
+
+\bibitem{BoxM58}
+G.~Box and M.~Muller.
+\newblock A note on the generation of random normal deviates.
+\newblock {\em The Annals of Mathematical Statistics}, 29(2):610--611, 1958.
+
+\bibitem{Cale01}
+M.~Calejo.
+\newblock Interprolog: A declarative java-prolog interface.
+\newblock In {\em EPIA}. Springer-Verlag, 2001.
+\newblock See XSB's home page for downloading instructions.
+
+\bibitem{CaSC01}
+L.~Castro and V.~S. Costa.
+\newblock Understanding memory management in {P}rolog systems.
+\newblock In {\em International Conference on Logic Programming}, number 2237
+  in LNCS, pages 11--26. Springer, 2001.
+
+\bibitem{CaSW02}
+L.~Castro, T.~Swift, and D.~S. Warren.
+\newblock Suspending and resuming computations in engines for {SLG} evaluation.
+\newblock In {\em Practical Applications of Declarative Languages}, pages
+  332--346, 2002.
+
+\bibitem{CaSW02a}
+L.~Castro, T.~Swift, and D.~S. Warren.
+\newblock {XASP}: {A}nswer {S}et {P}rogramming in {XSB}.
+\newblock Manual to Open-source software availible at xsb.sourceforge.net,
+  2002.
+
+\bibitem{ChKW93}
+W.~Chen, M.~Kifer, and D.~S. Warren.
+\newblock {HiLog}: A foundation for higher-order logic programming.
+\newblock {\em Journal of Logic Programming}, 15(3):187--230, 1993.
+
+\bibitem{ChSW95}
+W.~Chen, T.~Swift, and D.~S. Warren.
+\newblock Efficient top-down computation of queries under the well-founded
+  semantics.
+\newblock {\em Journal of Logic Programming}, 24(3):161--199, 1995.
+
+\bibitem{ChWa96}
+W.~Chen and D.~S. Warren.
+\newblock Tabled {E}valuation with {D}elaying for {G}eneral {L}ogic {P}rograms.
+\newblock {\em Journal of the ACM}, 43(1):20--74, January 1996.
+
+\bibitem{CoDS96}
+M.~Codish, B.~Demoen, and K.~Sagonas.
+\newblock Semantics-based program analysis for logic-based languages using
+  {XSB}.
+\newblock {\em Springer International Journal of Software Tools for Technology
+  Transfer}, 2(1):29--45, Nov. 1998.
+
+\bibitem{CuSW99a}
+B.~Cui and T.~Swift.
+\newblock Preference logic grammars: Fixed-point semantics and application to
+  data standardization.
+\newblock {\em Artificial Intelligence}, 138:117--147, 2002.
+
+\bibitem{CuSW99b}
+B.~Cui, T.~Swift, and D.~S. Warren.
+\newblock From tabling to transformation: Implementing non-ground residual
+  programs.
+\newblock In {\em International Workshop on Implementations of Declarative
+  Languages}, 1999.
+
+\bibitem{CuiW00}
+B.~Cui and D.~S. Warren.
+\newblock A system for tabled constraint logic programming.
+\newblock In {\em Computational Logic}, pages 478--492, 2000.
+
+\bibitem{DRSS96}
+S.~Dawson, C.~R. Ramakrishnan, S.~Skiena, and T.~Swift.
+\newblock Principles and practice of unification factoring.
+\newblock {\em ACM Transactions on Programming Languages and Systems},
+  18(5):528--563, 1996.
+
+\bibitem{DRW96}
+S.~Dawson, C.~R. Ramakrishnan, and D.~S. Warren.
+\newblock Practical program analysis using general purpose logic programming
+  systems --- a case study.
+\newblock In {\em ACM PLDI}, pages 117--126, May 1996.
+
+\bibitem{hprolog}
+B.~Demoen.
+\newblock {D}ynamic attributes, their h{P}rolog implementation, and a first
+  evaluation.
+\newblock Report CW 350, Department of Computer Science, K.U.Leuven, Leuven,
+  Belgium, oct 2002.
+\newblock URL =
+  http://www.cs.kuleuven.ac.be/publicaties/rapporten/cw/CW350.abs.html.
+
+\bibitem{CAT@PLILP-98}
+B.~Demoen and K.~Sagonas.
+\newblock {CAT: the Copying Approach to Tabling}.
+\newblock In {\em Priniclpes of Declarative Programming, 10th International
+  Symposium}, pages 21--35. Springer-Verlag, 1998.
+\newblock LNCS 1490.
+
+\bibitem{CATmem@ISMM-98}
+B.~Demoen and K.~Sagonas.
+\newblock {Memory Management for Prolog with Tabling}.
+\newblock In {\em Proceedings of ISMM'98: ACM SIGPLAN International Symposium
+  on Memory Management}, pages 97--106. ACM Press, 1998.
+
+\bibitem{DesR98}
+J.~Desel and W.~Reisig.
+\newblock Place/transition {P}etri nets.
+\newblock In {\em Lectures on Petri Nets I: Basic Models}, pages 122--174.
+  Springer LNCS 1491, 1998.
+
+\bibitem{Diet87}
+S.~Dietrich.
+\newblock {\em Extension Tables for Recursive Query Evaluation}.
+\newblock PhD thesis, SUNY at Stony Brook, 1987.
+
+\bibitem{FrSW97}
+J.~Freire, T.~Swift, and D.~S. Warren.
+\newblock Treating {I/O} seriously: Resolution reconsidered for disk.
+\newblock In {\em 14th International Conferene on Logic Programming}, 1997.
+\newblock To Appear.
+
+\bibitem{JFLP-Scheduling}
+J.~Freire, T.~Swift, and D.~S. Warren.
+\newblock Beyond depth-first: Improving tabled logic programs through
+  alternative scheduling strategies.
+\newblock {\em Journal of Functional and Logic Programming}, 1998(3):243--268,
+  1998.
+
+\bibitem{FSW98}
+J.~Freire, T.~Swift, and D.~S. Warren.
+\newblock A formal framework for scheduling in {SLG}.
+\newblock In {\em International Workshop on Tabling in Parsing and Deduction},
+  1998.
+
+\bibitem{Fruh}
+T.~Fruhwirth.
+\newblock Constraint handling rules.
+\newblock {\em Journal of Logic Programming}, 1998.
+
+\bibitem{GSTPD00}
+J.~Gartner, T.~Swift, A.~Tien, L.~M. Pereira, and C.~Dam\'asio.
+\newblock Psychiatric diagnosis from the viewpoint of computational logic.
+\newblock In {\em International Conference on Computational Logic}, pages
+  1362--1376. Springer-Verlag, 2000.
+\newblock LNAI 1861.
+
+\bibitem{GroS13}
+B.~Grosof and T.~Swift.
+\newblock Radial restraint: A semantically clean approach to bounded
+  rationality for logic programs.
+\newblock In {\em AAAI}, 2013.
+
+\bibitem{GuRR01}
+H.~Guo, C.~R. Ramakrishnan, and I.~V. Ramakrishnan.
+\newblock Speculative beats conservative justification.
+\newblock In {\em International Conference on Logic Programming}, volume 2237
+  of {\em Lecture Notes in Computer Science}, pages 150--165. Springer, 2001.
+
+\bibitem{Hara69}
+F.~Harary.
+\newblock {\em Graph Theory}.
+\newblock Addison Wesley, 1969.
+
+\bibitem{ISO-Prolog}
+{ISO working group JTC1/SC22}.
+\newblock Prolog international standard {ISO-IEC} 13211-1.
+\newblock Technical report, International Standards Organization, 1995.
+
+\bibitem{ISO-Revision}
+New built-in flags, predicates and functions proposal.
+\newblock Technical report, International Standards Organization, 2006.
+\newblock Edited by P. Moura, ISO/IEC DTR 13211-1:2006.
+
+\bibitem{TST99}
+E.~Johnson, C.~R. Ramakrishnan, I.~V. Ramakrishnan, and P.~Rao.
+\newblock A space efficient engine for subsumption-based tabled evaluation of
+  logic programs.
+\newblock In A.~Middeldorp and T.~Sato, editors, {\em 4th Fuji International
+  Symposium on Functional and Logic Programming}, number 1722 in Lecture Notes
+  in Computer Science, pages 284--299. Springer-Verlag, Nov. 1999.
+
+\bibitem{KaKa93}
+T.~Kanamori and T.~Kawamura.
+\newblock Abstract interpretation based on {OLDT} resolution.
+\newblock {\em Journal of Logic Programming}, 15:1--30, 1993.
+
+\bibitem{KeTo88}
+D.~Kemp and R.~Topor.
+\newblock Completeness of a top-down query evaluation procedure for stratified
+  databases.
+\newblock In {\em Logic Programming: Proc. of the Fifth International
+  Conference and Symposium}, pages 178--194, 1988.
+
+\bibitem{KLW95}
+M.~Kifer, G.~Lausen, and J.~Wu.
+\newblock Logical foundations of object-oriented and frame-based languages.
+\newblock {\em Journal of the ACM}, 42:741--843, July 1995.
+
+\bibitem{KiSu92}
+M.~Kifer and V.~S. Subrahmanian.
+\newblock Theory of generalized annotated logic programming and its
+  applications.
+\newblock {\em Journal of Logic Programming}, 12(4):335--368, 1992.
+
+\bibitem{syntactica}
+R.~Larson, D.~S. Warren, J.~Freire, and K.~Sagonas.
+\newblock {\em Syntactica}.
+\newblock MIT Press, 1995.
+
+\bibitem{semantica}
+R.~Larson, D.~S. Warren, J.~Freire, K.~Sagonas, and P.~Gomez.
+\newblock {\em Semantica}.
+\newblock MIT Press, 1996.
+
+\bibitem{LePe98}
+J.~Leite and L.~M. Pereira.
+\newblock Iterated logic programming updates.
+\newblock In {\em International Conference on Logic Programming}, pages
+  265--278. MIT Press, 1998.
+
+\bibitem{LiaK13a}
+S.~Liang and M.~Kifer.
+\newblock A practical analysis of non-termination in large logic programs.
+\newblock {\em Theory and Practice of Logic Programming}, 13(4-5):705--719,
+  2013.
+
+\bibitem{LiaK13}
+S.~Liang and M.~Kifer.
+\newblock Terminyzer: An automatic non-termination analyzer for large logic
+  programs.
+\newblock In {\em Practical Applications of Declarative Languages}, 2013.
+
+\bibitem{LiOk87}
+T.~Lindholm and R.~O'Keefe.
+\newblock Efficient implementation of a defensible semantics for dynamic
+  {P}rolog code.
+\newblock In {\em Proceedings of the International Conference on Logic
+  Programming}, pages 21--39, 1987.
+
+\bibitem{LiRS98}
+X.~Liu, C.~R. Ramakrishnan, and S.~Smolka.
+\newblock Fully local and efficient evaluation of alternating fixed points.
+\newblock In {\em TACAS 98: Tools and Algorithms for Construction and Analysis
+  of Systems}, pages 5--19. Springer-Verlag, 1998.
+
+\bibitem{Lloy84}
+J.~W. Lloyd.
+\newblock {\em Foundations of Logic Programming}.
+\newblock Springer-Verlag, 1984.
+
+\bibitem{MarS08b}
+R.~Marques, T.~Swift, and J.~Cunha.
+\newblock Extending tabled logic programming with multi-threading: A systems
+  perspective.
+\newblock In {\em CICLOPS}, pages 91--107, 2008.
+
+\bibitem{MarS10}
+R.~Marques, T.~Swift, and J.~Cunha.
+\newblock A simple and efficient implementation of concurrent local tabling.
+\newblock In {\em Practical Applications of Declarative Languages}, pages
+  264--278, 2010.
+
+\bibitem{McLe85}
+A.~McLeod.
+\newblock A remark on algorithm {AS} 183.
+\newblock {\em Applied Statistics}, 34:198--200, 1985.
+
+\bibitem{NiSi97}
+I.~Niemel{\"a} and P.~Simons.
+\newblock {SModels --- An implementation of the stable model and well-founded
+  semantics for normal LP}.
+\newblock In {\em International Conference on Logic Programming and
+  Non-Monotonic Reasoning}, pages 420--429. Springer-Verlag, 1997.
+
+\bibitem{PGDRR04}
+G.~Pemmasani, H.~Guo, Y.~Dong, C.~R. Ramakrishnan, and I.~V. Ramakrishnan.
+\newblock Online justification for tabled logic programs.
+\newblock In {\em Fuji International Symposium on Functional and Logic
+  Programming}, pages 24--38, 2004.
+
+\bibitem{Przy89d}
+T.~Przymusinski.
+\newblock Every logic program has a natural stratification and an iterated
+  least fixed point model.
+\newblock In {\em ACM Principles of Database Systems}, pages 11--21, 1989.
+
+\bibitem{RRRSSW97}
+Y.~S. Ramakrishna, C.~R. Ramakrishnan, I.~V. Ramakrishnan, S.~Smolka, T.~Swift,
+  and D.~S. Warren.
+\newblock Efficient model checking using tabled resolution.
+\newblock In {\em Proceedings on the Conference on Automated Verification},
+  1997.
+
+\bibitem{RRSSW98}
+P.~Rao, I.~V. Ramakrishnan, K.~Sagonas, T.~Swift, and D.~S. Warren.
+\newblock Efficient table access mechanisms for logic programs.
+\newblock {\em Journal of Logic Programming}, 38(1):31--54, Jan. 1999.
+
+\bibitem{RigS11a}
+F.~Riguzzi and T.~Swift.
+\newblock The {PITA} system: Tabling and answer subsumption for reasoning under
+  uncertainty.
+\newblock {\em Theory and Practice of Logic Programming}, 11(4-5):433--449,
+  2011.
+
+\bibitem{RigS13}
+F.~Riguzzi and T.~Swift.
+\newblock Well\--definedness and efficient inference for probabilistic logic
+  programming under the distribution semantics.
+\newblock {\em Theory and Practice of Logic Programming}, 13(2):279--302, 2013.
+
+\bibitem{RigS14}
+F.~Riguzzi and T.~Swift.
+\newblock Terminating evaluation of logic programs with finite three-valued
+  models.
+\newblock {\em ACM Transactions on Computational Logic}, 15(4), 2014.
+
+\bibitem{SaSw98}
+K.~Sagonas and T.~Swift.
+\newblock An abstract machine for tabled execution of fixed-order stratified
+  logic programs.
+\newblock {\em ACM TOPLAS}, 20(3):586 -- 635, May 1998.
+
+\bibitem{SaSw94}
+K.~Sagonas, T.~Swift, and D.~S. Warren.
+\newblock {XSB} as an efficient deductive database engine.
+\newblock In {\em Proc. of SIGMOD 1994 Conference}. ACM, 1994.
+
+\bibitem{SaSW96}
+K.~Sagonas, T.~Swift, and D.~S. Warren.
+\newblock An abstract machine for efficiently computing queries to well-founded
+  models.
+\newblock {\em Journal of Logic Programming}, 45(1-3):1--41, 2000.
+
+\bibitem{SaSW99}
+K.~Sagonas, T.~Swift, and D.~S. Warren.
+\newblock The limits of fixed-order computation.
+\newblock {\em Theoretical Computer Science}, 254(1-2):465--499, 2000.
+
+\bibitem{SaWa95}
+K.~Sagonas and D.~S. Warren.
+\newblock Efficient execution of {HiLog} in {WAM}-based {P}rolog
+  implementations.
+\newblock In L.~Sterling, editor, {\em Proceedings of the 12th International
+  Conference on Logic Programming}, pages 349--363. MIT Press, June 1995.
+
+\bibitem{Saha06}
+D.~Saha.
+\newblock {\em Incremental Evaluation of Tabled Logic Programs}.
+\newblock PhD thesis, SUNY Stony Brook, 2006.
+
+\bibitem{SaRa05}
+D.~Saha and C.~Ramakrishnan.
+\newblock Incemental and demand-driven points-to analysis using logic
+  programming.
+\newblock In {\em ACM Principles and Practice of Declarative Programming},
+  2005.
+
+\bibitem{Seki89}
+H.~Seki.
+\newblock On the power of {Alexandrer} templates.
+\newblock In {\em ACM Principles of Database Systems}, pages 150--159, 1989.
+
+\bibitem{SteV08}
+K.~Stenning and M.~van Lambalgen.
+\newblock {\em Human Reasoning and Cognitive Science}.
+\newblock MIT Press, 2008.
+
+\bibitem{Swif99b}
+T.~Swift.
+\newblock A new formulation of tabled resolution with delay.
+\newblock In {\em Recent Advances in Artifiial Intelligence}. Springer-Verlag,
+  1999.
+
+\bibitem{Swif99a}
+T.~Swift.
+\newblock Tabling for non-monotonic programming.
+\newblock {\em Ann. Math. Artif. Intell.}, 25(3-4):201--240, 1999.
+
+\bibitem{Swif04}
+T.~Swift.
+\newblock Deduction in ontologies via answer set programming.
+\newblock In {\em International Conference on Logic Programming and
+  Non-Monotonic Reasoning}, number 2923 in LNAI, pages 275--289, 2004.
+
+\bibitem{Swif09a}
+T.~Swift.
+\newblock An engine for efficiently computing (sub-)models.
+\newblock In {\em International Conference on Logic Programming}, pages
+  514--518, 2009.
+
+\bibitem{Swif14}
+T.~Swift.
+\newblock Incremental tabling in support of knowledge representation and
+  reasoning.
+\newblock {\em Theory and Practice of Logic Programming}, 14(4-5), 2014.
+
+\bibitem{Swif14b}
+T.~Swift.
+\newblock {Forest Logging}: A trace-based analysis of large rule-based
+  computations.
+\newblock {\em Semantic Web Journal}, 6, 2015.
+
+\bibitem{SwiW10a}
+T.~Swift and D.~S. Warren.
+\newblock Tabling with answer subsumption: Implementation, applications and
+  performance.
+\newblock In {\em JELIA}, 2010.
+\newblock Available at {\tt http://www.cs.stonybrook.edu/$\tilde{\ }$tswift}.
+
+\bibitem{SwiW12}
+T.~Swift and D.~S. Warren.
+\newblock {XSB}: Extending the power of {P}rolog using tabling.
+\newblock {\em Theory and Practice of Logic Programming}, 12(1-2):157--187,
+  2012.
+
+\bibitem{TaSa86}
+H.~Tamaki and T.~Sato.
+\newblock {OLDT} resolution with tabulation.
+\newblock In {\em Third International Conference on Logic Programming}, pages
+  84--98, 1986.
+
+\bibitem{Tarj72}
+R.~Tarjan.
+\newblock Depth-first search and linear graph algorithms.
+\newblock {\em {SIAM} Journal on Computing}, 1:146--160, 1972.
+
+\bibitem{VGRS91}
+A.~{van Gelder}, K.~Ross, and J.~Schlipf.
+\newblock Unfounded sets and well-founded semantics for general logic programs.
+\newblock {\em JACM}, 38(3):620--650, 1991.
+
+\bibitem{Viei89}
+L.~Vieille.
+\newblock Recursive query processing: The power of logic.
+\newblock {\em Theoretical Computer Science}, 69:1--53, 1989.
+
+\bibitem{Walk93}
+A.~Walker.
+\newblock Backchain iteration: Towards a practical inference method that is
+  simple enough to be proved terminating, sound, and complete.
+\newblock {\em J. Automated Reasoning}, 11(1):1--23, 1993.
+
+\bibitem{WGKFL09}
+H.~Wan, B.~Grosof, M.~Kifer, P.~Fodor, and S.~Liang.
+\newblock Logic programming with defaults and argumentation theories.
+\newblock In {\em International Conference on Logic Programming}, pages
+  432--448, 2009.
+
+\bibitem{DHWa83}
+D.~H.~D. Warren.
+\newblock An abstract {P}rolog instruction set.
+\newblock Technical Report 309, SRI, 1983.
+
+\bibitem{ciclops-2013-interning}
+D.~S. Warren.
+\newblock Interning ground terms in {XSB}.
+\newblock In {\em Proceedings of CICLOPS 2013}, August 2013.
+\newblock In conjunction with ICLP'2013.
+
+\bibitem{warren-tdbu}
+D.~S. Warren.
+\newblock Top-down and bottom-up evaluation procedurally integrated.
+\newblock {\em Theory and Practice of Logic Programming}, 18(3-4):706--721,
+  2018.
+
+\bibitem{WicH82}
+B.~A. Wichmann and I.~D. Hill.
+\newblock Algorithm {AS} 183: An efficient and portable pseudo-random number
+  generator.
+\newblock {\em Applied Statistics}, 31:188--190, 1982.
+
+\bibitem{SWI-manual}
+J.~Wielemaker.
+\newblock {\em SWI Prolog version 5.6: Reference Manual}.
+\newblock University of Amsterdam, 2007.
+
+\bibitem{YaKZ05}
+G.~Yang, M.~Kifer, and C.~Zhao.
+\newblock {\em FLORA-2: User's Manual Version 0.94}, 2005.
+\newblock Avaliable via flora.sourceforge.net.
+
+\end{thebibliography}

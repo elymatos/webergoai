@@ -1,0 +1,10 @@
+#include "flrheader.flh"
+#include "flr_fld_standardtypes.flh"
+
+#define FLORA_COMPILATION_ID 3
+
+FLORA_THIS_WORKSPACE(tblflapply)(set_field_type,__fldnewvar1,__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,loadDB,__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,detach,__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(attachNew,__DSN,__DB,__User,__Password),__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,flapply(attach,__DSN,__DB,__User,__Password),__fldnewvar2).

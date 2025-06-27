@@ -1,0 +1,828 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{VGRS91}
+\citation{Fruh}
+\citation{KLW95}
+\citation{NiSi97}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{introduction}{{1}{1}{Introduction}{chapter.1}{}}
+\citation{BoKi94}
+\citation{ADP94}
+\citation{KiSu92}
+\citation{ChWa96}
+\@writefile{toc}{\contentsline {paragraph}{Well-Founded Semantics}{2}{section*.2}}
+\citation{syntactica}
+\citation{semantica}
+\citation{DRW96}
+\citation{CoDS96}
+\citation{Boul97}
+\citation{RRRSSW97}
+\citation{GSTPD00}
+\citation{TaSa86}
+\citation{VGRS91}
+\newlabel{ex:Russell}{{1.0.1}{3}{Well-Founded Semantics}{example.1.0.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Constraint Support}{3}{section*.3}}
+\citation{SaSw94}
+\citation{LiOk87}
+\@writefile{toc}{\contentsline {paragraph}{Indexing Methods}{4}{section*.4}}
+\@writefile{toc}{\contentsline {paragraph}{Interfaces}{4}{section*.5}}
+\@writefile{toc}{\contentsline {paragraph}{Fast Loading of Code}{4}{section*.6}}
+\citation{ChKW93}
+\citation{SaWa95}
+\citation{SaWa95}
+\citation{DRSS96}
+\@writefile{toc}{\contentsline {paragraph}{HiLog}{5}{section*.7}}
+\@writefile{toc}{\contentsline {paragraph}{Unification Factoring}{6}{section*.8}}
+\@writefile{toc}{\contentsline {paragraph}{XSB Packages}{6}{section*.9}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Using This Manual}{6}{section.1.1}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Getting Started with XSB}{8}{chapter.2}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{quick_start}{{2}{8}{Getting Started with XSB}{chapter.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Installing XSB under UNIX}{8}{section.2.1}}
+\newlabel{installation_options}{{2.1}{8}{Installing XSB under UNIX}{section.2.1}{}}
+\newlabel{cc}{{2.1}{10}{Installing XSB under UNIX}{Item.9}{}}
+\citation{JFLP-Scheduling}
+\citation{CaSW02}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Possible Installation Problems}{12}{subsection.2.1.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Installing XSB under Windows}{13}{section.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Using Cygwin32 and Cygwin64}{13}{subsection.2.2.1}}
+\newlabel{quick:cygwin}{{2.2.1}{13}{Using Cygwin32 and Cygwin64}{subsection.2.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Using Microsoft Visual C++}{13}{subsection.2.2.2}}
+\newlabel{quick:DOS}{{2.2.2}{13}{Using Microsoft Visual C++}{subsection.2.2.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Invoking XSB}{16}{section.2.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Compiling XSB programs}{17}{section.2.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Sample XSB Programs}{17}{section.2.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Exiting XSB}{19}{section.2.6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}System Description}{20}{chapter.3}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:system}{{3}{20}{System Description}{chapter.3}{}}
+\newlabel{system}{{3}{20}{System Description}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Entering and Exiting XSB from the Command Line}{20}{section.3.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}The System and its Directories}{21}{section.3.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}How XSB Finds Files: Source File Designators}{22}{section.3.3}}
+\newlabel{sec:filenames}{{3.3}{22}{How XSB Finds Files: Source File Designators}{section.3.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}The Module System of XSB}{24}{section.3.4}}
+\newlabel{Modules}{{3.4}{24}{The Module System of XSB}{section.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}How the Compiler Determines the Module of a Term}{27}{subsection.3.4.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Meta-predicates known to XSB's Compiler}}{28}{table.3.1}}
+\newlabel{tab:meta-predicates}{{3.1}{28}{Meta-predicates known to XSB's Compiler}{table.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Atoms and 0-Ary Structure Symbols}{30}{subsection.3.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Importing and Loading On Demand}{30}{subsection.3.4.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Usage Inference and the Module System}{31}{subsection.3.4.4}}
+\newlabel{sec:useinfer}{{3.4.4}{31}{Usage Inference and the Module System}{subsection.3.4.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.5}Importing with Pseudo-Modules}{32}{subsection.3.4.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.6}Parameterized Modules in XSB}{33}{subsection.3.4.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.7}Modules with Explicit File Names}{36}{subsection.3.4.7}}
+\citation{ISO-Prolog}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Standard Predicates in XSB}{38}{section.3.5}}
+\newlabel{sec:standard}{{3.5}{38}{Standard Predicates in XSB}{section.3.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}The On-Demand Loader and its Search Path}{38}{section.3.6}}
+\newlabel{LibPath}{{3.6}{38}{The On-Demand Loader and its Search Path}{section.3.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.1}Changing the Default Search Path}{39}{subsection.3.6.1}}
+\newlabel{sec:search-path}{{3.6.1}{39}{Changing the Default Search Path}{subsection.3.6.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{The user's configuration directory: {\tt  .xsb/}}{40}{section*.13}}
+\newlabel{sec-user-config-dir}{{3.6.1}{40}{The user's configuration directory: {\tt .xsb/}}{section*.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{The user's initialization file: {\tt  xsbrc.P}}{40}{section*.14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.2}The Packaging System}{41}{subsection.3.6.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.7}Command Line Arguments}{43}{section.3.7}}
+\newlabel{sec:EmuOptions}{{3.7}{43}{Command Line Arguments}{section.3.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.1}General Options}{44}{subsection.3.7.1}}
+\citation{CaSC01}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.2}Other Command-line Options}{46}{subsection.3.7.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Memory Management Options}{47}{section*.15}}
+\newlabel{sec:memory-flags}{{3.7.2}{47}{Memory Management Options}{section*.15}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Options for Developers}{47}{section*.16}}
+\citation{CaSC01}
+\citation{CATmem@ISMM-98}
+\@writefile{toc}{\contentsline {section}{\numberline {3.8}Memory Management}{48}{section.3.8}}
+\newlabel{memory_management}{{3.8}{48}{Memory Management}{section.3.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.9}Compiling, Consulting, and Loading}{49}{section.3.9}}
+\newlabel{Consulting}{{3.9}{49}{Compiling, Consulting, and Loading}{section.3.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.1}Static Code}{50}{subsection.3.9.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.2}Dynamic Code}{51}{subsection.3.9.2}}
+\newlabel{sec:dynamic-code}{{3.9.2}{51}{Dynamic Code}{subsection.3.9.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.3}The multifile directive}{52}{subsection.3.9.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.10}The Compiler}{53}{section.3.10}}
+\newlabel{the_compiler}{{3.10}{53}{The Compiler}{section.3.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.10.1}Invoking the Compiler}{53}{subsection.3.10.1}}
+\newlabel{compiler_invoking}{{3.10.1}{53}{Invoking the Compiler}{subsection.3.10.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.10.2}Compiler Options}{55}{subsection.3.10.2}}
+\newlabel{sec:CompilerOptions}{{3.10.2}{55}{Compiler Options}{subsection.3.10.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{\it  Special considerations for using XSB as a preprocessor.}{59}{section*.17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.10.3}Specialization}{65}{subsection.3.10.3}}
+\newlabel{specialization}{{3.10.3}{65}{Specialization}{subsection.3.10.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.10.4}Compiler Directives}{67}{subsection.3.10.4}}
+\newlabel{compiler_directives}{{3.10.4}{67}{Compiler Directives}{subsection.3.10.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Including Files in a Compilation}{68}{section*.18}}
+\@writefile{toc}{\contentsline {subsubsection}{Conditional Compilation}{68}{section*.19}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.10.5}Mode Directives}{69}{subsection.3.10.5}}
+\newlabel{mode_declarations}{{3.10.5}{69}{Mode Directives}{subsection.3.10.5}{}}
+\citation{GroS13}
+\citation{RigS14}
+\@writefile{toc}{\contentsline {subsubsection}{Tabling Directives}{71}{section*.20}}
+\newlabel{tabling_directives}{{3.10.5}{71}{Tabling Directives}{section*.20}{}}
+\@writefile{toc}{\contentsline {paragraph}{Automatic Tabling for Termination: {\tt  auto\_table}}{71}{section*.21}}
+\citation{BeRa91}
+\@writefile{toc}{\contentsline {paragraph}{Automatic Tabling for Efficiency: {\tt  suppl\_table}}{72}{section*.22}}
+\@writefile{toc}{\contentsline {subsubsection}{Indexing Directives}{73}{section*.23}}
+\newlabel{indexing_directives}{{3.10.5}{73}{Indexing Directives}{section*.23}{}}
+\@writefile{toc}{\contentsline {paragraph}{Indexing of Dynamic Code}{73}{section*.24}}
+\@writefile{toc}{\contentsline {paragraph}{Static Code}{74}{section*.25}}
+\@writefile{toc}{\contentsline {subsubsection}{Other Directives}{74}{section*.26}}
+\newlabel{other-directives}{{3.10.5}{74}{Other Directives}{section*.26}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.10.6}Inline Predicates}{75}{subsection.3.10.6}}
+\newlabel{inline_predicates}{{3.10.6}{75}{Inline Predicates}{subsection.3.10.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces The Inline Predicates of XSB}}{75}{table.3.2}}
+\newlabel{inlinepredicatetable}{{3.2}{75}{The Inline Predicates of XSB}{table.3.2}{}}
+\citation{ISO-Prolog}
+\@writefile{toc}{\contentsline {section}{\numberline {3.11}A Note on ISO Compatibility}{76}{section.3.11}}
+\newlabel{sec:iso}{{3.11}{76}{A Note on ISO Compatibility}{section.3.11}{}}
+\citation{ISO-Revision}
+\citation{ISO-Prolog}
+\citation{ChKW93}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Syntax}{78}{chapter.4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{Syntax}{{4}{78}{Syntax}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Terms}{78}{section.4.1}}
+\newlabel{TermSyntax}{{4.1}{78}{Terms}{section.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Integers}{78}{subsection.4.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{ISO Integers}{78}{section*.27}}
+\@writefile{toc}{\contentsline {subsubsection}{Other Integer Representations}{79}{section*.28}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Floating-point Numbers}{80}{subsection.4.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Atoms}{80}{subsection.4.1.3}}
+\newlabel{sec:atoms}{{4.1.3}{80}{Atoms}{subsection.4.1.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}Variables}{82}{subsection.4.1.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.5}Compound Terms}{82}{subsection.4.1.5}}
+\newlabel{some_compound_terms}{{4.1.5}{82}{Compound Terms}{subsection.4.1.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.6}Lists}{84}{subsection.4.1.6}}
+\newlabel{Lists}{{4.1.6}{84}{Lists}{subsection.4.1.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}From HiLog to Prolog}{85}{section.4.2}}
+\newlabel{HiLog2Prolog}{{4.2}{85}{From HiLog to Prolog}{section.4.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Operators}{87}{section.4.3}}
+\newlabel{Operators}{{4.3}{87}{Operators}{section.4.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Canonical Syntax}{90}{section.4.4}}
+\newlabel{sec:canonical}{{4.4}{90}{Canonical Syntax}{section.4.4}{}}
+\citation{VGRS91}
+\citation{ChWa96}
+\citation{Swif99b}
+\citation{SaSW99}
+\citation{FSW98}
+\citation{DHWa83}
+\citation{AitK90}
+\citation{SaSw98}
+\citation{RRSSW98}
+\citation{JFLP-Scheduling}
+\citation{SaSW96}
+\citation{ChSW95}
+\citation{CAT@PLILP-98}
+\citation{TST99}
+\citation{CuSW99b}
+\citation{CuiW00}
+\citation{CaSW02}
+\citation{MarS08b}
+\citation{Swif09a}
+\citation{MarS10}
+\citation{SwiW10a}
+\citation{syntactica}
+\citation{semantica}
+\citation{CoDS96}
+\citation{DRW96}
+\citation{RRRSSW97}
+\citation{Boul97}
+\citation{CuSW99a}
+\citation{GSTPD00}
+\citation{SwiW12}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Using Tabling in XSB: A Tutorial Introduction}{92}{chapter.5}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:TablingOverview}{{5}{92}{Using Tabling in XSB: A Tutorial Introduction}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Tabling in the Context of a Prolog System}{93}{section.5.1}}
+\newlabel{tabling_env}{{5.1}{93}{Tabling in the Context of a Prolog System}{section.5.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Definite Programs}{93}{section.5.2}}
+\newlabel{sec:def}{{5.2}{93}{Definite Programs}{section.5.2}{}}
+\citation{Diet87}
+\citation{TaSa86}
+\citation{BMSU86}
+\citation{Viei89}
+\citation{Walk93}
+\@writefile{toc}{\contentsline {paragraph}{Exercises}{95}{section*.29}}
+\newlabel{ex:samegen}{{5.2.2}{95}{Exercises}{exercise.5.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Call Variance vs. Call Subsumption}{97}{subsection.5.2.1}}
+\newlabel{sec:SimilarityMeasures}{{5.2.1}{97}{Call Variance vs. Call Subsumption}{subsection.5.2.1}{}}
+\citation{ChWa96}
+\@writefile{toc}{\contentsline {paragraph}{Determining Call Similarity via Variance}{98}{section*.32}}
+\@writefile{toc}{\contentsline {paragraph}{Determining Call Similarity via Subsumption}{98}{section*.33}}
+\newlabel{ex:VarVsSub}{{5.2.5}{99}{Determining Call Similarity via Subsumption}{exercise.5.2.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{Declarations for Call Variance and Call Subsumption}{100}{section*.34}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Tabling with Interned Ground Terms}{100}{subsection.5.2.2}}
+\newlabel{section:interntabling}{{5.2.2}{100}{Tabling with Interned Ground Terms}{subsection.5.2.2}{}}
+\newlabel{section:interned-terms}{{5.2.2}{100}{Tabling with Interned Ground Terms}{subsection.5.2.2}{}}
+\citation{ciclops-2013-interning}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Table Scheduling Strategies}{101}{subsection.5.2.3}}
+\newlabel{section:scheduling}{{5.2.3}{101}{Table Scheduling Strategies}{subsection.5.2.3}{}}
+\citation{JFLP-Scheduling}
+\citation{FrSW97}
+\citation{JFLP-Scheduling}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Interaction Between Prolog Constructs and Tabling}{103}{subsection.5.2.4}}
+\newlabel{sec:cuts}{{5.2.4}{104}{Cuts and Tabling}{section*.35}{}}
+\@writefile{toc}{\contentsline {paragraph}{Cuts and Tabling}{104}{section*.35}}
+\newlabel{ex:nocut}{{5.2.6}{104}{Cuts and Tabling}{exercise.5.2.6}{}}
+\newlabel{ex:cutTable}{{5.2.3}{105}{Cuts and Tabling}{example.5.2.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Call Subsumption and Meta-Logical Predicates}{106}{section*.36}}
+\newlabel{example:sub-fail}{{5.2.4}{106}{Call Subsumption and Meta-Logical Predicates}{example.5.2.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.5}Potential Pitfalls in Tabling}{106}{subsection.5.2.5}}
+\newlabel{sec:TablingPitfalls}{{5.2.5}{106}{Potential Pitfalls in Tabling}{subsection.5.2.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{Over-Tabling}{106}{section*.37}}
+\newlabel{ex:append}{{5.2.7}{107}{Over-Tabling}{exercise.5.2.7}{}}
+\@writefile{toc}{\contentsline {paragraph}{Tabled Predicates and Tracing}{107}{section*.38}}
+\newlabel{ex:scc}{{5.2.8}{107}{Tabled Predicates and Tracing}{exercise.5.2.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Normal Programs}{108}{section.5.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Stratified Normal Programs}{108}{subsection.5.3.1}}
+\newlabel{ex:win1}{{5.3.1}{108}{Stratified Normal Programs}{exercise.5.3.1}{}}
+\citation{KeTo88}
+\citation{Seki89}
+\newlabel{ex:lrd}{{5.3.2}{109}{Stratified Normal Programs}{exercise.5.3.2}{}}
+\citation{ChWa96}
+\citation{Lloy84}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Non-stratified Programs}{112}{subsection.5.3.2}}
+\newlabel{sec-neg-unstratified}{{5.3.2}{112}{Non-stratified Programs}{subsection.5.3.2}{}}
+\newlabel{sec:conditional-answers}{{5.3.2}{112}{Conditional Answers}{section*.41}{}}
+\newlabel{ex:simpl}{{5.3.5}{113}{Conditional Answers}{exercise.5.3.5}{}}
+\citation{Przy89d}
+\newlabel{sec:lrd}{{5.3.2}{114}{When Conditional Answers are Needed}{section*.42}{}}
+\@writefile{toc}{\contentsline {paragraph}{When Conditional Answers are Needed}{114}{section*.42}}
+\citation{SaSW99}
+\@writefile{toc}{\contentsline {paragraph}{Programming in the Well-founded Semantics}{115}{section*.43}}
+\newlabel{ex:true-val}{{5.3.6}{115}{Programming in the Well-founded Semantics}{exercise.5.3.6}{}}
+\citation{ADP95}
+\citation{LePe98}
+\citation{Swif99a}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}On Beyond Zebra: Implementing Other Semantics for Non-stratified Programs}{116}{subsection.5.3.3}}
+\newlabel{sec:non-strat}{{5.3.3}{116}{On Beyond Zebra: Implementing Other Semantics for Non-stratified Programs}{subsection.5.3.3}{}}
+\newlabel{ex:pos-delay}{{5.3.8}{117}{The Residual Program}{exercise.5.3.8}{}}
+\citation{NiSi97}
+\citation{LiRS98}
+\citation{CaSW02a}
+\citation{Swif04}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Answer Subsumption}{119}{section.5.4}}
+\newlabel{sec:table-aggregation}{{5.4}{119}{Answer Subsumption}{section.5.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Types of Answer Subsumption}{119}{subsection.5.4.1}}
+\@writefile{toc}{\contentsline {subsubsection}{Partial Order Answer Subsumption.}{119}{section*.47}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces A Shortest Path Predicate}}{119}{figure.5.1}}
+\newlabel{fig:sp-preds}{{5.1}{119}{A Shortest Path Predicate}{figure.5.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Lattice Answer Subsumption.}{120}{section*.48}}
+\citation{SwiW10a}
+\citation{Swif99a}
+\citation{RigS11a}
+\citation{RigS13}
+\@writefile{toc}{\contentsline {subsubsection}{Partial Order Answer Subsumption with Abstraction.}{121}{section*.49}}
+\citation{DesR98}
+\citation{DesR98}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces A PT-net and configuration with an infinite number of reachable configurations}}{122}{figure.5.2}}
+\newlabel{fig:ptnet}{{5.2}{122}{A PT-net and configuration with an infinite number of reachable configurations}{figure.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Examples of Answer Subsumption}{122}{subsection.5.4.2}}
+\newlabel{sec:answer-subsumption-examples}{{5.4.2}{122}{Examples of Answer Subsumption}{subsection.5.4.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Answer Subsumption and Abstract Interpretation}{122}{section*.50}}
+\newlabel{sec:abs-int}{{5.4.2}{122}{Answer Subsumption and Abstract Interpretation}{section*.50}{}}
+\citation{KaKa93}
+\citation{PGDRR04}
+\citation{WGKFL09}
+\citation{WGKFL09}
+\citation{WGKFL09}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Top-level predicate for PT net reachability}}{123}{figure.5.3}}
+\newlabel{fig:ptnetcode}{{5.3}{123}{Top-level predicate for PT net reachability}{figure.5.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Scalability for multi-valued and quantitative logics}{123}{section*.51}}
+\newlabel{sec:mv}{{5.4.2}{123}{Scalability for multi-valued and quantitative logics}{section*.51}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces A Truth Lattice for a Simplified Version of Courteous Argumentation Theory}}{124}{figure.5.4}}
+\newlabel{fig:courteous}{{5.4}{124}{A Truth Lattice for a Simplified Version of Courteous Argumentation Theory}{figure.5.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.3}Term-Sets}{124}{subsection.5.4.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Tabling for Termination}{129}{section.5.5}}
+\newlabel{sec:tabling-termination}{{5.5}{129}{Tabling for Termination}{section.5.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{An Infinite Number of Subgoals}{129}{section*.52}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Term Size Abstraction in XSB}{130}{subsection.5.5.1}}
+\newlabel{sec:size-metric}{{5.5.1}{130}{Term Size Abstraction in XSB}{subsection.5.5.1}{}}
+\newlabel{ex:term-size-abs}{{5.5.1}{130}{Term Size Abstraction in XSB}{example.5.5.1}{}}
+\citation{RigS14}
+\citation{RigS13}
+\citation{RigS14}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Subgoal Abstraction}{131}{subsection.5.5.2}}
+\newlabel{sec:subg-abs}{{5.5.2}{131}{Subgoal Abstraction}{subsection.5.5.2}{}}
+\citation{RigS13}
+\@writefile{toc}{\contentsline {subsubsection}{Declaring Subgoal Abstraction}{132}{section*.54}}
+\citation{GroS13}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.3}XSB's Approach to Bounded Rationality}{133}{subsection.5.5.3}}
+\newlabel{sec:restraint}{{5.5.3}{133}{XSB's Approach to Bounded Rationality}{subsection.5.5.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Radial Restraint Through Answer Abstraction}{133}{section*.55}}
+\@writefile{toc}{\contentsline {subsubsection}{Answer Count{} Restraint}{135}{section*.57}}
+\newlabel{sec:answer-count-restraint}{{5.5.3}{135}{\MAXANS {} Restraint}{section*.57}{}}
+\newlabel{ex:maxans}{{5.5.3}{135}{\MAXANS {} Restraint}{example.5.5.3}{}}
+\citation{SaRa05}
+\citation{Saha06}
+\citation{Swif14}
+\@writefile{toc}{\contentsline {subsubsection}{Justifying or Explaining Restraint}{136}{section*.59}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Incremental Table Maintenance}{136}{section.5.6}}
+\newlabel{sec:incremental_tabling}{{5.6}{136}{Incremental Table Maintenance}{section.5.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.1}Transparent Incremental Tabling}{137}{subsection.5.6.1}}
+\newlabel{sec:incr_examples}{{5.6.1}{137}{Transparent Incremental Tabling}{subsection.5.6.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{View Consistency}{139}{section*.60}}
+\newlabel{sec:view-consistency}{{5.6.1}{139}{View Consistency}{section*.60}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.2}Updating in a Three-Valued Logic}{139}{subsection.5.6.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Declaring Predicates to be Incremental}{141}{section*.61}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.3}Incremental Tabling using Interned Tries}{141}{subsection.5.6.3}}
+\newlabel{sec:incr-update-tries}{{5.6.3}{141}{Incremental Tabling using Interned Tries}{subsection.5.6.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.4}Abstracting the IDG for Better Performance}{142}{subsection.5.6.4}}
+\newlabel{sec:IDG-abs}{{5.6.4}{142}{Abstracting the IDG for Better Performance}{subsection.5.6.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces A left-linear program and schematic IDGs: Left without IDG abstraction; Right: with IDG abstraction}}{143}{figure.5.5}}
+\newlabel{fig:abstraction}{{5.5}{143}{A left-linear program and schematic IDGs: Left without IDG abstraction; Right: with IDG abstraction}{figure.5.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.5}Summary and Implementation Status}{144}{subsection.5.6.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.6}Predicates for Incremental Table Maintenance}{144}{subsection.5.6.6}}
+\newlabel{sec:incr-preds1}{{5.6.6}{144}{Predicates for Incremental Table Maintenance}{subsection.5.6.6}{}}
+\@writefile{toc}{\contentsline {paragraph}{A Note on Terminology}{144}{section*.62}}
+\@writefile{toc}{\contentsline {paragraph}{Declarations}{145}{section*.63}}
+\@writefile{toc}{\contentsline {paragraph}{Basic Incremental Maintenance Predicates}{146}{section*.64}}
+\@writefile{toc}{\contentsline {paragraph}{Incremental Maintenance using Interned Tries}{147}{section*.65}}
+\@writefile{toc}{\contentsline {paragraph}{Inspecting the State of the Incremental Dependency Graph}{147}{section*.66}}
+\citation{Tarj72}
+\citation{SteV08}
+\citation{Lloy84}
+\@writefile{toc}{\contentsline {section}{\numberline {5.7}A Weaker Semantics for Tabling}{150}{section.5.7}}
+\@writefile{toc}{\contentsline {paragraph}{Examples}{151}{section*.67}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.8}Compatibility of Tabling Modes and Predicate Attributes}{152}{section.5.8}}
+\newlabel{sec:tabling-compatibility}{{5.8}{152}{Compatibility of Tabling Modes and Predicate Attributes}{section.5.8}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Standard and General Predicates}{155}{chapter.6}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{standard}{{6}{155}{Standard and General Predicates}{chapter.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Input and Output}{155}{section.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}I/O Streams in XSB}{155}{subsection.6.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{I/O Stream Implementation}{157}{section*.68}}
+\newlabel{sec:IO-streams}{{6.1.1}{157}{I/O Stream Implementation}{section*.68}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.2}Character Sets in XSB}{158}{subsection.6.1.2}}
+\newlabel{sec-charsets}{{6.1.2}{158}{Character Sets in XSB}{subsection.6.1.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.3}Predicates for ISO Streams}{158}{subsection.6.1.3}}
+\@writefile{toc}{\contentsline {subsubsection}{Other Predicates using ISO Streams}{164}{section*.69}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.4}DEC-IO Style File Handling}{165}{subsection.6.1.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.5}Character I/O}{168}{subsection.6.1.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.6}Term I/O}{174}{subsection.6.1.6}}
+\@writefile{toc}{\contentsline {subsubsection}{Term Writing to Designated I/O Streams}{183}{section*.70}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.7}Special I/O}{184}{subsection.6.1.7}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Interactions with the Operating System}{190}{section.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}The {\tt  path\_sysop/2} interface}{194}{subsection.6.2.1}}
+\citation{ISO-Prolog}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Evaluating Arithmetic Expressions through {\tt  is/2}}{196}{section.6.3}}
+\newlabel{Arithmetic}{{6.3}{196}{Evaluating Arithmetic Expressions through {\tt is/2}}{section.6.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}Evaluable Functors for Arithmetic Expressions}{197}{subsection.6.3.1}}
+\newlabel{sec:arith-eval}{{6.3.1}{197}{Evaluable Functors for Arithmetic Expressions}{subsection.6.3.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Mathematical Functions from {\tt  math.h}}{200}{section*.71}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Convenience}{200}{section.6.4}}
+\newlabel{Convenience}{{6.4}{200}{Convenience}{section.6.4}{}}
+\citation{SaSw98}
+\citation{SaSW96}
+\@writefile{toc}{\contentsline {section}{\numberline {6.5}Negation and Control}{201}{section.6.5}}
+\newlabel{sec:control}{{6.5}{201}{Negation and Control}{section.6.5}{}}
+\newlabel{tnot/1}{{6.5}{202}{Negation and Control}{section.6.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.6}Unification and Comparison of Terms}{205}{section.6.6}}
+\newlabel{Comparison}{{6.6}{205}{Unification and Comparison of Terms}{section.6.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.6.1}Sorting of Terms}{211}{subsection.6.6.1}}
+\newlabel{sort/3}{{6.6.1}{212}{Sorting of Terms}{subsection.6.6.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.7}Meta-Logical}{214}{section.6.7}}
+\newlabel{MetaLogical}{{6.7}{214}{Meta-Logical}{section.6.7}{}}
+\newlabel{interntermhash}{{6.7}{230}{Meta-Logical}{Item.53}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.8}Cyclic Terms}{231}{section.6.8}}
+\newlabel{sec:cyclic}{{6.8}{231}{Cyclic Terms}{section.6.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.8.1}Unification with and without Occurs Check}{231}{subsection.6.8.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.8.2}Cyclic Terms}{232}{subsection.6.8.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.9}Manipulation of Atomic Terms}{233}{section.6.9}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.10}All Solutions and Aggregate Predicates}{246}{section.6.10}}
+\newlabel{sec:setofs}{{6.10}{246}{All Solutions and Aggregate Predicates}{section.6.10}{}}
+\newlabel{tfindall/3}{{6.10}{249}{All Solutions and Aggregate Predicates}{section.6.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.11}Meta-Predicates}{251}{section.6.11}}
+\newlabel{meta_predicates}{{6.11}{251}{Meta-Predicates}{section.6.11}{}}
+\newlabel{not3}{{6.11}{253}{Meta-Predicates}{Item.58}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.11.1}Timed Calls and Co-routining}{257}{subsection.6.11.1}}
+\newlabel{sec:timed-call}{{6.11.1}{257}{Timed Calls and Co-routining}{subsection.6.11.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Interpreter Indices}{258}{section*.72}}
+\@writefile{toc}{\contentsline {subsubsection}{Timed Call and related predicates}{258}{section*.73}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.12}Information about the System State}{263}{section.6.12}}
+\newlabel{State}{{6.12}{263}{Information about the System State}{section.6.12}{}}
+\newlabel{prolog-flags}{{6.12}{264}{Information about the System State}{section.6.12}{}}
+\newlabel{PredProp}{{6.12}{277}{Tripwire Flags}{Item.70}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.13}Execution State}{286}{section.6.13}}
+\newlabel{environmental}{{6.13}{286}{Execution State}{section.6.13}{}}
+\citation{AitK90}
+\citation{AitK90}
+\citation{SaSw98}
+\newlabel{fig:statistics}{{6.13}{290}{Execution State}{section.6.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Statistics output from a large and heavily tabled program}}{290}{figure.6.1}}
+\citation{SaSw98}
+\citation{RRSSW98}
+\citation{TST99}
+\citation{CuSW99a}
+\@writefile{toc}{\contentsline {section}{\numberline {6.14}Asserting, Retracting, and Other Database Modifications}{295}{section.6.14}}
+\newlabel{sec:assert}{{6.14}{295}{Asserting, Retracting, and Other Database Modifications}{section.6.14}{}}
+\citation{LiOk87}
+\citation{RRSSW98}
+\newlabel{index_dynamic}{{6.14}{301}{Asserting, Retracting, and Other Database Modifications}{section.6.14}{}}
+\citation{RRSSW98}
+\newlabel{dynamic-declaration}{{6.14}{304}{Asserting, Retracting, and Other Database Modifications}{section.6.14}{}}
+\newlabel{dynamic/1}{{6.14}{304}{Asserting, Retracting, and Other Database Modifications}{section.6.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.14.1}(Fast) Loading of Dynamic Code from Files}{306}{subsection.6.14.1}}
+\newlabel{sec:LoadDyn}{{6.14.1}{306}{(Fast) Loading of Dynamic Code from Files}{subsection.6.14.1}{}}
+\newlabel{load_dyn_gen/2}{{6.14.1}{307}{(Fast) Loading of Dynamic Code from Files}{subsection.6.14.1}{}}
+\newlabel{load_dyn/1}{{6.14.1}{309}{(Fast) Loading of Dynamic Code from Files}{subsection.6.14.1}{}}
+\newlabel{load_dyn/2}{{6.14.1}{309}{(Fast) Loading of Dynamic Code from Files}{subsection.6.14.1}{}}
+\newlabel{load_dyn/3}{{6.14.1}{309}{(Fast) Loading of Dynamic Code from Files}{subsection.6.14.1}{}}
+\newlabel{load_dync/2}{{6.14.1}{310}{(Fast) Loading of Dynamic Code from Files}{subsection.6.14.1}{}}
+\newlabel{load_dync/3}{{6.14.1}{310}{(Fast) Loading of Dynamic Code from Files}{subsection.6.14.1}{}}
+\newlabel{load_dynca/2}{{6.14.1}{310}{(Fast) Loading of Dynamic Code from Files}{subsection.6.14.1}{}}
+\citation{BoKi94}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.14.2}The {\tt  storage} Module: Associative Arrays and Backtrackable Updates}{311}{subsection.6.14.2}}
+\newlabel{storage module}{{6.14.2}{311}{The {\tt storage} Module: Associative Arrays and Backtrackable Updates}{subsection.6.14.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Non-backtrackable Storage}{311}{section*.75}}
+\citation{BoKi94}
+\@writefile{toc}{\contentsline {subsubsection}{Backtrackable Updates}{312}{section*.76}}
+\newlabel{backtrackable update}{{6.14.2}{312}{Backtrackable Updates}{section*.76}{}}
+\citation{RRSSW98}
+\citation{TST99}
+\citation{CuSW99b}
+\citation{Swif14}
+\@writefile{toc}{\contentsline {subsubsection}{Reclaiming Space}{313}{section*.77}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.15}Tabling Declarations and Builtins}{313}{section.6.15}}
+\newlabel{sec:TablingPredicates}{{6.15}{313}{Tabling Declarations and Builtins}{section.6.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.15.1}Declaring and Modifying Tabled Predicates}{314}{subsection.6.15.1}}
+\newlabel{sec:TablePred:Decl&Mod}{{6.15.1}{314}{Declaring and Modifying Tabled Predicates}{subsection.6.15.1}{}}
+\newlabel{table-declaration}{{6.15.1}{314}{Declaring and Modifying Tabled Predicates}{subsection.6.15.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Checking Consistency and Support of Tabling Properties}{316}{section*.80}}
+\@writefile{toc}{\contentsline {paragraph}{Executing Multiple {\tt  table} Directives for a Predicate}{317}{section*.81}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.15.2}Predicates for Table Inspection}{318}{subsection.6.15.2}}
+\newlabel{sec:table-inspection}{{6.15.2}{318}{Predicates for Table Inspection}{subsection.6.15.2}{}}
+\newlabel{sec:TablePred:Inspection}{{6.15.2}{318}{Predicates for Table Inspection}{subsection.6.15.2}{}}
+\newlabel{ex:gcft}{{6.15.1}{320}{Predicates for Table Inspection}{example.6.15.1}{}}
+\newlabel{ex:grfc}{{6.15.2}{321}{Predicates for Table Inspection}{example.6.15.2}{}}
+\newlabel{ex:residual-program}{{6.15.3}{321}{Predicates for Table Inspection}{example.6.15.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.15.3}Predicates for Table Inspection: Lower-level}{325}{subsection.6.15.3}}
+\newlabel{sec:table-inspection-low}{{6.15.3}{325}{Predicates for Table Inspection: Lower-level}{subsection.6.15.3}{}}
+\newlabel{ex:get-call}{{6.15.6}{327}{Description of Low-level Inspection Predicates}{example.6.15.6}{}}
+\newlabel{ex:get-calls}{{6.15.7}{328}{Description of Low-level Inspection Predicates}{example.6.15.7}{}}
+\newlabel{ex:get-returns}{{6.15.8}{329}{Description of Low-level Inspection Predicates}{example.6.15.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.15.4}Abolishing Tables and Table Components}{330}{subsection.6.15.4}}
+\newlabel{sec:TablePred:Deleting}{{6.15.4}{330}{Abolishing Tables and Table Components}{subsection.6.15.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{Abolishing a Table that is being Computed}{330}{section*.84}}
+\@writefile{toc}{\contentsline {paragraph}{View Consistency and Table Garbage Collection}{331}{section*.85}}
+\@writefile{toc}{\contentsline {paragraph}{Maintenance of the Residual Program}{331}{section*.86}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Example for Deleting Tables (Call-Variance)}}{332}{figure.6.2}}
+\newlabel{ex:deletion}{{6.2}{332}{Example for Deleting Tables (Call-Variance)}{figure.6.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Abolishing Incremental Tab;es}{332}{section*.87}}
+\@writefile{toc}{\contentsline {subsubsection}{Table Deletion Predicates}{333}{section*.88}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.15.5}Indexing Subsumptive Tables}{338}{subsection.6.15.5}}
+\newlabel{sec:table-index}{{6.15.5}{338}{Indexing Subsumptive Tables}{subsection.6.15.5}{}}
+\citation{warren-tdbu}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Storing Facts in Tries}{341}{chapter.7}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:tries}{{7}{341}{Storing Facts in Tries}{chapter.7}{}}
+\newlabel{fig:trie}{{7}{342}{Storing Facts in Tries}{chapter.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Terms Stored as a Trie}}{342}{figure.7.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Examples of Using Tries}{342}{section.7.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Space Management for Tries}{344}{section.7.2}}
+\newlabel{sec:trie-gc}{{7.2}{344}{Space Management for Tries}{section.7.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}Predicates for Tries}{345}{section.7.3}}
+\newlabel{ex:bulk-delete}{{7.3.2}{350}{Predicates for Tries}{example.7.3.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.4}Low-level Trie Manipulation Utilities}{351}{section.7.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.1}A Low-Level API for Interned Tries}{352}{subsection.7.4.1}}
+\newlabel{sec:intern-basic}{{7.4.1}{352}{A Low-Level API for Interned Tries}{subsection.7.4.1}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Hooks}{355}{chapter.8}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{hooks}{{8}{355}{Hooks}{chapter.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.1}Adding and Removing Hooks}{355}{section.8.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.2}Hooks Supported by XSB}{356}{section.8.2}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {9}Debugging and Profiling}{359}{chapter.9}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{debugging}{{9}{359}{Debugging and Profiling}{chapter.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9.1}Prolog-style Tracing and Debugging}{359}{section.9.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1.1}Control of Prolog-Style Tracing and Debugging}{364}{subsection.9.1.1}}
+\citation{GuRR01}
+\citation{PGDRR04}
+\citation{Swif14b}
+\citation{SwiW12}
+\@writefile{toc}{\contentsline {section}{\numberline {9.2}Trace-based Execution Analysis through Forest Logging}{365}{section.9.2}}
+\newlabel{sec:forest-trace}{{9.2}{365}{Trace-based Execution Analysis through Forest Logging}{section.9.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2.1}Tracing a tabled evaluation through forest logging}{366}{subsection.9.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.1}{\ignorespaces A program $P_{Rrec}$ and SLG forest for (local) evaluation of {\tt  ?- reach(1,Y)}}}{367}{figure.9.1}}
+\newlabel{fig:local}{{9.1}{367}{A program $P_{Rrec}$ and SLG forest for (local) evaluation of {\tt ?- reach(1,Y)}}{figure.9.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9.1}{\ignorespaces Log file for computation in Figure\nobreakspace  {}\ref  {fig:local}}}{371}{table.9.1}}
+\newlabel{tab:fview}{{9.1}{371}{Log file for computation in Figure~\ref {fig:local}}{table.9.1}{}}
+\citation{YaKZ05}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2.2}Analyzing the log; seeing the forest through the trees}{372}{subsection.9.2.2}}
+\newlabel{sec:forest-log-anal}{{9.2.2}{372}{Analyzing the log; seeing the forest through the trees}{subsection.9.2.2}{}}
+\newlabel{ex:scc-anal}{{9.2.3}{372}{Analyzing the log; seeing the forest through the trees}{example.9.2.3}{}}
+\citation{SaSw98}
+\@writefile{toc}{\contentsline {subsubsection}{Using abstraction in the analysis}{375}{section*.90}}
+\newlabel{ex:moded-scc-anal}{{9.2.4}{375}{Using abstraction in the analysis}{example.9.2.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Analyzing Negation}{376}{section*.91}}
+\newlabel{ex:neg}{{9.2.5}{376}{Analyzing Negation}{example.9.2.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.2}{\ignorespaces A Normal Program and SLG Forest for Evaluation of the Query {\em  p(c)}}}{378}{figure.9.2}}
+\newlabel{fig:neg}{{9.2}{378}{A Normal Program and SLG Forest for Evaluation of the Query {\em p(c)}}{figure.9.2}{}}
+\citation{Swif14b}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2.3}Discussion}{379}{subsection.9.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2.4}Predicates for Forest Logging}{379}{subsection.9.2.4}}
+\citation{LiaK13}
+\citation{LiaK13a}
+\@writefile{toc}{\contentsline {section}{\numberline {9.3}Inspecting a Tabled Derivation}{380}{section.9.3}}
+\newlabel{sec:suspend-analyze}{{9.3}{380}{Inspecting a Tabled Derivation}{section.9.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3.1}Inspecting Tables with {\tt  table\_dump}}{381}{subsection.9.3.1}}
+\newlabel{sec:table-dump}{{9.3.1}{381}{Inspecting Tables with {\tt table\_dump}}{subsection.9.3.1}{}}
+\citation{SaSw98}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3.2}Inspection Predicates for Dependency Graphs}{384}{subsection.9.3.2}}
+\newlabel{sec:dep-graph}{{9.3.2}{384}{Inspection Predicates for Dependency Graphs}{subsection.9.3.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{A Prolog Format for Dependency Graphs}{385}{section*.92}}
+\newlabel{sec:adjacency-lists}{{9.3.2}{385}{A Prolog Format for Dependency Graphs}{section*.92}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Predicates to Access the Subgoal Dependency Graph}{386}{section*.93}}
+\newlabel{sec:sdg-preds}{{9.3.2}{386}{Predicates to Access the Subgoal Dependency Graph}{section*.93}{}}
+\newlabel{ex:get-sdg}{{9.3.1}{386}{Predicates to Access the Subgoal Dependency Graph}{example.9.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.3}{\ignorespaces {\em  SDG for {\tt  ?- q(3,3)} when the derivation is suspended by {\tt  break/0}}c}}{387}{figure.9.3}}
+\newlabel{fig:sdg-break-1}{{9.3}{387}{{\em SDG for {\tt ?- q(3,3)} when the derivation is suspended by {\tt break/0}}c}{figure.9.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Predicates to Access the Incremental Dependency Graph}{388}{section*.94}}
+\newlabel{sec:idg-preds}{{9.3.2}{388}{Predicates to Access the Incremental Dependency Graph}{section*.94}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Predicates to Access the Residual Dependency Graph}{389}{section*.95}}
+\newlabel{sec:rdg-preds}{{9.3.2}{389}{Predicates to Access the Residual Dependency Graph}{section*.95}{}}
+\newlabel{ex:rdg}{{9.3.2}{389}{Predicates to Access the Residual Dependency Graph}{example.9.3.2}{}}
+\citation{Tarj72}
+\citation{GroS13}
+\citation{Hara69}
+\@writefile{toc}{\contentsline {subsubsection}{Filtering, Manipulating, and Summarizing Dependency Graphs}{393}{section*.96}}
+\newlabel{sec:dependency-graph-manipulation}{{9.3.2}{393}{Filtering, Manipulating, and Summarizing Dependency Graphs}{section*.96}{}}
+\newlabel{ex:morph-sdg}{{9.3.4}{395}{Filtering, Manipulating, and Summarizing Dependency Graphs}{example.9.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3.3}Summary: Inspection Predicates}{397}{subsection.9.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3.4}Setting Tripwires on Tabled Derivations}{398}{subsection.9.3.4}}
+\newlabel{sec:tripwire}{{9.3.4}{398}{Setting Tripwires on Tabled Derivations}{subsection.9.3.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Tripwires Based on Resource Limits}{399}{section*.97}}
+\@writefile{toc}{\contentsline {paragraph}{Guidelines for Analysis of Resource-based Tripwires}{399}{section*.98}}
+\citation{RigS14}
+\@writefile{toc}{\contentsline {subsubsection}{Tripwires Based on Properties of a Tabled Derivation}{401}{section*.99}}
+\citation{GroS13}
+\@writefile{toc}{\contentsline {subsubsection}{The Suspend Action for Flag-Based Tripwires}{404}{section*.100}}
+\@writefile{toc}{\contentsline {subsubsection}{Summary of Flag-Based Tripwires}{405}{section*.101}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {10}Definite Clause Grammars}{408}{chapter.10}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{DCGs}{{10}{408}{Definite Clause Grammars}{chapter.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.1}General Description}{408}{section.10.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.2}Translation of Definite Clause Grammar rules}{410}{section.10.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {10.2.1}Definite Clause Grammars and Tabling}{412}{subsection.10.2.1}}
+\newlabel{sec:dcg_tabling}{{10.2.1}{412}{Definite Clause Grammars and Tabling}{subsection.10.2.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.3}Definite Clause Grammar predicates}{413}{section.10.3}}
+\newlabel{DCG_builtins}{{10.3}{413}{Definite Clause Grammar predicates}{section.10.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10.4}Two differences with other Prologs}{417}{section.10.4}}
+\newlabel{sec-dcg-differences}{{10.4}{417}{Two differences with other Prologs}{section.10.4}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {11}Exception Handling}{419}{chapter.11}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:exception}{{11}{419}{Exception Handling}{chapter.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {11.1}The Mechanics of Exception Handling}{419}{section.11.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.1.1}Exception Handling in Non-Tabled Evaluations}{419}{subsection.11.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11.1}{\ignorespaces The {\tt  userdiv/1} program}}{421}{figure.11.1}}
+\newlabel{fig:userdiv}{{11.1}{421}{The {\tt userdiv/1} program}{figure.11.1}{}}
+\citation{Cale01}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.1.2}Exception Handling in Tabled Evaluation}{424}{subsection.11.1.2}}
+\newlabel{sec:exceptions-w-tables}{{11.1.2}{424}{Exception Handling in Tabled Evaluation}{subsection.11.1.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11.2}{\ignorespaces A program to illustrate exception handling in tabled evaluations}}{425}{figure.11.2}}
+\newlabel{fig:tab_except}{{11.2}{425}{A program to illustrate exception handling in tabled evaluations}{figure.11.2}{}}
+\citation{ISO-Prolog}
+\@writefile{toc}{\contentsline {subsubsection}{Obtaining Information about a Tabled Computation after an Exception is Thrown}{426}{section*.102}}
+\@writefile{toc}{\contentsline {section}{\numberline {11.2}XSB's Standard Format for Errors}{426}{section.11.2}}
+\newlabel{sec:iso-errors}{{11.2}{426}{XSB's Standard Format for Errors}{section.11.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.2.1}Error Tags}{426}{subsection.11.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.2.2}XSB-Specific Information in Error Terms}{428}{subsection.11.2.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {11.3}Predicates to Throw and Handle Errors}{429}{section.11.3}}
+\newlabel{sec:errorpredicates}{{11.3}{429}{Predicates to Throw and Handle Errors}{section.11.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.3.1}Predicates to Throw Errors}{429}{subsection.11.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.3.2}Predicates used in Handling Errors}{431}{subsection.11.3.2}}
+\newlabel{sec:catch}{{11.3.2}{431}{Predicates used in Handling Errors}{subsection.11.3.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {11.4}Convenience Predicates}{432}{section.11.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {11.5}Backtraces}{433}{section.11.5}}
+\newlabel{sec:backtrace}{{11.5}{433}{Backtraces}{section.11.5}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {12}Foreign Language Interface}{435}{chapter.12}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{foreign}{{12}{435}{Foreign Language Interface}{chapter.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {12.1}Foreign Language Modules}{436}{section.12.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {12.2}Lower-Level Foreign Language Interface}{437}{section.12.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.2.1}Context Parameters}{441}{subsection.12.2.1}}
+\newlabel{sec:context-parameter}{{12.2.1}{441}{Context Parameters}{subsection.12.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.2.2}Exchanging Basic Data Types}{442}{subsection.12.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.2.3}Exchanging Complex Data Types}{443}{subsection.12.2.3}}
+\newlabel{c2p_p2p_p2c}{{12.2.3}{443}{Exchanging Complex Data Types}{subsection.12.2.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {12.3}Foreign Modules That Call XSB Predicates}{454}{section.12.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {12.4}Foreign Modules That Link Dynamically with Other Libraries}{455}{section.12.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {12.5}Higher-Level Foreign Language Interface}{457}{section.12.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.5.1}Declaration of high level foreign predicates}{457}{subsection.12.5.1}}
+\newlabel{table:hltypes}{{12.5.1}{459}{Declaration of high level foreign predicates}{subsection.12.5.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {12.1}{\ignorespaces Allowed combinations of types and modes, and their meanings}}{459}{table.12.1}}
+\newlabel{tbl-types-p}{{12.1}{459}{Allowed combinations of types and modes, and their meanings}{table.12.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {12.6}Compiling Foreign Modules on Windows and under Cygwin}{460}{section.12.6}}
+\newlabel{sec:foreign-windows}{{12.6}{460}{Compiling Foreign Modules on Windows and under Cygwin}{section.12.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {12.7}Functions for Use in Foreign Code}{462}{section.12.7}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {13}Embedding XSB in a Process}{466}{chapter.13}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ccallingxsb}{{13}{466}{Embedding XSB in a Process}{chapter.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {13.1}Calling XSB from C}{466}{section.13.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {13.2}Examples of Calling XSB}{468}{section.13.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.2.1}The XSB API for the Sequential Engine Only}{468}{subsection.13.2.1}}
+\newlabel{sec:CXSBSeq}{{13.2.1}{468}{The XSB API for the Sequential Engine Only}{subsection.13.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13.1}{\ignorespaces Calling the Sequential Engine Using the {\tt  VarString} Interface}}{469}{figure.13.1}}
+\newlabel{fig:varstringex}{{13.1}{469}{Calling the Sequential Engine Using the {\tt VarString} Interface}{figure.13.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{An Example using Fixed Strings}{471}{section*.103}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13.2}{\ignorespaces Calling XSB using the Fixed String Interface}}{472}{figure.13.2}}
+\newlabel{fig:fixedstringex}{{13.2}{472}{Calling XSB using the Fixed String Interface}{figure.13.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {13.3}A C API for XSB}{473}{section.13.3}}
+\newlabel{sec:CAPI}{{13.3}{473}{A C API for XSB}{section.13.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.3.1}Initializing and Closing XSB}{473}{subsection.13.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.3.2}Passing Commands to XSB}{474}{subsection.13.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.3.3}Querying XSB}{476}{subsection.13.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.3.4}Obtaining Information about Errors}{481}{subsection.13.3.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {13.4}The Variable-length String Data Type}{482}{section.13.4}}
+\newlabel{sec-varstring}{{13.4}{482}{The Variable-length String Data Type}{section.13.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {13.5}Passing Data into an XSB Module}{484}{section.13.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {13.6}Creating an XSB Module that Can be Called from C}{485}{section.13.6}}
+\@writefile{toc}{\contentsline {paragraph}{Unix instructions:}{486}{section*.104}}
+\@writefile{toc}{\contentsline {paragraph}{Windows instructions:}{486}{section*.105}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {14}Library Utilities}{488}{chapter.14}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{library_utilities}{{14}{488}{Library Utilities}{chapter.14}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.1}List (and Tree) Processing}{488}{section.14.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.1.1}Library Predicates for Trees}{491}{subsection.14.1.1}}
+\citation{hprolog}
+\citation{SWI-manual}
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.1.2}Processing Comma Lists}{492}{subsection.14.1.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.2}Attributed Variables}{492}{section.14.2}}
+\newlabel{sec:attributed-variables}{{14.2}{492}{Attributed Variables}{section.14.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.2.1}Low-level Interface}{492}{subsection.14.2.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.3}{\tt  constraintLib}: a library for CLP}{496}{section.14.3}}
+\newlabel{constraintLib}{{14.3}{496}{{\tt constraintLib}: a library for CLP}{section.14.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.4}Formatted Output}{499}{section.14.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.5}Low-level Atom Manipulation Predicates}{501}{section.14.5}}
+\newlabel{sec-strings}{{14.5}{501}{Low-level Atom Manipulation Predicates}{section.14.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.6}Script Writing Utilities}{504}{section.14.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.6.1}Communication with Subprocesses}{505}{subsection.14.6.1}}
+\newlabel{sec:subprocesses}{{14.6.1}{505}{Communication with Subprocesses}{subsection.14.6.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{{\em  Important notes about spawned processes\/}:}{508}{section*.106}}
+\@writefile{toc}{\contentsline {paragraph}{\em  Notes:}{511}{section*.107}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.7}Socket I/O}{514}{section.14.7}}
+\@writefile{toc}{\contentsline {paragraph}{General socket calls.}{515}{section*.108}}
+\@writefile{toc}{\contentsline {paragraph}{Buffered, message-based communication.}{516}{section*.109}}
+\@writefile{toc}{\contentsline {paragraph}{Stream-oriented, character-at-a-time interface.}{517}{section*.110}}
+\@writefile{toc}{\contentsline {paragraph}{Socket-probing.}{517}{section*.111}}
+\@writefile{toc}{\contentsline {paragraph}{Error codes.}{518}{section*.112}}
+\@writefile{toc}{\contentsline {paragraph}{Timeouts.}{518}{section*.113}}
+\@writefile{toc}{\contentsline {paragraph}{Buffered, stream-oriented communication.}{520}{section*.114}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.8}Arrays}{521}{section.14.8}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.9}The Profiling Library}{522}{section.14.9}}
+\newlabel{sec:profile}{{14.9}{522}{The Profiling Library}{section.14.9}{}}
+\citation{WicH82}
+\citation{McLe85}
+\@writefile{toc}{\contentsline {section}{\numberline {14.10}Gensym}{525}{section.14.10}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.11}Random Number Generation and Sampling Predicates}{525}{section.14.11}}
+\citation{BoxM58}
+\@writefile{toc}{\contentsline {subsection}{\numberline {14.11.1}Sampling Predicates}{527}{subsection.14.11.1}}
+\newlabel{sec:sample-aggrs}{{14.11.1}{527}{Sampling Predicates}{subsection.14.11.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.12}Loading .CSV and Other Delimiter-Separated Files}{528}{section.14.12}}
+\newlabel{sec:procfiles}{{14.12}{528}{Loading .CSV and Other Delimiter-Separated Files}{section.14.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.13}Scanning in Prolog}{533}{section.14.13}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.14}XSB Lint}{535}{section.14.14}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.15}Set Processing and Meta-programming with prolog\_db}{537}{section.14.15}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.16}Range Trees}{540}{section.14.16}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.17}Set and Bag Aggregation}{543}{section.14.17}}
+\newlabel{sec:set-aggregation}{{14.17}{543}{Set and Bag Aggregation}{section.14.17}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.18}Ordered Sets}{545}{section.14.18}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.19}Further Unicode Support: {\tt  xp\_unicode}}{547}{section.14.19}}
+\@writefile{toc}{\contentsline {section}{\numberline {14.20}Miscellaneous Predicates}{547}{section.14.20}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}GPP - Generic Preprocessor}{549}{appendix.A}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{gpp-man}{{A}{549}{GPP - Generic Preprocessor}{appendix.A}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}Description}{549}{section.A.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}Syntax}{550}{section.A.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.3}Options}{550}{section.A.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.4}Syntax Specification}{554}{section.A.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.5}Evaluation Rules}{558}{section.A.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.6}Meta-macros}{559}{section.A.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.7}Examples}{564}{section.A.7}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.8}Advanced Examples}{569}{section.A.8}}
+\bibstyle{abbrv}
+\bibdata{longstring,manual}
+\@writefile{toc}{\contentsline {section}{\numberline {A.9}Author}{571}{section.A.9}}
+\bibcite{AitK90}{1}
+\bibcite{ADP94}{2}
+\bibcite{ADP95}{3}
+\bibcite{BMSU86}{4}
+\bibcite{BeRa91}{5}
+\bibcite{BoKi94}{6}
+\bibcite{Boul97}{7}
+\bibcite{BoxM58}{8}
+\bibcite{Cale01}{9}
+\bibcite{CaSC01}{10}
+\bibcite{CaSW02}{11}
+\bibcite{CaSW02a}{12}
+\bibcite{ChKW93}{13}
+\bibcite{ChSW95}{14}
+\bibcite{ChWa96}{15}
+\bibcite{CoDS96}{16}
+\bibcite{CuSW99a}{17}
+\bibcite{CuSW99b}{18}
+\bibcite{CuiW00}{19}
+\bibcite{DRSS96}{20}
+\bibcite{DRW96}{21}
+\bibcite{hprolog}{22}
+\bibcite{CAT@PLILP-98}{23}
+\bibcite{CATmem@ISMM-98}{24}
+\bibcite{DesR98}{25}
+\bibcite{Diet87}{26}
+\bibcite{FrSW97}{27}
+\bibcite{JFLP-Scheduling}{28}
+\bibcite{FSW98}{29}
+\bibcite{Fruh}{30}
+\bibcite{GSTPD00}{31}
+\bibcite{GroS13}{32}
+\bibcite{GuRR01}{33}
+\bibcite{Hara69}{34}
+\bibcite{ISO-Prolog}{35}
+\bibcite{ISO-Revision}{36}
+\bibcite{TST99}{37}
+\bibcite{KaKa93}{38}
+\bibcite{KeTo88}{39}
+\bibcite{KLW95}{40}
+\bibcite{KiSu92}{41}
+\bibcite{syntactica}{42}
+\bibcite{semantica}{43}
+\bibcite{LePe98}{44}
+\bibcite{LiaK13a}{45}
+\bibcite{LiaK13}{46}
+\bibcite{LiOk87}{47}
+\bibcite{LiRS98}{48}
+\bibcite{Lloy84}{49}
+\bibcite{MarS08b}{50}
+\bibcite{MarS10}{51}
+\bibcite{McLe85}{52}
+\bibcite{NiSi97}{53}
+\bibcite{PGDRR04}{54}
+\bibcite{Przy89d}{55}
+\bibcite{RRRSSW97}{56}
+\bibcite{RRSSW98}{57}
+\bibcite{RigS11a}{58}
+\bibcite{RigS13}{59}
+\bibcite{RigS14}{60}
+\bibcite{SaSw98}{61}
+\bibcite{SaSw94}{62}
+\bibcite{SaSW96}{63}
+\bibcite{SaSW99}{64}
+\bibcite{SaWa95}{65}
+\bibcite{Saha06}{66}
+\bibcite{SaRa05}{67}
+\bibcite{Seki89}{68}
+\bibcite{SteV08}{69}
+\bibcite{Swif99b}{70}
+\bibcite{Swif99a}{71}
+\bibcite{Swif04}{72}
+\bibcite{Swif09a}{73}
+\bibcite{Swif14}{74}
+\bibcite{Swif14b}{75}
+\bibcite{SwiW10a}{76}
+\bibcite{SwiW12}{77}
+\bibcite{TaSa86}{78}
+\bibcite{Tarj72}{79}
+\bibcite{VGRS91}{80}
+\bibcite{Viei89}{81}
+\bibcite{Walk93}{82}
+\bibcite{WGKFL09}{83}
+\bibcite{DHWa83}{84}
+\bibcite{ciclops-2013-interning}{85}
+\bibcite{warren-tdbu}{86}
+\bibcite{WicH82}{87}
+\bibcite{SWI-manual}{88}
+\bibcite{YaKZ05}{89}

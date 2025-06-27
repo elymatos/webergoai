@@ -1,0 +1,8 @@
+#ifndef FLORA_NONTABLED_DATA_MODULE
+TABLING_CONNECTIVE(table(as(','(/(FLORA_THIS_WORKSPACE(mvd),4),','(/(FLORA_THIS_WORKSPACE(imvd),4),','(/(FLORA_THIS_WORKSPACE(mvddef),3),','(/(FLORA_THIS_WORKSPACE(imvddef),3),','(/(FLORA_THIS_WORKSPACE(meth),3),','(/(FLORA_THIS_WORKSPACE(imeth),3),/(FLORA_THIS_WORKSPACE(exists),2))))))),MOLECULE_TABLING_TYPE))).
+#endif
+TABLING_CONNECTIVE(table(as(','(/(FLORA_THIS_WORKSPACE(mvdsig),4),','(/(FLORA_THIS_WORKSPACE(mvdcondef),5),','(/(FLORA_THIS_WORKSPACE(mvdsigdef),3),','(/(FLORA_THIS_WORKSPACE(imvdsig),4),','(/(FLORA_THIS_WORKSPACE(imvdcondef),5),','(/(FLORA_THIS_WORKSPACE(imvdsigdef),3),','(/(FLORA_THIS_WORKSPACE(boolsig),3),','(/(FLORA_THIS_WORKSPACE(iboolsig),3),','(/(FLORA_THIS_WORKSPACE(transig),3),/(FLORA_THIS_WORKSPACE(itransig),3)))))))))),MOLECULE_TABLING_TYPE))).
+#ifndef FLORA_NONTABLED_DATA_MODULE
+TABLING_CONNECTIVE(table(as(','(/(FLORA_THIS_WORKSPACE(neg^mvd),4),','(/(FLORA_THIS_WORKSPACE(neg^imvd),4),','(/(FLORA_THIS_WORKSPACE(neg^mvddef),3),','(/(FLORA_THIS_WORKSPACE(neg^imvddef),3),','(/(FLORA_THIS_WORKSPACE(neg^meth),3),','(/(FLORA_THIS_WORKSPACE(neg^imeth),3),/(FLORA_THIS_WORKSPACE(neg^exists),2))))))),MOLECULE_TABLING_TYPE))).
+#endif
+TABLING_CONNECTIVE(table(as(','(/(FLORA_THIS_WORKSPACE(neg^mvdsig),4),','(/(FLORA_THIS_WORKSPACE(neg^mvdsigdef),3),','(/(FLORA_THIS_WORKSPACE(neg^imvdsig),4),','(/(FLORA_THIS_WORKSPACE(neg^imvdsigdef),3),','(/(FLORA_THIS_WORKSPACE(neg^boolsig),3),/(FLORA_THIS_WORKSPACE(neg^iboolsig),3)))))),MOLECULE_TABLING_TYPE))).

@@ -1,0 +1,200 @@
+:-( FLORA_THIS_WORKSPACE(static^sub)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(sub)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^isa)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(isa)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^imvd)(_h1773,_h1774,_h1775,_h1776),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(imvd)(_h1773,_h1774,_h1775,_h1776)) ).
+:-( FLORA_THIS_WORKSPACE(static^imvddef)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(imvddef)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^mvd)(_h1773,_h1774,_h1775,_h1776),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(mvd)(_h1773,_h1774,_h1775,_h1776)) ).
+:-( FLORA_THIS_WORKSPACE(static^mvddef)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(mvddef)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^meth)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(meth)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^imeth)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(imeth)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^boolsig)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(boolsig)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^iboolsig)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(iboolsig)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^transig)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(transig)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^itransig)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(itransig)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^tran)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tran)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^mvdsig)(_h1773,_h1774,_h1775,_h1776),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(mvdsig)(_h1773,_h1774,_h1775,_h1776)) ).
+:-( FLORA_THIS_WORKSPACE(static^mvdcondef)(_h1773,_h1774,_h1775,_h1776,_h1777),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(mvdcondef)(_h1773,_h1774,_h1775,_h1776,_h1777)) ).
+:-( FLORA_THIS_WORKSPACE(static^mvdsigdef)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(mvdsigdef)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^imvdsig)(_h1773,_h1774,_h1775,_h1776),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(imvdsig)(_h1773,_h1774,_h1775,_h1776)) ).
+:-( FLORA_THIS_WORKSPACE(static^imvdcondef)(_h1773,_h1774,_h1775,_h1776,_h1777),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(imvdcondef)(_h1773,_h1774,_h1775,_h1776,_h1777)) ).
+:-( FLORA_THIS_WORKSPACE(static^imvdsigdef)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(imvdsigdef)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^exists)(_h1773,_h1774),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(exists)(_h1773,_h1774)) ).
+:-( FLORA_THIS_WORKSPACE(static^objeql)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(objeql)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792,_h1793),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792,_h1793)) ).
+:-( FLORA_THIS_WORKSPACE(static^nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792,_h1793,_h1794),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(nontblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792,_h1793,_h1794)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792,_h1793),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792,_h1793)) ).
+:-( FLORA_THIS_WORKSPACE(static^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792,_h1793,_h1794),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792,_h1793,_h1794)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^sub)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^sub)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^isa)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^isa)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^imvd)(_h1773,_h1774,_h1775,_h1776),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^imvd)(_h1773,_h1774,_h1775,_h1776)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^imvddef)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^imvddef)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^mvd)(_h1773,_h1774,_h1775,_h1776),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^mvd)(_h1773,_h1774,_h1775,_h1776)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^mvddef)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^mvddef)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^meth)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^meth)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^imeth)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^imeth)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^boolsig)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^boolsig)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^iboolsig)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^iboolsig)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^mvdsig)(_h1773,_h1774,_h1775,_h1776),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^mvdsig)(_h1773,_h1774,_h1775,_h1776)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^mvdsigdef)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^mvdsigdef)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^imvdsig)(_h1773,_h1774,_h1775,_h1776),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^imvdsig)(_h1773,_h1774,_h1775,_h1776)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^imvdsigdef)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^imvdsigdef)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^exists)(_h1773,_h1774),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^exists)(_h1773,_h1774)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^objeql)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^objeql)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792,_h1793),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792,_h1793)) ).
+:-( FLORA_THIS_WORKSPACE(static^neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792,_h1793,_h1794),
+    flora_db_find_base(FLORA_THIS_FDB_STORAGE,FLORA_THIS_WORKSPACE(neg^tblflapply)(_h1773,_h1774,_h1775,_h1776,_h1777,_h1778,_h1779,_h1780,_h1781,_h1782,_h1783,_h1784,_h1785,_h1786,_h1787,_h1788,_h1789,_h1790,_h1791,_h1792,_h1793,_h1794)) ).

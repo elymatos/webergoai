@@ -2,9 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/volumes/ergoai/ErgoEngine" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/volumes/ergoai/Studio_fidji" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/volumes/ergoai/ergoai-docker" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/volumes/ergoai/xsb-code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/full" vcs="Git" />
   </component>
 </project>

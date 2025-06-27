@@ -1,0 +1,163 @@
+\BOOKMARK [0][-]{chapter.1}{XSB-ODBC Interface}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Using the Interface}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.2.1}{Connecting to and Disconnecting from Data Sources}{section.1.2}% 4
+\BOOKMARK [2][-]{subsection.1.2.2}{Accessing Tables in Data Sources Using SQL}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.3}{Cursor Management}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.4}{Accessing Tables in Data Sources through the Relation Level}{section.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.2.5}{Using the Relation Level Interface}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.6}{Handling NULL values}{section.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.2.7}{The View Level Interface}{section.1.2}% 10
+\BOOKMARK [2][-]{subsection.1.2.8}{Insertions and Deletions of Rows through the Relational Level}{section.1.2}% 11
+\BOOKMARK [2][-]{subsection.1.2.9}{Access to Data Dictionaries}{section.1.2}% 12
+\BOOKMARK [2][-]{subsection.1.2.10}{Other Database Operations}{section.1.2}% 13
+\BOOKMARK [2][-]{subsection.1.2.11}{Transaction Management}{section.1.2}% 14
+\BOOKMARK [2][-]{subsection.1.2.12}{Interface Flags}{section.1.2}% 15
+\BOOKMARK [2][-]{subsection.1.2.13}{Datalog}{section.1.2}% 16
+\BOOKMARK [1][-]{section.1.3}{Error messages}{chapter.1}% 17
+\BOOKMARK [1][-]{section.1.4}{Notes on specific ODBC drivers}{chapter.1}% 18
+\BOOKMARK [0][-]{chapter.2}{The New XSB-Database Interface}{}% 19
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.2}{Configuring the Interface}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.3}{Using the Interface}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.3.1}{Connecting to and Disconnecting from Databases}{section.2.3}% 23
+\BOOKMARK [2][-]{subsection.2.3.2}{Querying Databases}{section.2.3}% 24
+\BOOKMARK [1][-]{section.2.4}{Error Handling}{chapter.2}% 25
+\BOOKMARK [1][-]{section.2.5}{Notes on specific drivers}{chapter.2}% 26
+\BOOKMARK [0][-]{chapter.3}{Libraries from Other Prologs}{}% 27
+\BOOKMARK [1][-]{section.3.1}{AVL Trees}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.2}{Unweighted Graphs: ugraphs.P}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.3}{Heaps: heaps.P}{chapter.3}% 30
+\BOOKMARK [0][-]{chapter.4}{Introduction to XSB Packages}{}% 31
+\BOOKMARK [0][-]{chapter.5}{Wildcard Matching}{}% 32
+\BOOKMARK [0][-]{chapter.6}{pcre: Pattern Matching and Substitution Using PCRE}{}% 33
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 34
+\BOOKMARK [1][-]{section.6.2}{Pattern matching}{chapter.6}% 35
+\BOOKMARK [1][-]{section.6.3}{String Substitution}{chapter.6}% 36
+\BOOKMARK [1][-]{section.6.4}{Installation and configuration}{chapter.6}% 37
+\BOOKMARK [2][-]{subsection.6.4.1}{Configuring for Linux, Mac, and other Unices}{section.6.4}% 38
+\BOOKMARK [2][-]{subsection.6.4.2}{Configuring for Windows}{section.6.4}% 39
+\BOOKMARK [0][-]{chapter.7}{POSIX Regular Expression and Wildcard Matching}{}% 40
+\BOOKMARK [1][-]{section.7.1}{regmatch: Regular Expression Matching and Substitution}{chapter.7}% 41
+\BOOKMARK [1][-]{section.7.2}{wildmatch: Wildcard Matching and Globing}{chapter.7}% 42
+\BOOKMARK [0][-]{chapter.8}{curl: The XSB Internet Access Package}{}% 43
+\BOOKMARK [1][-]{section.8.1}{Introduction}{chapter.8}% 44
+\BOOKMARK [1][-]{section.8.2}{Integration with File I/O}{chapter.8}% 45
+\BOOKMARK [2][-]{subsection.8.2.1}{Opening a Web Document}{section.8.2}% 46
+\BOOKMARK [2][-]{subsection.8.2.2}{Closing a Web Document}{section.8.2}% 47
+\BOOKMARK [1][-]{section.8.3}{Low Level Predicates}{chapter.8}% 48
+\BOOKMARK [2][-]{subsection.8.3.1}{Loading Web Documents}{section.8.3}% 49
+\BOOKMARK [2][-]{subsection.8.3.2}{Retrieving Properties of a Web Document}{section.8.3}% 50
+\BOOKMARK [2][-]{subsection.8.3.3}{Encoding URLs}{section.8.3}% 51
+\BOOKMARK [1][-]{section.8.4}{Installation and configuration}{chapter.8}% 52
+\BOOKMARK [0][-]{chapter.9}{Packages sgml and xpath: SGML/XML/HTML and XPath Parsers}{}% 53
+\BOOKMARK [1][-]{section.9.1}{Introduction}{chapter.9}% 54
+\BOOKMARK [1][-]{section.9.2}{Overview of the SGML Parser}{chapter.9}% 55
+\BOOKMARK [1][-]{section.9.3}{Predicate Reference}{chapter.9}% 56
+\BOOKMARK [2][-]{subsection.9.3.1}{Loading Structured Documents}{section.9.3}% 57
+\BOOKMARK [2][-]{subsection.9.3.2}{Handling of White Spaces}{section.9.3}% 58
+\BOOKMARK [2][-]{subsection.9.3.3}{XML documents}{section.9.3}% 59
+\BOOKMARK [2][-]{subsection.9.3.4}{DTD-Handling}{section.9.3}% 60
+\BOOKMARK [2][-]{subsection.9.3.5}{Low-level Parsing Primitives}{section.9.3}% 61
+\BOOKMARK [2][-]{subsection.9.3.6}{External Entities}{section.9.3}% 62
+\BOOKMARK [2][-]{subsection.9.3.7}{Exceptions}{section.9.3}% 63
+\BOOKMARK [2][-]{subsection.9.3.8}{Unsupported features}{section.9.3}% 64
+\BOOKMARK [2][-]{subsection.9.3.9}{Summary of Predicates}{section.9.3}% 65
+\BOOKMARK [1][-]{section.9.4}{XPath support}{chapter.9}% 66
+\BOOKMARK [0][-]{chapter.10}{rdf: The XSB RDF Parser}{}% 67
+\BOOKMARK [1][-]{section.10.1}{Introduction}{chapter.10}% 68
+\BOOKMARK [1][-]{section.10.2}{High-level API}{chapter.10}% 69
+\BOOKMARK [2][-]{subsection.10.2.1}{RDF Object representation}{section.10.2}% 70
+\BOOKMARK [2][-]{subsection.10.2.2}{Name spaces}{section.10.2}% 71
+\BOOKMARK [2][-]{subsection.10.2.3}{Low-level access}{section.10.2}% 72
+\BOOKMARK [1][-]{section.10.3}{Testing the RDF translator}{chapter.10}% 73
+\BOOKMARK [0][-]{chapter.11}{Constraint Packages}{}% 74
+\BOOKMARK [1][-]{section.11.1}{clpr: The CLP\(R\) package}{chapter.11}% 75
+\BOOKMARK [2][-]{subsection.11.1.1}{The CLP\(R\) API}{section.11.1}% 76
+\BOOKMARK [1][-]{section.11.2}{The bounds Package}{chapter.11}% 77
+\BOOKMARK [2][-]{subsection.11.2.1}{The bounds API}{section.11.2}% 78
+\BOOKMARK [0][-]{chapter.12}{Constraint Handling Rules}{}% 79
+\BOOKMARK [1][-]{section.12.1}{Introduction}{chapter.12}% 80
+\BOOKMARK [1][-]{section.12.2}{Syntax and Semantics}{chapter.12}% 81
+\BOOKMARK [2][-]{subsection.12.2.1}{Syntax}{section.12.2}% 82
+\BOOKMARK [2][-]{subsection.12.2.2}{Semantics}{section.12.2}% 83
+\BOOKMARK [1][-]{section.12.3}{CHR in XSB Programs}{chapter.12}% 84
+\BOOKMARK [2][-]{subsection.12.3.1}{Embedding in XSB Programs}{section.12.3}% 85
+\BOOKMARK [2][-]{subsection.12.3.2}{Compilation}{section.12.3}% 86
+\BOOKMARK [1][-]{section.12.4}{Useful Predicates}{chapter.12}% 87
+\BOOKMARK [1][-]{section.12.5}{Examples}{chapter.12}% 88
+\BOOKMARK [1][-]{section.12.6}{CHR and Tabling}{chapter.12}% 89
+\BOOKMARK [2][-]{subsection.12.6.1}{General Issues and Principles}{section.12.6}% 90
+\BOOKMARK [2][-]{subsection.12.6.2}{Call Abstraction}{section.12.6}% 91
+\BOOKMARK [2][-]{subsection.12.6.3}{Answer Projection}{section.12.6}% 92
+\BOOKMARK [2][-]{subsection.12.6.4}{Answer Combination}{section.12.6}% 93
+\BOOKMARK [2][-]{subsection.12.6.5}{Overview of Tabling-related Predicates}{section.12.6}% 94
+\BOOKMARK [1][-]{section.12.7}{Guidelines}{chapter.12}% 95
+\BOOKMARK [1][-]{section.12.8}{CHRd}{chapter.12}% 96
+\BOOKMARK [0][-]{chapter.13}{The viewsys Package}{}% 97
+\BOOKMARK [1][-]{section.13.1}{An Example}{chapter.13}% 98
+\BOOKMARK [1][-]{section.13.2}{The ViewSys Data Model}{chapter.13}% 99
+\BOOKMARK [1][-]{section.13.3}{View Instance Model}{chapter.13}% 100
+\BOOKMARK [1][-]{section.13.4}{Using ViewSys}{chapter.13}% 101
+\BOOKMARK [0][-]{chapter.14}{The persistent\137tables Package}{}% 102
+\BOOKMARK [1][-]{section.14.1}{Using Persistent Tables with viewsys}{chapter.14}% 103
+\BOOKMARK [1][-]{section.14.2}{Methodology for Defining View Systems}{chapter.14}% 104
+\BOOKMARK [1][-]{section.14.3}{Using Timestamps \(or version numbers\)}{chapter.14}% 105
+\BOOKMARK [1][-]{section.14.4}{Predicates for Persistent Tabling}{chapter.14}% 106
+\BOOKMARK [0][-]{chapter.15}{ PITA: Probabilistic Inference}{}% 107
+\BOOKMARK [1][-]{section.15.1}{Installation}{chapter.15}% 108
+\BOOKMARK [1][-]{section.15.2}{Syntax}{chapter.15}% 109
+\BOOKMARK [1][-]{section.15.3}{Using PITA}{chapter.15}% 110
+\BOOKMARK [2][-]{subsection.15.3.1}{Probabilistic Logic Programming}{section.15.3}% 111
+\BOOKMARK [2][-]{subsection.15.3.2}{Modeling Assumptions}{section.15.3}% 112
+\BOOKMARK [2][-]{subsection.15.3.3}{Possibilistic Logic Programming}{section.15.3}% 113
+\BOOKMARK [0][-]{chapter.16}{Interface to MiniZinc}{}% 114
+\BOOKMARK [1][-]{section.16.1}{Introduction}{chapter.16}% 115
+\BOOKMARK [1][-]{section.16.2}{Installation}{chapter.16}% 116
+\BOOKMARK [1][-]{section.16.3}{The API}{chapter.16}% 117
+\BOOKMARK [0][-]{chapter.17}{XSB and Python}{}% 118
+\BOOKMARK [1][-]{section.17.1}{Configuration and Loading}{chapter.17}% 119
+\BOOKMARK [2][-]{subsection.17.1.1}{Installing xsbpy to work with Anaconda}{section.17.1}% 120
+\BOOKMARK [2][-]{subsection.17.1.2}{Configuring xsbpy for venv or without a virtual environmnet}{section.17.1}% 121
+\BOOKMARK [2][-]{subsection.17.1.3}{Installing a development version of Python under macOS \(if Anaconda is not used\)}{section.17.1}% 122
+\BOOKMARK [2][-]{subsection.17.1.4}{Configuring xsbpy under Windows}{section.17.1}% 123
+\BOOKMARK [2][-]{subsection.17.1.5}{Testing whether the xsbpy configuration was successful}{section.17.1}% 124
+\BOOKMARK [1][-]{section.17.2}{Introductory Examples}{chapter.17}% 125
+\BOOKMARK [1][-]{section.17.3}{Bi-translation between Prolog Terms and Python Data Structures}{chapter.17}% 126
+\BOOKMARK [2][-]{subsection.17.3.1}{The Bi-translation Specification}{section.17.3}% 127
+\BOOKMARK [1][-]{section.17.4}{Usage}{chapter.17}% 128
+\BOOKMARK [1][-]{section.17.5}{Performance and Space Management}{chapter.17}% 129
+\BOOKMARK [2][-]{subsection.17.5.1}{Memory Management}{section.17.5}% 130
+\BOOKMARK [2][-]{subsection.17.5.2}{Python Space Management}{section.17.5}% 131
+\BOOKMARK [1][-]{section.17.6}{Interfaces to Python Libraries}{chapter.17}% 132
+\BOOKMARK [2][-]{subsection.17.6.1}{Fasttext Queries and Language Detection: xp\137fasttext}{section.17.6}% 133
+\BOOKMARK [2][-]{subsection.17.6.2}{Dense Vector Queries with xp\137faiss}{section.17.6}% 134
+\BOOKMARK [2][-]{subsection.17.6.3}{Translating Between RDF and Prolog: xp\137rdflib}{section.17.6}% 135
+\BOOKMARK [2][-]{subsection.17.6.4}{xp\137spacy}{section.17.6}% 136
+\BOOKMARK [2][-]{subsection.17.6.5}{xp\137json}{section.17.6}% 137
+\BOOKMARK [2][-]{subsection.17.6.6}{Other Examples and Demos}{section.17.6}% 138
+\BOOKMARK [1][-]{section.17.7}{Current and Future Work}{chapter.17}% 139
+\BOOKMARK [0][-]{chapter.18}{px: The Python 3 - XSB Interface}{}% 140
+\BOOKMARK [1][-]{section.18.1}{Configuration, Loading and Start-up}{chapter.18}% 141
+\BOOKMARK [2][-]{subsection.18.1.1}{Installation on Linux and macOS}{section.18.1}% 142
+\BOOKMARK [2][-]{subsection.18.1.2}{Configuring PX on Windows}{section.18.1}% 143
+\BOOKMARK [1][-]{section.18.2}{Using px}{chapter.18}% 144
+\BOOKMARK [2][-]{subsection.18.2.1}{Deterministic Queries and Commands}{section.18.2}% 145
+\BOOKMARK [2][-]{subsection.18.2.2}{Comprehension of Non-Deterministic Queries}{section.18.2}% 146
+\BOOKMARK [2][-]{subsection.18.2.3}{Callbacks from XSB to Python}{section.18.2}% 147
+\BOOKMARK [2][-]{subsection.18.2.4}{Constraints and Residual Programs}{section.18.2}% 148
+\BOOKMARK [2][-]{subsection.18.2.5}{Other px Resources and Examples}{section.18.2}% 149
+\BOOKMARK [1][-]{section.18.3}{The px API}{chapter.18}% 150
+\BOOKMARK [2][-]{subsection.18.3.1}{px API Convenience Predicates}{section.18.3}% 151
+\BOOKMARK [1][-]{section.18.4}{Performance}{chapter.18}% 152
+\BOOKMARK [1][-]{section.18.5}{Current Issues and Limitations}{chapter.18}% 153
+\BOOKMARK [0][-]{chapter.19}{XASP}{}% 154
+\BOOKMARK [1][-]{section.19.1}{Installing the Interface}{chapter.19}% 155
+\BOOKMARK [2][-]{subsection.19.1.1}{Installing the Interface under Unix}{section.19.1}% 156
+\BOOKMARK [2][-]{subsection.19.1.2}{Installing XASP under Windows using Cygwin}{section.19.1}% 157
+\BOOKMARK [1][-]{section.19.2}{The Smodels Interface}{chapter.19}% 158
+\BOOKMARK [1][-]{section.19.3}{The xnmr\137int Interface}{chapter.19}% 159
+\BOOKMARK [0][-]{chapter.20}{Importing JSON Structures}{}% 160
+\BOOKMARK [1][-]{section.20.1}{Introduction}{chapter.20}% 161
+\BOOKMARK [1][-]{section.20.2}{API for Importing JSON as Terms}{chapter.20}% 162
+\BOOKMARK [1][-]{section.20.3}{Exporting Terms to JSON}{chapter.20}% 163

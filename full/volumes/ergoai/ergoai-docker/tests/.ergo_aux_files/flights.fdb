@@ -1,0 +1,18 @@
+#include "flrheader.flh"
+#define FLORA_COMPILATION_ID 1
+
+
+FLORA_THIS_WORKSPACE(tblflapply)('Flight','United1','NYC','Seattle','\\datatype'('\\dateTime'(1,2016,12,30,12,32,'00',0,0,0,','(750354,','(752,'00'))),'\\dateTime'),'\\datatype'('\\dateTime'(1,2016,12,30,16,15,'00',0,0,0,','(750354,','(975,'00'))),'\\dateTime'),__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)('Ticket',t1,'Abe Smith','Mary Smith',__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)('Itinerary',t1,'United1',__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)('Ticket',t3,'Ben Jones','John Smith',__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)('Itinerary',t3,'United1',__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)('Flight','United2','NYC','Seattle','\\datatype'('\\dateTime'(1,2016,12,31,12,32,'00',0,0,0,','(750355,','(752,'00'))),'\\dateTime'),'\\datatype'('\\dateTime'(1,2016,12,30,16,15,'00',0,0,0,','(750354,','(975,'00'))),'\\dateTime'),__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)('Ticket',t2,'Abe Smith','Mary Smith',__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)('Itinerary',t2,'United2',__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)('Ticket',t4,'Ben Jones','Mary Smith',__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)('Itinerary',t4,'United2',__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)('Flight','United3','Seattle','San Francisco','\\datatype'('\\dateTime'(1,2016,12,30,6,45,'00',0,0,0,','(750354,','(405,'00'))),'\\dateTime'),'\\datatype'('\\dateTime'(1,2016,12,30,11,17,'00',0,0,0,','(750354,','(677,'00'))),'\\dateTime'),__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)('Ticket',t5,'Calvin Curtis','Mary Smith',__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)('Itinerary',t5,'United3',__newcontextvar3).
+FLORA_THIS_WORKSPACE(tblflapply)('Flight','United4','Seattle','San Francisco','\\datatype'('\\dateTime'(1,2016,12,30,6,45,'00',0,0,0,','(750354,','(405,'00'))),'\\dateTime'),'\\datatype'('\\dateTime'(1,2016,12,30,11,16,'00',0,0,0,','(750354,','(676,'00'))),'\\dateTime'),__newcontextvar3).

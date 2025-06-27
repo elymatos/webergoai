@@ -1,0 +1,141 @@
+flora_nowarn_symbol(now,1,\@,any_symbol_context,nontransactional_symbol,'flrbasetype.flr').
+flora_nowarn_symbol(toType,1,\@,any_symbol_context,nontransactional_symbol,'flrbasetype.flr').
+flora_nowarn_symbol(toType,6,\@,any_symbol_context,nontransactional_symbol,'flrbasetype.flr').
+flora_nowarn_symbol(toType,7,\@,any_symbol_context,nontransactional_symbol,'flrbasetype.flr').
+flora_nowarn_symbol(toType,10,\@,any_symbol_context,nontransactional_symbol,'flrbasetype.flr').
+flora_nowarn_symbol(toDateTime,3,\@,any_symbol_context,nontransactional_symbol,'flrbasetype.flr').
+flora_nowarn_symbol(toDateTime,1,\@,any_symbol_context,nontransactional_symbol,'flrbasetype.flr').
+flora_nowarn_symbol(toDate,1,\@,any_symbol_context,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol('\\integer',0,\@,7473,46,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(minute,0,\@,1399,142,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(time,0,\@,2334,199,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(next,4,\@,3803,317,predicate_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol('\\double',0,\@,8346,176,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(concat,1,\@,6188,30,function_symbol,nontransactional_symbol,'flrbasetype_symbol.flh').
+flora_symbol(toList,0,\@,11355,174,function_symbol,nontransactional_symbol,'flrbasetype_string.flh').
+flora_symbol(second,0,\@,1425,143,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(check_pcrelib,0,\@,11898,232,predicate_symbol,nontransactional_symbol,'flrbasetype_string.flh').
+flora_symbol('\\boolean',0,\@,6519,67,function_symbol,nontransactional_symbol,'flrbasetype_symbol.flh').
+flora_symbol(dateSign,0,\@,1980,183,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol('_$concat',1,\@,6205,32,function_symbol,nontransactional_symbol,'flrbasetype_symbol.flh').
+flora_symbol('	whichever is appropriate for your system) then reconfigure Ergo.',0,\@,12105,264,function_symbol,nontransactional_symbol,'flrbasetype_string.flh').
+flora_symbol(sort,0,\@,8703,228,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(toUpper,0,\@,8510,202,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(query,0,\@,6846,48,function_symbol,nontransactional_symbol,'flrbasetype_iri.flh').
+flora_symbol(host,0,\@,6768,45,function_symbol,nontransactional_symbol,'flrbasetype_iri.flh').
+flora_symbol('\\opaqueJustification',2,\@,1129,108,predicate_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(year,0,\@,2006,184,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(-,1,\@,12311,41,function_symbol,nontransactional_symbol,'flrbasetype_currency.flh').
+flora_symbol(off,0,\@,5844,510,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(round,0,\@,8401,183,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(month,0,\@,2032,185,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(']: ',0,\@,5936,515,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol('\\iri',0,\@,5412,472,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(on,0,\@,5835,509,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(day,0,\@,2058,186,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(select,1,\@,8661,224,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(contains,1,\@,8606,219,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(list,0,\@,8609,219,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(floor,0,\@,8383,181,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol('	install the packages libpcre & libpcre-dev (or pcre & pcre-devel -- ',0,\@,12102,263,function_symbol,nontransactional_symbol,'flrbasetype_string.flh').
+flora_symbol(')]: both arguments must be bound',0,\@,1291,131,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol('[lessEq(',0,\@,1357,138,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(zoneSign,0,\@,1451,144,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(port,0,\@,6794,46,function_symbol,nontransactional_symbol,'flrbasetype_iri.flh').
+flora_symbol(zoneHour,0,\@,1477,145,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol('\\object',0,\@,7371,28,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol('\\isTypeOf(?) -> ?',0,\@,5200,435,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol('[lessThan(',0,\@,1286,131,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(zoneMinute,0,\@,1503,146,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol('\\long',0,\@,8263,163,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol('\\uri',0,\@,6894,50,function_symbol,nontransactional_symbol,'flrbasetype_iri.flh').
+flora_symbol('The pattern matching package has not been installed. Please
+',0,\@,12099,262,function_symbol,nontransactional_symbol,'flrbasetype_string.flh').
+flora_symbol('in ',0,\@,1280,130,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(localtime,0,\@,1529,147,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(toUTC,2,\@,1555,148,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(weekday,0,\@,6036,529,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(path,0,\@,6820,47,function_symbol,nontransactional_symbol,'flrbasetype_iri.flh').
+flora_symbol(islocaltime,0,\@,1625,150,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(weeknum,0,\@,6040,529,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(sign,0,\@,12284,39,function_symbol,nontransactional_symbol,'flrbasetype_currency.flh').
+flora_symbol('toNumber(): ',0,\@,6354,49,function_symbol,nontransactional_symbol,'flrbasetype_symbol.flh').
+flora_symbol(flatten,0,\@,9949,159,function_symbol,nontransactional_symbol,'flrbasetype_list.flh').
+flora_symbol(append,1,\@,8637,222,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(ceiling,0,\@,8392,182,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(weekstart,0,\@,6044,529,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(toTZ,2,\@,1590,149,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(toLower,0,\@,8519,203,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(toDate,0,\@,2547,220,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol('\\dateTime',0,\@,2808,243,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol('\\list',0,\@,8591,216,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(weekend,0,\@,6048,529,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(' to a basic data type object ',0,\@,1169,114,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(startsWith,1,\@,8530,204,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(sysabort,1,'\\system',1160,113,predicate_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(isTypeOf,1,\@,5162,433,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol('Attempt to apply an unbound method ',0,\@,1163,113,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(lessThan,1,\@,1228,125,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(unit,0,\@,12213,36,function_symbol,nontransactional_symbol,'flrbasetype_currency.flh').
+flora_symbol(substitute,2,\@,12008,247,function_symbol,nontransactional_symbol,'flrbasetype_string.flh').
+flora_symbol(delete,1,\@,8673,225,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(typeName,0,\@,1217,120,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(matchOne,1,\@,11886,231,function_symbol,nontransactional_symbol,'flrbasetype_string.flh').
+flora_symbol(date,0,\@,2321,198,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(amount,0,\@,12236,37,function_symbol,nontransactional_symbol,'flrbasetype_currency.flh').
+flora_symbol(toTuple,0,\@,9882,149,function_symbol,nontransactional_symbol,'flrbasetype_list.flh').
+flora_symbol('\\date',0,\@,1978,183,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(equals,1,\@,5150,431,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(times,1,\@,12513,59,function_symbol,nontransactional_symbol,'flrbasetype_currency.flh').
+flora_symbol(matchAll,1,\@,11947,239,function_symbol,nontransactional_symbol,'flrbasetype_string.flh').
+flora_symbol(lessEq,1,\@,1299,132,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(utc,0,\@,1926,177,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(description,0,\@,12259,38,function_symbol,nontransactional_symbol,'flrbasetype_currency.flh').
+flora_symbol('\\charlist',0,\@,6504,67,function_symbol,nontransactional_symbol,'flrbasetype_symbol.flh').
+flora_symbol(' is not convertible to a number; leaving as is',0,\@,6360,49,function_symbol,nontransactional_symbol,'flrbasetype_symbol.flh').
+flora_symbol(ratio,1,\@,12583,67,function_symbol,nontransactional_symbol,'flrbasetype_currency.flh').
+flora_symbol(fragment,0,\@,6872,49,function_symbol,nontransactional_symbol,'flrbasetype_iri.flh').
+flora_symbol(gtEq,1,\@,5084,426,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(warning,1,'\\system',6351,49,predicate_symbol,nontransactional_symbol,'flrbasetype_symbol.flh').
+flora_symbol('',0,\@,6225,33,function_symbol,nontransactional_symbol,'flrbasetype_symbol.flh').
+flora_symbol(ith,1,\@,8625,221,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol('\\duration',0,\@,4189,338,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol('[',0,\@,5930,515,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(rawValue,0,\@,1210,119,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol('\\symbol',0,\@,5373,467,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(monthstart,0,\@,6098,533,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(endsWith,1,\@,8540,205,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(days_until,1,\@,6123,537,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(length,0,\@,8501,201,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(user,0,\@,6742,44,function_symbol,nontransactional_symbol,'flrbasetype_iri.flh').
+flora_symbol('toType(?) -> ?',0,\@,5220,438,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol('\\isTypeOf',1,\@,7369,28,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(class_type_error,2,\@,38,38,prolog_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(nextday,1,\@,3793,317,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(toNumber,0,\@,6292,40,function_symbol,nontransactional_symbol,'flrbasetype_symbol.flh').
+flora_symbol('\\time',0,\@,1371,141,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol('\\decimal',0,\@,7486,47,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(nextmonth,1,\@,3816,318,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(reverse,0,\@,8492,200,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol('\\string',0,\@,5404,472,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(inverse,0,\@,5982,523,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(nextyear,1,\@,3839,319,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(gt,1,\@,5066,425,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(+>>,1,\@,8472,198,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(monthend,0,\@,6075,532,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(toSymbol,0,\@,1203,118,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(nexthour,1,\@,3862,320,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(toType,2,\@,5225,439,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(' must be a data type',0,\@,5942,516,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(scheme,0,\@,6716,43,function_symbol,nontransactional_symbol,'flrbasetype_iri.flh').
+flora_symbol(nextminute,1,\@,3885,321,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(pcrelib_missing_handler,0,\@,12086,258,predicate_symbol,nontransactional_symbol,'flrbasetype_string.flh').
+flora_symbol(substring,2,\@,8548,206,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol('\\currency',0,\@,4494,361,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(nextsecond,1,\@,3908,322,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(add,1,\@,4201,339,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol('Method',0,\@,5822,509,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(subset,1,\@,8734,231,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(minus,1,\@,2445,212,function_symbol,nontransactional_symbol,'flrbasetype.flr').
+flora_symbol(member,1,\@,8617,220,function_symbol,nontransactional_symbol,'flrbasetype_signatures.flh').
+flora_symbol(hour,0,\@,1373,141,function_symbol,nontransactional_symbol,'flrbasetype.flr').

@@ -1,0 +1,37 @@
+:-(compiler_options('.'(spec_off,[]))).
+#include "flora_errors.flh"
+:-(dynamic(/(flora_defined_class,1))).
+:-(import(from(/('{}',1),clpr))).
+:-(import(from(','(/(flora_db_find_base,2),','(/(flora_db_delete_all,1),/(flora_new_db_storage,1))),flrstoragebase))).
+:-(import(from(','(/(flora_load_dyndata_for_user_modules,1),/('_$_$_ergo''debugger_loaded',0)),flrdebugger))).
+:-(import(from(','(/(flora_storage_registry,1),','(/(flora_fld_storage_registry,1),','(/(flora_debug_module_registry,1),','(/(flora_module_registry,1),','(/(flora_module_registry,3),','(/(flora_defeasible_module_registry,2),','(/(flora_defined_udf_registry,6),','(/(flora_used_udf_registry,4),/(flora_in_debug_mode,1))))))))),flrregistry))).
+:-(import(from(/(flora_reset_descriptor_meta_predicates,1),flrdescriptor_support))).
+:-(import(from(/(flora_warning_line,2),flrprint))).
+:-(import(from(/(flora_increment_update_counter,0),flrupdatecounter))).
+:-(import(from(','(/(FLORA_NAF_PREDICATE,4),/(FLORA_NAF_PREDICATE,1)),flrnegation))).
+:-(import(from(','(/(flora_abolish_nonincremental_tables,0),','(/(flora_abolish_table_call,1),/(flora_abolish_table_call_carefully,1))),flrtables))).
+:-(import(from(','(/(flora_match_substring,3),/(flora_set_counter,2)),flrporting))).
+:-(import(from(/(flora_error_undefined,1),flrundefined))).
+:-(import(from(/(flora_error_notexported,1),flrundefined))).
+:-(import(from(/(flora_check_export_registry,3),flrexport))).
+:-(import(from(/(flora_reset_export_registries,1),flrexport))).
+:-(import(from(','(/(flora_reset_query_signature,1),/(flora_reset_rule_signature,1)),flrcanon))).
+:-(import(from(/(flora_delete_all_hooks,1),flrhooks))).
+:-(import(from(','(/(incr_retract,1),/(incr_asserta,1)),increval))).
+?-(flora_db_delete_all(FLORA_THIS_FLD_STORAGE)).
+?-(';'(','(flora_in_debug_mode('_'),','(!,assert(flora_debug_module_registry(FLORA_THIS_MODULE_NAME)))),true)).
+?-(flora_db_delete_all(FLORA_THIS_FDB_STORAGE)).
+?-(','(';'(','(flora_storage_registry(FLORA_THIS_FDB_STORAGE),!),','(assert(flora_storage_registry(FLORA_THIS_FDB_STORAGE)),assert(flora_fld_storage_registry(FLORA_THIS_FLD_STORAGE)))),flora_new_db_storage(FLORA_THIS_FDB_STORAGE))).
+:-(import(from(/(set_use_rule_structural_db_mode,2),flrutils))).
+?-(flora_db_delete_all(ERGO_THIS_STRUCTDB_STORAGE)).
+?-(set_use_rule_structural_db_mode(FLORA_THIS_MODULE_NAME,off)).
+?-(';'(->(flora_module_registry(FLORA_THIS_MODULE_NAME),','(retract(flora_module_registry(FLORA_THIS_MODULE_NAME,_h1827,_h1909)),asserta(flora_module_registry(FLORA_THIS_MODULE_NAME,unchanged,'NULL'())))),','(asserta(flora_module_registry(FLORA_THIS_MODULE_NAME,unchanged,'NULL'())),';'(->(current_predicate(/('_$_$_ergo''debugger_loaded',0)),flora_load_dyndata_for_user_modules('.'(FLORA_THIS_MODULE_NAME,[]))),true)))).
+?-(flora_reset_descriptor_meta_predicates(FLORA_THIS_MODULE_NAME)).
+?-(flora_reset_export_registries(FLORA_THIS_MODULE_NAME)).
+?-(flora_reset_rule_signature(FLORA_THIS_MODULE_NAME)).
+?-(flora_reset_query_signature(FLORA_THIS_MODULE_NAME)).
+?-(flora_delete_all_hooks(FLORA_THIS_MODULE_NAME)).
+?-(','(\+(flora_defined_class(_h1485)),assert(:-(flora_defined_class(_h1795),','(!,true))))).
+?-(';'(->(:(flrlibman,flora_system_module(FLORA_THIS_MODULE_NAME)),true),catch(abolish_all_tables,Exception,','(';'(->(=(Exception,error(permission_error(_h2283,_h2365,_h2447),context(_h2643,_h2725))),true),=(_h2643,unknown)),','(';'(->(flora_match_substring('patch.P',FLORA_THIS_FILENAME,_h3419),=(_h3539,'<internal patch file>')),=(_h3539,FLORA_THIS_FILENAME)),flora_warning_line(WARN_TABLED_FLLOAD,'.'('load{...} or newmodule{...},
+		  which must be standalone queries','.'(_h3539,'.'(FLORA_THIS_MODULE_NAME,'.'(_h2643,[])))))))))).
+?-(flora_increment_update_counter).

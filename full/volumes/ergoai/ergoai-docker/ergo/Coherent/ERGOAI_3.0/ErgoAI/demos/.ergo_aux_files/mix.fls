@@ -1,0 +1,9 @@
+flora_symbol(string,0,\@,57,12,function_symbol,nontransactional_symbol,'mix.flr').
+flora_symbol(a,0,\@,38,8,function_symbol,nontransactional_symbol,'mix.flr').
+flora_symbol(writelist,1,\@,155,24,predicate_symbol,transactional_symbol,'mix.flr').
+flora_symbol(show,1,\@,108,18,predicate_symbol,transactional_symbol,'mix.flr').
+flora_symbol(c,0,\@,47,9,function_symbol,nontransactional_symbol,'mix.flr').
+flora_symbol(activeNode,0,\@,66,14,function_symbol,nontransactional_symbol,'mix.flr').
+flora_symbol(b,0,\@,40,8,function_symbol,nontransactional_symbol,'mix.flr').
+flora_symbol(edge,2,\@,36,8,predicate_symbol,transactional_symbol,'mix.flr').
+flora_symbol(reachableTo,0,\@,59,12,function_symbol,nontransactional_symbol,'mix.flr').
