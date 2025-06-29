@@ -1,3 +1,0 @@
-
-In Info.plist.template, ergoAI_config.sh replaces
-ERGO_VERSION_NUMBER with the actual version and Info.plist is created.

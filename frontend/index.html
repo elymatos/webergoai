@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple ErgoAI Interface</title>
+    <title>Integrated ErgoAI Interface</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
         .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; }
@@ -19,184 +19,265 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🚀 Simple ErgoAI Web Interface</h1>
-        <p>Basic ErgoAI web interface for testing queries and managing knowledge bases.</p>
-        
-        <div class="grid">
-            <div class="section">
-                <h2>🔍 Execute Query</h2>
-                <textarea id="queryInput" placeholder="Enter your ErgoAI query here, e.g.: ?- adult(?X).">?- adult(?X).</textarea>
-                <br>
-                <button onclick="executeQuery()">Execute Query</button>
-                <button onclick="loadSampleQuery()">Load Sample Query</button>
-                <div id="queryResult" class="result"></div>
-            </div>
-            
-            <div class="section">
-                <h2>📊 System Status</h2>
-                <button onclick="checkHealth()">Check Health</button>
-                <div id="healthResult" class="result"></div>
-            </div>
-        </div>
-        
+<div class="container">
+    <h1>🚀 Integrated ErgoAI Web Interface</h1>
+    <p>ErgoAI web interface with Docker container integration and real F-Logic processing.</p>
+
+    <div class="grid">
         <div class="section">
-            <h2>📁 Projects & Knowledge Bases</h2>
-            <button onclick="loadProjects()">Load Projects</button>
-            <button onclick="createSampleProject()">Create Sample Project</button>
-            <div id="projectsResult" class="result"></div>
+            <h2>🔍 Execute Query</h2>
+            <textarea id="queryInput" placeholder="Enter your ErgoAI query here, e.g.: ?- adult(?X).">?- adult(?X).</textarea>
+            <br>
+            <button onclick="executeQuery()">Execute Query</button>
+            <button onclick="loadSampleQuery()">Load Sample Query</button>
+            <div id="queryResult" class="result"></div>
         </div>
-        
+
         <div class="section">
-            <h2>🧪 Test Queries</h2>
-            <p>Try these sample queries:</p>
-            <button onclick="testQuery('?- 1+1.')">Simple Math</button>
-            <button onclick="testQuery('?- adult(?X).')">Find Adults</button>
-            <button onclick="testQuery('?- parent(?X, ?Y).')">Find Parents</button>
-            <button onclick="testQuery('?- child(?X).')">Find Children</button>
-            <div id="testResult" class="result"></div>
+            <h2>📊 System Status</h2>
+            <button onclick="checkHealth()">Check Health</button>
+            <button onclick="testErgoAI()">Test ErgoAI Direct</button>
+            <div id="healthResult" class="result"></div>
         </div>
     </div>
 
-    <script>
-        const API_URL = 'http://localhost:5000/api';
-        
-        async function executeQuery() {
-            const query = document.getElementById('queryInput').value;
-            const resultDiv = document.getElementById('queryResult');
-            
-            if (!query.trim()) {
-                resultDiv.innerHTML = '<div class="status error">Please enter a query</div>';
-                return;
-            }
-            
-            resultDiv.innerHTML = '<div class="status">Executing query...</div>';
-            
+    <div class="section">
+        <h2>📁 Projects & Knowledge Bases</h2>
+        <button onclick="loadProjects()">Load Projects</button>
+        <button onclick="createSampleProject()">Create Sample Project</button>
+        <div id="projectsResult" class="result"></div>
+    </div>
+
+    <div class="section">
+        <h2>🧪 Test Queries</h2>
+        <p>Try these sample queries:</p>
+        <button onclick="testQuery('?- adult(?X).')">Find Adults</button>
+        <button onclick="testQuery('?- parent(?X, ?Y).')">Find Parents</button>
+        <button onclick="testQuery('?- child(?X).')">Find Children</button>
+        <button onclick="testQuery('?- john[age->?Age]@family.')">John's Age</button>
+        <div id="testResult" class="result"></div>
+    </div>
+</div>
+
+<script>
+    // Try different API URLs based on environment
+    const API_URLS = [
+        'http://localhost:5000/api',      // Direct to backend
+        'http://127.0.0.1:5000/api',     // Alternative localhost
+        '/api'                           // Proxy through nginx
+    ];
+
+    let API_URL = API_URLS[0]; // Start with first option
+
+    async function findWorkingAPI() {
+        for (const url of API_URLS) {
             try {
-                const response = await fetch(`${API_URL}/execute`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ query: query })
+                const response = await fetch(`${url}/health`, {
+                    method: 'GET',
+                    mode: 'cors',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
                 });
-                
-                const result = await response.json();
-                const statusClass = result.status === 'success' ? 'success' : 'error';
-                resultDiv.innerHTML = `
+                if (response.ok) {
+                    API_URL = url;
+                    console.log(`✅ Found working API at: ${API_URL}`);
+                    return true;
+                }
+            } catch (error) {
+                console.log(`❌ API not accessible at: ${url}`);
+            }
+        }
+        console.log(`❌ No working API found`);
+        return false;
+    }
+
+    async function makeAPICall(endpoint, options = {}) {
+        const defaultOptions = {
+            method: 'GET',
+            mode: 'cors',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            ...options
+        };
+
+        try {
+            const response = await fetch(`${API_URL}${endpoint}`, defaultOptions);
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+            return await response.json();
+        } catch (error) {
+            console.error('API call failed:', error);
+            throw error;
+        }
+    }
+
+    async function executeQuery() {
+        const query = document.getElementById('queryInput').value;
+        const resultDiv = document.getElementById('queryResult');
+
+        if (!query.trim()) {
+            resultDiv.innerHTML = '<div class="status error">Please enter a query</div>';
+            return;
+        }
+
+        resultDiv.innerHTML = '<div class="status">Executing query...</div>';
+
+        try {
+            const result = await makeAPICall('/execute', {
+                method: 'POST',
+                body: JSON.stringify({ query: query })
+            });
+
+            const statusClass = result.status === 'success' ? 'success' : 'error';
+            resultDiv.innerHTML = `
                     <div class="status ${statusClass}">Status: ${result.status}</div>
                     <strong>Result:</strong>
                     ${result.result || result.message}
                 `;
-            } catch (error) {
-                resultDiv.innerHTML = `<div class="status error">Error: ${error.message}</div>`;
-            }
+        } catch (error) {
+            resultDiv.innerHTML = `<div class="status error">Error: ${error.message}</div>`;
         }
-        
-        async function testQuery(query) {
-            document.getElementById('queryInput').value = query;
-            const resultDiv = document.getElementById('testResult');
-            
-            resultDiv.innerHTML = '<div class="status">Executing test query...</div>';
-            
-            try {
-                const response = await fetch(`${API_URL}/execute`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ query: query })
-                });
-                
-                const result = await response.json();
-                const statusClass = result.status === 'success' ? 'success' : 'error';
-                resultDiv.innerHTML = `
+    }
+
+    async function testQuery(query) {
+        document.getElementById('queryInput').value = query;
+        const resultDiv = document.getElementById('testResult');
+
+        resultDiv.innerHTML = '<div class="status">Executing test query...</div>';
+
+        try {
+            const result = await makeAPICall('/execute', {
+                method: 'POST',
+                body: JSON.stringify({ query: query })
+            });
+
+            const statusClass = result.status === 'success' ? 'success' : 'error';
+            resultDiv.innerHTML = `
                     <div class="status ${statusClass}">Query: ${query}</div>
                     <strong>Result:</strong>
                     ${result.result || result.message}
                 `;
-            } catch (error) {
-                resultDiv.innerHTML = `<div class="status error">Error: ${error.message}</div>`;
-            }
+        } catch (error) {
+            resultDiv.innerHTML = `<div class="status error">Error: ${error.message}</div>`;
         }
-        
-        async function checkHealth() {
-            const resultDiv = document.getElementById('healthResult');
-            
-            resultDiv.innerHTML = '<div class="status">Checking health...</div>';
-            
-            try {
-                const response = await fetch(`${API_URL}/health`);
-                const result = await response.json();
-                
-                const ergoStatus = result.ergoai_available ? 
-                    '<div class="status success">✅ ErgoAI Available</div>' : 
-                    '<div class="status error">⚠️ ErgoAI Not Found (using simulation)</div>';
-                
-                resultDiv.innerHTML = `
+    }
+
+    async function checkHealth() {
+        const resultDiv = document.getElementById('healthResult');
+
+        resultDiv.innerHTML = '<div class="status">Checking health...</div>';
+
+        try {
+            const result = await makeAPICall('/health');
+
+            const ergoStatus = result.ergoai_available ?
+                '<div class="status success">✅ ErgoAI Service Available</div>' :
+                '<div class="status error">⚠️ ErgoAI Service Not Available</div>';
+
+            resultDiv.innerHTML = `
                     <div class="status success">✅ API: ${result.status}</div>
                     ${ergoStatus}
+                    <div class="status">🔗 API URL: ${API_URL}</div>
                     <strong>Details:</strong>
                     ${JSON.stringify(result, null, 2)}
                 `;
-            } catch (error) {
-                resultDiv.innerHTML = `<div class="status error">❌ API Connection Failed: ${error.message}</div>`;
-            }
+        } catch (error) {
+            resultDiv.innerHTML = `
+                    <div class="status error">❌ API Connection Failed: ${error.message}</div>
+                    <div class="status error">🔗 Tried API URL: ${API_URL}</div>
+                    <div class="status">💡 Check if backend container is running on port 5000</div>
+                `;
         }
-        
-        async function loadProjects() {
-            const resultDiv = document.getElementById('projectsResult');
-            
-            resultDiv.innerHTML = '<div class="status">Loading projects...</div>';
-            
-            try {
-                const response = await fetch(`${API_URL}/projects`);
-                const result = await response.json();
-                
-                if (result.length === 0) {
-                    resultDiv.innerHTML = '<div class="status">No projects found. Create one!</div>';
-                } else {
-                    resultDiv.innerHTML = `
+    }
+
+    async function testErgoAI() {
+        const resultDiv = document.getElementById('healthResult');
+        resultDiv.innerHTML = '<div class="status">Testing ErgoAI service directly...</div>';
+
+        try {
+            // Test direct ErgoAI service
+            const response = await fetch('http://localhost:8080/docs');
+            if (response.ok) {
+                resultDiv.innerHTML += '<div class="status success">✅ ErgoAI service accessible at :8080</div>';
+            } else {
+                resultDiv.innerHTML += '<div class="status error">❌ ErgoAI service not accessible</div>';
+            }
+        } catch (error) {
+            resultDiv.innerHTML += `<div class="status error">❌ ErgoAI service error: ${error.message}</div>`;
+        }
+    }
+
+    async function loadProjects() {
+        const resultDiv = document.getElementById('projectsResult');
+
+        resultDiv.innerHTML = '<div class="status">Loading projects...</div>';
+
+        try {
+            const result = await makeAPICall('/projects');
+
+            if (result.length === 0) {
+                resultDiv.innerHTML = '<div class="status">No projects found. Create one!</div>';
+            } else {
+                resultDiv.innerHTML = `
                         <div class="status success">Found ${result.length} project(s)</div>
                         <strong>Projects:</strong>
                         ${JSON.stringify(result, null, 2)}
                     `;
-                }
-            } catch (error) {
-                resultDiv.innerHTML = `<div class="status error">Error: ${error.message}</div>`;
             }
+        } catch (error) {
+            resultDiv.innerHTML = `<div class="status error">Error: ${error.message}</div>`;
         }
-        
-        async function createSampleProject() {
-            const resultDiv = document.getElementById('projectsResult');
-            
-            try {
-                const response = await fetch(`${API_URL}/projects`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ 
-                        name: 'Test Project', 
-                        description: 'A test project created from the web interface' 
-                    })
-                });
-                
-                const result = await response.json();
-                resultDiv.innerHTML = `
+    }
+
+    async function createSampleProject() {
+        const resultDiv = document.getElementById('projectsResult');
+
+        try {
+            const result = await makeAPICall('/projects', {
+                method: 'POST',
+                body: JSON.stringify({
+                    name: 'Test Project',
+                    description: 'A test project created from the web interface'
+                })
+            });
+
+            resultDiv.innerHTML = `
                     <div class="status success">✅ Project created: ${result.name}</div>
                     <strong>Details:</strong>
                     ${JSON.stringify(result, null, 2)}
                 `;
-            } catch (error) {
-                resultDiv.innerHTML = `<div class="status error">Error: ${error.message}</div>`;
-            }
+        } catch (error) {
+            resultDiv.innerHTML = `<div class="status error">Error: ${error.message}</div>`;
         }
-        
-        function loadSampleQuery() {
-            document.getElementById('queryInput').value = `% Sample F-Logic query
-?- adult(?X).`;
+    }
+
+    function loadSampleQuery() {
+        document.getElementById('queryInput').value = `?- adult(?X).`;
+    }
+
+    // Initialize on page load
+    window.onload = async () => {
+        console.log('🚀 Initializing ErgoAI Web Interface...');
+
+        // Try to find working API
+        const apiFound = await findWorkingAPI();
+
+        if (apiFound) {
+            await checkHealth();
+            await loadProjects();
+        } else {
+            document.getElementById('healthResult').innerHTML = `
+                    <div class="status error">❌ Cannot connect to API</div>
+                    <div class="status">🔧 Troubleshooting:</div>
+                    <div class="status">1. Check if backend container is running: docker-compose ps</div>
+                    <div class="status">2. Check backend logs: docker-compose logs backend</div>
+                    <div class="status">3. Test API directly: curl http://localhost:5000/api/health</div>
+                `;
         }
-        
-        // Auto-load on page start
-        window.onload = () => {
-            checkHealth();
-            loadProjects();
-        };
-    </script>
+    };
+</script>
 </body>
 </html>

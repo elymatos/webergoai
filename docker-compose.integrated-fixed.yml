@@ -1,0 +1,87 @@
+services:
+  # Database for knowledge bases
+  postgres:
+    image: postgres:15-alpine
+    container_name: ergoai_db_integrated
+    environment:
+      POSTGRES_DB: ergoai_db
+      POSTGRES_USER: ergoai_user
+      POSTGRES_PASSWORD: ergoai123
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - postgres_data_new:/var/lib/postgresql/data
+      - ./database:/database
+    ports:
+      - "5433:5432"
+    restart: unless-stopped
+    networks:
+      - ergoai_network
+    command: >
+      postgres -c max_connections=100
+               -c shared_buffers=128MB
+
+  # ErgoAI Service Container
+  ergoai:
+    build:
+      context: ./ergoai-service
+      dockerfile: Dockerfile
+    container_name: ergoai_service
+    environment:
+      - ERGOROOT=/ergo/Coherent/ERGOAI_3.0/ErgoAI
+      - XSBARCHDIR=/ergo/Coherent/ERGOAI_3.0/XSB/config/x86_64-pc-linux-gnu
+      - PROJECT_NAME=integrated
+    volumes:
+      - ergoai_data:/ergo
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    networks:
+      - ergoai_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/docs"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Backend API - with correct database URL
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.integrated
+    container_name: ergoai_backend_integrated
+    environment:
+      - FLASK_ENV=development
+      - DATABASE_URL=postgresql://ergoai_user:ergoai123@postgres:5432/ergoai_db
+      - SECRET_KEY=simple-dev-key
+      - ERGOAI_SERVICE_URL=http://ergoai:80
+    ports:
+      - "5000:5000"
+    depends_on:
+      - postgres
+      - ergoai
+    restart: unless-stopped
+    networks:
+      - ergoai_network
+
+  # Nginx Proxy
+  nginx:
+    image: nginx:alpine
+    container_name: ergoai_nginx_proxy
+    volumes:
+      - ./frontend:/usr/share/nginx/html:ro
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - ergoai_network
+
+volumes:
+  postgres_data_new:
+  ergoai_data:
+
+networks:
+  ergoai_network:
+    driver: bridge
