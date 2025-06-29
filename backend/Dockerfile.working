@@ -1,0 +1,5 @@
+FROM python:3.11-slim
+WORKDIR /app
+RUN pip install Flask Flask-CORS
+COPY app_working.py .
+CMD ["python", "app_working.py"]
