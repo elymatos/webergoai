@@ -1,6 +1,0 @@
-%% Textual information for source file ergo2owl.ergo
-%% FL_TEXTUAL_INFO_PRED(StmtNum,ShortStmtFileSpec,BegLn,BegCh,EndLn,EndCh)
-%% Note: StmtNum != RuleId. Their relationship is encoded in rule signatures
-
-
-'_$_$_ergo''textual_info'(32,'ergo2owl.ergo',29,1,31,16).

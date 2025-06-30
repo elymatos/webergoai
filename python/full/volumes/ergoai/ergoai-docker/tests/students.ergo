@@ -1,0 +1,130 @@
+/*
+- KB facts:
+Student(sID: integer, sname: string, major: string, level: string, age: integer)
+Faculty(fID: integer, fname: string, deptid: string)
+Class(cname: string, room: string, fID: integer)
+Enrolled(sID: integer, cname: string)
+*/
+
+Student(1111, 'Abe Smith', math, freshman, 19).
+Student(2222, 'Bob Jones', 'computer science', freshman, 20).
+Student(3333, 'Chris Park', 'computer science', junior, 21).
+Student(4444, 'Dan Fider', 'computer science', senior, 22).
+Student(5555, 'Eugene Gao', math, senior, 23).
+
+Faculty(6666, 'Frank Aho', 'Math Department').
+Faculty(7777, 'George Cohen', 'Math Department').
+Faculty(8888, 'Ivan Toma', 'Computer Science Department').
+Faculty(9999, 'James Zhang', 'Computer Science Department').
+
+Class('Computer Science 1', 'Javits 100', 6666).
+Class('Computer Science 2', 'Javits 100', 7777).
+Class('Computer Science 3', 'Javits 100', 8888).
+
+Class('Computer Science 4', 'Javits 100', 9999).
+Class('Computer Science 5', 'Javits 101', 9999).
+
+Enrolled(1111, 'Computer Science 1').
+
+Enrolled(2222, 'Computer Science 1').
+Enrolled(2222, 'Computer Science 2').
+
+Enrolled(3333, 'Computer Science 1').
+Enrolled(3333, 'Computer Science 2').
+Enrolled(3333, 'Computer Science 3').
+
+Enrolled(4444, 'Computer Science 1').
+Enrolled(4444, 'Computer Science 2').
+Enrolled(4444, 'Computer Science 3').
+Enrolled(4444, 'Computer Science 4').
+Enrolled(4444, 'Computer Science 5').
+
+// Student 5555 is not enrolled in any course
+
+/*********************************************************************************/
+/*
+a. Find the names of all students who are enrolled in two classes with the same faculty.
+*/
+query1(?sname) :-
+    Student(?sID, ?sname, ?_major, ?_level, ?_age),
+    Enrolled(?sID, ?cname1),
+    Class(?cname1, ?_room, ?fID),
+    Enrolled(?sID, ?cname2),
+    ?cname1 != ?cname2,
+    Class(?cname2, ?_room2, ?fID).
+//?- query1(?sname).
+
+/*********************************************************************************/
+/*
+b. Find the names of faculty members who teach in every room on campus.
+*/
+room(?room) :-
+    Class(?_cname, ?room, ?_fID).
+
+query2(?fname) :-
+    Faculty(?fID, ?fname, ?_deptid),
+    forall(?room)^(
+        room(?room)
+        ~~>
+        exists(?cname)^(
+            Class(?cname, ?room, ?fID)
+        )
+    ).
+//?- query2(?fname).
+
+query2_2(?fname) :-
+    Faculty(?fID, ?fname, ?_deptid),
+    \naf exists(?room)^(
+        room(?room),
+        \naf exists(?cname)^(
+            Class(?cname, ?room, ?fID)
+        )
+    ).
+//?- query2_2(?fname).
+
+/*********************************************************************************/
+/*
+c. Find the names of faculty members for whom the combined enrollment of the courses that they teach is greater than 300.
+*/
+query3(?fname) :-
+    Faculty(?fID, ?fname, ?_deptid),
+    3 < count{?sID |
+        Class(?cname, ?_room, ?fID),
+        Enrolled(?sID, ?cname)
+    }.
+//?- query3(?fname).
+
+/*********************************************************************************/
+/*
+d. For each level, print the level and the average age of students for that level.
+*/
+query4(?level, ?avgAge) :-
+    Student(?_, ?_, ?_, ?level, ?_),
+    ?avgAge = avg{?age |
+        Student(?_sID, ?_sname, ?_major, ?level, ?age)
+    }.
+//?- query4(?fname, ?avgAge).
+
+/*********************************************************************************/
+/*
+e. Find the names of students enrolled in the maximum number of classes that students are enrolled in.
+*/
+classesPerStudent(?sID, ?numberOfClasses) :-
+    Student(?sID, ?_, ?_, ?_, ?_),
+    ?numberOfClasses = count{?cname |
+        Enrolled(?sID, ?cname)
+    }.
+maxNumberOfClassesTakenByAStudent(?Max):-
+    ?Max = max{?numberOfClasses |
+        classesPerStudent(?_sID, ?numberOfClasses)
+    }.
+    
+query5(?sname) :-
+    Student(?sID, ?sname, ?_major, ?_level, ?_age),
+    maxNumberOfClassesTakenByAStudent(?Max),
+    ?Max = count{?cname |
+        Enrolled(?sID, ?cname)
+    }.
+//?- query5(?sname).
+
+

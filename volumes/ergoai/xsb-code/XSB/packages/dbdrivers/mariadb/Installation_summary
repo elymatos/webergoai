@@ -1,6 +1,0 @@
-  MariaDB support:                                  no
-  MariaDB library directory:                        /usr/lib
-  MariaDB header directory:                         /usr/include/mysql
-  MariaDB C Flags:                                  -I/usr/include/mysql -I/usr/include/mysql/mysql
-  MariaDB Loader Flags:                             -L/usr/lib/ -lmariadb
-

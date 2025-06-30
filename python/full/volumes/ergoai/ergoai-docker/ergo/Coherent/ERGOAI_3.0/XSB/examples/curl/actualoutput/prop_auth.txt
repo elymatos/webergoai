@@ -1,0 +1,4 @@
+test_url_properties_auth on http://browserspy.dk/password-ok.php
+Size = -1
+Modified Time = -1
+Redirection URL = http://browserspy.dk/password-ok.php

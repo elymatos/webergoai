@@ -1,6 +1,0 @@
-  MySQL Embedded Server support:                  yes
-  MySQL Embedded Server library directory:        /usr/lib
-  MySQL Embedded Server header directory:         /usr/include/mysql
-  MySQL Embedded Server C Flags:                  -g -W -Wall -I/usr/include/mysql -I/usr/include/mysql/mysql -g -O2
-  MySQL Embedded Server Loader Flags:             -L/usr/lib/ -lmariadbd -lz -ldl -lm -lssl -lcrypto 
-
