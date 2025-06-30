@@ -1,2 +1,0 @@
-:- import flora_configuration/2 from flrregistry.
-?- assert(flora_configuration(builddate,'2024-10-2')).

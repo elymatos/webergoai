@@ -1,6 +1,0 @@
-%% Textual information for source file gclpe.ergo
-%% FL_TEXTUAL_INFO_PRED(StmtNum,ShortStmtFileSpec,BegLn,BegCh,EndLn,EndCh)
-%% Note: StmtNum != RuleId. Their relationship is encoded in rule signatures
-
-
-'_$_$_ergo''textual_info'(47,'gclpe.flr',40,1,40,51).

@@ -1,8 +1,0 @@
-:-( FLORA_THIS_WORKSPACE(diffobjeql)(_h1495,_h1577,'_$ctxt'(_h1735,_h1817,_h1899)),
-    ','(inferred_fd(_h2133,_h2215,_h1495,'_$ctxt'(_h1735,_h2533,_h2615)),','(inferred_fd(_h2133,_h2215,_h1577,'_$ctxt'(_h1735,_h3245,_h3327)),\=(_h1495,_h1577)))).
-:-( FLORA_THIS_WORKSPACE(diffobjeql)(_h1495,_h1577,'_$ctxt'(_h1735,_h1817,_h1899)),
-    ','(inferred_ifd(_h2133,_h2215,_h1495,'_$ctxt'(_h1735,_h2533,_h2615)),','(inferred_ifd(_h2133,_h2215,_h1577,'_$ctxt'(_h1735,_h3245,_h3327)),\=(_h1495,_h1577)))).
-:-( FLORA_THIS_WORKSPACE(diffobjeql)(_h1495,_h1577,'_$ctxt'(_h1735,_h1817,_h1899)),
-    ','(FLORA_THIS_WORKSPACE(diffobjeql)(_h2133,_h2215,'_$ctxt'(_h1735,_h2453,_h2535)),','(inferred_fd(_h2133,_h2849,_h1495,'_$ctxt'(_h1735,_h3167,_h3249)),','(inferred_fd(_h2215,_h2849,_h1577,'_$ctxt'(_h1735,_h3879,_h3961)),\=(_h1495,_h1577))))).
-:-( FLORA_THIS_WORKSPACE(diffobjeql)(_h1495,_h1577,'_$ctxt'(_h1735,_h1817,_h1899)),
-    ','(FLORA_THIS_WORKSPACE(diffobjeql)(_h2133,_h2215,'_$ctxt'(_h1735,_h2453,_h2535)),','(inferred_ifd(_h2133,_h2849,_h1495,'_$ctxt'(_h1735,_h3167,_h3249)),','(inferred_ifd(_h2215,_h2849,_h1577,'_$ctxt'(_h1735,_h3879,_h3961)),\=(_h1495,_h1577))))).

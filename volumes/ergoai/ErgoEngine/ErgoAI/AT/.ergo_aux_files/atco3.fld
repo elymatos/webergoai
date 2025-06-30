@@ -1,8 +1,0 @@
-#include "flrheader.flh"
-#include "flr_fld_standardtypes.flh"
-
-#define FLORA_COMPILATION_ID 11
-
-FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,howDefeated,__fldnewvar2,__fldnewvar3).
-FLORA_THIS_WORKSPACE(tblflapply)(undermined2,__fldnewvar1,__fldnewvar2,__fldnewvar3).
-FLORA_THIS_WORKSPACE(tblflapply)(undermined1,__fldnewvar1,__fldnewvar2,__fldnewvar3).

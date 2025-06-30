@@ -1,6 +1,0 @@
-  MySQL support:                                  yes
-  MySQL library directory:                        /usr/lib
-  MySQL header directory:                         /usr/include/mysql
-  MySQL C Flags:                                  -I/usr/include/mysql -I/usr/include/mysql/mysql
-  MySQL Loader Flags:                             -L/usr/lib/ -lmariadb
-
